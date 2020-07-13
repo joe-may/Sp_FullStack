@@ -7,6 +7,9 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 import'./App.css'
 import GameTwo from './components/gameTwo/gameTwo';
 import GameOne from './components/gameOne/gameOne';
+import GameThree from './components/gameThree/gameThree';
+import LandingPage from './components/landingPage/landingPage';
+import SnowCon from './components/snowconPage/snowconPage';
 
 
 
@@ -21,8 +24,26 @@ class App extends Component {
   render() {
     return (
       <Router>
+          <section>
+              <Route exact path="/" render={(props) => (
+              <LandingPage
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+      </section>
       <section>
-          <Route exact path="/1" render={(props) => (
+      <Route exact path="/snocon" render={(props) => (
+              <SnowCon
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/sno1" render={(props) => (
               <GameOne
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
@@ -31,11 +52,29 @@ class App extends Component {
                 )}/>
       </section>
       <section>
-          <Route exact path="/2" render={(props) => (
+          <Route exact path="/sno2" render={(props) => (
               <GameTwo
                 />
                 )}/>
       </section>
+      <section>
+          <Route exact path="/sno3" render={(props) => (
+              <GameThree
+                />
+                )}/>
+      </section>
+      <section>
+      {/* <Route exact path='/signup' render={({ history }) =>
+            <SignupPage
+              history={history}
+              handleSignupOrLogin={this.handleSignupOrLogin}
+              />}/>
+          <Route exact path='/login' render={({ history }) =>
+            <LoginPage
+              history={history}
+              handleSignupOrLogin={this.handleSignupOrLogin}
+              />}/> */}
+     </section>
       </Router>
     );
     

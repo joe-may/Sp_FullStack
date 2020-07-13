@@ -8,6 +8,7 @@ class GameTwo extends Component {
     componentDidMount() {
       $('.win').hide();
       $('.lose').hide();
+      $('.nextLevel').hide();
 
       
       const answerset = [
@@ -164,6 +165,7 @@ class GameTwo extends Component {
       console.log('keep playing');
         } else {
           $('.win').show();
+          $('.nextLevel').show();
           $(".reset").html(" ");
           $(".start").show();
           $('.tryAgain').show()
@@ -190,6 +192,7 @@ class GameTwo extends Component {
         <div class="problem reset"></div>
     </div>
   </div>
+  <p><a class="nextLevel" href="/3">Next Level!</a></p>
   <div>
       <span id="timer">
         <span id="time"></span>     
@@ -201,6 +204,7 @@ class GameTwo extends Component {
     <img class="fline" src="../StudyPup_assets/Ice_Cream_Scoop_5.png"alt=""/>
     <img src='../StudyPup_assets/Snow_Mountain_Background_Loop_Bigger.gif' alt="" class='movingBackground'/>
 
+    <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
 </body>
 </div>
 );

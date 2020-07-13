@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+// import { Link } from 'react-router-dom';
 
 import './gameOne.css';
 import $ from "jquery";
@@ -11,6 +12,7 @@ class GameOne extends Component {
 
 $('.win').hide();
 $('.lose').hide();
+$('.nextLevel').hide();
 
 
 ////snowball throw
@@ -159,6 +161,7 @@ console.log(currentGameArray);
 console.log('keep playing');
   } else {
     $('.win').show();
+    $('.nextLevel').show();
     $(".reset").html(" ");
     $(".start").show();
     $('.tryAgain').show();
@@ -181,7 +184,7 @@ console.log('keep playing');
     <div class="game1">
     
 <body>
-  
+         <img class="bg_game1" src='../StudyPup_assets/penguin-level-backdrop.jpeg' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
           <h1 class="win">YOU WON!!</h1>
@@ -189,7 +192,7 @@ console.log('keep playing');
                 
                 <div class="lose">Try Again!</div>
                 
-              
+                <p><a class="nextLevel" href="/sno2">Next Level!</a></p>
           
           <div>
             <span id="timer">
@@ -201,7 +204,7 @@ console.log('keep playing');
           
   
 </body>
-
+<link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
 </div>
     
 );
