@@ -10,6 +10,7 @@ class GameThree extends Component {
 $('.win').hide();
 $('.lose').hide();
 $('.create').hide();
+$('.nextLevel').hide();
 
 
 //////up counter 
@@ -207,6 +208,7 @@ $('.countDown').click(function(){
   if (currentGameArray.length > 0){
     console.log('keep playing');
   } else {
+    $('.nextLevel').show();
     clearInterval(interval);
     $('.win').show();
     $(".reset").html(" ");
@@ -291,7 +293,8 @@ $('.countDown').click(function(){
   </div>
   
             <div class="lose">Try Again!</div>
-    
+
+            <a class="nextLevel" href="/snoconb3">Next Level!</a>
       <div>
         <span id="timer">
           <span id="time">25</span>      

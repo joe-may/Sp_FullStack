@@ -453,3 +453,16 @@
     
      }
       
+     .game3 .nextLevel {
+      position: fixed;
+      width: 20%;
+      left: 50%;
+      top: 62%;
+      margin-left: -10%;
+      font-family: 'Titan One';
+      font-size:5vw;
+      color: rgb(90, 170, 207) ;
+      border-radius: 30px 30px 30px 30px;
+      z-index: 1000;
+      cursor: pointer;
+     }

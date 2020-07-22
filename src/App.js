@@ -8,10 +8,12 @@ import'./App.css'
 import GameTwo from './components/gameTwo/gameTwo';
 import GameOne from './components/gameOne/gameOne';
 import GameThree from './components/gameThree/gameThree';
+import GameFour from './components/gameFour/gameFour';
 import LandingPage from './components/landingPage/landingPage';
 import SnowCon from './components/snowconPage/snowconPage';
 import SnowConb1 from './components/snowconPageb1/snowconPageb1';
 import SnowConb2 from './components/snowconPageb2/snowconPageb2';
+import SnowConb3 from './components/snowconPageb3/snowconPageb3';
 
 
 
@@ -63,6 +65,15 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+      <Route exact path="/snoconb3" render={(props) => (
+              <SnowConb3
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+      </section>
+      <section>
           <Route exact path="/sno1" render={(props) => (
               <GameOne
                 //passing user from app to home so i can access it in NavBar!! important!!
@@ -81,6 +92,15 @@ class App extends Component {
           <Route exact path="/sno3" render={(props) => (
               <GameThree
                 />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/sno4" render={(props) => (
+              <GameFour
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
                 )}/>
       </section>
       <section>

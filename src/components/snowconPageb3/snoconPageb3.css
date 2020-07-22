@@ -1,0 +1,124 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.landingb3 { 
+    
+    width: 100vw;
+    height: 100vh;
+    background-repeat: center;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .landingb3 .planetWrapper {
+    width: 50%;
+    position: fixed;
+    margin-left: 30%;
+    text-align: center;
+    top: 0%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  
+  .landingb3 .snoconPlanet {
+    width: 50vw;
+    
+    position: fixed;
+    margin-left: -25%;
+    text-align: center;
+    top: 0%;
+    font-family: 'Titan One';
+    
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .landingb3 .glitter3 {
+    width: 80%;
+    position: absolute;
+    left: -22%;
+    margin-top: -2%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207);
+    z-index: 9000;
+  }
+  .landingb3 .blueLevel1 {
+    width: 25%;
+    position: relative;
+    left: -41%;
+    text-align: center;
+    margin-top: 30%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207);
+    z-index: 10000;
+  }
+  .landingb3 .greenLevel3:hover { 
+      transform: scale(1.1); 
+    }
+    .landingb3 .bg {
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+
+  .landingb3 .blueLevel2 {
+    width: 25%;
+    position: absolute;
+    left: 4%;
+    text-align: center;
+    margin-top: 13%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207);
+    z-index: 10000;
+  }
+
+  .landingb3 .blueLevel3 {
+    width: 49%;
+    position: absolute;
+    left: 29%;
+    text-align: center;
+    margin-top: 8%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207);
+    z-index: 10000;
+  }
+  .landingb3 .bossLevel1 {
+    width: 37%;
+    position: absolute;
+    left: 34%;
+    text-align: center;
+    margin-top: 26%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    z-index: 10000;
+  }
+  .landingb3 .wind {
+    width: 40%;
+    position: absolute;
+    left: 40%;
+    margin-top: 29%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207);
+    z-index: 9000;
+  }
+
+
+
+

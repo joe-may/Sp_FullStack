@@ -192,7 +192,7 @@ class GameTwo extends Component {
         <div class="problem reset"></div>
     </div>
   </div>
-  <p><a class="nextLevel" href="/3">Next Level!</a></p>
+  <p><a class="nextLevel" href="/snoconb2">Next Level!</a></p>
   <div>
       <span id="timer">
         <span id="time"></span>     
