@@ -1,10 +1,40 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
 
+.landing { 
+    
+    width: 100vw;
+    height: 100vh;
+    background-repeat: center;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
 
+  .snoconPlanet {
+    width: 60%;
+    position: fixed;
+    margin-left: 20%;
+    text-align: center;
+    top: 10%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
 .bg {
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
 
 .landing .h1 {

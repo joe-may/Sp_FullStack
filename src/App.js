@@ -10,6 +10,7 @@ import GameOne from './components/gameOne/gameOne';
 import GameThree from './components/gameThree/gameThree';
 import LandingPage from './components/landingPage/landingPage';
 import SnowCon from './components/snowconPage/snowconPage';
+import SnowConb1 from './components/snowconPageb1/snowconPageb1';
 
 
 
@@ -36,6 +37,15 @@ class App extends Component {
       <section>
       <Route exact path="/snocon" render={(props) => (
               <SnowCon
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+      <Route exact path="/snoconb1" render={(props) => (
+              <SnowConb1
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}
