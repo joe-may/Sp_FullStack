@@ -192,7 +192,7 @@ console.log('keep playing');
                 
                 <div class="lose">Try Again!</div>
                 
-                <p><a class="nextLevel" href="/sno2">Next Level!</a></p>
+                <p><a class="nextLevel" href="/snoconb1">Next Level!</a></p>
           
           <div>
             <span id="timer">

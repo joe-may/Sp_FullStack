@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import "./snoconPageb1.css"
+import "./snoconPageb2.css"
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
-class SnowConb1 extends Component {
+class SnowConb2 extends Component {
 
 
         render() {
           return (
-            <div className="landingb1" style ={ { backgroundImage: "url('../StudyPup_assets/Background_Galaxy.png')"} }>
+            <div className="landingb2" style ={ { backgroundImage: "url('../StudyPup_assets/Background_Galaxy.png')"} }>
                 <Router>
                 <div class='planetWrapper'>
                 <img class="snoconPlanet" src="../StudyPup_assets/Sno-con_planet_forground.png" alt=""/>
@@ -20,11 +20,14 @@ class SnowConb1 extends Component {
 
 
                 <a href="/sno2">
-                <img class="greenLevel2" src="../StudyPup_assets/Snow-con_Level2_On.png"alt=""/>
+                <img class="blueLevel2" src="../StudyPup_assets/Snow-con_Level2_Complete.png"alt=""/>
                 </a>
-                <img class="glitter2" src="../StudyPup_assets/Snow-con_Level2_On_Deco.gif" alt=""/>
-                
   
+                <a href="/sno2">
+                <img class="greenLevel3" src="../StudyPup_assets/Snow-con_Level3_On.png"alt=""/>
+                </a>
+                <img class="storm" src="../StudyPup_assets/Snow-con_Level3_On_Deco.gif" alt=""/>
+                
     
                 </div>
                 
@@ -40,4 +43,4 @@ class SnowConb1 extends Component {
         }
       }
   
-  export default SnowConb1;
+  export default SnowConb2;

@@ -4,7 +4,7 @@ body {
     overflow: hidden;
 }
 
-.landingb1 { 
+.landingb2 { 
     
     width: 100vw;
     height: 100vh;
@@ -18,7 +18,7 @@ body {
     overflow: hidden;
   }
 
-  .landingb1 .planetWrapper {
+  .landingb2 .planetWrapper {
     width: 50%;
     position: fixed;
     margin-left: 30%;
@@ -30,7 +30,7 @@ body {
     z-index: 9000;
   }
   
-  .landingb1 .snoconPlanet {
+  .landingb2 .snoconPlanet {
     width: 50vw;
     
     position: fixed;
@@ -42,7 +42,7 @@ body {
     color: rgb(90, 170, 207) ;
     z-index: 9000;
   }
-  .landingb1 .glitter2 {
+  .landingb2 .glitter3 {
     width: 80%;
     position: absolute;
     left: -22%;
@@ -52,7 +52,7 @@ body {
     color: rgb(90, 170, 207);
     z-index: 9000;
   }
-  .landingb1 .blueLevel1 {
+  .landingb2 .blueLevel1 {
     width: 25%;
     position: relative;
     left: -41%;
@@ -63,10 +63,10 @@ body {
     color: rgb(90, 170, 207);
     z-index: 10000;
   }
-  .landingb1 .greenLevel2:hover { 
+  .landingb2 .greenLevel3:hover { 
       transform: scale(1.1); 
     }
-    .landingb1 .bg {
+    .landingb2 .bg {
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -75,18 +75,39 @@ body {
   }
 
 
-  .landingb1 .greenLevel2 {
-    width: 29%;
+  .landingb2 .blueLevel2 {
+    width: 25%;
     position: absolute;
-    left: 2%;
+    left: 4%;
     text-align: center;
-    margin-top: 12%;
+    margin-top: 13%;
     font-family: 'Titan One';
     font-size: 5vh;
     color: rgb(90, 170, 207);
     z-index: 10000;
   }
 
+  .landingb2 .greenLevel3 {
+    width: 49%;
+    position: absolute;
+    left: 29%;
+    text-align: center;
+    margin-top: 8%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207);
+    z-index: 10000;
+  }
+  .landingb2 .storm {
+    width: 81%;
+    position: absolute;
+    left: 15%;
+    margin-top: -2%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207);
+    z-index: 9000;
+  }
 
 
 

@@ -18,17 +18,54 @@ body {
     overflow: hidden;
   }
 
-  .snoconPlanet {
-    width: 60%;
+  .planetWrapper {
+    width: 50%;
     position: fixed;
-    margin-left: 20%;
+    margin-left: 30%;
     text-align: center;
-    top: 10%;
+    top: 0%;
     font-family: 'Titan One';
     font-size: 5vh;
     color: rgb(90, 170, 207) ;
     z-index: 9000;
   }
+  
+  .snoconPlanet {
+    width: 50vw;
+    
+    position: fixed;
+    margin-left: -25%;
+    text-align: center;
+    top: 0%;
+    font-family: 'Titan One';
+    
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .glitter {
+    width: 80%;
+    position: relative;
+    left: -41%;
+    margin-top: -90%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207);
+    z-index: 9000;
+  }
+  .greenLevel1 {
+    width: 28%;
+    position: relative;
+    left: -41%;
+    text-align: center;
+    margin-top: 28%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207);
+    z-index: 10000;
+  }
+  .greenLevel1:hover { 
+      transform: scale(1.1); 
+    }
 .bg {
     height: 100%; 
     background-position: center;
