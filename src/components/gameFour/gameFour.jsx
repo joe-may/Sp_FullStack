@@ -197,7 +197,7 @@ class GameFour extends Component {
                 
                 <div class="lose">Try Again!</div>
                 
-                <p><a class="nextLevel" href="/snoconb3">Next Level!</a></p>
+                <a class="nextLevel" href="/snoconb4">Next Level!</a>
           
           <div>
             <span id="timer">

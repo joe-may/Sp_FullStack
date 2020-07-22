@@ -294,7 +294,7 @@ $('.countDown').click(function(){
   
             <div class="lose">Try Again!</div>
 
-            <a class="nextLevel" href="/snoconb3">Next Level!</a>
+            <a class="nextLevel" href="/snoconb2">Next Level!</a>
       <div>
         <span id="timer">
           <span id="time">25</span>      

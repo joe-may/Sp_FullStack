@@ -63,7 +63,7 @@ body {
     color: rgb(90, 170, 207);
     z-index: 10000;
   }
-  .landingb3 .greenLevel3:hover { 
+  .landingb3 .bossLevel1:hover { 
       transform: scale(1.1); 
     }
     .landingb3 .bg {
