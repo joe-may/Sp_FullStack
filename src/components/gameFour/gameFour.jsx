@@ -46,6 +46,9 @@ class GameFour extends Component {
       $('.start').hide();
       $('.win').hide();
       $('.lose').hide();
+      $('audio#stormSong')[0].play();
+      
+      
       
       
       
@@ -117,6 +120,8 @@ class GameFour extends Component {
           var clickedAnswer = $(this).text();
           
           if (clickedAnswer === theAnswer) {
+            $('audio#whoosh')[0].play();
+            $('audio#whoosh')[0].currentTime = 0
             console.log("Correct!");
             $(this).find('.icecube').fadeOut(10);
             $(this).find('.answer').fadeOut(10, function() {
@@ -140,7 +145,9 @@ class GameFour extends Component {
          
       
           } else {
-           
+            $('audio#wrongWhoosh')[0].play();
+            
+            $('audio#wrongWhoosh')[0].currentTime = 0;
           };
         });
       
@@ -173,6 +180,8 @@ class GameFour extends Component {
           $('.tryAgain').show();
           $('.nextLevel').show();
           clearInterval(interval);
+          $('audio#stormSong')[0].pause()
+          $('audio#stormSong')[0].currentTime = 0
           console.log('you win')
           // generateHearts();
           
@@ -190,6 +199,15 @@ class GameFour extends Component {
     <div class="game4" style ={ { backgroundImage: "url('../StudyPup_assets/storm_in_sky.gif')"} }>
     
 <body>
+<audio id="stormSong">
+    <source src='../StudyPup_assets/Song_Snow-Con_Level_3.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="whoosh">
+    <source src='../StudyPup_assets/Net_Woosh_Slower.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="wrongWhoosh">
+    <source src='../StudyPup_assets/Wrong_Ice.m4a' type="audio/mpeg"/>
+  </audio>
         <div class="answers reset"></div>
         <button class="start">START</button>
           <h1 class="win">YOU WON!!</h1>

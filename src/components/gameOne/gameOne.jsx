@@ -10,21 +10,26 @@ class GameOne extends Component {
     componentDidMount() {
      
 
+
+
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
 
 
-////snowball throw
-$('body').click(function(e) {
+$('.game1').on('click',function(e) {
+  console.log('FIRRRRRREEE');
   var parentOffset = $(this).parent().offset();
    var relX = e.pageX - parentOffset.left;
    var relY = e.pageY - parentOffset.top;
+   $('audio#snowballThrow')[0].play();
+   $('audio#snowballThrow')[0].currentTime = 0
   $(".snowball").animate({
       width: '10px',
       left: relX,
       top: relY
-  }, 200, function() {
+  }, 330, function() {
+  
       $(".snowball").removeAttr('style');
   });
 });
@@ -45,6 +50,8 @@ $('.start').on('click',function() {
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
+$('audio#iglooSong')[0].play();
+
 
 
 
@@ -69,7 +76,7 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/igloo.png' class='igloo'><img src='../StudyPup_assets/penguin_transparent.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/igloo.png' class='igloo'><img src='../StudyPup_assets/Penguin_Walk_Gif_Faster.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
   });
 
@@ -88,6 +95,8 @@ console.log(currentGameArray);
           $('.lose').show();
           $(".reset").html(" ");
           $(".start").show();
+          $('audio#iglooSong')[0].pause()
+          $('audio#iglooSong')[0].currentTime = 0
           
         return;
     }else{
@@ -108,20 +117,32 @@ console.log(currentGameArray);
   }
  
   currentEquation();
-  
+
 
   // when answer is clicked on
-  $('.iglooWrapper').on('click',function() {
+  $('.iglooWrapper').on('click',function(e) {
     var clickedAnswer = $(this).text();
-    
+    $(this).prepend("<img src='' class='splash'>");
+    var splash = $(this).parent().find('.splash');
+    splash.attr("src", "../StudyPup_assets/snowball_hit_delay2.gif");
+    setTimeout(function() {
+      splash.attr("src", "").remove();
+  }, 1000)
+
     if (clickedAnswer === theAnswer) {
+      
+
       console.log("Correct!");
       $(this).find('.answer').fadeOut(1000, function() {
         $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
         console.log(currentGameArray.length);
         var penguin = $(this).parent().find('.penguin');
-        penguin.attr("src", "../StudyPup_assets/penguin_transparent.gif");
+        penguin.attr("src", "../StudyPup_assets/Penguin_Walk_Gif_Faster.gif");
         
+       
+        
+
+
           currentGameArray.splice(randomProblemSelector,1);
           console.log(currentGameArray.length);
           winningCheck();
@@ -129,7 +150,7 @@ console.log(currentGameArray);
           console.log($(this).parent());
           setTimeout(function() {
             penguin.attr("src", "").remove();
-        }, 3200)
+        }, 1900)
       });
 
   
@@ -165,7 +186,10 @@ console.log('keep playing');
     $(".reset").html(" ");
     $(".start").show();
     $('.tryAgain').show();
+    $('p').hide();
     clearInterval(interval);
+    $('audio#iglooSong')[0].pause()
+    $('audio#iglooSong')[0].currentTime = 0
     console.log('you win')
     // generateHearts();
     
@@ -184,6 +208,14 @@ console.log('keep playing');
     <div class="game1">
     
 <body>
+
+<audio id="iglooSong">
+    <source src='../StudyPup_assets/Song_Snow-Con_Level_1.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="snowballThrow">
+    <source src='../StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
+  </audio>
+ 
          <img class="bg_game1" src='../StudyPup_assets/penguin-level-backdrop.jpeg' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
