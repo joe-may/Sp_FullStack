@@ -44,6 +44,10 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.create').show();
+$('.nextLevel').hide();
+$('audio#icecreamSong')[0].play();
+
+
 
 
 
@@ -81,7 +85,7 @@ console.log(randomProblemSelector);
   // });
 
  
-  var counter = 25;
+  var counter = 1000;
  
 ////////////timer
   var interval = setInterval(function() {
@@ -110,31 +114,30 @@ console.log(randomProblemSelector);
   var currentEquation = function () {
     var problemHtml = $('<p></p>').html(selectedProblem);
     return $(".problem").html(problemHtml);
-    console.log(problemHtml);
+   
       
   }
  
   currentEquation();
 
 
-  ///////////green light on and off
-//   $("#go").click(function() {
-//     $("#box").removeClass("demo");
-//     setTimeout(function() {
-//         $("#box").addClass("demo");
-//     }, 1);
-// });
+
   
 ///////////change button img
 $('.countUp').click(function(){
   $('.countUp').hide();
+  $('audio#buttonSound')[0].play();
+  $('audio#buttonSound')[0].currentTime = 0
   setTimeout(function() {
  $('.countUp').show();
+
 }, 100);
 });
 
 $('.countDown').click(function(){
   $('.countDown').hide();
+  $('audio#buttonSound')[0].play();
+  $('audio#buttonSound')[0].currentTime = 0
   setTimeout(function() {
  $('.countDown').show();
 }, 100);
@@ -155,14 +158,17 @@ $('.countDown').click(function(){
       console.log("Correct!");
 
       console.log(currentGameArray.length);
+      $('audio#swoopboop')[0].play();
+      $('audio#swoopboop')[0].currentTime = 0
       $('.greenBox').prepend("<img src='' class='penguinIcecream'>");
       var penguin = $('.penguinIcecream');
       penguin.attr("src", "../StudyPup_assets/Penguin_Gets_Ice_Cream_.gif");
 
+
       
-      
-      currentGameArray.splice(randomProblemSelector,1);
       $('p').remove();
+      currentGameArray.splice(randomProblemSelector,1);
+     
         
 
 
@@ -181,6 +187,8 @@ $('.countDown').click(function(){
         }, 2500);
 
     } else {
+      $('audio#wrongDing')[0].play();
+      $('audio#wrongDing')[0].currentTime = 0
      console.log('wrong!!!!');
     };
   });
@@ -215,30 +223,17 @@ $('.countDown').click(function(){
     $(".start").show();
     $('.tryAgain').show();
     generateNextTurn();
+    $('p').hide();
     currentEquation = null;
     theAnswer = null;
     selectedProblem = null;
     randomProblemSelector = null;
     
-
-    
-
-
-
     console.log('keep playing');
-    
 
-   
-
-    // clearInterval(interval);
-   
     console.log(currentGameArray);
     console.log('you win');
-    
-    // generateHearts();
-    
-   
-    
+
   };
 }
   
@@ -254,9 +249,23 @@ $('.countDown').click(function(){
 
  render() {
   return (
-      <div class="game3">
+    <div class="game3" style ={ { backgroundImage: "url('../StudyPup_assets/Ice_Cream_Game_Background.png')"} }>
     <body>
-
+  <audio id="swoopboop">
+    <source src='../StudyPup_assets/Penguin_Gets_Ice_Cream.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="buttonSound">
+    <source src='../StudyPup_assets/Button_Click_Up.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="icecreamSong">
+    <source src='../StudyPup_assets/Song_Snow-Con_IceCream_Level.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="wrongDing">
+    <source src='../StudyPup_assets/Wrong_Ding.m4a' type="audio/mpeg"/>
+  </audio>
+ 
+  
+    
     <img src='../StudyPup_assets/just_pipes.png' alt="" class='skeletonBackground'/>
       
       <div class="answers reset"></div>
@@ -272,7 +281,7 @@ $('.countDown').click(function(){
       <button class="create">CREATE</button>
       <img src='../StudyPup_assets/Box_Yellow.png' alt="" class='ybox'/>
        <div class="guessCounter">
-        <button class="countUp" type="button">up</button> 
+         
           <img src='../StudyPup_assets/Up_Button_Unclicked.png'alt=""  class='countUp'/>
           <img src='../StudyPup_assets/Up_Button_Clicked.png'alt=""  class='countUpClicked'/>
   
