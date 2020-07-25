@@ -28,6 +28,7 @@ class GameTwo extends Component {
       $('.start').hide();
       $('.win').hide();
       $('.lose').hide();
+      $('audio#raceMusic')[0].play();
       $('li').first().remove();
       $('li').first().remove();
       $('li').first().remove();
@@ -63,6 +64,7 @@ class GameTwo extends Component {
                 $('.lose').show();
                 $(".reset").html(" ");
                 $(".start").show();
+
                 
               return;
           }else{
@@ -122,6 +124,8 @@ class GameTwo extends Component {
                 currentGameArray.splice(randomProblemSelector,1);
                 winningCheck();
                 generateNextTurn();
+                $('audio#boardBoost')[0].play();
+                $('audio#boardBoost')[0].currentTime = 0
                 console.log(currentGameArray.length + "Current game array");
                 $('.kart1').animate({
                   'left': boost + "%"
@@ -168,8 +172,10 @@ class GameTwo extends Component {
           $('.nextLevel').show();
           $(".reset").html(" ");
           $(".start").show();
-          $('.tryAgain').show()
-          // generateHearts();
+          $('.tryAgain').show();
+          $('audio#raceSong')[0].pause();
+          $('audio#raceSong')[0].currentTime = 0
+          
         };
       }
         
@@ -180,7 +186,14 @@ class GameTwo extends Component {
   return (
     <div class="game2">
 <body>
-
+ 
+ <audio id="raceMusic">
+    <source src='../StudyPup_assets/Song_Snow-Con_Race.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="boardBoost">
+    <source src='../StudyPup_assets/Sound_Snowboard_Boost.m4a' type="audio/mpeg"/>
+  </audio>
+  
 
 <div class="floor"></div>
   <div>

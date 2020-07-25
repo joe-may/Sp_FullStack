@@ -232,7 +232,7 @@ console.log('keep playing');
             </span>
           </div>
       
-          <img src='../StudyPup_assets/snowballold.jpg' alt="" class='snowball'/>
+          <img src='../StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
           
   
 </body>
