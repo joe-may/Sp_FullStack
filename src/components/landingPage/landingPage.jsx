@@ -9,14 +9,14 @@ class LandingPage extends Component {
 
     render() {
       return (
-        <div className="landing" style ={ { backgroundImage: "url('../StudyPup_assets/galaxy.jpeg')"} }>
+        <div class="landing" style ={ { backgroundImage: "url('../StudyPup_assets/galaxy.jpeg')"} }>
             <Router>
             <section>
                 
 
             </section>
                 <section>
-                <a class="start" href='/snocon'>START</a>
+                <p><a class="start" href='/snocon'>START</a></p>
                 </section>
                 <section>
                
