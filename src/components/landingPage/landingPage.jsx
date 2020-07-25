@@ -9,24 +9,25 @@ class LandingPage extends Component {
 
     render() {
       return (
-        <div className="landing">
+        <div className="landing" style ={ { backgroundImage: "url('../StudyPup_assets/galaxy.jpeg')"} }>
             <Router>
             <section>
-                <h1>This is the landing page</h1>
-                <img class='lpbg' src='../StudyPup_assets/galaxy.jpeg' alt="" />
+                
+
             </section>
                 <section>
-                <p><a class="startgame" href="/snocon">Start Game</a></p>
+                <a class="start" href='/snocon'>START</a>
                 </section>
                 <section>
-                <Link to="/login">Login</Link>
+               
                 </section>
                 <section>
-                <Link to="/signup">Sign Up</Link>
+                
                 </section>
                 
 
             </Router>
+            <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
         </div>
       );
     }
