@@ -80,7 +80,7 @@ console.log(currentGameArray);
   $.each(currentGameArray, function(index,value){
     $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='../StudyPup_assets/Frosto_Flying.gif' class='snowman'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
-    animateDiv();
+    
   });
 
  ///////////////////////////////timer
@@ -119,44 +119,7 @@ console.log(currentGameArray);
   
 
 
-function makeNewPosition(){
-  
-  // Get viewport dimensions (remove the dimension of the div)
-  var h = $('.answer').height() + 100;
-  var w = $('.answer').width() ;
-  
-  var nh = Math.floor(Math.random() * h);
-  var nw = Math.floor(Math.random() * w);
-  
-  return [nh,nw];    
-  
-}
 
-function animateDiv(){
-  var newq = makeNewPosition();
-  var oldq = $('.snowmanWrapper').offset();
-  var speed = calcSpeed([oldq.top, oldq.left], newq);
-  
-  $('.snowmanWrapper').animate({ top: newq[0], left: newq[1] }, speed, function(){
-    animateDiv();        
-  });
-  
-};
-
-function calcSpeed(prev, next) {
-  
-  var x = Math.abs(prev[1] - next[1]);
-  var y = Math.abs(prev[0] - next[0]);
-  
-  var greatest = x > y ? x : y;
-  
-  var speedModifier = 0.09;
-
-  var speed = Math.ceil(greatest/speedModifier);
-
-  return speed;
-
-}
  /////////////////////////////////
 
   // display the selected problem on the screen

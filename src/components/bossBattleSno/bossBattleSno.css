@@ -1,5 +1,68 @@
+@keyframes azero {
+  0%   { left:0%; top:-211%;}
+  69%  { left:45%; top:-150%;}
+  69%  {left:35%; top:-100%;}
+  69%  {left:15%; top:-125%;}
+  100% { left:0%; top:-211%;}
+}
 
- 
+@keyframes aone {
+  0%   { left:0%; top:-190%;}
+  45%  { left:-26%; top:-140%;}
+  75%  {left:45%; top:-130%;}
+  75%  {left:-15%; top:-125%;}
+  100% { left:0%; top:-190%;}
+}
+
+
+@keyframes atwo {
+  0%   { left:43%; top:-160%;}
+  25%  { left:57%; top:-135%;}
+  50%  {left:22%; top:-129%;}
+  75%  {left:65%; top:-115%;}
+  100% { left:43%; top:-160%;}
+}
+
+@keyframes athree {
+  0%   { left:0%; top:-211%;}
+  25%  { left:0%; top:-180%;}
+  50%  {left:0%; top:-150%;}
+  75%  {left:0%; top:-125%;}
+  100% { left:0%; top:-211%;}
+}
+@keyframes afour {
+  0%   { left:0%; top:-150%;}
+  75%  { left:50%; top:-100%;}
+  95%  {left:0%; top:-150%;}
+  75%  {left:50%; top:-100%;}
+  100% { left:0%; top:-150%;}
+}
+@keyframes afive {
+  0%   { left:0%; top:-100%;}
+  45%  { left:50%; top:-100%;}
+  75%  {left:50%; top:-150%;}
+  65%  {left:50%; top:-100%;}
+  100% { left:0%; top:-100%;}
+}
+@keyframes asix {
+  0%   { left:0%; top:-150%;}
+  45%  { left:40%; top:-160%;}
+  75%  {left:30%; top:-150%;}
+  65%  {left:15%; top:-140%;}
+  100% { left:0%; top:-150%;}
+}
+@keyframes aseven {
+  0%   { left:0%; top:-150%;}
+  45%  { left:0%; top:-90%;}
+  75%  {left:0%; top:-120%;}
+  65%  {left:0%; top:-100%;}
+  100% { left:0%; top:-150%;}
+}
+
+
+
+
+
  .bossBattleSno .footer { 
     height: 200px;
     bottom: 0;
@@ -70,7 +133,7 @@
       position: fixed;
       font-size: 5vh;
       height: 50%;
-      top: 0%;
+      top: 50%;
       left: 0%;
       width: 100%;
       z-index: 800;
@@ -126,7 +189,7 @@
       /* background-color: cornflowerblue; */
       width: 20%;
       margin-left: 42%;
-      top: 20%;
+      top: 0%;
       font-family: 'Titan One';
       z-index: 800;
       cursor: crosshair; 
@@ -174,6 +237,9 @@
 .bossBattleSno .house .a0 {
   width: 92%;
   top: -211%;
+  animation-name: azero;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
   
 }
 
@@ -181,12 +247,7 @@
   left:56%;
   
 } 
-.bossBattleSno .house .a0 .penguin {
-  width: 41%;
-  margin-top: 24%;
-  margin-left: 3%;
-  transform: rotateY(180deg);
-} 
+
 .bossBattleSno .house .a0 .splash {
   position: absolute;
   left:5%;
@@ -196,6 +257,9 @@
 .bossBattleSno .house .a1 {
   width: 80%;
   top: -200%;
+  animation-name: aone;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
 }
 
 .bossBattleSno .house .a1 .answer {
@@ -216,6 +280,9 @@
   width: 79%;
   top: -193%;
   left: 27%;
+  animation-name: atwo;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 .bossBattleSno .house .a2 .snowman {
   transform: rotateY(180deg);
@@ -235,6 +302,9 @@
   width: 100%;
   top: -175%;
   left: -3%;
+  animation-name: athree;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 .bossBattleSno .house .a3 .snowman {
   transform: rotateY(180deg);
@@ -252,6 +322,9 @@
 .bossBattleSno .house .a4 {
   width: 100%;
   top: -114%;
+  animation-name: afour;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
 .bossBattleSno .house .a4 .answer {
@@ -271,6 +344,9 @@
 .bossBattleSno .house .a5 {
   width: 100%;
   top: -145%;
+  animation-name: afive;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
 }
 
 .bossBattleSno .house .a5 .answer {
@@ -291,6 +367,9 @@
   width: 100%;
   top: -185%;
   left: 24%;
+  animation-name: asix;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 .bossBattleSno .house .a6 .snowman {
   transform: rotateY(180deg);
@@ -308,6 +387,9 @@
   width: 100%;
   top: -165%;
   left: -20%;
+  animation-name: aseven;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 .bossBattleSno .house .a7 .snowman {
   transform: rotateY(180deg);
