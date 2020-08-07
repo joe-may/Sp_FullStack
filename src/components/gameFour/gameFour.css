@@ -7,7 +7,19 @@
          
     top:100%;    
   }
+  
 }
+
+   
+.game4 #timer{
+    color: blanchedalmond;
+    font-size: 10vh;
+    z-index: 1000;
+    position: fixed;
+    top: 90%;
+    left: 90%;
+
+  }
   .game4 .footer { 
       height: 200px;
       bottom: 0;
@@ -111,16 +123,18 @@
   
     .game4 .problem p {
         position: fixed;
-        border-radius: 5%;
+        border-radius: 0%;
         color: white;
         text-shadow: 20px 20px 20px black, 0 0 5px blue, 0 0 5px darkblue;
         font-size:9vw;
         width: 40%;
-        left: 30%;
-        top: -12%;
+        left: 35%;
+        top: 5%;
         font-family: 'Titan One';
         z-index: 800;
         cursor: crosshair; 
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
    
     .game4 .start {

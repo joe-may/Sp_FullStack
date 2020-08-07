@@ -5,6 +5,7 @@ import { render } from "react-dom";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 import'./App.css'
+import BossBattleSno from './components/bossBattleSno/bossBattleSno';
 import GameTwo from './components/gameTwo/gameTwo';
 import GameOne from './components/gameOne/gameOne';
 import GameThree from './components/gameThree/gameThree';
@@ -97,6 +98,15 @@ class App extends Component {
       <section>
           <Route exact path="/sno4" render={(props) => (
               <GameFour
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+      <Route exact path="/bbsno1" render={(props) => (
+              <BossBattleSno
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}

@@ -30,13 +30,11 @@ var answerset = [
   { problem: "3 + 2 =", answer: "5"},
   { problem: "6 + 1 =", answer: "7"},
   { problem: "4 + 4 =", answer: "8"},
-  // { problem: "1 + 2 =", answer: "3"},
-  // { problem: "3 + 1 =", answer: "4"},
-  // { problem: "7 + 3 =", answer: "10"},
-  // { problem: "6 + 3 =", answer: "9"},
-  // { problem: "2 + 4 =", answer: "6"},
-  
-  
+  { problem: "1 + 2 =", answer: "3"},
+  { problem: "3 + 1 =", answer: "4"},
+  { problem: "7 + 3 =", answer: "10"},
+  { problem: "6 + 3 =", answer: "9"},
+  { problem: "2 + 4 =", answer: "6"},
 ]
 
 $('.start').on('click',function() {
@@ -47,14 +45,6 @@ $('.create').show();
 $('.nextLevel').hide();
 $('audio#icecreamSong')[0].play();
 
-
-
-
-
-// $(document).click(function(e) {
-//   mouseX = e.pageX;
-//   $('.dart').css("left", e.pageX);
-// });
 
 var currentGameArray = [];
 // var playerLives = 0;
@@ -76,13 +66,6 @@ console.log(selectedProblem);
 
 console.log(randomProblemSelector);
 
-// $('.scoop').attr("src", "../StudyPup_assets/scope-"+selectedProblem+".gif");
-// $('.cone').attr("src", "../StudyPup_assets/cone-"+selectedProblem+".gif");
-
-  // $.each(currentGameArray, function(index,value){
-  //   $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='https://i.imgur.com/DsWjPxC.png' class='scoop'><img src='../StudyPup_assets/penguin_transparent.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
-  //   console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
-  // });
 
  
   var counter = 1000;
@@ -187,8 +170,7 @@ $('.countDown').click(function(){
         }, 2500);
 
     } else {
-      $('audio#wrongDing')[0].play();
-      $('audio#wrongDing')[0].currentTime = 0
+
      console.log('wrong!!!!');
     };
   });

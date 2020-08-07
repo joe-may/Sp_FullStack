@@ -29,6 +29,7 @@ class GameTwo extends Component {
       $('.win').hide();
       $('.lose').hide();
       $('audio#raceMusic')[0].play();
+      $('.nextLevel').hide();
       $('li').first().remove();
       $('li').first().remove();
       $('li').first().remove();
@@ -48,7 +49,7 @@ class GameTwo extends Component {
           }, 20000);
       });
       ///////// finish line
-      $( ".fline" ).delay( 20000 ).animate({  
+      $( ".fline" ).delay( 15000 ).animate({  
           left: "55%"
       },2200);
       
@@ -173,8 +174,8 @@ class GameTwo extends Component {
           $(".reset").html(" ");
           $(".start").show();
           $('.tryAgain').show();
-          $('audio#raceSong')[0].pause();
-          $('audio#raceSong')[0].currentTime = 0
+          
+  
           
         };
       }
@@ -214,7 +215,7 @@ class GameTwo extends Component {
     <div class="lose">Try Again!</div>
     <img class="kart1" src="https://i.imgur.com/DdOJQq9.gif"alt=""/>
     <img class="kart2" src="https://i.imgur.com/hJ4doek.gif"alt=""/>
-    <img class="fline" src="../StudyPup_assets/Ice_Cream_Scoop_5.png"alt=""/>
+    <img class="fline" src="../StudyPup_assets/https://i.imgur.com/3D1jwiQ.jpg"alt=""/>
     <img src='../StudyPup_assets/Snow_Mountain_Background_Loop_Bigger.gif' alt="" class='movingBackground'/>
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>

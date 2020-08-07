@@ -2,11 +2,11 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 
-import './gameOne.css';
+import './bossBattleSno.css';
 import $ from "jquery";
 
 
-class GameOne extends Component {
+class BossBattleSno extends Component {
     componentDidMount() {
      
 
@@ -17,7 +17,7 @@ $('.lose').hide();
 $('.nextLevel').hide();
 
 
-$('.game1').on('click',function(e) {
+$('.bossBattleSno').on('click',function(e) {
   console.log('FIRRRRRREEE');
   var parentOffset = $(this).parent().offset();
    var relX = e.pageX - parentOffset.left;
@@ -56,6 +56,7 @@ $('audio#iglooSong')[0].play();
 
 
 
+
 // $(document).click(function(e) {
 //   mouseX = e.pageX;
 //   $('.dart').css("left", e.pageX);
@@ -77,15 +78,14 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/igloo.png' class='igloo'><img src='../StudyPup_assets/Penguin_Walk_Gif_Faster.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='../StudyPup_assets/Frosto_Flying.gif' class='snowman'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
+    animateDiv();
   });
 
- 
+ ///////////////////////////////timer
   var counter = 100;
  
-
-  
   var interval = setInterval(function() {
     counter--;
     // Display 'counter' wherever you want to display it.
@@ -108,7 +108,56 @@ console.log(currentGameArray);
     }
 }, 1000);
 
+ ////////////////////////////////// 
+
+ ///////////////random movement
+
+
+
+ 
+ 
   
+
+
+function makeNewPosition(){
+  
+  // Get viewport dimensions (remove the dimension of the div)
+  var h = $('.answer').height() + 100;
+  var w = $('.answer').width() ;
+  
+  var nh = Math.floor(Math.random() * h);
+  var nw = Math.floor(Math.random() * w);
+  
+  return [nh,nw];    
+  
+}
+
+function animateDiv(){
+  var newq = makeNewPosition();
+  var oldq = $('.snowmanWrapper').offset();
+  var speed = calcSpeed([oldq.top, oldq.left], newq);
+  
+  $('.snowmanWrapper').animate({ top: newq[0], left: newq[1] }, speed, function(){
+    animateDiv();        
+  });
+  
+};
+
+function calcSpeed(prev, next) {
+  
+  var x = Math.abs(prev[1] - next[1]);
+  var y = Math.abs(prev[0] - next[0]);
+  
+  var greatest = x > y ? x : y;
+  
+  var speedModifier = 0.09;
+
+  var speed = Math.ceil(greatest/speedModifier);
+
+  return speed;
+
+}
+ /////////////////////////////////
 
   // display the selected problem on the screen
   
@@ -122,7 +171,7 @@ console.log(currentGameArray);
 
 
   // when answer is clicked on
-  $('.iglooWrapper').on('click',function(e) {
+  $('.snowmanWrapper').on('click',function(e) {
     var clickedAnswer = $(this).text();
     $(this).prepend("<img src='' class='splash'>");
     var splash = $(this).parent().find('.splash');
@@ -135,11 +184,10 @@ console.log(currentGameArray);
       
 
       console.log("Correct!");
-      $(this).find('.answer').fadeOut(1000, function() {
-        $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
+      $(this).fadeOut(1000, function() {
+       
         console.log(currentGameArray.length);
-        var penguin = $(this).parent().find('.penguin');
-        penguin.attr("src", "../StudyPup_assets/Penguin_Walk_Gif_Faster.gif");
+        
         
        
         
@@ -150,9 +198,7 @@ console.log(currentGameArray);
           winningCheck();
           generateNextTurn();
           console.log($(this).parent());
-          setTimeout(function() {
-            penguin.attr("src", "").remove();
-        }, 1800)
+         
       });
 
   
@@ -207,9 +253,10 @@ console.log('keep playing');
 
  render() {
   return (
-    <div class="game1">
+    <div class="bossBattleSno">
     
 <body>
+
 
 <audio id="iglooSong">
     <source src='../StudyPup_assets/Song_Snow-Con_Level_1.m4a' type="audio/mpeg"/>
@@ -218,7 +265,7 @@ console.log('keep playing');
     <source src='../StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_game1" src='../StudyPup_assets/penguin-level-backdrop.jpeg' alt="" />
+         <img class="bg_bb1" src='../StudyPup_assets/Snow_Con_Boss_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
           <h1 class="win">YOU WON!!</h1>
@@ -247,4 +294,4 @@ console.log('keep playing');
 
 }
 
-export default GameOne;
+export default BossBattleSno;

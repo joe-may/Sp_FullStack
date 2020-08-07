@@ -1,6 +1,6 @@
 
  
- .game1 .footer { 
+ .bossBattleSno .footer { 
     height: 200px;
     bottom: 0;
     width:100%;
@@ -12,7 +12,7 @@
 }
 
    
-.game1 #timer{
+.bossBattleSno #timer{
   font-size: 30px;
   z-index: 1000;
   position: fixed;
@@ -20,13 +20,13 @@
   left: 50%;
 
 }
-.game1 .backbutton{
+.bossBattleSno .backbutton{
     position: fixed;
     top:0%;
     z-index: 1400;
 }
 
-.game1 .bg_game1 {
+.bossBattleSno .bg_bb1 {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -35,12 +35,12 @@
   overflow: hidden;
 }
 
-.game1 #time{
+.bossBattleSno #time{
     
   font-size: 30px;
 }
 
-.game1 .snowball {
+.bossBattleSno .snowball {
     width: 5%;
     position:absolute;
     top:90%;
@@ -48,7 +48,7 @@
     z-index:1000;
 
 }
- .game1 body {
+ .bossBattleSno body {
 
     text-align: center;
     background-size: cover;
@@ -58,65 +58,66 @@
     overflow: hidden;
   }
 
-  .game1 .hide {
+  .bossBattleSno .hide {
      display: none;
  }
- .game1 .penguin {
+ .bossBattleSno .penguin {
   background-repeat: no-repeat;
   z-index: 1000;
  }
 
- .game1 .answers {
+ .bossBattleSno .answers {
       position: fixed;
       font-size: 5vh;
       height: 50%;
-      top: 50%;
+      top: 0%;
+      left: 0%;
       width: 100%;
       z-index: 800;
       display: flex;
       flex-wrap: wrap;
   }
 
-  .game1 .house {
+  .bossBattleSno .house {
       width: 25%;
       cursor: crosshair;  
   }
 
 
-  .game1 .house .iglooWrapper {
+  .bossBattleSno .house .snowmanWrapper {
       width:80%;  
       display: inline-block;
       position: relative;
   }
 
-  .game1 .house .iglooWrapper .igloo {
-      width: 100%;   
+  .bossBattleSno .house .snowmanWrapper .snowman {
+      width: 120%;   
       position: absolute;
     
       left:0px;
       top: 0px;
   }
-  .game1 .house .iglooWrapper .answer {
+  .bossBattleSno .house .snowmanWrapper .answer {
       position: absolute;
       color: #333;
       font-size: 8vh;
       left: 25%;
-      margin-top: 5%;
+      margin-top: 43%;
   }
-  .game1 .house .iglooWrapper .penguin {
+  .bossBattleSno .house .snowmanWrapper .penguin {
       position: absolute;
       width: 50%;
       margin-top: 16%;
 
   }
-.game1 .splash {
+.bossBattleSno .splash {
   position: absolute;
   width:70%;
   z-index: 10000;
 }
 
 
-  .game1 .problem p {
+  .bossBattleSno .problem p {
       position: fixed;
       border-radius: 5%;
       background-color: cornsilk;
@@ -131,7 +132,7 @@
       cursor: crosshair; 
   }
  
-  .game1 .start {
+  .bossBattleSno .start {
   position: fixed;
   width: 20%;
   left: 50%;
@@ -145,7 +146,7 @@
   cursor: pointer;
   }
   
-  .game1 .nextLevel {
+  .bossBattleSno .nextLevel {
     position: fixed;
     width: 20%;
     left: 50%;
@@ -161,7 +162,7 @@
   }
 
 
-.game1 .boss {
+.bossBattleSno .boss {
   position: fixed;
   width: 30%;
   left: 50%;
@@ -170,58 +171,59 @@
   z-index: 900;
 }
 
-.game1 .house .a0 {
+.bossBattleSno .house .a0 {
   width: 92%;
-  top: -25%;
+  top: -211%;
   
 }
 
-.game1 .house .a0 .answer {
-  left: 23%;
+.bossBattleSno .house .a0 .answer {
+  left:56%;
+  
 } 
-.game1 .house .a0 .penguin {
+.bossBattleSno .house .a0 .penguin {
   width: 41%;
   margin-top: 24%;
   margin-left: 3%;
   transform: rotateY(180deg);
 } 
-.game1 .house .a0 .splash {
+.bossBattleSno .house .a0 .splash {
   position: absolute;
   left:5%;
 }
 
 
-.game1 .house .a1 {
+.bossBattleSno .house .a1 {
   width: 80%;
-  top: -24%;
+  top: -200%;
 }
 
-.game1 .house .a1 .answer {
-  left: 23%;
+.bossBattleSno .house .a1 .answer {
+  left: 56%;
 } 
-.game1 .house .a1 .penguin {
+.bossBattleSno .house .a1 .penguin {
   width: 41%;
   margin-top: 24%;
   margin-left: 3%;
   transform: rotateY(180deg);
 } 
-.game1 .house .a1 .splash {
+.bossBattleSno .house .a1 .splash {
   position: absolute;
   left:15%;
 }
 
-.game1 .house .a2 {
+.bossBattleSno .house .a2 {
   width: 79%;
-  top: -49%;
+  top: -193%;
   left: 27%;
 }
-.game1 .house .a2 .igloo {
+.bossBattleSno .house .a2 .snowman {
   transform: rotateY(180deg);
 }
-.game1 .house .a2 .answer {
-  left: 65%;
+.bossBattleSno .house .a2 .answer {
+  left: 53%;
 } 
-.game1 .house .a2 .penguin {
+.bossBattleSno .house .a2 .penguin {
   width: 43%;
   margin-top: 22%;
   margin-left: -45%;
@@ -229,91 +231,91 @@
 
 
 
-.game1 .house .a3 {
-  width: 94%;
-  top: -35%;
+.bossBattleSno .house .a3 {
+  width: 100%;
+  top: -175%;
   left: -3%;
 }
-.game1 .house .a3 .igloo {
+.bossBattleSno .house .a3 .snowman {
   transform: rotateY(180deg);
 }
-.game1 .house .a3 .answer {
-  left: 65%;
+.bossBattleSno .house .a3 .answer {
+  left: 56%;
 } 
-.game1 .house .a3 .penguin {
+.bossBattleSno .house .a3 .penguin {
   width: 43%;
   margin-top: 22%;
   margin-left: -45%;
 } 
 
 
-.game1 .house .a4 {
-  width: 127%;
-  top: -14%;
+.bossBattleSno .house .a4 {
+  width: 100%;
+  top: -114%;
 }
 
-.game1 .house .a4 .answer {
-  left: 23%;
+.bossBattleSno .house .a4 .answer {
+  left: 56%;
 } 
-.game1 .house .a4 .penguin {
+.bossBattleSno .house .a4 .penguin {
   width: 41%;
   margin-top: 24%;
   margin-left: 3%;
   transform: rotateY(180deg);
 } 
-.game1 .house .a4 .splash {
+.bossBattleSno .house .a4 .splash {
   position: absolute;
   left:5%;
 }
 
-.game1 .house .a5 {
-  width: 102%;
-  top: -63%;
+.bossBattleSno .house .a5 {
+  width: 100%;
+  top: -145%;
 }
 
-.game1 .house .a5 .answer {
-  left: 23%;
+.bossBattleSno .house .a5 .answer {
+  left: 53%;
 } 
-.game1 .house .a5 .penguin {
+.bossBattleSno .house .a5 .penguin {
   width: 41%;
   margin-top: 24%;
   margin-left: 3%;
   transform: rotateY(180deg);
 } 
-.game1 .house .a5 .splash {
+.bossBattleSno .house .a5 .splash {
   position: absolute;
   left:15%;
 }
 
-.game1 .house .a6 {
-  width: 112%;
-  top: -68%;
+.bossBattleSno .house .a6 {
+  width: 100%;
+  top: -185%;
   left: 24%;
 }
-.game1 .house .a6 .igloo {
+.bossBattleSno .house .a6 .snowman {
   transform: rotateY(180deg);
 }
-.game1 .house .a6 .answer {
-  left: 65%;
+.bossBattleSno .house .a6 .answer {
+  left: 53%;
 } 
-.game1 .house .a6 .penguin {
+.bossBattleSno .house .a6 .penguin {
   width: 43%;
   margin-top: 22%;
   margin-left: -45%;
 } 
 
-.game1 .house .a7 {
-  width: 128%;
-  top: -20%;
-  left: -40%;
+.bossBattleSno .house .a7 {
+  width: 100%;
+  top: -165%;
+  left: -20%;
 }
-.game1 .house .a7 .igloo {
+.bossBattleSno .house .a7 .snowman {
   transform: rotateY(180deg);
 }
-.game1 .house .a7 .answer {
-  left: 65%;
+.bossBattleSno .house .a7 .answer {
+  left: 52%;
 } 
-.game1 .house .a7 .penguin {
+.bossBattleSno .house .a7 .penguin {
   width: 43%;
   margin-top: 22%;
   margin-left: -45%;
@@ -322,14 +324,14 @@
 
 
 
-.game1 .heart {
+.bossBattleSno .heart {
     float: right;
     height: 7%;
     Width: 7%;
 }
 
 
-.game1 .win 
+.bossBattleSno .win 
  {
   width: 30%;
   position: fixed;
@@ -343,7 +345,7 @@
   background-color: cornsilk;
   z-index: 9000;
  }
- .game1 .lose {
+ .bossBattleSno .lose {
   width: 30%;
   position: fixed;
   margin-left: 35%;

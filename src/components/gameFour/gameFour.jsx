@@ -47,6 +47,7 @@ class GameFour extends Component {
       $('.win').hide();
       $('.lose').hide();
       $('audio#stormSong')[0].play();
+      $('.nextLevel').hide();
       
       
       
@@ -78,7 +79,7 @@ class GameFour extends Component {
         });
       
        
-        var counter = 25;
+        var counter = 1000;
        
       
         
@@ -215,13 +216,14 @@ class GameFour extends Component {
                 
                 <div class="lose">Try Again!</div>
                 
-                <a class="nextLevel" href="/snoconb4">Next Level!</a>
+                <a class="nextLevel" href="/snoconb3">Next Level!</a>
           
           <div>
             <span id="timer">
-              {/* <span id="time">25</span>       */}
+              <span id="time">25</span>      
             </span>
           </div>
+          
       
 
           
