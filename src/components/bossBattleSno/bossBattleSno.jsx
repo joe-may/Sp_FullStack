@@ -17,7 +17,9 @@ $('.lose').hide();
 $('.nextLevel').hide();
 
 
+
 $('.bossBattleSno').on('click',function(e) {
+  $('.snowball').show();
   console.log('FIRRRRRREEE');
   var parentOffset = $(this).parent().offset();
    var relX = e.pageX - parentOffset.left;
@@ -31,6 +33,8 @@ $('.bossBattleSno').on('click',function(e) {
   }, 330, function() {
   
       $(".snowball").removeAttr('style');
+      
+
   });
 });
 
@@ -52,15 +56,19 @@ $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
 $('audio#iglooSong')[0].play();
+$('.snowball').hide();
 
 
 
 
 
-// $(document).click(function(e) {
-//   mouseX = e.pageX;
-//   $('.dart').css("left", e.pageX);
-// });
+$(document).mousemove(function(e) {
+  // mouseX = e.pageX;
+  $('.novaWithHose').css("left", e.pageX);
+  $('.snowball').hide();
+  $('.snowball').css("left", e.pageX);
+
+});
 
 var currentGameArray = [];
 // var playerLives = 0;
@@ -155,7 +163,7 @@ console.log(currentGameArray);
        
         
 
-
+        $('p').remove();
           currentGameArray.splice(randomProblemSelector,1);
           console.log(currentGameArray.length);
           winningCheck();
@@ -243,9 +251,10 @@ console.log('keep playing');
               <span id="time">25</span>      
             </span>
           </div>
-      
-          <img src='../StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
-          
+      <div class="cocoNova">
+          <img src='../StudyPup_assets/hotCocoSquirt.png' alt="" class='snowball'/>
+          <img src='../StudyPup_assets/nova_with_hose.png' alt="" class='novaWithHose'/>
+     </div>
   
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>

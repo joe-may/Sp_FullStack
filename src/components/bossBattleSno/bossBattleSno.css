@@ -105,13 +105,24 @@
 }
 
 .bossBattleSno .snowball {
-    width: 5%;
-    position:absolute;
-    top:90%;
-    left:40%;
-    z-index:1000;
+  width: 1%;
+  position: absolute;
+  top: 80%;
+  left: 100%;
+  margin-left: 9.5%;
+  z-index: 1000;
 
 }
+.bossBattleSno .novaWithHose {
+  width: 13%;
+  position: absolute;
+  top: 73%;
+  left: 46%;
+  z-index: 1000;
+
+}
+
+
  .bossBattleSno body {
 
     text-align: center;
