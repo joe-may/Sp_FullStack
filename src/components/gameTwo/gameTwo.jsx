@@ -28,7 +28,7 @@ class GameTwo extends Component {
       $('.start').hide();
       $('.win').hide();
       $('.lose').hide();
-      $('audio#raceMusic')[0].play();
+      // $('audio#raceMusic')[0].play();
       $('.nextLevel').hide();
       $('li').first().remove();
       $('li').first().remove();
@@ -36,6 +36,7 @@ class GameTwo extends Component {
       $('.kart2').finish().css('left', '0');
       $('.kart1').finish().css('left', '0%');
       $('.fline').finish().css('left', '100%');
+      $('.groundSno').finish().css('left','0%');
       
       
       
@@ -52,7 +53,18 @@ class GameTwo extends Component {
       $( ".fline" ).delay( 15000 ).animate({  
           left: "55%"
       },2200);
-      
+      ///////////////
+
+      /////////////groundSno
+      $( ".groundSno" ).animate({  
+        left: "-600%"
+    },20000);
+    /////////////
+          /////////////gamebackground
+          $( ".backgroundSno2" ).animate({  
+            left: "-400%"
+        },43999);
+        /////////////
       /////timer and lose logic
       var counter = 20;
       var interval = setInterval(function() {
@@ -185,9 +197,10 @@ class GameTwo extends Component {
 
  render() {
   return (
-    <div class="game2">
-<body>
- 
+<div class="game2">
+  <body>
+  
+  <img class="backgroundSno2" src="../StudyPup_assets/Snow_Con_Background_Race_Game.png"alt=""/>
  <audio id="raceMusic">
     <source src='../StudyPup_assets/Song_Snow-Con_Race.m4a' type="audio/mpeg"/>
   </audio>
@@ -214,9 +227,10 @@ class GameTwo extends Component {
   </div>
     <div class="lose">Try Again!</div>
     <img class="kart1" src="https://i.imgur.com/DdOJQq9.gif"alt=""/>
-    <img class="kart2" src="https://i.imgur.com/hJ4doek.gif"alt=""/>
+    
     <img class="fline" src="../StudyPup_assets/https://i.imgur.com/3D1jwiQ.jpg"alt=""/>
-    <img src='../StudyPup_assets/Snow_Mountain_Background_Loop_Bigger.gif' alt="" class='movingBackground'/>
+    <img class="groundSno" src="../StudyPup_assets/Snow_Con_Foreground_Race_Game.png"alt=""/>
+
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
 </body>

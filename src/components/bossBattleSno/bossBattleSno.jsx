@@ -30,7 +30,7 @@ $('.bossBattleSno').on('click',function(e) {
       width: '10px',
       left: relX,
       top: relY
-  }, 330, function() {
+  }, 100, function() {
   
       $(".snowball").removeAttr('style');
       
@@ -55,7 +55,7 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-$('audio#iglooSong')[0].play();
+$('audio#raceMusic')[0].play();
 $('.snowball').hide();
 
 
@@ -63,7 +63,7 @@ $('.snowball').hide();
 
 
 $(document).mousemove(function(e) {
-  // mouseX = e.pageX;
+  
   $('.novaWithHose').css("left", e.pageX);
   $('.snowball').hide();
   $('.snowball').css("left", e.pageX);
@@ -105,8 +105,8 @@ console.log(currentGameArray);
           $(".reset").html(" ");
           $(".start").show();
           $('p').hide();
-          $('audio#iglooSong')[0].pause()
-          $('audio#iglooSong')[0].currentTime = 0
+          $('audio#raceMusic')[0].pause()
+          $('audio#raceMusic')[0].currentTime = 0
           
         return;
     }else{
@@ -146,16 +146,16 @@ console.log(currentGameArray);
     var clickedAnswer = $(this).text();
     $(this).prepend("<img src='' class='splash'>");
     var splash = $(this).parent().find('.splash');
-    splash.attr("src", "../StudyPup_assets/snowball_hit_delay2.gif");
+    splash.attr("src", "../StudyPup_assets/Cocoa_Splat_Endless.gif");
     setTimeout(function() {
       splash.attr("src", "").remove();
-  }, 1000)
+  }, 1500)
 
     if (clickedAnswer === theAnswer) {
       
 
       console.log("Correct!");
-      $(this).fadeOut(1000, function() {
+      $(this).fadeOut(1200, function() {
        
         console.log(currentGameArray.length);
         
@@ -207,8 +207,8 @@ console.log('keep playing');
     $('.tryAgain').show();
     $('p').hide();
     clearInterval(interval);
-    $('audio#iglooSong')[0].pause()
-    $('audio#iglooSong')[0].currentTime = 0
+    $('audio#raceMusic')[0].pause()
+    $('audio#raceMusic')[0].currentTime = 0
     console.log('you win')
     // generateHearts();
     
@@ -229,8 +229,8 @@ console.log('keep playing');
 <body>
 
 
-<audio id="iglooSong">
-    <source src='../StudyPup_assets/Song_Snow-Con_Level_1.m4a' type="audio/mpeg"/>
+<audio id="raceMusic">
+    <source src='../StudyPup_assets/Song_Snow-Con_Race.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="snowballThrow">
     <source src='../StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>

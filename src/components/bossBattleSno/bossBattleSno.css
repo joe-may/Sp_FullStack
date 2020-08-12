@@ -26,23 +26,23 @@
 @keyframes athree {
   0%   { left:0%; top:-211%;}
   25%  { left:0%; top:-180%;}
-  50%  {left:0%; top:-150%;}
-  75%  {left:0%; top:-125%;}
+  50%  {left:0%; top:-170%;}
+  75%  {left:0%; top:-150%;}
   100% { left:0%; top:-211%;}
 }
 @keyframes afour {
   0%   { left:0%; top:-150%;}
   75%  { left:50%; top:-100%;}
   95%  {left:0%; top:-150%;}
-  75%  {left:50%; top:-100%;}
+  75%  {left:50%; top:-125%;}
   100% { left:0%; top:-150%;}
 }
 @keyframes afive {
-  0%   { left:0%; top:-100%;}
-  45%  { left:50%; top:-100%;}
-  75%  {left:50%; top:-150%;}
-  65%  {left:50%; top:-100%;}
-  100% { left:0%; top:-100%;}
+  0%   { left:0%; top:-175%;}
+  45%  { left:50%; top:-175%;}
+  75%  {left:50%; top:-125%;}
+  65%  {left:50%; top:-175%;}
+  100% { left:0%; top:-175%;}
 }
 @keyframes asix {
   0%   { left:0%; top:-150%;}
@@ -52,10 +52,10 @@
   100% { left:0%; top:-150%;}
 }
 @keyframes aseven {
-  0%   { left:0%; top:-150%;}
-  45%  { left:0%; top:-90%;}
-  75%  {left:0%; top:-120%;}
-  65%  {left:0%; top:-100%;}
+  0%   { left:0%; top:-160%;}
+  45%  { left:0%; top:-170%;}
+  75%  {left:0%; top:-150%;}
+  65%  {left:0%; top:-170%;}
   100% { left:0%; top:-150%;}
 }
 
@@ -115,7 +115,7 @@
 }
 .bossBattleSno .novaWithHose {
   width: 13%;
-  position: absolute;
+  position: fixed;
   top: 73%;
   left: 46%;
   z-index: 1000;
@@ -264,7 +264,8 @@
 
 .bossBattleSno .house .a0 .splash {
   position: absolute;
-  left:5%;
+  left:25%;
+  margin-top:10%
 }
 
 
@@ -287,7 +288,8 @@
 } 
 .bossBattleSno .house .a1 .splash {
   position: absolute;
-  left:15%;
+  left:25%;
+  margin-top:10%
 }
 
 .bossBattleSno .house .a2 {
@@ -309,6 +311,11 @@
   margin-top: 22%;
   margin-left: -45%;
 } 
+.bossBattleSno .house .a2 .splash {
+  position: absolute;
+  left:25%;
+  margin-top:10%
+}
 
 
 
@@ -330,7 +337,14 @@
   width: 43%;
   margin-top: 22%;
   margin-left: -45%;
+
 } 
+
+.bossBattleSno .house .a3 .splash {
+  position: absolute;
+  left:25%;
+  margin-top:10%
+}
 
 
 .bossBattleSno .house .a4 {
@@ -352,12 +366,13 @@
 } 
 .bossBattleSno .house .a4 .splash {
   position: absolute;
-  left:5%;
+  left:25%;
+  margin-top:10%
 }
 
 .bossBattleSno .house .a5 {
   width: 100%;
-  top: -145%;
+  top: -160%;
   animation-name: afive;
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -374,7 +389,9 @@
 } 
 .bossBattleSno .house .a5 .splash {
   position: absolute;
-  left:15%;
+    left:25%;
+    margin-top:10%
+
 }
 
 .bossBattleSno .house .a6 {
@@ -396,6 +413,11 @@
   margin-top: 22%;
   margin-left: -45%;
 } 
+.bossBattleSno .house .a6 .splash {
+  position: absolute;
+  left:25%;
+  margin-top:10%
+}
 
 .bossBattleSno .house .a7 {
   width: 100%;
@@ -416,6 +438,11 @@
   margin-top: 22%;
   margin-left: -45%;
 } 
+.bossBattleSno .house .a7 .splash {
+  position: absolute;
+  left:25%;
+  margin-top:10%
+}
 
 
 
