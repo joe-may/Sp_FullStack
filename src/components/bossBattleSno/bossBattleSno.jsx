@@ -155,7 +155,7 @@ console.log(currentGameArray);
       
 
       console.log("Correct!");
-      $(this).fadeOut(1200, function() {
+      $(this).fadeOut(1800, function() {
        
         console.log(currentGameArray.length);
         

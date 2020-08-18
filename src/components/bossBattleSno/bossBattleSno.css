@@ -187,7 +187,7 @@
   }
 .bossBattleSno .splash {
   position: absolute;
-  width:70%;
+  width:150%;
   z-index: 10000;
 }
 
@@ -264,7 +264,7 @@
 
 .bossBattleSno .house .a0 .splash {
   position: absolute;
-  left:25%;
+  left:-7%;
   margin-top:10%
 }
 
@@ -288,7 +288,7 @@
 } 
 .bossBattleSno .house .a1 .splash {
   position: absolute;
-  left:25%;
+  left:-7%;
   margin-top:10%
 }
 
@@ -313,7 +313,7 @@
 } 
 .bossBattleSno .house .a2 .splash {
   position: absolute;
-  left:25%;
+  left:-7%;
   margin-top:10%
 }
 
@@ -342,7 +342,7 @@
 
 .bossBattleSno .house .a3 .splash {
   position: absolute;
-  left:25%;
+  left:-7%;
   margin-top:10%
 }
 
@@ -366,7 +366,7 @@
 } 
 .bossBattleSno .house .a4 .splash {
   position: absolute;
-  left:25%;
+  left:-7%;
   margin-top:10%
 }
 
@@ -389,7 +389,7 @@
 } 
 .bossBattleSno .house .a5 .splash {
   position: absolute;
-    left:25%;
+  left:-7%;
     margin-top:10%
 
 }
@@ -415,7 +415,7 @@
 } 
 .bossBattleSno .house .a6 .splash {
   position: absolute;
-  left:25%;
+  left:-7%;
   margin-top:10%
 }
 
@@ -440,7 +440,7 @@
 } 
 .bossBattleSno .house .a7 .splash {
   position: absolute;
-  left:25%;
+  left:-7%;
   margin-top:10%
 }
 

@@ -36,7 +36,7 @@ class GameTwo extends Component {
       $('.kart2').finish().css('left', '0');
       $('.kart1').finish().css('left', '0%');
       $('.fline').finish().css('left', '100%');
-      $('.groundSno').finish().css('left','0%');
+      $('.groundSno').finish().css('left','-79%');
       
       
       
@@ -57,8 +57,8 @@ class GameTwo extends Component {
 
       /////////////groundSno
       $( ".groundSno" ).animate({  
-        left: "-600%"
-    },20000);
+        left: "-880%"
+    },25000);
     /////////////
           /////////////gamebackground
           $( ".backgroundSno2" ).animate({  
@@ -81,7 +81,7 @@ class GameTwo extends Component {
                 
               return;
           }else{
-            // $('#time').text(counter);
+            $('#time').text(counter);
             console.log("Timer --> " + counter);
           }
       }, 1100);
@@ -200,7 +200,7 @@ class GameTwo extends Component {
 <div class="game2">
   <body>
   
-  <img class="backgroundSno2" src="../StudyPup_assets/Snow_Con_Background_Race_Game.png"alt=""/>
+  <img class="backgroundSno2" src="../StudyPup_assets/Snow_Con_Background_Race_Game_double_dude.png"alt=""/>
  <audio id="raceMusic">
     <source src='../StudyPup_assets/Song_Snow-Con_Race.m4a' type="audio/mpeg"/>
   </audio>
@@ -226,10 +226,10 @@ class GameTwo extends Component {
       </span>
   </div>
     <div class="lose">Try Again!</div>
-    <img class="kart1" src="https://i.imgur.com/DdOJQq9.gif"alt=""/>
+    <img class="kart1" src="https://i.imgur.com/cxbenav.gif"alt=""/>
     
     <img class="fline" src="../StudyPup_assets/https://i.imgur.com/3D1jwiQ.jpg"alt=""/>
-    <img class="groundSno" src="../StudyPup_assets/Snow_Con_Foreground_Race_Game.png"alt=""/>
+    <img class="groundSno" src="../StudyPup_assets/granniesHouse.png"alt=""/>
 
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
