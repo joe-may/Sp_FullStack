@@ -29,15 +29,15 @@ class SnowConb3 extends Component {
                 <img class="blueLevel2" src="../StudyPup_assets/Snow-con_Level2_Complete.png"alt=""/>
                 </a>
   
-                <a href="/sno4">
+                <a href="/sno2">
                 <img class="blueLevel3" src="../StudyPup_assets/Snow-con_Level3_Complete.png"alt=""/>
                 </a>
                 <img class="wind" src="../StudyPup_assets/Snow-con_Level4_Deco.gif" alt=""/>
 
-                <a href="/sno2">
+                <a href="/bbsno1">
                 <img class="bossLevel1" src="../StudyPup_assets/Snow-con_Level4_On.png"alt=""/>
                 </a>
-                
+                 
     
                 </div>
                 

@@ -30,7 +30,7 @@ class SnowConb2 extends Component {
                 <img class="blueLevel2" src="../StudyPup_assets/Snow-con_Level2_Complete.png"alt=""/>
                 </a>
   
-                <a href="/sno4">
+                <a href="/sno2">
                 <img class="greenLevel3" src="../StudyPup_assets/Snow-con_Level3_On.png"alt=""/>
                 </a>
                 <img class="storm" src="../StudyPup_assets/Snow-con_Level3_On_Deco.gif" alt=""/>

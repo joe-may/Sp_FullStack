@@ -37,6 +37,7 @@ class GameTwo extends Component {
       $('.kart1').finish().css('left', '0%');
       $('.fline').finish().css('left', '100%');
       $('.groundSno').finish().css('left','-79%');
+      $('.backgroundSno2').finish().css('left','0%');
       
       
       
@@ -57,13 +58,13 @@ class GameTwo extends Component {
 
       /////////////groundSno
       $( ".groundSno" ).animate({  
-        left: "-880%"
+        left: "-790%"
     },25000);
     /////////////
           /////////////gamebackground
           $( ".backgroundSno2" ).animate({  
-            left: "-400%"
-        },43999);
+            left: "-120%"
+        },29999);
         /////////////
       /////timer and lose logic
       var counter = 20;
@@ -77,6 +78,8 @@ class GameTwo extends Component {
                 $('.lose').show();
                 $(".reset").html(" ");
                 $(".start").show();
+                $('p').hide();
+                clearInterval(interval);
 
                 
               return;
@@ -187,6 +190,8 @@ class GameTwo extends Component {
           $(".start").show();
           $('.tryAgain').show();
           
+          clearInterval(interval);
+          
   
           
         };
@@ -219,7 +224,7 @@ class GameTwo extends Component {
         <div class="problem reset"></div>
     </div>
   </div>
-  <p><a class="nextLevel" href="/snoconb2">Next Level!</a></p>
+  <p><a class="nextLevel" href="/snoconb3">Next Level!</a></p>
   <div>
       <span id="timer">
         <span id="time"></span>     
@@ -228,11 +233,12 @@ class GameTwo extends Component {
     <div class="lose">Try Again!</div>
     <img class="kart1" src="https://i.imgur.com/cxbenav.gif"alt=""/>
     
-    <img class="fline" src="../StudyPup_assets/https://i.imgur.com/3D1jwiQ.jpg"alt=""/>
-    <img class="groundSno" src="../StudyPup_assets/granniesHouse.png"alt=""/>
+   
+    <img class="groundSno" src="../StudyPup_assets/tinyhousegranny.png"alt=""/>
 
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+    
 </body>
 </div>
 );

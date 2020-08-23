@@ -15,6 +15,8 @@ import SnowCon from './components/snowconPage/snowconPage';
 import SnowConb1 from './components/snowconPageb1/snowconPageb1';
 import SnowConb2 from './components/snowconPageb2/snowconPageb2';
 import SnowConb3 from './components/snowconPageb3/snowconPageb3';
+import VideoPlayer from './components/VideoPlayer/VideoPlayer';
+
 
 
 
@@ -113,6 +115,19 @@ class App extends Component {
                 {...props} />
                 )}/>
       </section>
+      <section>
+      <Route exact path="/snov1" render={(props) => (
+              <VideoPlayer url= "https://www.youtube.com/watch?v=0RYHpQHicgs"
+                {...props} />
+                )}/>
+      </section>
+      <section>
+      <Route exact path="/v1" render={(props) => (
+              <VideoPlayer url= "https://www.youtube.com/watch?v=_WZem4eS5v8"
+                {...props} />
+                )}/>
+      </section>
+
       <section>
       {/* <Route exact path='/signup' render={({ history }) =>
             <SignupPage

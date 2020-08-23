@@ -184,9 +184,6 @@ class GameFour extends Component {
           $('audio#stormSong')[0].pause()
           $('audio#stormSong')[0].currentTime = 0
           console.log('you win')
-          // generateHearts();
-          
-         
           
         };
       }
