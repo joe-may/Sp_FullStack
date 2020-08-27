@@ -51,7 +51,7 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-$('audio#iglooSong')[0].play();
+// $('audio#iglooSong')[0].play();
 
 
 
@@ -82,7 +82,7 @@ console.log(currentGameArray);
   });
 
  
-  var counter = 100;
+  var counter = 10000;
  
 
   
@@ -235,6 +235,17 @@ console.log('keep playing');
           </div>
       
           <img src='../StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
+          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeOne'/>
+          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeTwo'/>
+          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeThree'/>
+          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeFour'/>
+          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeFive'/>
+          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeSix'/>
+          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeSeven'/>
+          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeEight'/>
+          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeNine'/>
+          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeTen'/>
+
           
   
 </body>

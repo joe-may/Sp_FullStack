@@ -10,6 +10,84 @@
 
 
 }
+.game1 .treeOne {
+  width: 5%;
+  position:fixed;
+  top:45%;
+  left:40%;
+  z-index:300;
+
+}
+.game1 .treeTwo {
+  width: 5%;
+  position:fixed;
+  top:50%;
+  left:50%;
+  z-index:300;
+
+}
+
+.game1 .treeThree {
+  width: 8%;
+  position:fixed;
+  top:80%;
+  left:50%;
+  z-index:300;
+
+}
+.game1 .treeFour{
+  width: 6%;
+  position:fixed;
+  top:45%;
+  left:20%;
+  z-index:300;
+
+}
+.game1 .treeFive{
+  width: 5%;
+  position:fixed;
+  top:36%;
+  left:82%;
+  z-index:1300;
+
+}
+
+.game1 .treeSix { 
+  width: 5.5%;
+  position:fixed;
+  top:63%;
+  left:60%;
+  z-index:300;
+}
+.game1 .treeSeven{ 
+  width: 7%;
+  position:fixed;
+  top:63%;
+  left:95%;
+  z-index:300;
+}
+.game1 .treeEight{ 
+  width: 7%;
+  position:fixed;
+  top:63%;
+  left:-3%;
+  z-index:300;
+}
+.game1 .treeNine { 
+  width: 5%;
+  position:fixed;
+  top:39%;
+  left:2%;
+  z-index:300;
+}
+.game1 .treeTen{ 
+  width: 7%;
+  position:fixed;
+  top:69%;
+  left:15%;
+  z-index:300;
+}
+
 
    
 .game1 #timer{
