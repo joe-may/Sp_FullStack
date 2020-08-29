@@ -29,12 +29,11 @@ $('.countDown').click(function() {
 var answerset = [
   { problem: "3 + 2 =", answer: "5"},
   { problem: "6 + 1 =", answer: "7"},
-  { problem: "4 + 4 =", answer: "8"},
-  { problem: "1 + 2 =", answer: "3"},
-  { problem: "3 + 1 =", answer: "4"},
-  { problem: "7 + 3 =", answer: "10"},
-  { problem: "6 + 3 =", answer: "9"},
-  { problem: "2 + 4 =", answer: "6"},
+  // { problem: "4 + 4 =", answer: "8"},
+  // { problem: "1 + 2 =", answer: "3"},
+  // { problem: "3 + 1 =", answer: "4"},
+  // { problem: "7 + 3 =", answer: "10"},
+
 ]
 
 $('.start').on('click',function() {
@@ -43,7 +42,7 @@ $('.win').hide();
 $('.lose').hide();
 $('.create').show();
 $('.nextLevel').hide();
-$('audio#icecreamSong')[0].play();
+// $('audio#icecreamSong')[0].play();
 
 
 var currentGameArray = [];
@@ -68,7 +67,7 @@ console.log(randomProblemSelector);
 
 
  
-  var counter = 1000;
+  var counter = 30;
  
 ////////////timer
   var interval = setInterval(function() {
@@ -79,6 +78,10 @@ console.log(randomProblemSelector);
           // $('#time').text(counter);
           console.log("you lose");
           $('.lose').show();
+          $('.yellowBox').hide();
+          $('.skeletonBackground').hide();
+          $('.greenBox').hide();
+          $('.blueBox').hide();
           $(".reset").html(" ");
           $(".start").show();
           
@@ -201,11 +204,16 @@ $('.countDown').click(function(){
     $('.nextLevel').show();
     clearInterval(interval);
     $('.win').show();
+    $('.yellowBox').hide();
+    $('.skeletonBackground').hide();
+    $('.greenBox').hide();
+    $('.blueBox').hide();
     $(".reset").html(" ");
     $(".start").show();
     $('.tryAgain').show();
     generateNextTurn();
     $('p').hide();
+    $('.yellowBox').hide();
     currentEquation = null;
     theAnswer = null;
     selectedProblem = null;
@@ -252,7 +260,8 @@ $('.countDown').click(function(){
       
       <div class="answers reset"></div>
       <button class="start">START</button>
-        <h1 class="win">YOU WON!!</h1>
+      <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game2.png' alt="" />
+        
   
       <div class='blueBox'>
         <img src='../StudyPup_assets/Box_Blue.png' alt=""  class='bbox'/>
@@ -283,7 +292,7 @@ $('.countDown').click(function(){
       
   </div>
   
-            <div class="lose">Try Again!</div>
+  <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game2.png' alt="" />
 
             <a class="nextLevel" href="/snoconb2">Next Level!</a>
       <div>

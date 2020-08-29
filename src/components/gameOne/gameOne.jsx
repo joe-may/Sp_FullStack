@@ -82,7 +82,7 @@ console.log(currentGameArray);
   });
 
  
-  var counter = 10000;
+  var counter = 30;
  
 
   
@@ -140,6 +140,8 @@ console.log(currentGameArray);
         console.log(currentGameArray.length);
         var penguin = $(this).parent().find('.penguin');
         penguin.attr("src", "../StudyPup_assets/Penguin_Walk_Gif_Faster.gif");
+        $('p').remove();
+              
         
        
         
@@ -221,20 +223,27 @@ console.log('keep playing');
          <img class="bg_game1" src='../StudyPup_assets/penguin-level-backdrop.jpeg' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
-          <h1 class="win">YOU WON!!</h1>
+          
+          <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game1.png' alt="" />
+
           <div class="problem reset"></div>
                 
-                <div class="lose">Try Again!</div>
+                
+                <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game1.png' alt="" />
                 
                 <a class="nextLevel" href="/snoconb1">Next Level!</a>
           
           <div>
             <span id="timer">
-              <span id="time">25</span>      
+              <span id="time">10</span>      
             </span>
           </div>
       
           <img src='../StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
+          <img src='../StudyPup_assets/Nova_standing.png' alt="" class='novaThrow'/>
+          
+
+          
           <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeOne'/>
           <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeTwo'/>
           <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeThree'/>
@@ -245,6 +254,8 @@ console.log('keep playing');
           <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeEight'/>
           <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeNine'/>
           <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeTen'/>
+          
+          
 
           
   

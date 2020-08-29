@@ -92,7 +92,7 @@ console.log(currentGameArray);
   });
 
  ///////////////////////////////timer
-  var counter = 100;
+  var counter = 30;
  
   var interval = setInterval(function() {
     counter--;
@@ -239,10 +239,10 @@ console.log('keep playing');
          <img class="bg_bb1" src='../StudyPup_assets/Snow_Con_Boss_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
-          <h1 class="win">YOU WON!!</h1>
+        <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game4.png' alt="" />
           <div class="problem reset"></div>
                 
-                <div class="lose">Try Again!</div>
+          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game4.png' alt="" />
                 
                 <a class="nextLevel" href="/snoconb1">Next Level!</a>
           

@@ -21,7 +21,7 @@ class GameTwo extends Component {
         { problem: "7 + 3 =", answer: "10"},
         { problem: "6 + 6 =", answer: "12"},
         { problem: "2 + 1 =", answer: "3"},
-        { problem: "3 + 3 =", answer: "6"},
+        
       ]
       
       $('.start').on('click',function() {
@@ -139,6 +139,7 @@ class GameTwo extends Component {
             $(this).fadeOut(200, function() {
                 currentGameArray.splice(randomProblemSelector,1);
                 winningCheck();
+                $('p').remove();
                 generateNextTurn();
                 $('audio#boardBoost')[0].play();
                 $('audio#boardBoost')[0].currentTime = 0
@@ -219,18 +220,18 @@ class GameTwo extends Component {
   <div class="answers reset"></div>
   <button class="start">START</button>
   <div class="footer">
-    <div class="win">YOU WON!!</div>
+  <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game3.png' alt="" />
   
         <div class="problem reset"></div>
     </div>
   </div>
-  <p><a class="nextLevel" href="/snoconb3">Next Level!</a></p>
+  <a class="nextLevel" href="/snoconb1">Next Level!</a>
   <div>
       <span id="timer">
         <span id="time"></span>     
       </span>
   </div>
-    <div class="lose">Try Again!</div>
+   <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game3.png' alt="" />
     <img class="kart1" src="https://i.imgur.com/cxbenav.gif"alt=""/>
     
    
