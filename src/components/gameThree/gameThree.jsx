@@ -68,7 +68,7 @@ console.log(randomProblemSelector);
 
 
  
-  var counter = 25;
+  var counter = 25  ;
  
 ////////////timer
   var interval = setInterval(function() {
@@ -271,12 +271,12 @@ $('.countDown').click(function(){
       <button class="create">CREATE</button>
       <img src='../StudyPup_assets/Snow_Con_Cocoa_Box2.png' alt="" class='ybox'/>
        <div class="guessCounter">
-         
-          <img src='../StudyPup_assets/Up_Button_Unclicked.png'alt=""  class='countUp'/>
-          <img src='../StudyPup_assets/Up_Button_Clicked.png'alt=""  class='countUpClicked'/>
+    
+          <img src='../StudyPup_assets/Snow_Con_Cocoa_Button_Up_Unclicked.png'alt=""  class='countUp'/>
+          <img src='../StudyPup_assets/Snow_Con_Cocoa_Button_Up1_Clicked.png'alt=""  class='countUpClicked'/>
   
-          <img src='../StudyPup_assets/Down_Button_Unclicked.png'alt=""  class='countDown'/>
-          <img src='../StudyPup_assets/Down_Button_Clicked.png'alt=""  class='countDownClicked'/>
+          <img src='../StudyPup_assets/Snow_Con_Cocoa_Button_Down1_Unclicked.png'alt=""  class='countDown'/>
+          <img src='../StudyPup_assets/Snow_Con_Cocoa_Button_Down_Clicked.png'alt=""  class='countDownClicked'/>
 
           <img src='../StudyPup_assets/Snow_Con_Cocoa_ChocolateBar.gif'alt=""  class='choco'/>
         

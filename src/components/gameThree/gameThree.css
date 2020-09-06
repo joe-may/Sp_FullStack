@@ -270,13 +270,13 @@
         position: absolute;
         width: 17%;
         margin-top: -17%;
-        left: 79%;
+        left: 78%;
         z-index: 1000;
       }
   
       .game3 .countDownClicked {
         position: absolute;
-        width: 17%;
+        width: 16%;
         margin-top: -17%;
         left: 79%;
         z-index: 900;
@@ -294,9 +294,9 @@
   
       .game3 .countUpClicked{
         position: absolute;
-        width: 17%;
+        width: 15%;
         margin-top: -46%;
-        left: 79%;
+        left: 81%;
         z-index: 900;
     }
   
