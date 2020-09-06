@@ -16,6 +16,10 @@ import SnowConb1 from './components/snowconPageb1/snowconPageb1';
 import SnowConb2 from './components/snowconPageb2/snowconPageb2';
 import SnowConb3 from './components/snowconPageb3/snowconPageb3';
 import VideoPlayer from './components/VideoPlayer/VideoPlayer';
+import HotGameOne  from './components/hotGameOne/hotGameOne';
+import HotGameTwo  from './components/hotGameTwo/hotGameTwo';
+import HotGameThree  from './components/hotGameThree/hotGameThree';
+
 
 
 
@@ -124,6 +128,33 @@ class App extends Component {
       <section>
       <Route exact path="/v1" render={(props) => (
               <VideoPlayer url= "https://www.youtube.com/watch?v=_WZem4eS5v8"
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/hot1" render={(props) => (
+              <HotGameOne
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/hot2" render={(props) => (
+              <HotGameTwo
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/hot3" render={(props) => (
+              <HotGameThree
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
                 {...props} />
                 )}/>
       </section>

@@ -1,0 +1,529 @@
+.hotGameOne { 
+    
+  width: 100vw;
+  height: 100vh;
+  background-repeat: center;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hotGameOne .skeletonBackground {
+    position: fixed;
+    width: 90vw;
+    left: 14%;
+    height: 80vh;
+    top: 6%;
+    margin-left: -18%;
+    font-family: 'Titan One';
+    font-size: 9vh;
+    color: rgb(90, 170, 207);
+    border-radius: 30px 30px 30px 30px;
+    z-index: 800;
+    cursor: pointer;
+  }
+  
+  
+  .hotGameOne .footer { 
+        height: 200px;
+        bottom: 0;
+        width:100%;
+        left:0;
+        text-align: center;
+        margin: 200px 0px 0px 0px;
+    
+    }
+  
+    .hotGameOne .brownBox {
+      position: fixed;
+      top: 9%;
+      left: 52%;
+      z-index: 1000;
+      width: 44%;
+    }
+
+    .hotGameOne .brownBox .smokers {
+      position: fixed;
+      margin-top:-37%;
+      left: 60%;
+      z-index: 500;
+      width: 30%;
+    }
+    
+
+    .hotGameOne .brownBox .ybox {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    z-index: 300;
+  }
+  
+  .hotGameOne .create {
+    position: absolute;
+    width: 50%;
+    left: 71%;
+    background-color: white;
+    top: 129%;
+    margin-left: -59%;
+    font-family: 'Titan One';
+    font-size: 5vw;
+    color: #f2c653;
+    border-radius: 13%;
+    z-index: 1500;
+    cursor: pointer;
+  
+  }
+    
+  .hotGameOne .cocoaAndOutput {
+      position: relative;
+      margin-top: -56%;
+      width: 100%;
+      height: 33%;
+      z-index: 900;
+      margin-left: -12%;
+  }
+  
+  .hotGameOne .cocoa {
+    position: relative;
+    margin-top: 16%;
+    left: -3%;
+    width: 31%;
+    }
+  
+    .hotGameOne .output {
+      margin-top: -32%;
+      left: 28%;
+      font-size: 7vw;
+      position: relative;
+    }
+    
+  .hotGameOne .greenBoxAndGif {
+    position: relative;
+    top: 51%;
+    left: 5%;
+    z-index: 1000;
+    width: 30%;
+  }
+    .hotGameOne .greenBox {
+      position: fixed;
+      top: 51%;
+      left: 5%;
+      z-index: 1000;
+      width: 30%;
+    }
+    .hotGameOne .greenBox .choco {
+      position: fixed;
+      top: 65%;
+      left: -.4%;
+      z-index: 1200;
+      width: 10%;
+    }
+  
+    .hotGameOne .greenBox .gbox {
+      position: relative;
+      width: 80%;
+      height: 100%;
+      z-index: 300;
+    }
+  
+  
+  
+    .hotGameOne .penguinIcecream {
+      margin-top: -50%;
+      left: -42%;
+      width: 362%;
+      /* background: black; */
+      height: 260%;
+      z-index: 1200;
+      position: absolute;
+    } 
+  
+  
+    .hotGameOne .container {position: relative;}
+  
+    
+  
+    .hotGameOne .greenLight {
+      height: 100px; 
+      width: 100px; 
+      background-color: #777;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      opacity: 0;
+      z-index: 1000;
+  }
+  
+  
+  
+  
+  .hotGameOne .createMachine {
+      position: fixed;
+      width: 38%;
+      height: 27%;
+      left: 3%;
+      top: 56%;
+      background: lightgrey;
+      z-index: 400;
+    }
+  
+    @-webkit-keyframes demo {
+      0% {
+          background-color: green;
+          opacity:1;
+      }
+      22% {
+          background-color: greenyellow;
+      }
+      77% {
+          background-color: greenyellow;
+      }
+      100% {
+          background-color: greenyellow;
+      }
+  }
+      
+  .hotGameOne .demo {
+      -webkit-animation-name: demo;
+      -webkit-animation-duration: 900ms;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease-in-out;
+  }    
+  
+  
+  
+  
+  .hotGameOne  { 
+      background-image: ('../StudyPup_assets/Ice_Cream_Game_Background.png');
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      overflow: hidden;
+    }
+    
+    .hotGameOne #timer{
+        
+      font-size: 30px;
+      z-index: 1000;
+      position: fixed;
+      top: 0%;
+      left: 50%;
+  
+    }
+    
+    /* .snowball {
+        width: 5%;
+        position:absolute;
+          top:90%;
+          left:40%;
+          z-index:1000;
+  
+    } */
+    .hotGameOne body {
+       
+        font-family: 'Titan One';
+        /* overflow: hidden; */
+      }
+  
+      .hotGameOne .hide {
+         display: none;
+     }
+     .hotGameOne .penguin {
+      background-repeat: no-repeat;
+      z-index: 1000;
+     }
+      /* .answers {
+          position: fixed;
+          font-size: 5vh;
+          height: 20%;
+          top: 29%;
+          width: 67%;
+          z-index: 800;
+          display: flex;
+          flex-wrap: wrap;
+    
+      } */
+  
+      /* .house {
+        position: relative;
+        width: 38%;
+        height: 59%;
+        right: -73%;
+        bottom: 141%;
+        cursor: crosshair;
+            
+      } */
+  
+      .hotGameOne .guessCounter {
+        position: relative;
+        left: -22%;
+        top: 16%;
+        z-index: 1000;
+      }
+  
+      .hotGameOne .countDown {
+        position: absolute;
+        width: 17%;
+        margin-top: -17%;
+        left: 78%;
+        z-index: 1000;
+      }
+  
+      .hotGameOne .countDownClicked {
+        position: absolute;
+        width: 16%;
+        margin-top: -17%;
+        left: 79%;
+        z-index: 900;
+      }
+  
+  
+  
+      .hotGameOne .countUp {
+        position: absolute;
+        width: 17%;
+        margin-top: -46%;
+        left: 79%;
+        z-index: 1000;
+      }
+  
+      .hotGameOne .countUpClicked{
+        position: absolute;
+        width: 15%;
+        margin-top: -46%;
+        left: 81%;
+        z-index: 900;
+    }
+  
+  
+    .hotGameOne .house .iglooWrapper {
+          width:90%;  
+          display: inline-block;
+          position: relative;
+         
+      }
+  
+      .hotGameOne .house .iglooWrapper .scoop {
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+      .hotGameOne .house .iglooWrapper .answer {
+        position: absolute;
+        color: #333;
+        font-size: 5vh;
+        left: 45%;
+        margin-top: 11%;
+      }
+      .hotGameOne .house .iglooWrapper .penguin {
+          position: absolute;
+          width: 50%;
+          margin-top: 16%;
+  
+      }
+    
+      
+      /* .answers div {
+          font-size: 7vh;
+          font-family: 'Titan One', cursive;
+          width: 20%;
+          color: black;
+          cursor: crosshair;
+          z-index: 600;
+      } */
+
+      .hotGameOne .pinkBoxAndGif {
+        position: fixed;
+        width: 40%;
+        left: 11%;
+        top: 17%;
+        z-index: 1000;
+      }
+      .hotGameOne .pinkBoxAndGif .pinkBox {
+        position: fixed;
+        width: 40%;
+        /* left: 11%;
+        top: 13%;
+        z-index: 1000; */
+  
+      }
+      .hotGameOne .pinkBoxAndGif .spinner{
+        position: fixed;
+        margin-top: 17%;
+        left:10%;
+        z-index: 500;
+        width: 40%;
+      }
+  
+      .hotGameOne .pinkBox img {
+        position: relative;
+        width: 77%;
+        height: 100%;
+      }
+     
+      .hotGameOne .problem p {
+        position: absolute;
+        width: 76%;
+        left: 14%;
+        top: -12%;
+      
+        font-size: 7vw;
+        color: rgb(65, 35, 35);
+        border-radius: 30px 30px 30px 30px;
+        z-index: 800;
+        cursor: pointer;
+    }
+      
+     
+      
+    .hotGameOne .start {
+      position: fixed;
+      width: 20%;
+      left: 50%;
+      top: 50%;
+      margin-left: -10%;
+      font-family: 'Titan One';
+      font-size:5vw;
+      color: rgb(90, 170, 207) ;
+      border-radius: 30px 30px 30px 30px;
+      z-index: 1300;
+      cursor: pointer;
+      
+    }
+    
+   
+    
+    .hotGameOne .boss {
+      position: fixed;
+      width: 30%;
+      left: 50%;
+      top: 0;
+      margin-left: -15%;
+      z-index: 900;
+    }
+   
+    /* .snowmen {
+        /* background-size: 75% 75%;
+        background-repeat: no-repeat;
+        background-image: url(https://i.imgur.com/peo6gAS.gif); */
+        /* cursor: url("https://i.imgur.com/PFfe6oi.png") , auto; */
+        
+   
+  
+  
+        .hotGameOne .house .a0 {
+      /* width: 92%;
+      top: -24%; */
+      
+  }
+   
+   
+  
+  .hotGameOne .house .a1 {
+      /* width: 80%;
+      top: -24%; */
+  }
+   
+    
+  .hotGameOne .house .a2 {
+      /* width: 79%;
+      top: -32%;
+      left: 27%; */
+  }
+    
+  
+  
+  
+  .hotGameOne .house .a3 {
+      /* width: 94%;
+      top: -3%;
+      left: -3%; */
+  }
+   
+  
+  .hotGameOne .house .a4 {
+      /* width: 127%;
+      top: -14%; */
+  }
+   
+  
+  .hotGameOne .house .a5 {
+      /* width: 102%;
+      top: -63%; */
+  }
+   
+  .hotGameOne .house .a6 {
+      /* width: 112%;
+      top: -43%;
+      left: 24%; */
+  }
+    
+  
+  .hotGameOne .house .a7 {
+      /* width: 128%;
+      top: 10%;
+      left: -26%; */
+  }
+    
+    
+    
+ 
+    
+  .hotGameOne .win 
+     {
+      position: fixed;
+      width: 50%;
+      left:20%;
+      top:20%;
+      height: 50%;
+      z-index: 1700;
+     }
+    
+     .hotGameOne .lose {
+      position: fixed;
+      width: 50%;
+      left:20%;
+      top:20%;
+      height: 60%;
+      z-index: 1700;
+     }
+      
+     .hotGameOne .nextLevel {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+    text-shadow: 9px 5px #333;
+    position: fixed;
+    width: 40%;
+    left: 24%;
+    top:62%;
+    font-family: 'Titan One';
+    font-size:5vw;
+    color: rgb(90, 170, 207) ;
+    border-radius: 30px 30px 30px 30px;
+    z-index: 2200;
+    cursor: pointer; 
+   
+     }
+     .hotGameOne .restart3 {
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: #333;
+      text-shadow: 9px 5px #333;
+      position: fixed;
+      width: 40%;
+      left: 25%;
+      top:67%;
+      font-family: 'Titan One';
+      font-size:5vw;
+      color: rgb(90, 170, 207) ;
+      border-radius: 30px 30px 30px 30px;
+      z-index: 2200;
+      cursor: pointer; 
+     
+       }
+     

@@ -43,7 +43,7 @@ $('.win').hide();
 $('.lose').hide();
 $('.create').show();
 $('.nextLevel').hide();
-// $('audio#icecreamSong')[0].play();
+$('audio#icecreamSong')[0].play();
 
 
 var currentGameArray = [];
@@ -291,7 +291,7 @@ $('.countDown').click(function(){
     <div class='greenBox'>
       
         <img src='../StudyPup_assets/Snow_Con_Cocoa_Box3.png' alt="" class='gbox'/>
-        <img src='../StudyPup_assets/Snow_Con_Cocoa_Steam.gif'alt=""  class='choco'/>
+        <img src='../StudyPup_assets/Snow_Con_Cocoa_Steam.gif'alt=""  class='smoke'/>
       
   </div>
  
