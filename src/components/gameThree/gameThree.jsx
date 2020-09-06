@@ -11,6 +11,7 @@ $('.win').hide();
 $('.lose').hide();
 $('.create').hide();
 $('.nextLevel').hide();
+$('.restart3').hide();
 
 
 //////up counter 
@@ -67,7 +68,7 @@ console.log(randomProblemSelector);
 
 
  
-  var counter = 300;
+  var counter = 25;
  
 ////////////timer
   var interval = setInterval(function() {
@@ -78,10 +79,9 @@ console.log(randomProblemSelector);
           // $('#time').text(counter);
           console.log("you lose");
           $('.lose').show();
-       
+          $('.restart3').show();
           $(".reset").html(" ");
-          $(".start").show();
-          $('p').remove();
+          $('p').hide();
           
         return;
     }else{
@@ -208,6 +208,7 @@ $('.countDown').click(function(){
     generateNextTurn();
     $('p').remove();
     currentEquation = null;
+    currentGameArray =null;
     theAnswer = null;
     selectedProblem = null;
     randomProblemSelector = null;
@@ -251,11 +252,12 @@ $('.countDown').click(function(){
       
       <div class="answers reset"></div>
       <button class="start">START</button>
+      <a class="restart3" href="/sno3">restart!</a>
 
-      <div class="winAndNl">
+     
         <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game2.png' alt="" />
         <a class="nextLevel" href="/snoconb2">Next Level!</a>
-      </div>
+     
         
   <div class='pinkBoxAndGif'>
       <div class='pinkBox'>

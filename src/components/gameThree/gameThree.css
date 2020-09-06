@@ -50,7 +50,7 @@
       position: fixed;
       top: 10%;
       left: 60%;
-      z-index: 900;
+      z-index: 500;
       width: 44%;
     }
     
@@ -73,7 +73,7 @@
     font-size: 5vw;
     color: #f2c653;
     border-radius: 13%;
-    z-index: 1000;
+    z-index: 1500;
     cursor: pointer;
   
   }
@@ -138,7 +138,7 @@
       width: 362%;
       /* background: black; */
       height: 260%;
-      z-index: 1600;
+      z-index: 1200;
       position: absolute;
     } 
   
@@ -397,6 +397,8 @@
       
     }
     
+   
+    
     .game3 .boss {
       position: fixed;
       width: 30%;
@@ -479,20 +481,17 @@
       width: 50%;
       left:20%;
       top:20%;
-      height: 60%;
+      height: 50%;
       z-index: 1700;
      }
     
      .game3 .lose {
-      width: 47%;
-      position: relative;
-      left:26%;
-     
-      font-family: 'Titan One';
-      font-size: 5vh;
-      color:rgb(90, 170, 207) ;
-      border-radius: 5%;
-      z-index: 1200;
+      position: fixed;
+      width: 50%;
+      left:20%;
+      top:20%;
+      height: 60%;
+      z-index: 1700;
      }
       
      .game3 .nextLevel {
@@ -511,3 +510,20 @@
     cursor: pointer; 
    
      }
+     .game3 .restart3 {
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: #333;
+      text-shadow: 9px 5px #333;
+      position: fixed;
+      width: 40%;
+      left: 25%;
+      top:67%;
+      font-family: 'Titan One';
+      font-size:5vw;
+      color: rgb(90, 170, 207) ;
+      border-radius: 30px 30px 30px 30px;
+      z-index: 2200;
+      cursor: pointer; 
+     
+       }
+     
