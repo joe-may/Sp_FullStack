@@ -29,7 +29,7 @@ $('.countDown').click(function() {
 var answerset = [
   { problem: "3 + 2 =", answer: "5"},
   { problem: "6 + 1 =", answer: "7"},
-  // { problem: "4 + 4 =", answer: "8"},
+  { problem: "4 + 4 =", answer: "8"},
   // { problem: "1 + 2 =", answer: "3"},
   // { problem: "3 + 1 =", answer: "4"},
   // { problem: "7 + 3 =", answer: "10"},
@@ -67,7 +67,7 @@ console.log(randomProblemSelector);
 
 
  
-  var counter = 30;
+  var counter = 300;
  
 ////////////timer
   var interval = setInterval(function() {
@@ -78,12 +78,10 @@ console.log(randomProblemSelector);
           // $('#time').text(counter);
           console.log("you lose");
           $('.lose').show();
-          $('.yellowBox').hide();
-          $('.skeletonBackground').hide();
-          $('.greenBox').hide();
-          $('.blueBox').hide();
+       
           $(".reset").html(" ");
           $(".start").show();
+          $('p').remove();
           
         return;
     }else{
@@ -148,8 +146,8 @@ $('.countDown').click(function(){
       $('audio#swoopboop')[0].currentTime = 0
       $('.greenBox').prepend("<img src='' class='penguinIcecream'>");
       var penguin = $('.penguinIcecream');
-      penguin.attr("src", "../StudyPup_assets/Penguin_Gets_Ice_Cream_.gif");
-
+      penguin.attr("src", "../StudyPup_assets/cocoa_Penguin_jump.gif");
+      
 
       
       $('p').remove();
@@ -204,23 +202,16 @@ $('.countDown').click(function(){
     $('.nextLevel').show();
     clearInterval(interval);
     $('.win').show();
-    $('.yellowBox').hide();
-    $('.skeletonBackground').hide();
-    $('.greenBox').hide();
-    $('.blueBox').hide();
     $(".reset").html(" ");
     $(".start").show();
     $('.tryAgain').show();
     generateNextTurn();
-    $('p').hide();
-    $('.yellowBox').hide();
+    $('p').remove();
     currentEquation = null;
     theAnswer = null;
     selectedProblem = null;
     randomProblemSelector = null;
-    
     console.log('keep playing');
-
     console.log(currentGameArray);
     console.log('you win');
 
@@ -239,7 +230,7 @@ $('.countDown').click(function(){
 
  render() {
   return (
-    <div class="game3" style ={ { backgroundImage: "url('../StudyPup_assets/Ice_Cream_Game_Background.png')"} }>
+    <div class="game3" style ={ { backgroundImage: "url('../StudyPup_assets/Snow_Con_Cocoa_Background.png')"} }>
     <body>
   <audio id="swoopboop">
     <source src='../StudyPup_assets/Penguin_Gets_Ice_Cream.m4a' type="audio/mpeg"/>
@@ -256,21 +247,27 @@ $('.countDown').click(function(){
  
   
     
-    <img src='../StudyPup_assets/just_pipes.png' alt="" class='skeletonBackground'/>
+    <img src='../StudyPup_assets/Snow_Con_Cocoa_Pipes.png' alt="" class='skeletonBackground'/>
       
       <div class="answers reset"></div>
       <button class="start">START</button>
-      <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game2.png' alt="" />
+
+      <div class="winAndNl">
+        <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game2.png' alt="" />
+        <a class="nextLevel" href="/snoconb2">Next Level!</a>
+      </div>
         
-  
-      <div class='blueBox'>
-        <img src='../StudyPup_assets/Box_Blue.png' alt=""  class='bbox'/>
+  <div class='pinkBoxAndGif'>
+      <div class='pinkBox'>
+        <img src='../StudyPup_assets/Snow_Con_Cocoa_Box1.png' alt=""  class='bbox'/>
         <div class="problem reset"></div>
+        </div>
+        <img src='../StudyPup_assets/Snow_Con_Cocoa_Propeller.gif' alt=""  class='spinner'/>
      </div>
   
-     <div class="yellowBox">
+     <div class="brownBox">
       <button class="create">CREATE</button>
-      <img src='../StudyPup_assets/Box_Yellow.png' alt="" class='ybox'/>
+      <img src='../StudyPup_assets/Snow_Con_Cocoa_Box2.png' alt="" class='ybox'/>
        <div class="guessCounter">
          
           <img src='../StudyPup_assets/Up_Button_Unclicked.png'alt=""  class='countUp'/>
@@ -278,23 +275,27 @@ $('.countDown').click(function(){
   
           <img src='../StudyPup_assets/Down_Button_Unclicked.png'alt=""  class='countDown'/>
           <img src='../StudyPup_assets/Down_Button_Clicked.png'alt=""  class='countDownClicked'/>
+
+          <img src='../StudyPup_assets/Snow_Con_Cocoa_ChocolateBar.gif'alt=""  class='choco'/>
         
       </div>
-        <div class='scoopAndOutput'>
-          <img src='../StudyPup_assets/Ice_Cream_Scoop_7.png'alt=""  class='scoop'/>
+        <div class='cocoaAndOutput'>
+          <img src='../StudyPup_assets/cocoa.png'alt=""  class='cocoa'/>
           <div class="output">3</div>
        </div>
     </div>
   
+    <div class='greenBoxAndGif'></div>
     <div class='greenBox'>
       
-        <img src='../StudyPup_assets/Box_Green_with_Door.png' alt="" class='gbox'/>
+        <img src='../StudyPup_assets/Snow_Con_Cocoa_Box3.png' alt="" class='gbox'/>
+        <img src='../StudyPup_assets/Snow_Con_Cocoa_Steam.gif'alt=""  class='choco'/>
       
   </div>
-  
-  <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game2.png' alt="" />
+ 
+      <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game2.png' alt="" />
+     
 
-            <a class="nextLevel" href="/snoconb2">Next Level!</a>
       <div>
         <span id="timer">
           <span id="time">25</span>      

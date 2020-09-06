@@ -51,7 +51,7 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-// $('audio#iglooSong')[0].play();
+$('audio#iglooSong')[0].play();
 
 
 
@@ -185,6 +185,7 @@ console.log(currentGameArray);
   if (currentGameArray.length > 0){
 console.log('keep playing');
   } else {
+    $('.lose').hide();
     $('.win').show();
     $('.nextLevel').show();
     $(".reset").html(" ");
