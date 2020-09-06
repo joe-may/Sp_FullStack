@@ -146,7 +146,7 @@ $('.countDown').click(function(){
       $('audio#swoopboop')[0].currentTime = 0
       $('.greenBox').prepend("<img src='' class='penguinIcecream'>");
       var penguin = $('.penguinIcecream');
-      penguin.attr("src", "../StudyPup_assets/cocoa_Penguin_jump.gif");
+      penguin.attr("src", "../StudyPup_assets/Hotsva_HotSauce_Nova.gif");
       
 
       
@@ -168,7 +168,7 @@ $('.countDown').click(function(){
   
           setTimeout(function() {
             penguin.attr("src", "").remove();
-        }, 2500);
+        }, 5900);
 
     } else {
 
@@ -227,7 +227,7 @@ $('.countDown').click(function(){
 
  render() {
   return (
-    <div class="hotGameOne" style ={ { backgroundImage: "url('../StudyPup_assets/Hotsva_HotSauce_Background.png')"} }>
+    <div class="hotGameOne" style ={ { backgroundImage: "url('../StudyPup_assets/Hotsva_HotSauce_Background2.png')"} }>
     <body>
   <audio id="swoopboop">
     <source src='../StudyPup_assets/Penguin_Gets_Ice_Cream.m4a' type="audio/mpeg"/>
@@ -244,14 +244,14 @@ $('.countDown').click(function(){
  
   
     
-    <img src='../StudyPup_assets/Snow_Con_Cocoa_Pipes.png' alt="" class='skeletonBackground'/>
+    <img src='../StudyPup_assets/Hotsva_HotSauce_Pipes.png' alt="" class='skeletonBackground'/>
       
       <div class="answers reset"></div>
       <button class="start">START</button>
-      <a class="restart3" href="/sno3">restart!</a>
+      <a class="restart3" href="/hot1">restart!</a>
 
      
-        <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game2.png' alt="" />
+        <img class="win" src='../StudyPup_assets/YOU_WON_Hotsva_Game1.png' alt="" />
         <a class="nextLevel" href="/snoconb2">Next Level!</a>
      
         
@@ -278,7 +278,7 @@ $('.countDown').click(function(){
         
       </div>
         <div class='cocoaAndOutput'>
-          <img src='../StudyPup_assets/cocoa.png'alt=""  class='cocoa'/>
+          <img src='../StudyPup_assets/Hotsva_HotSauce_Flame_Icon.png'alt=""  class='cocoa'/>
           <div class="output">3</div>
        </div>
     </div>
@@ -286,12 +286,12 @@ $('.countDown').click(function(){
     <div class='greenBoxAndGif'></div>
     <div class='greenBox'>
       
-        <img src='../StudyPup_assets/Snow_Con_Cocoa_Box3.png' alt="" class='gbox'/>
-        <img src='../StudyPup_assets/Snow_Con_Cocoa_Steam.gif'alt=""  class='chocod'/>
+        <img src='../StudyPup_assets/Hotsva_HotSauce_Box3.png' alt="" class='gbox'/>
+      
       
   </div>
  
-      <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game2.png' alt="" />
+      <img class="lose" src='../StudyPup_assets/YOU_LOSE_Hotsva_Game1.png' alt="" />
      
 
       <div>
