@@ -24,8 +24,8 @@ $('.bossBattleSno').on('click',function(e) {
   var parentOffset = $(this).parent().offset();
    var relX = e.pageX - parentOffset.left;
    var relY = e.pageY - parentOffset.top;
-   $('audio#snowballThrow')[0].play();
-   $('audio#snowballThrow')[0].currentTime = 0
+   $('audio#sizzle')[0].play();
+   $('audio#sizzle')[0].currentTime = 0
   $(".snowball").animate({
       width: '10px',
       left: relX,
@@ -55,7 +55,7 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-// $('audio#raceMusic')[0].play();
+$('audio#moltaMusic')[0].play();
 $('.snowball').hide();
 
 
@@ -64,7 +64,7 @@ $('.snowball').hide();
 
 $(document).mousemove(function(e) {
   
-  $('.novaWithHose').css("left", e.pageX);
+  $('.novaWithHoseMolta').css("left", e.pageX);
   $('.snowball').hide();
   $('.snowball').css("left", e.pageX);
 
@@ -92,7 +92,7 @@ console.log(currentGameArray);
   });
 
  ///////////////////////////////timer
-  var counter = 30;
+  var counter = 25;
  
   var interval = setInterval(function() {
     counter--;
@@ -105,8 +105,8 @@ console.log(currentGameArray);
           $(".reset").html(" ");
           $(".start").show();
           $('p').hide();
-          $('audio#raceMusic')[0].pause()
-          $('audio#raceMusic')[0].currentTime = 0
+          $('audio#moltaMusic')[0].pause()
+          $('audio#moltaMusic')[0].currentTime = 0
           
         return;
     }else{
@@ -144,18 +144,16 @@ console.log(currentGameArray);
   // when answer is clicked on
   $('.snowmanWrapper').on('click',function(e) {
     var clickedAnswer = $(this).text();
-    $(this).prepend("<img src='' class='splash'>");
-    var splash = $(this).parent().find('.splash');
-    splash.attr("src", "../StudyPup_assets/Cocoa_Splat_Endless.gif");
-    setTimeout(function() {
-      splash.attr("src", "").remove();
-  }, 1500)
+   
+
 
     if (clickedAnswer === theAnswer) {
       
 
       console.log("Correct!");
-      $(this).fadeOut(1800, function() {
+      $('audio#sizzle')[0].play();
+      $('audio#sizzle')[0].currentTime = 0
+      $(this).fadeOut(200, function() {
        
         console.log(currentGameArray.length);
         
@@ -207,8 +205,8 @@ console.log('keep playing');
     $('.tryAgain').show();
     $('p').hide();
     clearInterval(interval);
-    $('audio#raceMusic')[0].pause()
-    $('audio#raceMusic')[0].currentTime = 0
+    $('audio#moltaMusic')[0].pause()
+    $('audio#moltaMusic')[0].currentTime = 0
     console.log('you win')
     // generateHearts();
     
@@ -229,20 +227,20 @@ console.log('keep playing');
 <body>
 
 
-<audio id="raceMusic">
-    <source src='../StudyPup_assets/Song_Snow-Con_Race.m4a' type="audio/mpeg"/>
+<audio id="moltaMusic">
+    <source src='../StudyPup_assets/Hotsva_Boss_Battle_Song.m4a' type="audio/mpeg"/>
   </audio>
-  <audio id="snowballThrow">
-    <source src='../StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
+  <audio id="sizzle">
+    <source src='../StudyPup_assets/Hotsva_Boss_Battle_Sound_Sizzle.m4a' type="audio/mpeg"/>
   </audio>
  
          <img class="bg_bb1" src='../StudyPup_assets/Hotsva_Boss_Battle_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
-        <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game4.png' alt="" />
+        <img class="win" src='../StudyPup_assets/YOU_WON_Hotsva_Game4.png' alt="" />
           <div class="problem reset"></div>
                 
-          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game4.png' alt="" />
+          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Hotsva_Game4.png' alt="" />
                 
                 <a class="nextLevel" href="/snoconb1">Next Level!</a>
           
@@ -257,7 +255,7 @@ console.log('keep playing');
 
       <div class="cocoNova">
           <img src='../StudyPup_assets/hotCocoSquirt.png' alt="" class='snowball'/>
-          <img src='../StudyPup_assets/nova_with_hose.png' alt="" class='novaWithHose'/>
+          <img src='../StudyPup_assets/Hotsva_Boss_Battle_Nova_Hose.png' alt="" class='novaWithHoseMolta'/>
      </div>
   
 </body>
