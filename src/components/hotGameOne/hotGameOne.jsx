@@ -82,6 +82,8 @@ console.log(randomProblemSelector);
           $('.restart3').show();
           $(".reset").html(" ");
           $('p').hide();
+          $('audio#icecreamSong')[0].pause()
+          $('audio#icecreamSong')[0].currentTime = 0
           
         return;
     }else{
@@ -215,6 +217,8 @@ $('.countDown').click(function(){
     console.log('keep playing');
     console.log(currentGameArray);
     console.log('you win');
+    $('audio#icecreamSong')[0].pause()
+    $('audio#icecreamSong')[0].currentTime = 0
 
   };
 }
@@ -230,13 +234,13 @@ $('.countDown').click(function(){
     <div class="hotGameOne" style ={ { backgroundImage: "url('../StudyPup_assets/Hotsva_HotSauce_Background2.png')"} }>
     <body>
   <audio id="swoopboop">
-    <source src='../StudyPup_assets/Penguin_Gets_Ice_Cream.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Hotsva_HotSauce_Sound_Scream.mp3' type="audio/mpeg"/>
   </audio>
   <audio id="buttonSound">
     <source src='../StudyPup_assets/Button_Click_Up.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="icecreamSong">
-    <source src='../StudyPup_assets/Song_Snow-Con_IceCream_Level.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Hotsva_HotSauce_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="wrongDing">
     <source src='../StudyPup_assets/Wrong_Ding.m4a' type="audio/mpeg"/>

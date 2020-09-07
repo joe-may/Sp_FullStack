@@ -1,6 +1,18 @@
 
+ .hotGameThree { 
+  width: 100vw;
+  height: 100vh;
+  background-repeat: center;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
  
- .game1 .footer { 
+ .hotGameThree .footer { 
     height: 200px;
     bottom: 0;
     width:100%;
@@ -10,87 +22,9 @@
 
 
 }
-.game1 .treeOne {
-  width: 5%;
-  position:fixed;
-  top:45%;
-  left:40%;
-  z-index:300;
-
-}
-.game1 .treeTwo {
-  width: 5%;
-  position:fixed;
-  top:50%;
-  left:50%;
-  z-index:300;
-
-}
-
-.game1 .treeThree {
-  width: 8%;
-  position:fixed;
-  top:80%;
-  left:50%;
-  z-index:300;
-
-}
-.game1 .treeFour{
-  width: 6%;
-  position:fixed;
-  top:45%;
-  left:20%;
-  z-index:300;
-
-}
-.game1 .treeFive{
-  width: 5%;
-  position:fixed;
-  top:36%;
-  left:82%;
-  z-index:1300;
-
-}
-
-.game1 .treeSix { 
-  width: 5.5%;
-  position:fixed;
-  top:63%;
-  left:60%;
-  z-index:300;
-}
-.game1 .treeSeven{ 
-  width: 7%;
-  position:fixed;
-  top:63%;
-  left:95%;
-  z-index:300;
-}
-.game1 .treeEight{ 
-  width: 7%;
-  position:fixed;
-  top:63%;
-  left:-3%;
-  z-index:300;
-}
-.game1 .treeNine { 
-  width: 5%;
-  position:fixed;
-  top:39%;
-  left:2%;
-  z-index:300;
-}
-.game1 .treeTen{ 
-  width: 7%;
-  position:fixed;
-  top:69%;
-  left:15%;
-  z-index:300;
-}
-
 
    
-.game1 #timer{
+.hotGameThree #timer{
   font-size: 30px;
   z-index: 1000;
   position: fixed;
@@ -98,13 +32,13 @@
   left: 70%;
 
 }
-.game1 .backbutton{
+.hotGameThree .backbutton{
     position: fixed;
     top:0%;
     z-index: 1400;
 }
 
-.game1 .bg_game1 {
+.hotGameThree .bg_hotGameThree {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -113,26 +47,12 @@
   overflow: hidden;
 }
 
-.game1 #time{
+.hotGameThree #time{
   font-size: 30px;
 }
-.game1 .novaThrow {
-  width: 13%;
-  position:absolute;
-  top:85%;
-  left:43%;
-  z-index:1000;
 
-}
-.game1 .snowball {
-    width: 5%;
-    position:absolute;
-    top:89%;
-    left:52%;
-    z-index:1000;
 
-}
- .game1 body {
+ .hotGameThree body {
 
     text-align: center;
     background-size: cover;
@@ -142,65 +62,69 @@
     overflow: hidden;
   }
 
-  .game1 .hide {
+  .hotGameThree .hide {
      display: none;
  }
- .game1 .penguin {
+ .hotGameThree .penguin {
   background-repeat: no-repeat;
-  z-index: 1000;
+  z-index: 700;
  }
 
- .game1 .answers {
+ .hotGameThree .answers {
       position: fixed;
+      
       font-size: 5vh;
       height: 50%;
       top: 50%;
       width: 100%;
-      z-index: 800;
+      z-index: 1600;
       display: flex;
       flex-wrap: wrap;
   }
 
-  .game1 .house {
+  .hotGameThree .house {
       width: 25%;
       cursor: crosshair;  
   }
 
 
-  .game1 .house .iglooWrapper {
+  .hotGameThree .house .iglooWrapper {
       width:80%;  
       display: inline-block;
       position: relative;
   }
 
-  .game1 .house .iglooWrapper .igloo {
-      width: 100%;   
+  .hotGameThree .house .iglooWrapper .igloo {
+      width: 60%;   
       position: absolute;
     
       left:0px;
       top: 0px;
+      z-index: 900;
   }
-  .game1 .house .iglooWrapper .answer {
+  .hotGameThree .house .iglooWrapper .answer {
       position: absolute;
-      color: #333;
+      color: rgb(175, 54, 54);
       font-size: 8vh;
       left: 25%;
       margin-top: 5%;
+      z-index: 900;
   }
-  .game1 .house .iglooWrapper .penguin {
+  .hotGameThree .house .iglooWrapper .penguin {
       position: absolute;
-      width: 50%;
+      width: 500%;
       margin-top: 16%;
+      z-index: 700;
 
   }
-.game1 .splash {
+.hotGameThree .splash {
   position: absolute;
   width:70%;
   z-index: 10000;
 }
 
 
-  .game1 .problem p {
+  .hotGameThree .problem p {
       position: fixed;
       background-image: url(https://i.imgur.com/DZanh1O.png);
       background-size: 35vw 20vh;
@@ -216,7 +140,7 @@
   }
 
  
-  .game1 .start {
+  .hotGameThree .start {
    position: fixed;
 width: 20%;
 left: 50%;
@@ -226,10 +150,10 @@ font-family: 'Titan One';
 font-size:5vw;
 color: rgb(90, 170, 207) ;
 border-radius: 30px 30px 30px 30px;
-z-index: 1000;
+z-index: 2000;
   }
   
-  .game1 .nextLevel {
+  .hotGameThree .nextLevel {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #333;
     text-shadow: 9px 5px #333;
@@ -248,7 +172,7 @@ z-index: 1000;
   }
 
 
-.game1 .boss {
+.hotGameThree .boss {
   position: fixed;
   width: 30%;
   left: 50%;
@@ -257,167 +181,181 @@ z-index: 1000;
   z-index: 900;
 }
 
-.game1 .house .a0 {
-  width: 92%;
-  top: -25%;
+.hotGameThree .house .a0 {
+  width: 45%;
+  top: 50%;
+  left:45%;
   
 }
 
-.game1 .house .a0 .answer {
-  left: 23%;
+.hotGameThree .house .a0 .answer {
+  left: 15%;
+  margin-top: -68%;
 } 
-.game1 .house .a0 .penguin {
-  width: 41%;
-  margin-top: 24%;
-  margin-left: 3%;
+.hotGameThree .house .a0 .penguin {
+  width: 707%;
+  margin-top: -127%;
+  margin-left: -381%;
   transform: rotateY(180deg);
 } 
-.game1 .house .a0 .splash {
+.hotGameThree .house .a0 .splash {
   position: absolute;
   left:5%;
 }
 
 
-.game1 .house .a1 {
-  width: 80%;
-  top: -24%;
+.hotGameThree .house .a1 {
+  width: 35%;
+  top: 17%;
+  left:-10%;
 }
 
-.game1 .house .a1 .answer {
-  left: 23%;
+.hotGameThree .house .a1 .answer {
+  left: 6%;
+  margin-top: -83%;
 } 
-.game1 .house .a1 .penguin {
-  width: 41%;
-  margin-top: 24%;
-  margin-left: 3%;
+.hotGameThree .house .a1 .penguin {
+  width: 630%;
+  margin-top: -112%;
+  margin-left: -337%;
   transform: rotateY(180deg);
 } 
-.game1 .house .a1 .splash {
+.hotGameThree .house .a1 .splash {
   position: absolute;
   left:15%;
 }
 
-.game1 .house .a2 {
-  width: 79%;
-  top: -49%;
-  left: 27%;
+.hotGameThree .house .a2 {
+  width: 30%;
+  top: -7%;
+  left: -2%;
 }
-.game1 .house .a2 .igloo {
+.hotGameThree .house .a2 .igloo {
   transform: rotateY(180deg);
 }
-.game1 .house .a2 .answer {
-  left: 65%;
+.hotGameThree .house .a2 .answer {
+  left: 0%;
+  margin-top: -108%;
 } 
-.game1 .house .a2 .penguin {
-  width: 43%;
-  margin-top: 22%;
-  margin-left: -45%;
+.hotGameThree .house .a2 .penguin {
+  width: 700%;
+  margin-top: -132%;
+  margin-left: -369%;
 } 
 
 
 
-.game1 .house .a3 {
-  width: 94%;
-  top: -35%;
-  left: -3%;
+.hotGameThree .house .a3 {
+  width: 45%;
+  top: 50%;
+  left:-40%;
+  
 }
-.game1 .house .a3 .igloo {
+.hotGameThree .house .a3 .igloo {
   transform: rotateY(180deg);
 }
-.game1 .house .a3 .answer {
-  left: 65%;
+.hotGameThree .house .a3 .answer {
+  margin-top: -72%;
+    left: 12%;
 } 
-.game1 .house .a3 .penguin {
-  width: 43%;
-  margin-top: 22%;
-  margin-left: -45%;
+.hotGameThree .house .a3 .penguin {
+  width: 620%;
+  margin-top: -104%;
+  margin-left: -327%;
   z-index: 500;
 } 
 
 
-.game1 .house .a4 {
-  width: 127%;
-  top: -25%;
+.hotGameThree .house .a4 {
+  width: 50%;
+  top: -20%;
 }
 
-.game1 .house .a4 .answer {
-  left: 23%;
+.hotGameThree .house .a4 .answer {
+  left: 16%;
+    margin-top: -67%;
 } 
-.game1 .house .a4 .penguin {
-  width: 41%;
-  margin-top: 24%;
-  margin-left: 3%;
+.hotGameThree .house .a4 .penguin {
+  width: 700%;
+  margin-top: -121%;
+  margin-left: -374%;
   transform: rotateY(180deg);
 } 
-.game1 .house .a4 .splash {
+.hotGameThree .house .a4 .splash {
   position: absolute;
   left:5%;
 }
 
-.game1 .house .a5 {
-  width: 102%;
-  top: -63%;
+.hotGameThree .house .a5 {
+  width: 30%;
+  top: -107%;
+  left:25%;
 }
 
-.game1 .house .a5 .answer {
-  left: 23%;
+.hotGameThree .house .a5 .answer {
+  left: -16%;
+  margin-top: -109%;
 } 
-.game1 .house .a5 .penguin {
-  width: 41%;
-  margin-top: 24%;
-  margin-left: 3%;
+.hotGameThree .house .a5 .penguin {
+  width: 700%;
+  margin-top: -124%;
+  margin-left: -376%;
   transform: rotateY(180deg);
 } 
-.game1 .house .a5 .splash {
+.hotGameThree .house .a5 .splash {
   position: absolute;
   left:15%;
 }
 
-.game1 .house .a6 {
-  width: 112%;
-  top: -68%;
-  left: 24%;
+.hotGameThree .house .a6 {
+  width: 35%;
+  top: -85%;
+  left:25%;
 }
-.game1 .house .a6 .igloo {
+.hotGameThree .house .a6 .igloo {
   transform: rotateY(180deg);
 }
-.game1 .house .a6 .answer {
-  left: 65%;
+.hotGameThree .house .a6 .answer {
+  left: 9%;
+  margin-top: -81%;
+
+
 } 
-.game1 .house .a6 .penguin {
-  width: 43%;
-  margin-top: 22%;
-  margin-left: -45%;
+.hotGameThree .house .a6 .penguin {
+  width: 704%;
+  margin-top: -134%;
+  margin-left: -368%;
+  
 } 
 
-.game1 .house .a7 {
-  width: 128%;
+.hotGameThree .house .a7 {
+  width: 50%;
   top: -20%;
-  left: -40%;
 }
-.game1 .house .a7 .igloo {
+.hotGameThree .house .a7 .igloo {
   transform: rotateY(180deg);
 }
-.game1 .house .a7 .answer {
-  left: 65%;
+.hotGameThree .house .a7 .answer {
+  left: 14%;
+  margin-top: -66%;
 } 
-.game1 .house .a7 .penguin {
-  width: 43%;
-  margin-top: 22%;
-  margin-left: -45%;
+.hotGameThree .house .a7 .penguin {
+  margin-top: -111%;
+  margin-left: -342%;
+  width: 652%;
 } 
 
 
 
 
-.game1 .heart {
+.hotGameThree .heart {
     float: right;
     height: 7%;
     Width: 7%;
 }
 
 
-.game1 .win 
+.hotGameThree .win 
  {
   width: 50%;
   position: fixed;
@@ -430,7 +368,7 @@ z-index: 1000;
   border-radius: 5%;
   z-index: 1000;
  }
- .game1 .lose {
+ .hotGameThree .lose {
   width: 45%;
   position: fixed;
   left:28.5%;

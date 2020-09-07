@@ -51,7 +51,7 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-$('audio#iglooSong')[0].play();
+// $('audio#iglooSong')[0].play();
 
 
 
@@ -77,12 +77,12 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/igloo.png' class='igloo'><img src='../StudyPup_assets/Penguin_Walk_Gif_Faster.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/Hotsva_Boss_Battle_Single_Torch.png' class='igloo'><img src='../StudyPup_assets/Hotsva_Cave_Torch_Lit_Left.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
   });
 
  
-  var counter = 30;
+  var counter = 30000;
  
 
   
@@ -135,11 +135,12 @@ console.log(currentGameArray);
       
 
       console.log("Correct!");
+      $(this).find('.igloo').remove();
       $(this).find('.answer').fadeOut(1000, function() {
         $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
         console.log(currentGameArray.length);
         var penguin = $(this).parent().find('.penguin');
-        penguin.attr("src", "../StudyPup_assets/Penguin_Walk_Gif_Faster.gif");
+        penguin.attr("src", "../StudyPup_assets/Hotsva_Cave_Torch_Lit_Left.gif");
         $('p').remove();
               
         
@@ -152,9 +153,7 @@ console.log(currentGameArray);
           winningCheck();
           generateNextTurn();
           console.log($(this).parent());
-          setTimeout(function() {
-            penguin.attr("src", "").remove();
-        }, 1800)
+         
       });
 
   
@@ -210,7 +209,7 @@ console.log('keep playing');
 
  render() {
   return (
-    <div class="game1">
+    <div class="hotGameThree">
     
 <body>
 
@@ -221,7 +220,7 @@ console.log('keep playing');
     <source src='../StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_game1" src='../StudyPup_assets/penguin-level-backdrop.jpeg' alt="" />
+         <img class="bg_hotGameThree" src='../StudyPup_assets/Hotsva_Cave_Torch_Background_NEW.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
           
@@ -240,21 +239,11 @@ console.log('keep playing');
             </span>
           </div>
       
-          <img src='../StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
-          <img src='../StudyPup_assets/Nova_standing.png' alt="" class='novaThrow'/>
+
+   
           
 
-          
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeOne'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeTwo'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeThree'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeFour'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeFive'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeSix'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeSeven'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeEight'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeNine'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeTen'/>
+
           
           
 

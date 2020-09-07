@@ -28,7 +28,7 @@ class HotGameTwo extends Component {
       $('.start').hide();
       $('.win').hide();
       $('.lose').hide();
-      // $('audio#raceMusic')[0].play();
+      $('audio#raceMusic')[0].play();
       $('.nextLevel').hide();
       $('li').first().remove();
       $('li').first().remove();
@@ -79,6 +79,8 @@ class HotGameTwo extends Component {
                 $(".reset").html(" ");
                 $(".start").show();
                 $('p').hide();
+                $('audio#raceMusic')[0].pause()
+                $('audio#raceMusic')[0].currentTime = 0
                 clearInterval(interval);
 
                 
@@ -190,6 +192,8 @@ class HotGameTwo extends Component {
           $(".reset").html(" ");
           $(".start").show();
           $('.tryAgain').show();
+          $('audio#raceMusic')[0].pause()
+          $('audio#raceMusic')[0].currentTime = 0
           
           clearInterval(interval);
           
@@ -208,10 +212,10 @@ class HotGameTwo extends Component {
   
   <img class="backgroundSno2" src="../StudyPup_assets/Hotsva_Racing_Background.png"alt=""/>
  <audio id="raceMusic">
-    <source src='../StudyPup_assets/Song_Snow-Con_Race.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Hotsva_Racing_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="boardBoost">
-    <source src='../StudyPup_assets/Sound_Snowboard_Boost.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Hotsva_Racing_Sound_Balloon.m4a' type="audio/mpeg"/>
   </audio>
   
 
