@@ -17,22 +17,7 @@ $('.lose').hide();
 $('.nextLevel').hide();
 
 
-$('.game1').on('click',function(e) {
-  console.log('FIRRRRRREEE');
-  var parentOffset = $(this).parent().offset();
-   var relX = e.pageX - parentOffset.left;
-   var relY = e.pageY - parentOffset.top;
-   $('audio#snowballThrow')[0].play();
-   $('audio#snowballThrow')[0].currentTime = 0
-  $(".snowball").animate({
-      width: '10px',
-      left: relX,
-      top: relY
-  }, 330, function() {
-  
-      $(".snowball").removeAttr('style');
-  });
-});
+
 
 const answerset = [
   { problem: "3 + 2 =", answer: "5"},
@@ -51,18 +36,14 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-// $('audio#iglooSong')[0].play();
+$('audio#torchSong')[0].play();
 
 
 
 
-// $(document).click(function(e) {
-//   mouseX = e.pageX;
-//   $('.dart').css("left", e.pageX);
-// });
 
 var currentGameArray = [];
-// var playerLives = 0;
+
 
 
 answerset.forEach(function(questions) {
@@ -82,7 +63,7 @@ console.log(currentGameArray);
   });
 
  
-  var counter = 30000;
+  var counter = 3000;
  
 
   
@@ -97,8 +78,8 @@ console.log(currentGameArray);
           $(".reset").html(" ");
           $(".start").show();
           $('p').hide();
-          $('audio#iglooSong')[0].pause()
-          $('audio#iglooSong')[0].currentTime = 0
+          $('audio#torchSong')[0].pause()
+          $('audio#torchSong')[0].currentTime = 0
           
         return;
     }else{
@@ -124,24 +105,22 @@ console.log(currentGameArray);
   // when answer is clicked on
   $('.iglooWrapper').on('click',function(e) {
     var clickedAnswer = $(this).text();
-    $(this).prepend("<img src='' class='splash'>");
-    var splash = $(this).parent().find('.splash');
-    splash.attr("src", "../StudyPup_assets/snowball_hit_delay2.gif");
-    setTimeout(function() {
-      splash.attr("src", "").remove();
-  }, 1000)
+   
 
     if (clickedAnswer === theAnswer) {
       
 
       console.log("Correct!");
       $(this).find('.igloo').remove();
-      $(this).find('.answer').fadeOut(1000, function() {
+      $(this).find('.answer').fadeOut(1, function() {
         $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
         console.log(currentGameArray.length);
         var penguin = $(this).parent().find('.penguin');
         penguin.attr("src", "../StudyPup_assets/Hotsva_Cave_Torch_Lit_Left.gif");
+        $('audio#torchLight')[0].play();
+        $('audio#torchLight')[0].currentTime = 0
         $('p').remove();
+
               
         
        
@@ -186,14 +165,15 @@ console.log('keep playing');
   } else {
     $('.lose').hide();
     $('.win').show();
+    $('.start').hide();
     $('.nextLevel').show();
     $(".reset").html(" ");
     $(".start").show();
     $('.tryAgain').show();
     $('p').hide();
     clearInterval(interval);
-    $('audio#iglooSong')[0].pause()
-    $('audio#iglooSong')[0].currentTime = 0
+    $('audio#torchSong')[0].pause()
+    $('audio#torchSong')[0].currentTime = 0
     console.log('you win')
     // generateHearts();
     
@@ -213,23 +193,23 @@ console.log('keep playing');
     
 <body>
 
-<audio id="iglooSong">
-    <source src='../StudyPup_assets/Song_Snow-Con_Level_1.m4a' type="audio/mpeg"/>
+<audio id="torchSong">
+    <source src='../StudyPup_assets/Hotsva_Cave_Torch_Song.m4a' type="audio/mpeg"/>
   </audio>
-  <audio id="snowballThrow">
-    <source src='../StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
+  <audio id="torchLight">
+    <source src='../StudyPup_assets/Hotsva_Cave_Torch_Sound.m4a' type="audio/mpeg"/>
   </audio>
  
          <img class="bg_hotGameThree" src='../StudyPup_assets/Hotsva_Cave_Torch_Background_NEW.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
           
-          <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game1.png' alt="" />
+          <img class="win" src='../StudyPup_assets/YOU_WON_Hotsva_Game3.png' alt="" />
 
           <div class="problem reset"></div>
                 
                 
-                <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game1.png' alt="" />
+                <img class="lose" src='../StudyPup_assets/YOU_LOSE_Hotsva_Game3.png' alt="" />
                 
                 <a class="nextLevel" href="/snoconb1">Next Level!</a>
           

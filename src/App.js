@@ -19,6 +19,7 @@ import VideoPlayer from './components/VideoPlayer/VideoPlayer';
 import HotGameOne  from './components/hotGameOne/hotGameOne';
 import HotGameTwo  from './components/hotGameTwo/hotGameTwo';
 import HotGameThree  from './components/hotGameThree/hotGameThree';
+import HotGameFour  from './components/hotGameFour/hotGameFour';
 
 
 
@@ -158,6 +159,16 @@ class App extends Component {
                 {...props} />
                 )}/>
       </section>
+      <section>
+          <Route exact path="/hot4" render={(props) => (
+              <HotGameFour
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+      </section>
+
 
       <section>
       {/* <Route exact path='/signup' render={({ history }) =>

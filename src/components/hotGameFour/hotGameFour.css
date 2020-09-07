@@ -1,0 +1,447 @@
+
+@keyframes animate
+{
+  0% {
+      top:-10%;
+  }
+  100% {
+         
+    top:100%;    
+  }
+  
+}
+
+.molta {
+  position: fixed;
+  width: 21%;
+  top: -7%;
+  left: 56%;
+  z-index: 500;
+}
+
+
+
+ .hotGameFour .footer { 
+    height: 200px;
+    bottom: 0;
+    width:100%;
+    left:0;
+    text-align: center;
+    margin: 200px 0px 0px 0px;
+
+
+}
+
+   
+.hotGameFour #timer{
+  font-size: 30px;
+  z-index: 1000;
+  position: fixed;
+  top: 95%;
+  color: rgb(25, 150, 199);
+  left: 90%;
+
+}
+.hotGameFour .backbutton{
+    position: fixed;
+    top:0%;
+    z-index: 1400;
+}
+
+.hotGameFour .bg_bb1 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  overflow: hidden;
+}
+
+.hotGameFour #time{
+    
+  font-size: 30px;
+}
+
+.hotGameFour .snowball {
+  width: 1%;
+  position: absolute;
+  top: 80%;
+  left: 100%;
+  margin-left: 9.5%;
+  z-index: 1000;
+
+}
+.hotGameFour .novaWithHose {
+  width: 13%;
+  position: fixed;
+  top: 73%;
+  left: 46%;
+  z-index: 1000;
+
+}
+
+
+ .hotGameFour body {
+
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Titan One';
+    overflow: hidden;
+  }
+
+  .hotGameFour .hide {
+     display: none;
+ }
+ .hotGameFour .penguin {
+  background-repeat: no-repeat;
+  z-index: 1000;
+ }
+
+ .hotGameFour .answers {
+      position: fixed;
+      font-size: 5vh;
+      height: 50%;
+      top: 50%;
+      left: 0%;
+      width: 100%;
+      z-index: 800;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .hotGameFour .house {
+      width: 25%;
+      cursor: crosshair;  
+  }
+
+
+  .hotGameFour .house .snowmanWrapper {
+      width:80%;
+      display: inline-block;
+      position: relative;
+  }
+
+  .hotGameFour .house .snowmanWrapper .flame {
+      width: 50%;   
+      position: absolute;
+    
+      left:0px;
+      top: 0px;
+  }
+  .hotGameFour .house .snowmanWrapper .answer {
+      position: absolute;
+      color: #333;
+      font-size: 8vh;
+      margin-left: -37%;
+      margin-top: 43%;
+  }
+  .hotGameFour .house .snowmanWrapper .penguin {
+      position: absolute;
+      width: 50%;
+      margin-top: 16%;
+
+  }
+.hotGameFour .splash {
+  position: absolute;
+  width:150%;
+  z-index: 10000;
+}
+
+
+  .hotGameFour .problem p {
+    position: fixed;
+    border-radius: 5%;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+    text-shadow: 10px 5px #333;
+    color: white;
+    font-size: 8vw;
+    /* background-color: cornflowerblue; */
+    width: 25%;
+    margin-left: 9%;
+    top: -5%;
+    font-family: 'Titan One';
+    z-index: 800;
+    cursor: crosshair;
+  }
+ 
+  .hotGameFour .start {
+  position: fixed;
+  width: 20%;
+  left: 50%;
+  top: 50%;
+  margin-left: -10%;
+  font-family: 'Titan One';
+  font-size:5vw;
+  color: rgb(90, 170, 207) ;
+  border-radius: 30px 30px 30px 30px;
+  z-index: 1000;
+  cursor: pointer;
+  }
+  
+  .hotGameFour .nextLevel {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+    text-shadow: 9px 5px #333;
+  position: fixed;
+  width: 20%;
+  left: 50%;
+  top: 53%;
+  margin-left: -10%;
+  font-family: 'Titan One';
+  font-size:4vw;
+  color: rgb(90, 170, 207) ;
+  border-radius: 30px 30px 30px 30px;
+  z-index: 1300;
+  cursor: pointer;
+    
+  }
+
+
+.hotGameFour .boss {
+  position: fixed;
+  width: 30%;
+  left: 50%;
+  top: 0;
+  margin-left: -15%;
+  z-index: 900;
+}
+
+.hotGameFour .house .a0 {
+  position: fixed;
+  width: 17%;
+  top: 40%;
+  animation: animate 15s linear infinite;
+
+ 
+  
+  
+}
+
+.hotGameFour .house .a0 .answer {
+  left:56%;
+  
+} 
+
+.hotGameFour .house .a0 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+
+.hotGameFour .house .a1 {
+  position: fixed;
+  width: 17%;
+  left:25%;
+  top: -24%;
+  animation: animate 25s linear infinite;
+  
+}
+
+.hotGameFour .house .a1 .answer {
+  left: 56%;
+} 
+.hotGameFour .house .a1 .penguin {
+  width: 41%;
+  margin-top: 24%;
+  margin-left: 3%;
+  transform: rotateY(180deg);
+} 
+.hotGameFour .house .a1 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+.hotGameFour .house .a2 {
+  position:fixed;
+  width: 17%;
+  top: -52%;
+  left: 67%;
+  animation: animate 14s linear infinite;
+ 
+  
+}
+.hotGameFour .house .a2 .snowman {
+  transform: rotateY(180deg);
+}
+.hotGameFour .house .a2 .answer {
+  left: 53%;
+} 
+.hotGameFour .house .a2 .penguin {
+  width: 43%;
+  margin-top: 22%;
+  margin-left: -45%;
+} 
+.hotGameFour .house .a2 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+
+
+.hotGameFour .house .a3 {
+  position: fixed;
+  width: 17%;
+  top: 35%;
+  left: 85%;
+  animation: animate 29s linear infinite;
+ 
+  
+  
+}
+.hotGameFour .house .a3 .snowman {
+  transform: rotateY(180deg);
+}
+.hotGameFour .house .a3 .answer {
+  left: 56%;
+} 
+.hotGameFour .house .a3 .penguin {
+  width: 43%;
+  margin-top: 22%;
+  margin-left: -45%;
+
+} 
+
+.hotGameFour .house .a3 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+
+.hotGameFour .house .a4 {
+  position: fixed;
+  width: 17%;
+  top: -14%;
+  animation: animate 28s linear infinite;
+  
+  
+}
+
+.hotGameFour .house .a4 .answer {
+  left: 56%;
+} 
+.hotGameFour .house .a4 .penguin {
+  width: 41%;
+  margin-top: 24%;
+  margin-left: 3%;
+  transform: rotateY(180deg);
+} 
+.hotGameFour .house .a4 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+.hotGameFour .house .a5 {
+  position: fixed;
+  width: 17%;
+  top: -63%;
+  animation: animate 17s linear infinite;
+}
+
+.hotGameFour .house .a5 .answer {
+  left: 53%;
+} 
+.hotGameFour .house .a5 .penguin {
+  width: 41%;
+  margin-top: 24%;
+  margin-left: 3%;
+  transform: rotateY(180deg);
+} 
+.hotGameFour .house .a5 .splash {
+  position: absolute;
+  left:-7%;
+    margin-top:10%
+
+}
+
+.hotGameFour .house .a6 {
+  position: fixed;
+  width: 17%;
+  top: -43%;
+  left: 72%;
+  animation: animate 17s linear infinite;
+}
+.hotGameFour .house .a6 .snowman {
+  transform: rotateY(180deg);
+}
+.hotGameFour .house .a6 .answer {
+  left: 53%;
+} 
+.hotGameFour .house .a6 .penguin {
+  width: 43%;
+  margin-top: 22%;
+  margin-left: -45%;
+} 
+.hotGameFour .house .a6 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+.hotGameFour .house .a7 {
+  position: fixed;
+  width: 17%;
+  top: 0%;
+  left: 69%;
+  animation: animate 25s linear infinite;
+}
+.hotGameFour .house .a7 .snowman {
+  transform: rotateY(180deg);
+}
+.hotGameFour .house .a7 .answer {
+  left: 52%;
+} 
+.hotGameFour .house .a7 .penguin {
+  width: 43%;
+  margin-top: 22%;
+  margin-left: -45%;
+} 
+.hotGameFour .house .a7 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+
+
+
+.hotGameFour .heart {
+    float: right;
+    height: 7%;
+    Width: 7%;
+}
+
+
+.hotGameFour .win 
+ {
+  width: 50%;
+  position: fixed;
+  left:26%;
+  text-align: center;
+  top: 10%;
+  font-family: 'Titan One';
+  font-size: 5vh;
+  color:rgb(90, 170, 207) ;
+  border-radius: 5%;
+  z-index: 1100;
+ }
+ .hotGameFour .lose {
+  width: 47%;
+  position: fixed;
+  left:26%;
+  text-align: center;
+  top: 1%;
+  font-family: 'Titan One';
+  font-size: 5vh;
+  color:rgb(90, 170, 207) ;
+  border-radius: 5%;
+  z-index: 900;
+ }
+  
