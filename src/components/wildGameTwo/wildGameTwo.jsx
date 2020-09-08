@@ -36,6 +36,7 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
+$("audio#torchSong").prop("volume", 0.07);
 $('audio#torchSong')[0].play();
 
 
@@ -58,10 +59,9 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/Hotsva_Boss_Battle_Single_Torch.png' class='igloo'><img src='../StudyPup_assets/Hotsva_Cave_Torch_Lit_Left.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/Tumblewyld_Shooting_Bottle.png' class='igloo'><img src='../StudyPup_assets/Tumblewyld_Shooting_Bottle_Fall.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
-  });
-
+  }); 
  
   var counter = 3000;
  
@@ -116,7 +116,8 @@ console.log(currentGameArray);
         $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
         console.log(currentGameArray.length);
         var penguin = $(this).parent().find('.penguin');
-        penguin.attr("src", "../StudyPup_assets/Hotsva_Cave_Torch_Lit_Left.gif");
+        penguin.attr("src", "../StudyPup_assets/Tumblewyld_Shooting_Bottle_Fall.gif");
+        
         $('audio#torchLight')[0].play();
         $('audio#torchLight')[0].currentTime = 0
         $('p').remove();
@@ -132,6 +133,9 @@ console.log(currentGameArray);
           winningCheck();
           generateNextTurn();
           console.log($(this).parent());
+          setTimeout(function() {
+            penguin.attr("src", "").remove();
+        }, 200)
          
       });
 
@@ -194,13 +198,13 @@ console.log('keep playing');
 <body>
 
 <audio id="torchSong">
-    <source src='../StudyPup_assets/Hotsva_Cave_Torch_Song.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Tumblewyld_Shooting_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="torchLight">
-    <source src='../StudyPup_assets/Hotsva_Cave_Torch_Sound.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Tumblewyld_Shooting_Sound_Effect.m4a' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_wildGameTwo" src='../StudyPup_assets/Hotsva_Cave_Torch_Background_NEW.png' alt="" />
+         <img class="bg_wildGameTwo" src='../StudyPup_assets/Tumblewyld_Shooting_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
           

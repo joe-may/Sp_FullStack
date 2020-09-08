@@ -252,7 +252,7 @@ $('.countDown').click(function(){
       
       <div class="answers reset"></div>
       <button class="start">START</button>
-      <a class="restart3" href="/hot1">restart!</a>
+      <a class="restart3" href="/wild1">restart!</a>
 
      
         <img class="win" src='../StudyPup_assets/YOU_WON_Hotsva_Game1.png' alt="" />

@@ -104,7 +104,8 @@
   }
   .wildGameTwo .house .iglooWrapper .answer {
       position: absolute;
-      color: rgb(175, 54, 54);
+      color: rgb(241, 234, 234);
+      text-shadow: 20px 20px 20px black, 0 0 5px rgb(102, 83, 43), 0 0 5px darkblue;
       font-size: 8vh;
       left: 25%;
       margin-top: 5%;
@@ -126,15 +127,15 @@
 
   .wildGameTwo .problem p {
       position: fixed;
-      background-image: url(https://i.imgur.com/aoEUw8w.png);
-      background-size: 34vw 18.7vh;
+      background-image: url(https://i.imgur.com/xjpaScb.png);
+      background-size: 35vw 20vh;
       
       color: black;
-      font-size:50px;
+      font-size:80px;
       width: 35%;
       height: 20%;
       left: 35%;
-      top:-3%;
+      top:-9%;
       font-family: 'Titan One';
       z-index: 800;
       cursor: crosshair; 
@@ -184,19 +185,19 @@ z-index: 2000;
 
 .wildGameTwo .house .a0 {
   width: 45%;
-  top: 50%;
-  left:45%;
+  top: -139%;
+  left:62%;
   
 }
 
 .wildGameTwo .house .a0 .answer {
-  left: 15%;
-  margin-top: -68%;
+  left: 20%;
+  margin-top: -40%;
 } 
 .wildGameTwo .house .a0 .penguin {
-  width: 707%;
-  margin-top: -127%;
-  margin-left: -381%;
+  width: 240%;
+  margin-top: -10%;
+  margin-left: -139%;
   transform: rotateY(180deg);
 } 
 .wildGameTwo .house .a0 .splash {
@@ -207,18 +208,18 @@ z-index: 2000;
 
 .wildGameTwo .house .a1 {
   width: 35%;
-  top: 17%;
-  left:-10%;
+  top:20%;
+  left:1%;
 }
 
 .wildGameTwo .house .a1 .answer {
-  left: 6%;
-  margin-top: -83%;
+  left: 14%;
+  margin-top: -63%;
 } 
 .wildGameTwo .house .a1 .penguin {
-  width: 630%;
-  margin-top: -112%;
-  margin-left: -337%;
+  width: 240%;
+  margin-top: -15%;
+  margin-left: -138%;
   transform: rotateY(180deg);
 } 
 .wildGameTwo .house .a1 .splash {
@@ -229,57 +230,58 @@ z-index: 2000;
 .wildGameTwo .house .a2 {
   width: 30%;
   top: -7%;
-  left: -2%;
+  left: -20%;
 }
 .wildGameTwo .house .a2 .igloo {
   transform: rotateY(180deg);
 }
 .wildGameTwo .house .a2 .answer {
-  left: 0%;
-  margin-top: -108%;
+  left: 11%;
+  margin-top: -60%;
 } 
 .wildGameTwo .house .a2 .penguin {
-  width: 700%;
-  margin-top: -132%;
-  margin-left: -369%;
+  width: 226%;
+  margin-top: -4%;
+  margin-left: -131%;
 } 
 
 
 
 .wildGameTwo .house .a3 {
   width: 45%;
-  top: 50%;
-  left:-40%;
+  top: -159%;
+  left:-20%;
   
 }
 .wildGameTwo .house .a3 .igloo {
   transform: rotateY(180deg);
 }
 .wildGameTwo .house .a3 .answer {
-  margin-top: -72%;
-    left: 12%;
+  margin-top: -32%;
+    left: 19%;
 } 
 .wildGameTwo .house .a3 .penguin {
-  width: 620%;
-  margin-top: -104%;
-  margin-left: -327%;
+  width: 225%;
+  margin-top: -6%;
+  margin-left: -131%;
   z-index: 500;
 } 
 
 
 .wildGameTwo .house .a4 {
   width: 50%;
-  top: -20%;
+  top: -60%;
+  left:20%;
 }
 
 .wildGameTwo .house .a4 .answer {
-  left: 16%;
-    margin-top: -67%;
+  left: 19%;
+    margin-top: -37%;
 } 
 .wildGameTwo .house .a4 .penguin {
-  width: 700%;
-  margin-top: -121%;
-  margin-left: -374%;
+  width: 218%;
+  margin-top: -2%;
+  margin-left: -127%;
   transform: rotateY(180deg);
 } 
 .wildGameTwo .house .a4 .splash {
@@ -289,18 +291,18 @@ z-index: 2000;
 
 .wildGameTwo .house .a5 {
   width: 30%;
-  top: -107%;
-  left:25%;
+  top: -30%;
+  left:60%;
 }
 
 .wildGameTwo .house .a5 .answer {
-  left: -16%;
-  margin-top: -109%;
+  left: -1%;
+  margin-top: -59%;
 } 
 .wildGameTwo .house .a5 .penguin {
-  width: 700%;
-  margin-top: -124%;
-  margin-left: -376%;
+  width: 240%;
+  margin-top: -14%;
+  margin-left: -140%;
   transform: rotateY(180deg);
 } 
 .wildGameTwo .house .a5 .splash {
@@ -310,40 +312,41 @@ z-index: 2000;
 
 .wildGameTwo .house .a6 {
   width: 35%;
-  top: -85%;
-  left:25%;
+  top: -10%;
+  left:10%;
 }
 .wildGameTwo .house .a6 .igloo {
   transform: rotateY(180deg);
 }
 .wildGameTwo .house .a6 .answer {
-  left: 9%;
-  margin-top: -81%;
+  left: 12%;
+  margin-top: -61%;
 
 
 } 
 .wildGameTwo .house .a6 .penguin {
-  width: 704%;
-  margin-top: -134%;
-  margin-left: -368%;
+  width: 200%;
+  margin-top: 9%;
+  margin-left: -121%;
   
 } 
 
 .wildGameTwo .house .a7 {
-  width: 50%;
-  top: -20%;
+  width: 30%;
+  top: -50%;
+  left:-20%;
 }
 .wildGameTwo .house .a7 .igloo {
   transform: rotateY(180deg);
 }
 .wildGameTwo .house .a7 .answer {
-  left: 14%;
-  margin-top: -66%;
+  left: 12%;
+  margin-top: -60%;
 } 
 .wildGameTwo .house .a7 .penguin {
-  margin-top: -111%;
-  margin-left: -342%;
-  width: 652%;
+  margin-top: -11%;
+  margin-left: -133%;
+  width: 232%;
 } 
 
 
