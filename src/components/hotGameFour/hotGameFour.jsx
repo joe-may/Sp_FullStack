@@ -18,7 +18,7 @@ $('.nextLevel').hide();
 
 
 
-$('.bossBattleSno').on('click',function(e) {
+$('.hotGameFour').on('click',function(e) {
   $('.snowball').show();
   console.log('FIRRRRRREEE');
   var parentOffset = $(this).parent().offset();
@@ -92,7 +92,7 @@ console.log(currentGameArray);
   });
 
  ///////////////////////////////timer
-  var counter = 25;
+  var counter = 33;
  
   var interval = setInterval(function() {
     counter--;
@@ -144,6 +144,13 @@ console.log(currentGameArray);
   // when answer is clicked on
   $('.snowmanWrapper').on('click',function(e) {
     var clickedAnswer = $(this).text();
+    $(this).prepend("<img src='' class='waterSplash'>");
+    var splash = $(this).parent().find('.waterSplash');
+    splash.attr("src", "../StudyPup_assets/Hotsva_Boss_Battle_Water_Splat.gif");
+    setTimeout(function() {
+      splash.attr("src", "").remove();
+  }, 1300)
+    var clickedAnswer = $(this).text();
    
 
 
@@ -153,7 +160,7 @@ console.log(currentGameArray);
       console.log("Correct!");
       $('audio#sizzle')[0].play();
       $('audio#sizzle')[0].currentTime = 0
-      $(this).fadeOut(200, function() {
+      $(this).fadeOut(1200, function() {
        
         console.log(currentGameArray.length);
         
@@ -254,7 +261,7 @@ console.log('keep playing');
           <img class="molta" src='../StudyPup_assets/Hotsva_Boss_Battle_Molta.gif' alt="" />
 
       <div class="cocoNova">
-          <img src='../StudyPup_assets/hotCocoSquirt.png' alt="" class='snowball'/>
+          <img src='../StudyPup_assets/Hotsva_Boss_Battle_Water_Squirt.png' alt="" class='snowball'/>
           <img src='../StudyPup_assets/Hotsva_Boss_Battle_Nova_Hose.png' alt="" class='novaWithHoseMolta'/>
      </div>
   

@@ -143,10 +143,11 @@
       margin-top: 16%;
 
   }
-.hotGameFour .splash {
+.hotGameFour .waterSplash {
   position: absolute;
   width:150%;
   z-index: 10000;
+  left:-55%;
 }
 
 
