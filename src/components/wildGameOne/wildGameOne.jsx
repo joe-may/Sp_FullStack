@@ -234,13 +234,13 @@ $('.countDown').click(function(){
     <div class="wildGameOne" style ={ { backgroundImage: "url('../StudyPup_assets/Tumblewyld_Sass_Background.png')"} }>
     <body>
   <audio id="swoopboop">
-    <source src='../StudyPup_assets/Hotsva_HotSauce_Sound_Scream.mp3' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Tumblewyld_Sass_Sound_Pour.png.mp3' type="audio/mpeg"/>
   </audio>
   <audio id="buttonSound">
     <source src='../StudyPup_assets/Button_Click_Up.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="icecreamSong">
-    <source src='../StudyPup_assets/Hotsva_HotSauce_Song.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Tumblewyld_Sass_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="wrongDing">
     <source src='../StudyPup_assets/Wrong_Ding.m4a' type="audio/mpeg"/>

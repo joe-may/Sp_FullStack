@@ -36,11 +36,16 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-$("audio#torchSong").prop("volume", 0.07);
-$('audio#torchSong')[0].play();
+$("audio#SlingSong").prop("volume", 0.19);
+$('audio#SlingSong')[0].play();
 
 
+$(document).mousemove(function(e) {
+  
+  $('.novaWithSling').css("left", e.pageX);
+ 
 
+});
 
 
 var currentGameArray = [];
@@ -78,8 +83,8 @@ console.log(currentGameArray);
           $(".reset").html(" ");
           $(".start").show();
           $('p').hide();
-          $('audio#torchSong')[0].pause()
-          $('audio#torchSong')[0].currentTime = 0
+          $('audio#SlingSong')[0].pause()
+          $('audio#SlingSong')[0].currentTime = 0
           
         return;
     }else{
@@ -176,8 +181,8 @@ console.log('keep playing');
     $('.tryAgain').show();
     $('p').hide();
     clearInterval(interval);
-    $('audio#torchSong')[0].pause()
-    $('audio#torchSong')[0].currentTime = 0
+    $('audio#SlingSong')[0].pause()
+    $('audio#SlingSong')[0].currentTime = 0
     console.log('you win')
     // generateHearts();
     
@@ -197,14 +202,14 @@ console.log('keep playing');
     
 <body>
 
-<audio id="torchSong">
-    <source src='../StudyPup_assets/Tumblewyld_Shooting_Song.m4a' type="audio/mpeg"/>
+<audio id="SlingSong">
+    <source src='../StudyPup_assets/Tumblewyld_Shooting_Song_NEW.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="torchLight">
-    <source src='../StudyPup_assets/Tumblewyld_Shooting_Sound_Effect.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Tumblewyld_Shooting_Sound_Effect_NEW.m4a' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_wildGameTwo" src='../StudyPup_assets/Tumblewyld_Shooting_Background.png' alt="" />
+         <img class="bg_wildGameTwo" src='../StudyPup_assets/Tumblewyld_Shooting_Background_NEW.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
           
@@ -214,6 +219,8 @@ console.log('keep playing');
                 
                 
                 <img class="lose" src='../StudyPup_assets/YOU_LOSE_Hotsva_Game3.png' alt="" />
+
+                <img src='../StudyPup_assets/Tumblewyld_Shooting_Nova_Slingshot.png' alt="" class='novaWithSling'/>
                 
                 <a class="nextLevel" href="/snoconb1">Next Level!</a>
           

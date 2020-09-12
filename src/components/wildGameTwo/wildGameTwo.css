@@ -381,3 +381,11 @@ z-index: 2000;
   z-index: 900;
  }
   
+ .wildGameTwo .novaWithSling {
+  width: 7%;
+  position: fixed;
+  top: 90%;
+  left: 46%;
+  z-index: 2200;
+
+}
