@@ -23,6 +23,7 @@ import HotGameFour  from './components/hotGameFour/hotGameFour';
 import WildGameOne  from './components/wildGameOne/wildGameOne';
 import WildGameTwo  from './components/wildGameTwo/wildGameTwo';
 import WildGameThree  from './components/wildGameThree/wildGameThree';
+import WildGameFour  from './components/wildGameFour/wildGameFour';
 
 
 
@@ -192,6 +193,15 @@ class App extends Component {
       <section>
           <Route exact path="/wild3" render={(props) => (
               <WildGameThree
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/wild4" render={(props) => (
+              <WildGameFour
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}

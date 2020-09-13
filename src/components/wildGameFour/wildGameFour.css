@@ -1,0 +1,452 @@
+
+@keyframes animate
+{
+  0% {
+      top:-10%;
+  }
+  100% {
+         
+    top:100%;    
+  }
+  
+}
+
+.wildGameFour .caveStuff {
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  z-index: 300;
+}
+
+
+
+ .wildGameFour .footer { 
+    height: 200px;
+    bottom: 0;
+    width:100%;
+    left:0;
+    text-align: center;
+    margin: 200px 0px 0px 0px;
+
+
+}
+
+   
+.wildGameFour #timer{
+  font-size: 30px;
+  z-index: 1000;
+  position: fixed;
+  top: 95%;
+  color: rgb(25, 150, 199);
+  left: 90%;
+
+}
+.wildGameFour .backbutton{
+    position: fixed;
+    top:0%;
+    z-index: 1400;
+}
+
+.wildGameFour .bg_bb1 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  overflow: hidden;
+  z-index: 300;
+}
+
+
+
+.wildGameFour #time{
+    
+  font-size: 30px;
+}
+
+.wildGameFour .snowball {
+  width: 1%;
+  position: absolute;
+  top: 80%;
+  left: 100%;
+  margin-left: 9.5%;
+  z-index: 1000;
+
+}
+.wildGameFour .dusty {
+  width: 100%;
+  position: absolute;
+  top: 4.2%;
+  left: 0%;
+  margin-left: 9.5%;
+  z-index:100;
+
+}
+.wildGameFour .novaWithHoseMolta {
+  width: 13%;
+  position: fixed;
+  top: 87%;
+  left: 46%;
+  z-index: 1000;
+
+}
+
+
+ .wildGameFour body {
+
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Titan One';
+    overflow: hidden;
+  }
+
+  .wildGameFour .hide {
+     display: none;
+ }
+ .wildGameFour .penguin {
+  background-repeat: no-repeat;
+  z-index: 1000;
+ }
+
+ .wildGameFour .answers {
+      position: fixed;
+      font-size: 5vh;
+      height: 50%;
+      top: 50%;
+      left: 0%;
+      width: 100%;
+      z-index: 800;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .wildGameFour .house {
+      width: 25%;
+      cursor: crosshair;  
+  }
+
+
+  .wildGameFour .house .snowmanWrapper {
+      width:80%;
+      display: inline-block;
+      position: relative;
+  }
+
+  .wildGameFour .house .snowmanWrapper .flame {
+      width: 100%;   
+      position: absolute;
+      left:-32px;
+      top: 50px;
+  }
+  .wildGameFour .house .snowmanWrapper .answer {
+      position: absolute;
+      color: #333;
+      font-size: 8vh;
+      margin-left: -37%;
+      margin-top: 43%;
+  }
+  .wildGameFour .house .snowmanWrapper .penguin {
+      position: absolute;
+      width: 50%;
+      margin-top: 16%;
+
+  }
+.wildGameFour .waterSplash {
+  position: absolute;
+  width:100%;
+  z-index: 800;
+  left:-9%;
+  margin-top:15%;
+}
+
+
+  .wildGameFour .problem p {
+    position: fixed;
+    background-image: url(https://i.imgur.com/aoEUw8w.png);
+    background-size: 35vw 18.9vh;
+    
+    color: black;
+    font-size:75px;
+    width: 35%;
+    height: 20%;
+    left: 5%;
+    top:-3%;
+    font-family: 'Titan One';
+    z-index: 800;
+    cursor: crosshair; 
+  }
+ 
+  .wildGameFour .start {
+  position: fixed;
+  width: 20%;
+  left: 50%;
+
+  top: 50%;
+  margin-left: -10%;
+  font-family: 'Titan One';
+  font-size:5vw;
+  color: rgb(175, 54, 54) ;
+  border-radius: 30px 30px 30px 30px;
+  z-index: 1000;
+  cursor: pointer;
+  }
+  
+  .wildGameFour .nextLevel {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+    text-shadow: 9px 5px #333;
+    position: fixed;
+    width: 40%;
+    left: 34%;
+    top:63%;
+    font-family: 'Titan One';
+    font-size:5vw;
+    color: rgb(175, 54, 54) ;
+    border-radius: 30px 30px 30px 30px;
+    z-index: 2200;
+    cursor: pointer; 
+    
+  }
+
+
+.wildGameFour .boss {
+  position: fixed;
+  width: 30%;
+  left: 50%;
+  top: 0;
+  margin-left: -15%;
+  z-index: 900;
+}
+
+.wildGameFour .house .a0 {
+  position: fixed;
+  width: 17%;
+  top: 40%;
+  animation: animate 15s linear infinite;
+
+ 
+  
+  
+}
+
+.wildGameFour .house .a0 .answer {
+  left:56%;
+  
+} 
+
+.wildGameFour .house .a0 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+
+.wildGameFour .house .a1 {
+  position: fixed;
+  width: 17%;
+  left:25%;
+  top: -24%;
+  animation: animate 25s linear infinite;
+  
+}
+
+.wildGameFour .house .a1 .answer {
+  left: 56%;
+} 
+.wildGameFour .house .a1 .penguin {
+  width: 41%;
+  margin-top: 24%;
+  margin-left: 3%;
+  transform: rotateY(180deg);
+} 
+.wildGameFour .house .a1 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+.wildGameFour .house .a2 {
+  position:fixed;
+  width: 17%;
+  top: -52%;
+  left: 67%;
+  animation: animate 14s linear infinite;
+ 
+  
+}
+.wildGameFour .house .a2 .snowman {
+  transform: rotateY(180deg);
+}
+.wildGameFour .house .a2 .answer {
+  left: 53%;
+} 
+.wildGameFour .house .a2 .penguin {
+  width: 43%;
+  margin-top: 22%;
+  margin-left: -45%;
+} 
+.wildGameFour .house .a2 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+
+
+.wildGameFour .house .a3 {
+  position: fixed;
+  width: 17%;
+  top: 35%;
+  left: 85%;
+  animation: animate 29s linear infinite;
+ 
+  
+  
+}
+.wildGameFour .house .a3 .snowman {
+  transform: rotateY(180deg);
+}
+.wildGameFour .house .a3 .answer {
+  left: 56%;
+} 
+.wildGameFour .house .a3 .penguin {
+  width: 43%;
+  margin-top: 22%;
+  margin-left: -45%;
+
+} 
+
+.wildGameFour .house .a3 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+
+.wildGameFour .house .a4 {
+  position: fixed;
+  width: 17%;
+  top: -14%;
+  animation: animate 28s linear infinite;
+  
+  
+}
+
+.wildGameFour .house .a4 .answer {
+  left: 56%;
+} 
+.wildGameFour .house .a4 .penguin {
+  width: 41%;
+  margin-top: 24%;
+  margin-left: 3%;
+  transform: rotateY(180deg);
+} 
+.wildGameFour .house .a4 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+.wildGameFour .house .a5 {
+  position: fixed;
+  width: 17%;
+  top: -63%;
+  animation: animate 17s linear infinite;
+}
+
+.wildGameFour .house .a5 .answer {
+  left: 53%;
+} 
+.wildGameFour .house .a5 .penguin {
+  width: 41%;
+  margin-top: 24%;
+  margin-left: 3%;
+  transform: rotateY(180deg);
+} 
+.wildGameFour .house .a5 .splash {
+  position: absolute;
+  left:-7%;
+    margin-top:10%
+
+}
+
+.wildGameFour .house .a6 {
+  position: fixed;
+  width: 17%;
+  top: -43%;
+  left: 72%;
+  animation: animate 17s linear infinite;
+}
+.wildGameFour .house .a6 .snowman {
+  transform: rotateY(180deg);
+}
+.wildGameFour .house .a6 .answer {
+  left: 53%;
+} 
+.wildGameFour .house .a6 .penguin {
+  width: 43%;
+  margin-top: 22%;
+  margin-left: -45%;
+} 
+.wildGameFour .house .a6 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+.wildGameFour .house .a7 {
+  position: fixed;
+  width: 17%;
+  top: 0%;
+  left: 69%;
+  animation: animate 25s linear infinite;
+}
+.wildGameFour .house .a7 .snowman {
+  transform: rotateY(180deg);
+}
+.wildGameFour .house .a7 .answer {
+  left: 52%;
+} 
+.wildGameFour .house .a7 .penguin {
+  width: 43%;
+  margin-top: 22%;
+  margin-left: -45%;
+} 
+.wildGameFour .house .a7 .splash {
+  position: absolute;
+  left:-7%;
+  margin-top:10%
+}
+
+
+
+
+.wildGameFour .heart {
+    float: right;
+    height: 7%;
+    Width: 7%;
+}
+
+
+.wildGameFour .win 
+ {
+  position: fixed;
+  width: 50%;
+  left:30%;
+  top:20%;
+  height: 60%;
+  z-index: 2200;
+ }
+ .wildGameFour .lose {
+  position: fixed;
+  width: 55%;
+  left:23%;
+  top:3%;
+  height: 70%;
+  z-index: 800;
+ }
+  

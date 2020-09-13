@@ -479,18 +479,18 @@
      {
       position: fixed;
       width: 50%;
-      left:20%;
-      top:20%;
-      height: 50%;
+      left:25%;
+      top:10%;
+      height: 70%;
       z-index: 1700;
      }
     
      .wildGameOne .lose {
       position: fixed;
       width: 50%;
-      left:20%;
-      top:20%;
-      height: 60%;
+      left:25%;
+      top:10%;
+      height: 70%;
       z-index: 1700;
      }
       
@@ -500,7 +500,7 @@
     text-shadow: 9px 5px #333;
     position: fixed;
     width: 40%;
-    left: 24%;
+    left: 30%;
     top:55%;
     font-family: 'Titan One';
     font-size:5vw;
@@ -516,8 +516,8 @@
       text-shadow: 9px 5px #333;
       position: fixed;
       width: 40%;
-      left: 25%;
-      top:67%;
+      left: 31.5%;
+      top:64%;
       font-family: 'Titan One';
       font-size:5vw;
       color: rgb(175, 54, 54) ;
