@@ -145,8 +145,7 @@ class WildGameThree extends Component {
                 winningCheck();
                 $('p').remove();
                 generateNextTurn();
-                $('audio#boardBoost')[0].play();
-                $('audio#boardBoost')[0].currentTime = 0
+        
                 console.log(currentGameArray.length + "Current game array");
                 $('.kart1').animate({
                   'left': boost + "%"
@@ -216,9 +215,7 @@ class WildGameThree extends Component {
  <audio id="raceMusic">
     <source src='../StudyPup_assets/Tumblewyld_MineCart_Song.m4a' type="audio/mpeg"/>
   </audio>
-  <audio id="boardBoost">
-    <source src='../StudyPup_assets/Hotsva_Racing_Sound_Balloon.m4a' type="audio/mpeg"/>
-  </audio>
+  
   
 
 <div class="floor"></div>
@@ -226,7 +223,7 @@ class WildGameThree extends Component {
   <div class="answers reset"></div>
   <button class="start">START</button>
   <div class="footer">
-  <img class="win" src='../StudyPup_assets/YOU_WON_Hotsva_Game2.png' alt="" />
+  <img class="win" src='../StudyPup_assets/YOU_WON_Tumblewyld_Game3.png' alt="" />
   
         <div class="problem reset"></div>
     </div>
@@ -237,7 +234,7 @@ class WildGameThree extends Component {
         <span id="time"></span>     
       </span>
   </div>
-   <img class="lose" src='../StudyPup_assets/YOU_LOSE_Hotsva_Game2.png' alt="" />
+   <img class="lose" src='../StudyPup_assets/YOU_LOSE_Tumblewyld_Game3.png' alt="" />
     <img class="kart1" src="../StudyPup_assets/Tumblewyld_MineCart_Nova.gif"alt=""/>
     <img class="kart2" src="../StudyPup_assets/Tumblewyld_MineCart_Tumblebeast.gif"alt=""/>
     

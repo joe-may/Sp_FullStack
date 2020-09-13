@@ -255,7 +255,7 @@ $('.countDown').click(function(){
       <a class="restart3" href="/wild1">restart!</a>
 
      
-        <img class="win" src='../StudyPup_assets/YOU_WON_Hotsva_Game1.png' alt="" />
+        <img class="win" src='../StudyPup_assets/YOU_WON_Tumblewyld_Game1.png' alt="" />
         <a class="nextLevel" href="/snoconb2">Next Level!</a>
      
         
@@ -295,7 +295,7 @@ $('.countDown').click(function(){
       
   </div>
  
-      <img class="lose" src='../StudyPup_assets/YOU_LOSE_Hotsva_Game1.png' alt="" />
+      <img class="lose" src='../StudyPup_assets/YOU_LOSE_Tumblewyld_Game1.png' alt="" />
      
 
       <div>

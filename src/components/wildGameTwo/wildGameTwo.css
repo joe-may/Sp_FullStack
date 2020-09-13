@@ -133,7 +133,7 @@
       color: black;
       font-size:80px;
       width: 35%;
-      height: 20%;
+      height: 19%;
       left: 35%;
       top:-9%;
       font-family: 'Titan One';
@@ -363,22 +363,18 @@ z-index: 2000;
  {
   position: fixed;
   width: 40%;
-  left:30%;
+  left:29%;
   top:20%;
   height: 50%;
   z-index: 2200;
  }
  .wildGameTwo .lose {
-  width: 45%;
   position: fixed;
+  width: 43%;
   left:27%;
-  text-align: center;
-  top: 5%;
-  font-family: 'Titan One';
-  font-size: 5vh;
-  color:rgb(90, 170, 207) ;
-  border-radius: 5%;
-  z-index: 900;
+  top:6%;
+  height: 60%;
+  z-index: 1000;
  }
   
  .wildGameTwo .novaWithSling {
