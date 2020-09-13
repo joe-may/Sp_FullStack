@@ -160,7 +160,7 @@ console.log(currentGameArray);
       console.log("Correct!");
       $('audio#sizzle')[0].play();
       $('audio#sizzle')[0].currentTime = 0
-      $(this).fadeOut(1200, function() {
+      $(this).fadeOut(50, function() {
        
         console.log(currentGameArray.length);
         
@@ -235,10 +235,10 @@ console.log('keep playing');
 
 
 <audio id="moltaMusic">
-    <source src='../StudyPup_assets/Hotsva_Boss_Battle_Song.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Tumblewyld_Boss_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="sizzle">
-    <source src='../StudyPup_assets/Hotsva_Boss_Battle_Sound_Sizzle.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Tumblewyld_Boss_Sound_Pickaxe_Hit.m4a' type="audio/mpeg"/>
   </audio>
 
          <img class="bg_bb1" src='../StudyPup_assets/Tumblewyld_Boss_Background.png' alt="" />
@@ -246,10 +246,10 @@ console.log('keep playing');
 
         <div class="answers reset"></div>
         <button class="start">START</button>
-        <img class="win" src='../StudyPup_assets/YOU_WON_Hotsva_Game4.png' alt="" />
+        <img class="win" src='../StudyPup_assets/YOU_WON_Tumblewyld_Game4.png' alt="" />
           <div class="problem reset"></div>
                 
-          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Hotsva_Game4.png' alt="" />
+          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Tumblewyld_Game4.png' alt="" />
                 
                 <a class="nextLevel" href="/snoconb1">Next Level!</a>
           
