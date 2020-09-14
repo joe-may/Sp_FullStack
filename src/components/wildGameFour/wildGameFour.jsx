@@ -62,13 +62,7 @@ $('.snowball').hide();
 
 
 
-$(document).mousemove(function(e) {
-  
-  $('.novaWithHoseMolta').css("left", e.pageX);
-  $('.snowball').hide();
-  $('.snowball').css("left", e.pageX);
 
-});
 
 var currentGameArray = [];
 // var playerLives = 0;
@@ -264,7 +258,7 @@ console.log('keep playing');
 
       <div class="cocoNova">
           <img src='../StudyPup_assets/Hotsva_Boss_Battle_Water_Squirt.png' alt="" class='snowball'/>
-          <img src='../StudyPup_assets/Hotsva_Boss_Battle_Nova_Hose.png' alt="" class='novaWithHoseMolta'/>
+          
      </div>
   
 </body>

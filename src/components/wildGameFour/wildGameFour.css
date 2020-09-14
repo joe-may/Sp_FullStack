@@ -166,9 +166,9 @@
 
   .wildGameFour .problem p {
     position: fixed;
-    background-image: url(https://i.imgur.com/aoEUw8w.png);
-    background-size: 35vw 18.9vh;
-    
+    background-image: url(https://i.imgur.com/xjpaScb.png);
+    background-size: 30vw 15vh;
+    background-repeat: no-repeat;
     color: black;
     font-size:75px;
     width: 35%;

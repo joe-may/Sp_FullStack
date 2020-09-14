@@ -1,4 +1,4 @@
-.hotGameOne { 
+.cozGameOne { 
     
   width: 100vw;
   height: 100vh;
@@ -12,23 +12,10 @@
   overflow: hidden;
 }
 
-.hotGameOne .skeletonBackground {
-    position: fixed;
-    width: 90vw;
-    left: 14%;
-    height: 80vh;
-    top: 6%;
-    margin-left: -18%;
-    font-family: 'Titan One';
-    font-size: 9vh;
-    color: rgb(90, 170, 207);
-    border-radius: 30px 30px 30px 30px;
-    z-index: 800;
-    cursor: pointer;
-  }
+
   
   
-  .hotGameOne .footer { 
+  .cozGameOne .footer { 
         height: 200px;
         bottom: 0;
         width:100%;
@@ -38,7 +25,7 @@
     
     }
   
-    .hotGameOne .brownBox {
+    .cozGameOne .brownBox {
       position: fixed;
       top: 9%;
       left: 52%;
@@ -46,7 +33,7 @@
       width: 44%;
     }
 
-    .hotGameOne .brownBox .smokers {
+    .cozGameOne .brownBox .smokers {
       position: fixed;
       margin-top:-37%;
       left: 60%;
@@ -55,14 +42,16 @@
     }
     
 
-    .hotGameOne .brownBox .ybox {
-    position: relative;
-    width: 80%;
-    height: 100%;
-    z-index: 300;
+    .cozGameOne .brownBox .ybox {
+      position: relative;
+      width: 55%;
+      left: 20%;
+      margin-top: 10%;
+      height: 100%;
+      z-index: 300;
   }
   
-  .hotGameOne .create {
+  .cozGameOne .create {
     position: absolute;
     width: 50%;
     left: 71%;
@@ -78,44 +67,45 @@
   
   }
     
-  .hotGameOne .cocoaAndOutput {
+  .cozGameOne .cocoaAndOutput {
       position: relative;
-      margin-top: -56%;
+      margin-top: -57%;
       width: 100%;
+      color: white;
       height: 33%;
       z-index: 900;
-      margin-left: -12%;
+      margin-left: -9%;
   }
   
-  .hotGameOne .cocoa {
+  .cozGameOne .cocoa {
     position: relative;
     margin-top: 16%;
     left: -3%;
-    width: 27%;
+    width: 30%;
     }
   
-    .hotGameOne .output {
-      margin-top: -32%;
+    .cozGameOne .output {
+      margin-top: -23%;
       left: 28%;
       font-size: 7vw;
       position: relative;
     }
     
-  .hotGameOne .greenBoxAndGif {
+  .cozGameOne .greenBoxAndGif {
     position: relative;
     top: 51%;
     left: 5%;
     z-index: 1000;
     width: 30%;
   }
-    .hotGameOne .greenBox {
+    .cozGameOne .greenBox {
       position: fixed;
       top: 51%;
       left: 5%;
       z-index: 1000;
       width: 30%;
     }
-    .hotGameOne .greenBox .choco {
+    .cozGameOne .greenBox .choco {
       position: fixed;
       top: 65%;
       left: -.4%;
@@ -123,31 +113,33 @@
       width: 10%;
     }
   
-    .hotGameOne .greenBox .gbox {
+    .cozGameOne .greenBox .gbox {
       position: relative;
-      width: 80%;
+      width: 210%;
+      margin-top: -69%;
+      left: -16%;
       height: 100%;
       z-index: 300;
     }
   
   
   
-    .hotGameOne .penguinIcecream {
-      top: 30%;
-      left: -30%;
-      width: 70%;
+    .cozGameOne .penguinIcecream {
+      top: -43%;
+      left: -23.5%;
+      width: 170%;
       /* background: black; */
-      height: 60%;
+      height: 150%;
       z-index: 1200;
       position: absolute;
     } 
   
   
-    .hotGameOne .container {position: relative;}
+    .cozGameOne .container {position: relative;}
   
     
   
-    .hotGameOne .greenLight {
+    .cozGameOne .greenLight {
       height: 100px; 
       width: 100px; 
       background-color: #777;
@@ -161,7 +153,7 @@
   
   
   
-  .hotGameOne .createMachine {
+  .cozGameOne .createMachine {
       position: fixed;
       width: 38%;
       height: 27%;
@@ -187,7 +179,7 @@
       }
   }
       
-  .hotGameOne .demo {
+  .cozGameOne .demo {
       -webkit-animation-name: demo;
       -webkit-animation-duration: 900ms;
       -webkit-animation-iteration-count: 1;
@@ -197,7 +189,7 @@
   
   
   
-  .hotGameOne  { 
+  .cozGameOne  { 
       background-image: ('../StudyPup_assets/Ice_Cream_Game_Background.png');
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -206,7 +198,7 @@
       overflow: hidden;
     }
     
-    .hotGameOne #timer{
+    .cozGameOne #timer{
         
       font-size: 30px;
       z-index: 1000;
@@ -224,16 +216,16 @@
           z-index:1000;
   
     } */
-    .hotGameOne body {
+    .cozGameOne body {
        
         font-family: 'Titan One';
         /* overflow: hidden; */
       }
   
-      .hotGameOne .hide {
+      .cozGameOne .hide {
          display: none;
      }
-     .hotGameOne .penguin {
+     .cozGameOne .penguin {
       background-repeat: no-repeat;
       z-index: 1000;
      }
@@ -259,69 +251,69 @@
             
       } */
   
-      .hotGameOne .guessCounter {
+      .cozGameOne .guessCounter {
         position: relative;
         left: -22%;
         top: 16%;
         z-index: 1000;
       }
   
-      .hotGameOne .countDown {
+      .cozGameOne .countDown {
         position: absolute;
         width: 17%;
-        margin-top: -17%;
-        left: 78%;
+        margin-top: -36%;
+        left: 83%;
         z-index: 1000;
       }
   
-      .hotGameOne .countDownClicked {
+      .cozGameOne .countDownClicked {
         position: absolute;
         width: 16%;
-        margin-top: -17%;
-        left: 79%;
+        margin-top: -36%;
+        left: 83%;
         z-index: 900;
       }
   
   
   
-      .hotGameOne .countUp {
+      .cozGameOne .countUp {
         position: absolute;
         width: 17%;
-        margin-top: -46%;
-        left: 79%;
+        margin-top: -75%;
+        left: 83%;
         z-index: 1000;
       }
   
-      .hotGameOne .countUpClicked{
+      .cozGameOne .countUpClicked{
         position: absolute;
         width: 15%;
-        margin-top: -46%;
-        left: 81%;
+        margin-top: -74%;
+        left: 83%;
         z-index: 900;
     }
   
   
-    .hotGameOne .house .iglooWrapper {
+    .cozGameOne .house .iglooWrapper {
           width:90%;  
           display: inline-block;
           position: relative;
          
       }
   
-      .hotGameOne .house .iglooWrapper .scoop {
+      .cozGameOne .house .iglooWrapper .scoop {
         width: 100%;
         position: absolute;
         left: 0px;
         top: 0px;
       }
-      .hotGameOne .house .iglooWrapper .answer {
+      .cozGameOne .house .iglooWrapper .answer {
         position: absolute;
         color: #333;
         font-size: 5vh;
         left: 45%;
         margin-top: 11%;
       }
-      .hotGameOne .house .iglooWrapper .penguin {
+      .cozGameOne .house .iglooWrapper .penguin {
           position: absolute;
           width: 50%;
           margin-top: 16%;
@@ -338,14 +330,14 @@
           z-index: 600;
       } */
 
-      .hotGameOne .pinkBoxAndGif {
+      .cozGameOne .pinkBoxAndGif {
         position: fixed;
         width: 40%;
         left: 11%;
         top: 7%;
         z-index: 1000;
       }
-      .hotGameOne .pinkBoxAndGif .pinkBox {
+      .cozGameOne .pinkBoxAndGif .pinkBox {
         position: fixed;
         width: 40%;
         /* left: 11%;
@@ -353,7 +345,7 @@
         z-index: 1000; */
   
       }
-      .hotGameOne .pinkBoxAndGif .spinner{
+      .cozGameOne .pinkBoxAndGif .spinner{
         position: fixed;
         margin-top: 17%;
         left:15%;
@@ -361,20 +353,19 @@
         width: 23%;
       }
   
-      .hotGameOne .pinkBox img {
+      .cozGameOne .pinkBox img {
         position: relative;
         width: 77%;
         height: 100%;
       }
      
-      .hotGameOne .problem p {
+      .cozGameOne .problem p {
         position: absolute;
         width: 76%;
-        left: 14%;
-        top: 1%;
-      
-        font-size: 7vw;
-        color: rgb(65, 35, 35);
+        left: -7%;
+        top: -7%;
+        font-size: 11vw;
+        color: white;
         border-radius: 30px 30px 30px 30px;
         z-index: 800;
         cursor: pointer;
@@ -382,7 +373,7 @@
       
      
       
-    .hotGameOne .start {
+    .cozGameOne .start {
       position: fixed;
       width: 20%;
       left: 50%;
@@ -399,7 +390,7 @@
     
    
     
-    .hotGameOne .boss {
+    .cozGameOne .boss {
       position: fixed;
       width: 30%;
       left: 50%;
@@ -417,7 +408,7 @@
    
   
   
-        .hotGameOne .house .a0 {
+        .cozGameOne .house .a0 {
       /* width: 92%;
       top: -24%; */
       
@@ -425,13 +416,13 @@
    
    
   
-  .hotGameOne .house .a1 {
+  .cozGameOne .house .a1 {
       /* width: 80%;
       top: -24%; */
   }
    
     
-  .hotGameOne .house .a2 {
+  .cozGameOne .house .a2 {
       /* width: 79%;
       top: -32%;
       left: 27%; */
@@ -440,32 +431,32 @@
   
   
   
-  .hotGameOne .house .a3 {
+  .cozGameOne .house .a3 {
       /* width: 94%;
       top: -3%;
       left: -3%; */
   }
    
   
-  .hotGameOne .house .a4 {
+  .cozGameOne .house .a4 {
       /* width: 127%;
       top: -14%; */
   }
    
   
-  .hotGameOne .house .a5 {
+  .cozGameOne .house .a5 {
       /* width: 102%;
       top: -63%; */
   }
    
-  .hotGameOne .house .a6 {
+  .cozGameOne .house .a6 {
       /* width: 112%;
       top: -43%;
       left: 24%; */
   }
     
   
-  .hotGameOne .house .a7 {
+  .cozGameOne .house .a7 {
       /* width: 128%;
       top: 10%;
       left: -26%; */
@@ -475,32 +466,32 @@
     
  
     
-  .hotGameOne .win 
+  .cozGameOne .win 
      {
       position: fixed;
       width: 50%;
-      left:20%;
-      top:20%;
-      height: 50%;
+      left:25%;
+      top:10%;
+      height: 70%;
       z-index: 1700;
      }
     
-     .hotGameOne .lose {
+     .cozGameOne .lose {
       position: fixed;
       width: 50%;
-      left:20%;
-      top:20%;
-      height: 60%;
+      left:25%;
+      top:10%;
+      height: 70%;
       z-index: 1700;
      }
       
-     .hotGameOne .nextLevel {
+     .cozGameOne .nextLevel {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #333;
     text-shadow: 9px 5px #333;
     position: fixed;
     width: 40%;
-    left: 24%;
+    left: 30%;
     top:55%;
     font-family: 'Titan One';
     font-size:5vw;
@@ -510,14 +501,14 @@
     cursor: pointer; 
    
      }
-     .hotGameOne .restart3 {
+     .cozGameOne .restart3 {
       -webkit-text-stroke-width: 3px;
       -webkit-text-stroke-color: #333;
       text-shadow: 9px 5px #333;
       position: fixed;
       width: 40%;
-      left: 25%;
-      top:67%;
+      left: 31.5%;
+      top:64%;
       font-family: 'Titan One';
       font-size:5vw;
       color: rgb(175, 54, 54) ;
