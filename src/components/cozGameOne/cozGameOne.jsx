@@ -31,9 +31,9 @@ var answerset = [
   { problem: "3 + 2 =", answer: "5"},
   { problem: "6 + 1 =", answer: "7"},
   { problem: "4 + 4 =", answer: "8"},
-  // { problem: "1 + 2 =", answer: "3"},
-  // { problem: "3 + 1 =", answer: "4"},
-  // { problem: "7 + 3 =", answer: "10"},
+  { problem: "1 + 2 =", answer: "3"},
+  { problem: "3 + 1 =", answer: "4"},
+  { problem: "7 + 3 =", answer: "10"},
 
 ]
 
@@ -68,7 +68,7 @@ console.log(randomProblemSelector);
 
 
  
-  var counter = 25  ;
+  var counter = 30;
  
 ////////////timer
   var interval = setInterval(function() {
@@ -148,7 +148,7 @@ $('.countDown').click(function(){
       $('audio#swoopboop')[0].currentTime = 0
       $('.greenBox').prepend("<img src='' class='penguinIcecream'>");
       var penguin = $('.penguinIcecream');
-      penguin.attr("src", "../StudyPup_assets/Tumblewyld_Sass_Bottle_FIll.gif");
+      penguin.attr("src", "../StudyPup_assets/Cozmo_Elevator_DoorOpen_BugWalk.gif");
       
 
       
@@ -167,10 +167,16 @@ $('.countDown').click(function(){
           console.log($(this).parent());
           console.log(selectedProblem);
           
+          setTimeout(function() {
+            $('.gbox').hide();
+        }, 10);
+        setTimeout(function() {
+          $('.gbox').show();
+      }, 2000);
   
           setTimeout(function() {
             penguin.attr("src", "").remove();
-        }, 4000);
+        }, 2000);
 
     } else {
 
@@ -234,13 +240,13 @@ $('.countDown').click(function(){
     <div class="cozGameOne" style ={ { backgroundImage: "url('../StudyPup_assets/Cozmo_Elevator_Background.png')"} }>
     <body>
   <audio id="swoopboop">
-    <source src='../StudyPup_assets/Tumblewyld_Sass_Sound_Pour.png.mp3' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Cozmo_Elevator_Sound_Effect.mp3' type="audio/mpeg"/>
   </audio>
   <audio id="buttonSound">
     <source src='../StudyPup_assets/Button_Click_Up.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="icecreamSong">
-    <source src='../StudyPup_assets/Tumblewyld_Sass_Song.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Cozmo_Elevator_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="wrongDing">
     <source src='../StudyPup_assets/Wrong_Ding.m4a' type="audio/mpeg"/>
@@ -268,14 +274,14 @@ $('.countDown').click(function(){
       <img src='../StudyPup_assets/Cozmo_Elevator_Box.png' alt="" class='ybox'/>
        <div class="guessCounter">
     
-          <img src='../StudyPup_assets/Hotsva_HotSauce_Button_Up_Unclicked.png'alt=""  class='countUp'/>
-          <img src='../StudyPup_assets/Hotsva_HotSauce_Button_Up_Clicked.png'alt=""  class='countUpClicked'/>
+          <img src='../StudyPup_assets/Cozmo_Elevator_Button_Up_Unclicked.png'alt=""  class='countUp'/>
+          <img src='../StudyPup_assets/Cozmo_Elevator_Button_Up_Clicked.png'alt=""  class='countUpClicked'/>
   
-          <img src='../StudyPup_assets/Hotsva_HotSauce_Button_Down_Unclicked.png'alt=""  class='countDown'/>
-          <img src='../StudyPup_assets/Hotsva_HotSauce_Button_Down_Clicked.png'alt=""  class='countDownClicked'/>
+          <img src='../StudyPup_assets/Cozmo_Elevator_Button_Down_Unclicked.png'alt=""  class='countDown'/>
+          <img src='../StudyPup_assets/Cozmo_Elevator_Button_Down_Clicked.png'alt=""  class='countDownClicked'/>
 
 
-        
+       
       </div>
         <div class='cocoaAndOutput'>
 
@@ -292,7 +298,7 @@ $('.countDown').click(function(){
   </div>
  
       <img class="lose" src='../StudyPup_assets/YOU_LOSE_Tumblewyld_Game1.png' alt="" />
-     
+      <img src='../StudyPup_assets/Cozmo_Elevator_Buggies.png' alt="" class='buggies'/>
 
       <div>
         <span id="timer">

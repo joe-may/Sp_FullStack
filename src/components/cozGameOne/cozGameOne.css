@@ -46,20 +46,20 @@
       position: relative;
       width: 55%;
       left: 20%;
-      margin-top: 10%;
-      height: 100%;
+      margin-top: 21%;
+      height: 150%;
       z-index: 300;
   }
   
   .cozGameOne .create {
     position: absolute;
-    width: 50%;
-    left: 71%;
+    width: 32%;
+    left: 112%;
     background-color: white;
-    top: 129%;
+    top: 142%;
     margin-left: -59%;
     font-family: 'Titan One';
-    font-size: 5vw;
+    font-size: 3.2vw;
     color: #f2c653;
     border-radius: 13%;
     z-index: 1500;
@@ -98,6 +98,7 @@
     z-index: 1000;
     width: 30%;
   }
+
     .cozGameOne .greenBox {
       position: fixed;
       top: 51%;
@@ -115,21 +116,22 @@
   
     .cozGameOne .greenBox .gbox {
       position: relative;
-      width: 210%;
-      margin-top: -69%;
-      left: -16%;
-      height: 100%;
+      width:50vw;
+      height: 100vh;
+      margin-top:-69%;
+      margin-left: -15%;
       z-index: 300;
     }
+    
   
   
   
     .cozGameOne .penguinIcecream {
-      top: -43%;
-      left: -23.5%;
-      width: 170%;
+      margin-top: -85%;
+      left: -22%;
+      width: 78vw;
       /* background: black; */
-      height: 150%;
+      height: 115vh;
       z-index: 1200;
       position: absolute;
     } 
@@ -361,13 +363,13 @@
      
       .cozGameOne .problem p {
         position: absolute;
-        width: 76%;
-        left: -7%;
-        top: -7%;
-        font-size: 11vw;
+        width: 68%;
+        left: 49%;
+        top: -13%;
+        font-size: 9vw;
         color: white;
         border-radius: 30px 30px 30px 30px;
-        z-index: 800;
+        z-index: 1200;
         cursor: pointer;
     }
       
@@ -381,7 +383,22 @@
       margin-left: -10%;
       font-family: 'Titan One';
       font-size:5vw;
-      color: rgb(175, 54, 54) ;
+      color: rgb(14, 150, 168) ;
+      border-radius: 30px 30px 30px 30px;
+      z-index: 1300;
+      cursor: pointer;
+      
+    }
+    .cozGameOne .buggies{
+      position: absolute;
+      width: 54%;
+      left: 5%;
+      top: 67%;
+      height: 45%;
+      margin-left: -10%;
+      font-family: 'Titan One';
+      font-size: 5vw;
+      color: rgb(175, 54, 54);
       border-radius: 30px 30px 30px 30px;
       z-index: 1300;
       cursor: pointer;
