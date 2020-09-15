@@ -51,8 +51,8 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-// $("audio#SlingSong").prop("volume", 0.19);
-// $('audio#SlingSong')[0].play();
+$("audio#SlingSong").prop("volume", 0.19);
+$('audio#SlingSong')[0].play();
 
 
 // $(document).mousemove(function(e) {
@@ -218,10 +218,10 @@ console.log('keep playing');
 <body>
 
 <audio id="SlingSong">
-    <source src='../StudyPup_assets/Tumblewyld_Shooting_Song_NEW.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Cozmo_Pizza_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="torchLight">
-    <source src='../StudyPup_assets/Tumblewyld_Shooting_Sound_Effect_NEW.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Cozmo_Pizza_Sound_Effect.m4a' type="audio/mpeg"/>
   </audio>
  
          <img class="bg_cozGameThree" src='../StudyPup_assets/Cozmo_Pizza_Background.png' alt="" />
