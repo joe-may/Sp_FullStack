@@ -26,6 +26,7 @@ import WildGameThree  from './components/wildGameThree/wildGameThree';
 import WildGameFour  from './components/wildGameFour/wildGameFour';
 import CozGameOne  from './components/cozGameOne/cozGameOne';
 import CozGameTwo  from './components/cozGameTwo/cozGameTwo';
+import CozGameThree  from './components/cozGameThree/cozGameThree';
 
 
 
@@ -228,9 +229,19 @@ class App extends Component {
                 // handleLogout={this.handleLogout}
                 {...props} />
                 )}/>
-
-
       <section>
+      <Route exact path="/coz3" render={(props) => (
+              <CozGameThree
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+
+     
       {/* <Route exact path='/signup' render={({ history }) =>
             <SignupPage
               history={history}

@@ -2,11 +2,11 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 
-import './gameOne.css';
+import './cozGameThree.css';
 import $ from "jquery";
 
 
-class GameOne extends Component {
+class CozGameThree extends Component {
     componentDidMount() {
      
 
@@ -16,14 +16,13 @@ $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
 
-
-$('.game1').on('click',function(e) {
+$('.cozGameThree').on('click',function(e) {
   console.log('FIRRRRRREEE');
   var parentOffset = $(this).parent().offset();
    var relX = e.pageX - parentOffset.left;
    var relY = e.pageY - parentOffset.top;
-   $('audio#snowballThrow')[0].play();
-   $('audio#snowballThrow')[0].currentTime = 0
+  //  $('audio#snowballThrow')[0].play();
+  //  $('audio#snowballThrow')[0].currentTime = 0
   $(".snowball").animate({
       width: '10px',
       left: relX,
@@ -33,6 +32,7 @@ $('.game1').on('click',function(e) {
       $(".snowball").removeAttr('style');
   });
 });
+
 
 const answerset = [
   { problem: "3 + 2 =", answer: "5"},
@@ -51,18 +51,20 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-$('audio#iglooSong')[0].play();
+// $("audio#SlingSong").prop("volume", 0.19);
+// $('audio#SlingSong')[0].play();
 
 
+// $(document).mousemove(function(e) {
+  
+//   $('.novaWithSling').css("left", e.pageX);
+ 
 
-
-// $(document).click(function(e) {
-//   mouseX = e.pageX;
-//   $('.dart').css("left", e.pageX);
 // });
 
+
 var currentGameArray = [];
-// var playerLives = 0;
+
 
 
 answerset.forEach(function(questions) {
@@ -77,12 +79,11 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/igloo.png' class='igloo'><img src='../StudyPup_assets/Penguin_Walk_Gif_Faster.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/Cozmo_Pizza_House2.png' class='igloo'><img src='../StudyPup_assets/Tumblewyld_Shooting_Bottle_Fall.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
-  });
-
+  }); 
  
-  var counter = 30;
+  var counter = 30000;
  
 
   
@@ -97,8 +98,8 @@ console.log(currentGameArray);
           $(".reset").html(" ");
           $(".start").show();
           $('p').hide();
-          $('audio#iglooSong')[0].pause()
-          $('audio#iglooSong')[0].currentTime = 0
+          $('audio#SlingSong')[0].pause()
+          $('audio#SlingSong')[0].currentTime = 0
           
         return;
     }else{
@@ -124,23 +125,23 @@ console.log(currentGameArray);
   // when answer is clicked on
   $('.iglooWrapper').on('click',function(e) {
     var clickedAnswer = $(this).text();
-    $(this).prepend("<img src='' class='splash'>");
-    var splash = $(this).parent().find('.splash');
-    splash.attr("src", "../StudyPup_assets/snowball_hit_delay2.gif");
-    setTimeout(function() {
-      splash.attr("src", "").remove();
-  }, 1000)
+   
 
     if (clickedAnswer === theAnswer) {
       
 
       console.log("Correct!");
-      $(this).find('.answer').fadeOut(1000, function() {
-        // $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
+     
+      $(this).find('.answer').fadeOut(1, function() {
+        $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
         console.log(currentGameArray.length);
         var penguin = $(this).parent().find('.penguin');
-        penguin.attr("src", "../StudyPup_assets/Penguin_Walk_Gif_Faster.gif");
+        penguin.attr("src", "../StudyPup_assets/Cozmo_Pizza_Bug_Jump.gif");
+        
+        $('audio#torchLight')[0].play();
+        $('audio#torchLight')[0].currentTime = 0
         $('p').remove();
+
               
         
        
@@ -154,7 +155,8 @@ console.log(currentGameArray);
           console.log($(this).parent());
           setTimeout(function() {
             penguin.attr("src", "").remove();
-        }, 1800)
+        }, 1200)
+         
       });
 
   
@@ -187,14 +189,15 @@ console.log('keep playing');
   } else {
     $('.lose').hide();
     $('.win').show();
+    $('.start').hide();
     $('.nextLevel').show();
     $(".reset").html(" ");
     $(".start").show();
     $('.tryAgain').show();
     $('p').hide();
     clearInterval(interval);
-    $('audio#iglooSong')[0].pause()
-    $('audio#iglooSong')[0].currentTime = 0
+    $('audio#SlingSong')[0].pause()
+    $('audio#SlingSong')[0].currentTime = 0
     console.log('you win')
     // generateHearts();
     
@@ -210,51 +213,43 @@ console.log('keep playing');
 
  render() {
   return (
-    <div class="game1">
+    <div class="cozGameThree">
     
 <body>
 
-<audio id="iglooSong">
-    <source src='../StudyPup_assets/Song_Snow-Con_Level_1.m4a' type="audio/mpeg"/>
+<audio id="SlingSong">
+    <source src='../StudyPup_assets/Tumblewyld_Shooting_Song_NEW.m4a' type="audio/mpeg"/>
   </audio>
-  <audio id="snowballThrow">
-    <source src='../StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
+  <audio id="torchLight">
+    <source src='../StudyPup_assets/Tumblewyld_Shooting_Sound_Effect_NEW.m4a' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_game1" src='../StudyPup_assets/penguin-level-backdrop.jpeg' alt="" />
+         <img class="bg_cozGameThree" src='../StudyPup_assets/Cozmo_Pizza_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
           
-          <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game1.png' alt="" />
+          <img class="win" src='../StudyPup_assets/YOU_WON_Tumblewyld_Game2.png' alt="" />
 
           <div class="problem reset"></div>
                 
                 
-                <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game1.png' alt="" />
+                <img class="lose" src='../StudyPup_assets/YOU_LOSE_Tumblewyld_Game2.png' alt="" />
+
+                <img src='../StudyPup_assets/Cozmo_Pizza_Nova.png' alt="" class='novaWithSling'/>
                 
                 <a class="nextLevel" href="/snoconb1">Next Level!</a>
-          
+                <img src='../StudyPup_assets/pizza.png' alt="" class='snowball'/>
           <div>
             <span id="timer">
               <span id="time">10</span>      
             </span>
           </div>
       
-          <img src='../StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
-          <img src='../StudyPup_assets/Nova_standing.png' alt="" class='novaThrow'/>
+
+   
           
 
-          
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeOne'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeTwo'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeThree'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeFour'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeFive'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeSix'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeSeven'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeEight'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeNine'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeTen'/>
+
           
           
 
@@ -270,4 +265,4 @@ console.log('keep playing');
 
 }
 
-export default GameOne;
+export default CozGameThree ;
