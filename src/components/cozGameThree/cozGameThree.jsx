@@ -21,8 +21,8 @@ $('.cozGameThree').on('click',function(e) {
   var parentOffset = $(this).parent().offset();
    var relX = e.pageX - parentOffset.left;
    var relY = e.pageY - parentOffset.top;
-   $('audio#snowballThrow')[0].play();
-   $('audio#snowballThrow')[0].currentTime = 0
+  //  $('audio#snowballThrow')[0].play();
+  //  $('audio#snowballThrow')[0].currentTime = 0
   $(".snowball").animate({
       width: '10px',
       left: relX,

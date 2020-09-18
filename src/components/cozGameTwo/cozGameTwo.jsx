@@ -10,6 +10,23 @@ class CozGameTwo extends Component {
       $('.lose').hide();
       $('.nextLevel').hide();
 
+      $('.cozGameThree').on('click',function(e) {
+        console.log('FIRRRRRREEE');
+        var parentOffset = $(this).parent().offset();
+         var relX = e.pageX - parentOffset.left;
+         var relY = e.pageY - parentOffset.top;
+         $('audio#snowballThrow')[0].play();
+         $('audio#snowballThrow')[0].currentTime = 0
+        $(".snowball").animate({
+            width: '10px',
+            left: relX,
+            top: relY
+        }, 330, function() {
+        
+            $(".snowball").removeAttr('style');
+        });
+      });
+
       
       const answerset = [
         { problem: "3 + 2 =", answer: "5"},

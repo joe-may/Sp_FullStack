@@ -136,7 +136,7 @@ console.log(currentGameArray);
 
       console.log("Correct!");
       $(this).find('.answer').fadeOut(1000, function() {
-        // $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
+        $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
         console.log(currentGameArray.length);
         var penguin = $(this).parent().find('.penguin');
         penguin.attr("src", "../StudyPup_assets/Penguin_Walk_Gif_Faster.gif");
