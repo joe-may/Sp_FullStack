@@ -1,0 +1,378 @@
+@keyframes animate
+{
+  0% {
+      top:-10%;
+  }
+  100% {
+         
+    top:100%;    
+  }
+  
+}
+
+   
+.pupGameTwo #timer{
+    color: blanchedalmond;
+    font-size: 10vh;
+    z-index: 1000;
+    position: fixed;
+    top: 90%;
+    left: 90%;
+
+  }
+  .pupGameTwo .footer { 
+      height: 200px;
+      bottom: 0;
+      width:100%;
+      left:0;
+      text-align: center;
+      margin: 200px 0px 0px 0px;
+  
+  }
+
+
+  
+  .pupGameTwo { 
+    
+    width: 100vw;
+    height: 100vh;
+    background-repeat: center;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .pupGameTwo #time{
+      
+    font-size: 30px;
+  }
+
+ body {
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      color: black;
+      font-family: 'Titan One';
+      overflow: hidden;
+    }
+
+    .pupGameTwo .hide {
+       display: none;
+   }
+   .pupGameTwo .net {
+    background-repeat: no-repeat;
+    z-index: 100;
+   }
+   .pupGameTwo .answers {
+        position: fixed;
+        font-size: 5vh;
+        height: 50%;
+        top: 0%;
+        width: 100%;
+        z-index: 800;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .pupGameTwo .house {
+        width: 25%;
+        cursor: crosshair;  
+    }
+
+
+    .pupGameTwo .house .icecubeWrapper {
+        width:80%;  
+        display: inline-block;
+        position: relative;
+    }
+
+    .pupGameTwo .house .icecubeWrapper .icecube {
+        width: 100%;   
+        position: absolute;
+        left:0px;
+        top: 0px;
+    }
+    .pupGameTwo .house .icecubeWrapper .answer {
+        position: absolute;
+        color: #333;
+        font-size: 5vh;
+        left: 25%;
+        margin-top: 5%;
+    }
+    
+    .pupGameTwo .house .icecubeWrapper .net {
+        position: absolute;
+        width: 50%;
+        margin-top: 16%;
+        z-index: 100;
+    }
+  
+    
+    /* .answers div {
+        font-size: 7vh;
+        font-family: 'Titan One', cursive;
+        width: 20%;
+        color: black;
+        cursor: crosshair;
+        z-index: 600;
+    } */
+  
+    .pupGameTwo .problem p {
+        position: fixed;
+        border-radius: 0%;
+        color: white;
+        text-shadow: 20px 20px 20px black, 0 0 5px blue, 0 0 5px darkblue;
+        font-size:9vw;
+        width: 40%;
+        left: 35%;
+        top: 5%;
+        font-family: 'Titan One';
+        z-index: 800;
+        cursor: crosshair; 
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+   
+    .pupGameTwo .start {
+    position: fixed;
+    width: 20%;
+    left: 50%;
+    top: 50%;
+    margin-left: -10%;
+    font-family: 'Titan One';
+    font-size:5vw;
+    color: rgb(42, 131, 47) ;
+    border-radius: 30px 30px 30px 30px;
+    z-index: 800;
+    cursor: pointer;
+    
+  }
+  
+  .pupGameTwo .boss {
+    position: fixed;
+    width: 30%;
+    left: 50%;
+    top: 0;
+    margin-left: -15%;
+    z-index: 900;
+  }
+ 
+
+
+  .pupGameTwo .house .a0 {
+    position: fixed;
+    width: 10%;
+    top: 40%;
+    animation: animate 15s linear infinite;
+    
+    
+}
+ 
+.pupGameTwo .house .a0 .answer {
+    left: 50%;
+  
+} 
+.pupGameTwo .house .a0 .net{
+    width: 609%;
+    margin-top: -119%;
+    left: -105%;
+    transform: rotatey(1deg);
+} 
+
+
+
+.pupGameTwo .house .a1 {
+    position: fixed;
+    width: 10%;
+    left:25%;
+    top: -24%;
+    animation: animate 25s linear infinite;
+}
+ 
+.pupGameTwo .house .a1 .answer {
+    left: 50%;
+} 
+.pupGameTwo .house .a1 .net {
+    width: 630%;
+    margin-top: -125%;
+    margin-left: -161%;
+    transform: rotatey(1deg);
+} 
+
+.pupGameTwo .house .a2 {
+    position:fixed;
+    width: 10%;
+    top: -52%;
+    left: 67%;
+    animation: animate 14s linear infinite;
+}
+.pupGameTwo .house .a2 .icecube {
+    
+}
+.pupGameTwo .house .a2 .answer {
+    left: 32%;
+    
+} 
+.pupGameTwo .house .a2 .net {
+    width: 630%;
+    margin-top: -125%;
+    margin-left: -158%;
+    transform: rotatey(1deg)
+    
+} 
+
+
+
+.pupGameTwo .house .a3 {
+    position: fixed;
+    width: 10%;
+    top: 35%;
+    left: 85%;
+    animation: animate 29s linear infinite;
+}
+.pupGameTwo .house .a3 .icecube {
+    transform: rotateY(180deg);
+}
+.pupGameTwo .house .a3 .answer {
+    left: 37%;
+    z-index: 2200;
+} 
+.pupGameTwo .house .a3 .net{
+    width: 630%;
+    margin-top: -125%;
+    margin-left: -158%;
+    transform: rotatey(1deg)
+} 
+
+.pupGameTwo .house .a4 {
+    position: fixed;
+    width: 10%;
+    top: -14%;
+    animation: animate 28s linear infinite;
+}
+ 
+.pupGameTwo .house .a4 .answer {
+    left: 50%;
+} 
+.pupGameTwo .house .a4 .net {
+    width: 630%;
+    margin-top: -125%;
+    margin-left: -158%;
+    transform: rotatey(1deg)
+} 
+
+.pupGameTwo .house .a5 {
+    position: fixed;
+    width: 10%;
+    top: -63%;
+    animation: animate 17s linear infinite;
+}
+ 
+.pupGameTwo .house .a5 .answer {
+    left: 35%;
+} 
+.pupGameTwo .house .a5 .net {
+    width: 630%;
+    margin-top: -125%;
+    margin-left: -158%;
+    transform: rotatey(1deg)
+} 
+
+.pupGameTwo .house .a6 { 
+    position: fixed;
+    width: 10%;
+    top: -43%;
+    left: 72%;
+    animation: animate 17s linear infinite;
+    
+}
+.pupGameTwo .house .a6 .icecube {
+   
+}
+.pupGameTwo .house .a6 .answer {
+    left: 37%;
+
+} 
+.pupGameTwo .house .a6 .net {
+    width: 630%;
+    margin-top: -125%;
+    margin-left: -158%;
+    
+} 
+
+.pupGameTwo .house .a7 {
+    position: fixed;
+    width: 10%;
+    top: 0%;
+    left: 69%;
+    animation: animate 25s linear infinite;
+}
+.pupGameTwo .house .a7 .icecube {
+    transform: rotateY(180deg);
+}
+.pupGameTwo .house .a7 .answer {
+    left: 37%;
+} 
+.pupGameTwo .house .a7 .net {
+width: 630%;
+    margin-top: -125%;
+    margin-left: -158%;
+    
+} 
+
+.pupGameTwo .nextLevel {
+  position: fixed;
+  width: 20%;
+  left: 50%;
+  top: 62%;
+  margin-left: -10%;
+  font-family: 'Titan One';
+  font-size:5vw;
+  color: rgb(90, 170, 207) ;
+  border-radius: 30px 30px 30px 30px;
+  z-index: 1000;
+  cursor: pointer;
+ }
+  
+.pupGameTwo .heart {
+      float: right;
+      height: 7%;
+      Width: 7%;
+  }
+  
+  
+  .pupGameTwo .win 
+   {
+    width: 30%;
+    position: fixed;
+    margin-left: 35%;
+    text-align: center;
+    top: 10%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207) ;
+    border-radius: 5%;
+    background-color: cornsilk;
+    z-index: 9000;
+   }
+   .pupGameTwo .lose {
+    width: 30%;
+    position: fixed;
+    margin-left: 35%;
+    text-align: center;
+    top: 10%;
+    font-family: 'Titan One';
+    font-size: 5vh;
+    color: rgb(90, 170, 207) ;
+    border-radius: 5%;
+    background-color: cornsilk;
+    z-index: 9000;
+     
+  
+   }
+    
