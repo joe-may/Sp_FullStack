@@ -240,7 +240,7 @@ class CozGameTwo extends Component {
   <div class="answers reset"></div>
   <button class="start">START</button>
   <div class="footer">
-  <img class="win" src='../StudyPup_assets/YOU_WON_Tumblewyld_Game3.png' alt="" />
+  <img class="win" src='../StudyPup_assets/YOU_WON_Cozmo_Game2.png' alt="" />
   
         <div class="problem reset"></div>
     </div>
@@ -251,7 +251,7 @@ class CozGameTwo extends Component {
         <span id="time"></span>     
       </span>
   </div>
-   <img class="lose" src='../StudyPup_assets/YOU_LOSE_Tumblewyld_Game3.png' alt="" />
+   <img class="lose" src='../StudyPup_assets/YOU_LOSE_Cozmo_Game2.png' alt="" />
     <img class="kart1" src="../StudyPup_assets/Cozmo_Taxi_Nova.gif"alt=""/>
 
     

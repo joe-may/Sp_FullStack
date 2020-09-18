@@ -46,6 +46,7 @@ class PupGameTwo extends Component {
       $('.start').hide();
       $('.win').hide();
       $('.lose').hide();
+      $("audio#stormSong").prop("volume", 0.19);
       $('audio#stormSong')[0].play();
       $('.nextLevel').hide();
       
@@ -121,10 +122,11 @@ class PupGameTwo extends Component {
           var clickedAnswer = $(this).text();
           
           if (clickedAnswer === theAnswer) {
+            $("audio#whoosh").prop("volume", 0.19);
             $('audio#whoosh')[0].play();
             $('audio#whoosh')[0].currentTime = 0
             console.log("Correct!");
-            // $(this).find('.icecube').fadeOut(10);
+            $(this).find('.icecube').fadeOut(10);
             $(this).find('.answer').fadeOut(10, function() {
               $(this).parent('.icecubeWrapper').prepend("<img src='' class='net'>");
               console.log(currentGameArray.length);
@@ -138,9 +140,9 @@ class PupGameTwo extends Component {
                 winningCheck();
                 generateNextTurn();
                 console.log($(this).parent());
-              //   setTimeout(function() {
-              //     net.attr("src", "").remove();
-              // }, 1000)
+                setTimeout(function() {
+                  net.attr("src", "").remove();
+              }, 800)
             });
       
          

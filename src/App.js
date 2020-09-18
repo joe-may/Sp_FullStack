@@ -30,6 +30,7 @@ import CozGameThree  from './components/cozGameThree/cozGameThree';
 import CozGameFour  from './components/cozGameFour/cozGameFour';
 import PupGameOne  from './components/pupGameOne/pupGameOne';
 import PupGameTwo  from './components/pupGameTwo/pupGameTwo';
+import PupGameThree  from './components/pupGameThree/pupGameThree';
 
 
 
@@ -265,6 +266,16 @@ class App extends Component {
       <section>
       <Route exact path="/pup2" render={(props) => (
               <PupGameTwo
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/pup3" render={(props) => (
+              <PupGameThree
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}

@@ -258,10 +258,10 @@ $('.countDown').click(function(){
       
       <div class="answers reset"></div>
       <button class="start">START</button>
-      <a class="restart3" href="/wild1">restart!</a>
+      <a class="restart3" href="/coz1">restart!</a>
 
      
-        <img class="win" src='../StudyPup_assets/YOU_WON_Tumblewyld_Game1.png' alt="" />
+        <img class="win" src='../StudyPup_assets/YOU_WON_Cozmo_Game3.png' alt="" />
         <a class="nextLevel" href="/snoconb2">Next Level!</a>
      
         
@@ -297,7 +297,7 @@ $('.countDown').click(function(){
       
   </div>
  
-      <img class="lose" src='../StudyPup_assets/YOU_LOSE_Tumblewyld_Game1.png' alt="" />
+      <img class="lose" src='../StudyPup_assets/YOU_LOSE_Cozmo_Game3.png' alt="" />
       <img src='../StudyPup_assets/Cozmo_Elevator_Buggies.png' alt="" class='buggies'/>
 
       <div>

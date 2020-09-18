@@ -36,16 +36,16 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-$("audio#SlingSong").prop("volume", 0.19);
+$("audio#SlingSong").prop("volume", 0.29);
 $('audio#SlingSong')[0].play();
 
 
-$(document).mousemove(function(e) {
+// $(document).mousemove(function(e) {
   
-  $('.novaWithSling').css("left", e.pageX);
+//   $('.novaWithSling').css("left", e.pageX);
  
 
-});
+// });
 
 
 var currentGameArray = [];
@@ -122,7 +122,7 @@ console.log(currentGameArray);
         console.log(currentGameArray.length);
         
         
-        
+        $("audio#torchLight").prop("volume", 0.19);
         $('audio#torchLight')[0].play();
         $('audio#torchLight')[0].currentTime = 0
         $('p').remove();
@@ -217,8 +217,8 @@ console.log('keep playing');
                 
                 
                 <img class="lose" src='../StudyPup_assets/YOU_LOSE_Tumblewyld_Game2.png' alt="" />
-
-                <img src='../StudyPup_assets/Tumblewyld_Shooting_Nova_Slingshot.png' alt="" class='novaWithSling'/>
+{/* 
+                <img src='../StudyPup_assets/Tumblewyld_Shooting_Nova_Slingshot.png' alt="" class='novaWithSling'/> */}
                 
                 <a class="nextLevel" href="/snoconb1">Next Level!</a>
           

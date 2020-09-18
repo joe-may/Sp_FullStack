@@ -92,7 +92,7 @@ console.log(currentGameArray);
   });
 
  ///////////////////////////////timer
-  var counter = 30000;
+  var counter = 30;
  
   var interval = setInterval(function() {
     counter--;
@@ -244,10 +244,10 @@ console.log('keep playing');
          <img class="bg_bb1" src='../StudyPup_assets/Cozmo_Boss_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
-        <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game4.png' alt="" />
+        <img class="win" src='../StudyPup_assets/YOU_WON_Cozmo_Game4.png' alt="" />
           <div class="problem reset"></div>
                 
-          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game4.png' alt="" />
+          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Cozmo_Game4.png' alt="" />
                 
                 <a class="nextLevel" href="/snoconb1">Next Level!</a>
           
