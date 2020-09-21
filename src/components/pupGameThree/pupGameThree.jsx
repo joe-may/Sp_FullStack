@@ -227,7 +227,7 @@ class PupGameThree extends Component {
   <div class="answers reset"></div>
   <button class="start">START</button>
   <div class="footer">
-  <img class="win" src='../StudyPup_assets/YOU_WON_Tumblewyld_Game3.png' alt="" />
+  <img class="win" src='../StudyPup_assets/YOU_WON_Puptune_Game3.png' alt="" />
   
         <div class="problem reset"></div>
     </div>
@@ -238,12 +238,12 @@ class PupGameThree extends Component {
         <span id="time"></span>     
       </span>
   </div>
-   <img class="lose" src='../StudyPup_assets/YOU_LOSE_Tumblewyld_Game3.png' alt="" />
+   <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game3.png' alt="" />
     <img class="kart1" src="../StudyPup_assets/Puptune_Race_Nova_NEW.gif"alt=""/>
     <img class="kart2" src="../StudyPup_assets/Puptune_Race_Dipster.gif"alt=""/>
     
    
-    <img class="groundSno" src="../StudyPup_assets/Puptune_Race_Foreground.png"alt=""/>
+    <img class="groundSno" src="../StudyPup_assets/Puptune_Race_Foreground_NEWNEW.png"alt=""/>
 
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>

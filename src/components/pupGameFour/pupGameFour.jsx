@@ -55,7 +55,8 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-// $('audio#raceMusic')[0].play();
+$("audio#SlingSong").prop("volume", 0.29);
+$('audio#raceMusic')[0].play();
 $('.snowball').hide();
 
 
@@ -235,21 +236,21 @@ console.log('keep playing');
 
 
 <audio id="raceMusic">
-    <source src='../StudyPup_assets/Cozmo_Boss_Song.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Puptune_Boss_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="snowballThrow">
-    <source src='../StudyPup_assets/Cozmo_Boss_Sound_Effect.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/Puptune_Boss_Sound_Effect.m4a' type="audio/mpeg"/>
   </audio>
  
          <img class="bg_bb1" src='../StudyPup_assets/Puptune_Boss_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
-        <img class="win" src='../StudyPup_assets/YOU_WON_Cozmo_Game4.png' alt="" />
+        <img class="win" src='../StudyPup_assets/YOU_WON_Puptune_Game4.png' alt="" />
           <div class="problem reset"></div>
                 
-          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Cozmo_Game4.png' alt="" />
+          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game4.png' alt="" />
                 
-                <a class="nextLevel" href="/snoconb1">Next Level!</a>
+                <a class="nextLevel" href="/snoconb1">SAVE THE WORLD!</a>
           
           <div>
             <span id="timer">

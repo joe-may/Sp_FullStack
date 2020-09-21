@@ -210,12 +210,13 @@ class PupGameTwo extends Component {
   </audio>
         <div class="answers reset"></div>
         <button class="start">START</button>
-          <h1 class="win">YOU WON!!</h1>
+        <img class="win" src='../StudyPup_assets/YOU_WON_Puptune_Game2.png' alt="" />
           <div class="problem reset"></div>
                 
-                <div class="lose">Try Again!</div>
                 
-                <a class="nextLevel" href="/snoconb3">Next Level!</a>
+                
+                <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game2.png' alt="" />
+                <a class="nextLevel" href="/snoconb1">Next Level!</a>
           
           <div>
             <span id="timer">

@@ -32,6 +32,8 @@ import PupGameOne  from './components/pupGameOne/pupGameOne';
 import PupGameTwo  from './components/pupGameTwo/pupGameTwo';
 import PupGameThree  from './components/pupGameThree/pupGameThree';
 import PupGameFour  from './components/pupGameFour/pupGameFour';
+import HomePage  from './components/homePage/homePage';
+
 
 
 
@@ -284,9 +286,19 @@ class App extends Component {
                 )}/>
 
       </section>
-      <section>
+            <section>
       <Route exact path="/pup4" render={(props) => (
               <PupGameFour
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/home" render={(props) => (
+              <HomePage
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}

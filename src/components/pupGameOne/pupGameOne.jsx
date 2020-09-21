@@ -211,12 +211,12 @@ console.log('keep playing');
         <div class="answers reset"></div>
         <button class="start">START</button>
           
-          <img class="win" src='../StudyPup_assets/YOU_WON_Tumblewyld_Game2.png' alt="" />
+          <img class="win" src='../StudyPup_assets/YOU_WON_Puptune_Game1.png' alt="" />
 
           <div class="problem reset"></div>
                 
                 
-                <img class="lose" src='../StudyPup_assets/YOU_LOSE_Tumblewyld_Game2.png' alt="" />
+                <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game1.png' alt="" />
 {/* 
                 <img src='../StudyPup_assets/Tumblewyld_Shooting_Nova_Slingshot.png' alt="" class='novaWithSling'/> */}
                 
