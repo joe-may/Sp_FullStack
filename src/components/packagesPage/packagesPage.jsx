@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import "./homePage.css"
+import "./packagesPage.css"
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Navbars from "../navBar/navBar"
 
 
 
 
-class HomePage extends Component {
+class PackagesPage extends Component {
   componentDidMount() {
     
   }
 
     render() {
       return (
-        <div class="homePage" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
+        <div class="packagesPage" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
             <Router>
 
             <section>
@@ -21,19 +21,14 @@ class HomePage extends Component {
 
             </section>
                 <section>
-                <p className="select">SELCET A GRADE LEVEL</p>
+                <p className="select">Pick a Package</p>
                 {/* <div className="gradLevels">
                 <p><a  href='/snocon'>1</a></p>
                 <p><a href='/snocon'>2</a></p>
                 </div> */}
 
-                  <div class="menu">
-                    
-                  <a class="g1" href="/link">1st</a>
-                  <a href="#">2nd</a>
-                  <a href="#">3rd</a>
-                  <a href="#">4th</a>
-                  </div>
+                  <div class="boxey">Parents</div>
+                  <div class="boxey2">Classroom</div>
 
                 </section>
                 <section>
@@ -51,4 +46,4 @@ class HomePage extends Component {
     }
   }
   
-  export default HomePage;
+  export default PackagesPage;

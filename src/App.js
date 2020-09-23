@@ -5,12 +5,13 @@ import { render } from "react-dom";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 import'./App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import BossBattleSno from './components/bossBattleSno/bossBattleSno';
 import GameTwo from './components/gameTwo/gameTwo';
 import GameOne from './components/gameOne/gameOne';
 import GameThree from './components/gameThree/gameThree';
 import GameFour from './components/gameFour/gameFour';
-import LandingPage from './components/landingPage/landingPage';
+import GamesPage from './components/gamesPage/gamesPage';
 import SnowCon from './components/snowconPage/snowconPage';
 import SnowConb1 from './components/snowconPageb1/snowconPageb1';
 import SnowConb2 from './components/snowconPageb2/snowconPageb2';
@@ -33,6 +34,11 @@ import PupGameTwo  from './components/pupGameTwo/pupGameTwo';
 import PupGameThree  from './components/pupGameThree/pupGameThree';
 import PupGameFour  from './components/pupGameFour/pupGameFour';
 import HomePage  from './components/homePage/homePage';
+import VideosPage  from './components/videosPage/videosPage';
+import PackagesPage  from './components/packagesPage/packagesPage';
+import ContactUs  from './components/contactUs/contactUs';
+import QuestionsPage  from './components/questionsPage/questionsPage';
+import AboutUs  from './components/aboutUs/aboutUs';
 
 
 
@@ -52,8 +58,8 @@ class App extends Component {
     return (
       <Router>
           <section>
-              <Route exact path="/" render={(props) => (
-              <LandingPage
+              <Route exact path="/games" render={(props) => (
+              <GamesPage
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}
@@ -297,6 +303,16 @@ class App extends Component {
 
       </section>
       <section>
+      <Route exact path="/" render={(props) => (
+              <HomePage
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
       <Route exact path="/home" render={(props) => (
               <HomePage
                 //passing user from app to home so i can access it in NavBar!! important!!
@@ -306,6 +322,57 @@ class App extends Component {
                 )}/>
 
       </section>
+      <section>
+      <Route exact path="/videos" render={(props) => (
+              <VideosPage
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/premium" render={(props) => (
+              <PackagesPage
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/contact" render={(props) => (
+              <ContactUs
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/questions" render={(props) => (
+              <QuestionsPage
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/about" render={(props) => (
+              <AboutUs
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      
       <section>
 
      
