@@ -1,0 +1,183 @@
+.planetsPageG1 {
+        width: 100vw;
+        height: 100vh;
+        background-repeat: center;
+        background-position: center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+}
+
+
+.gradeLevels a  {
+position: fixed;
+top:50%;
+}
+
+.select {
+    position: absolute;
+    color: whitesmoke;
+    width:40%;
+    font-size: 3vw ;
+    top:10%;
+    left: 0%;
+}
+.menu {
+    position: fixed;
+    font-size:7vh;
+    top:10%;
+    
+    width:100%;
+    text-align:center;
+    overflow: auto;
+    left:30%;
+  }
+  .menu a {
+    background-color:#e5e5e5;
+    padding:8px;
+    margin-top:7px;
+    width:100%;
+    color:black;
+  }
+  .game1g1 {
+      background-color: yellow;
+      padding: 10%;
+  }
+
+  .snoPlanetG1 {
+    width: 18vw;
+    position: fixed;
+    margin-left: -43%;
+    text-align: center;
+    top: 54%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+
+  .hotsvaPlanetG1 {
+    width: 18vw;
+    position: fixed;
+    margin-left: -23%;
+    text-align: center;
+    top: 24%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .linkL1G1 {
+    position: fixed;
+    width:4vw;
+    top: 50%;
+    left:5%;
+    background-color:whitesmoke ;
+    border-radius: 20%;
+  }
+
+  .tumblewildPlanetG1 {
+    width: 18vw;
+    position: fixed;
+    margin-left: 4%;
+    text-align: center;
+    top: 25%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+
+  .cosmoG1  {
+    width: 18vw;
+    position: fixed;
+    margin-left: 25%;
+    text-align: center;
+    top: 54%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .puptuneG1 {
+    width: 18vw;
+    position: fixed;
+    text-align: center;
+    left:40%;
+    top: 60%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+
+  .locktrans1 {
+    width: 18vw;
+    position: fixed;
+    text-align: center;
+    left:27%;
+    top: 20%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+
+  .locktrans2 {
+    width: 18vw;
+    position: fixed;
+    text-align: center;
+    left:54%;
+    top: 20%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .locktrans3 {
+    width: 18vw;
+    position: fixed;
+    text-align: center;
+    left:40%;
+    top: 58%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+
+  .locktrans4 {
+    width: 18vw;
+    position: fixed;
+    text-align: center;
+    left:75%;
+    top: 48%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .locktrans5 {
+    width: 4vw;
+    position: fixed;
+    text-align: center;
+    left:11%;
+    top: 48%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .locktrans6 {
+    width: 4vw;
+    position: fixed;
+    text-align: center;
+    left:16%;
+    top: 48%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .locktrans7 {
+    width: 4vw;
+    position: fixed;
+    text-align: center;
+    left:21%;
+    top: 48%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }

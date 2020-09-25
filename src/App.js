@@ -39,6 +39,8 @@ import PackagesPage  from './components/packagesPage/packagesPage';
 import ContactUs  from './components/contactUs/contactUs';
 import QuestionsPage  from './components/questionsPage/questionsPage';
 import AboutUs  from './components/aboutUs/aboutUs';
+import PlanetsPageG1  from './components/planetsPageG1/planetsPageG1';
+
 
 
 
@@ -365,6 +367,16 @@ class App extends Component {
       <section>
       <Route exact path="/about" render={(props) => (
               <AboutUs
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/planetsPageG1" render={(props) => (
+              <PlanetsPageG1
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}
