@@ -113,7 +113,7 @@
   z-index: 1000;
 
 }
-.bossBattleSno .novaWithHose {
+.bossBattleSno .body {
   width: 13%;
   position: fixed;
   top: 73%;
@@ -123,7 +123,7 @@
 }
 
 
- .bossBattleSno body {
+ .bossBattleSno .hotGameThree {
 
     text-align: center;
     background-size: cover;

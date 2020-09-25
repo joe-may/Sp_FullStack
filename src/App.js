@@ -5,7 +5,7 @@ import { render } from "react-dom";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 import'./App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import BossBattleSno from './components/bossBattleSno/bossBattleSno';
 import GameTwo from './components/gameTwo/gameTwo';
 import GameOne from './components/gameOne/gameOne';
@@ -152,6 +152,7 @@ class App extends Component {
       <section>
       <Route exact path="/v1" render={(props) => (
               <VideoPlayer url= "https://www.youtube.com/watch?v=_WZem4eS5v8"
+               width= "100%"
                 {...props} />
                 )}/>
       </section>

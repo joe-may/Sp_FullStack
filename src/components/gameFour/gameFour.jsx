@@ -194,9 +194,10 @@ class GameFour extends Component {
 
  render() {
   return (
-    <div class="game4" style ={ { backgroundImage: "url('../StudyPup_assets/storm_in_sky.gif')"} }>
+    <div class="game4">
     
 <body>
+<img class="backgroundSno2" src="../StudyPup_assets/Cozmo_Taxi_Background.png"alt=""/>
 <audio id="stormSong">
     <source src='../StudyPup_assets/Song_Snow-Con_Level_3.m4a' type="audio/mpeg"/>
   </audio>
@@ -220,15 +221,14 @@ class GameFour extends Component {
               <span id="time">25</span>      
             </span>
           </div>
-          
-      
-
-          
-  
+        
 </body>
+<div class="adBLock">ad</div>
+<div class="adBLock2">ad</div>
+<div class="bgbg"></div>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
 </div>
-    
+
 );
   
 }

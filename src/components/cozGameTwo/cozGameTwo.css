@@ -62,15 +62,15 @@
     
   }
   
-  /* .cozGameTwo body {
+  .cozGameTwo body {
       
-      background-color: white;
+      background-color: black;
       background-size: cover;
       background-position: center;
       font-family: 'Titan One', cursive;
       height: 100vh;
       overflow: hidden;
-    } */
+    }
 
     .cozGameTwo .nextLevel {
    -webkit-text-stroke-width: 3px;

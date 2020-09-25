@@ -231,8 +231,9 @@ $('.countDown').click(function(){
 
  render() {
   return (
-    <div class="wildGameOne" style ={ { backgroundImage: "url('../StudyPup_assets/Tumblewyld_Sass_Background.png')"} }>
+    <div class="wildGameOne">
     <body>
+    <img class="backgroundSno2" src="../StudyPup_assets/Tumblewyld_Sass_Background.png"alt=""/>
   <audio id="swoopboop">
     <source src='../StudyPup_assets/Tumblewyld_Sass_Sound_Pour.png.mp3' type="audio/mpeg"/>
   </audio>

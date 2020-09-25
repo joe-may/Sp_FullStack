@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import ReactPlayer from 'react-player'
 import "./VideoPlayer.css"
 
-const VideoPlayer = ({ url })  => {
+const VideoPlayer = ({ url, width })  => {
       return (
         <div className='player-wrapper'>
           <ReactPlayer
             className='react-player'
             url = { url }
-            width='100%'
+            width = { width }
             height='100%'
             controls={true}
           />

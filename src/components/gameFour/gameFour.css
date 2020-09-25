@@ -29,23 +29,57 @@
       margin: 200px 0px 0px 0px;
   
   }
+  .adBLock {
+      position: fixed;
+      color: blanchedalmond;
+      background-color: black;
+      width:19vw;
+      height: 80vh;
+      top:10%;
 
+  }
+  .adBLock2{
+    position: fixed;
+    color: blanchedalmond;
+    background-color: black;
+    width:19vw;
+    height: 80vh;
+    right:0%;
+    top:10%;
 
+}
+
+  .game4 .backgroundSno2 {
+    position: fixed;
+    width: 250%;
+    height:100%;
+    left: 0%;
+  }
   
-  .game4 { 
-    
+  .game4 body { 
+      position: fixed;
+    /* margin-top: 20%; */
+    left:20% ;
+    top:20%;
+    transform: scale(.6);
+    transform-origin: 0 0;
     width: 100vw;
     height: 100vh;
-    background-repeat: center;
-    background-position: center;
-    background-attachment: fixed;
+    /* background-repeat: center; */
+    /* background-position: center; */
+    /* background-attachment: fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
+    
   }
-
+.bgbg {
+background-color: rgb(43, 159, 226);
+width: 100vw;
+height: 100vh;
+}
   .game4 #time{
       
     font-size: 30px;
