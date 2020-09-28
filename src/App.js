@@ -5,7 +5,7 @@ import { render } from "react-dom";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 import'./App.css'
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
 import BossBattleSno from './components/bossBattleSno/bossBattleSno';
 import GameTwo from './components/gameTwo/gameTwo';
 import GameOne from './components/gameOne/gameOne';
@@ -40,6 +40,7 @@ import ContactUs  from './components/contactUs/contactUs';
 import QuestionsPage  from './components/questionsPage/questionsPage';
 import AboutUs  from './components/aboutUs/aboutUs';
 import PlanetsPageG1  from './components/planetsPageG1/planetsPageG1';
+
 
 
 
@@ -109,33 +110,62 @@ class App extends Component {
       <section>
           <Route exact path="/sno1" render={(props) => (
               <GameOne
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
-                {...props} />
-                )}/>
-      </section>
-      <section>
-          <Route exact path="/sno2" render={(props) => (
-              <GameTwo
-                />
-                )}/>
-      </section>
-      <section>
-          <Route exact path="/sno3" render={(props) => (
-              <GameThree
-                />
-                )}/>
-      </section>
-      <section>
-          <Route exact path="/sno4" render={(props) => (
-              <GameFour answerset={[
+              answerset = {[
                 { problem: "3 + 2 =", answer: "5"},
                 { problem: "6 + 1 =", answer: "7"},
                 { problem: "4 + 4 =", answer: "8"},
                 { problem: "1 + 2 =", answer: "3"},
                 { problem: "3 + 1 =", answer: "4"},
                 { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
+               
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/sno2" render={(props) => (
+              <GameTwo
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
+                />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/sno3" render={(props) => (
+              <GameThree
+              answerset={[
+                { problem: "2 + 2 =", answer: "5"},
+                { problem: "2 + 1 =", answer: "7"},
+                { problem: "2 + 4 =", answer: "8"},
+                { problem: "2 + 2 =", answer: "3"},
+                { problem: "2 + 1 =", answer: "4"},
+                { problem: "2 + 3 =", answer: "10"},
+              
+              ]}
+                />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/sno4" render={(props) => (
+              <GameFour answerset={[
+                { problem: "eee=", answer: "e"},
+                { problem: "poop", answer: "7"},
+                { problem: "pee", answer: "8"},
+                { problem: "nut", answer: "3"},
+                { problem: "ip", answer: "4"},
+                { problem: "tuns", answer: "10"},
               
               ]}
               
@@ -148,9 +178,17 @@ class App extends Component {
       <section>
       <Route exact path="/bbsno1" render={(props) => (
               <BossBattleSno
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
       </section>
@@ -171,98 +209,186 @@ class App extends Component {
       <section>
           <Route exact path="/hot1" render={(props) => (
               <HotGameOne
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
       </section>
       <section>
           <Route exact path="/hot2" render={(props) => (
               <HotGameTwo
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
       </section>
       <section>
           <Route exact path="/hot3" render={(props) => (
               <HotGameThree
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
       </section>
       <section>
           <Route exact path="/hot4" render={(props) => (
               <HotGameFour
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
       </section>
       <section>
           <Route exact path="/wild1" render={(props) => (
               <WildGameOne
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
       </section>
       <section>
           <Route exact path="/wild2" render={(props) => (
               <WildGameTwo
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
       </section>
       <section>
           <Route exact path="/wild3" render={(props) => (
               <WildGameThree
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
       </section>
       <section>
           <Route exact path="/wild4" render={(props) => (
               <WildGameFour
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
       </section>
       <section>
           <Route exact path="/coz1" render={(props) => (
               <CozGameOne
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
                 
       </section>
       <Route exact path="/coz2" render={(props) => (
               <CozGameTwo
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
       <section>
       <Route exact path="/coz3" render={(props) => (
               <CozGameThree
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
 
@@ -270,9 +396,17 @@ class App extends Component {
       <section>
       <Route exact path="/coz4" render={(props) => (
               <CozGameFour
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
 
@@ -280,9 +414,17 @@ class App extends Component {
       <section>
       <Route exact path="/pup1" render={(props) => (
               <PupGameOne
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
 
@@ -290,9 +432,17 @@ class App extends Component {
       <section>
       <Route exact path="/pup2" render={(props) => (
               <PupGameTwo
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
 
@@ -300,9 +450,17 @@ class App extends Component {
       <section>
       <Route exact path="/pup3" render={(props) => (
               <PupGameThree
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
 
@@ -310,9 +468,17 @@ class App extends Component {
             <section>
       <Route exact path="/pup4" render={(props) => (
               <PupGameFour
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
                 {...props} />
                 )}/>
 
@@ -320,9 +486,7 @@ class App extends Component {
       <section>
       <Route exact path="/" render={(props) => (
               <HomePage
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              
                 {...props} />
                 )}/>
 

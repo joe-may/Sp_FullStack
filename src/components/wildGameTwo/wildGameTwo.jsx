@@ -9,7 +9,7 @@ import $ from "jquery";
 class WildGameTwo extends Component {
     componentDidMount() {
      
-
+      const { answerset } = this.props;
 
 
 $('.win').hide();
@@ -19,17 +19,7 @@ $('.nextLevel').hide();
 
 
 
-const answerset = [
-  { problem: "3 + 2 =", answer: "5"},
-  { problem: "6 + 1 =", answer: "7"},
-  { problem: "4 + 4 =", answer: "8"},
-  { problem: "1 + 2 =", answer: "3"},
-  { problem: "3 + 1 =", answer: "4"},
-  { problem: "7 + 3 =", answer: "10"},
-  { problem: "6 + 3 =", answer: "9"},
-  { problem: "2 + 4 =", answer: "6"},
-  
-]
+
 
 $('.start').on('click',function() {
 $('.start').hide();

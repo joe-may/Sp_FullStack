@@ -6,6 +6,8 @@ import $ from "jquery";
 
 class WildGameOne extends Component {
     componentDidMount() {
+
+      const { answerset } = this.props;
      
 $('.win').hide();
 $('.lose').hide();
@@ -27,15 +29,7 @@ $('.countDown').click(function() {
 ////snowball throw
 
 
-var answerset = [
-  { problem: "3 + 2 =", answer: "5"},
-  { problem: "6 + 1 =", answer: "7"},
-  { problem: "4 + 4 =", answer: "8"},
-  // { problem: "1 + 2 =", answer: "3"},
-  // { problem: "3 + 1 =", answer: "4"},
-  // { problem: "7 + 3 =", answer: "10"},
 
-]
 
 $('.start').on('click',function() {
 $('.start').hide();

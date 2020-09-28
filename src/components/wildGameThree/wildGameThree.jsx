@@ -6,23 +6,15 @@ import $ from "jquery";
 
 class WildGameThree extends Component {
     componentDidMount() {
+
+      const { answerset } = this.props;
+
       $('.win').hide();
       $('.lose').hide();
       $('.nextLevel').hide();
 
       
-      const answerset = [
-        { problem: "3 + 2 =", answer: "5"},
-        { problem: "6 + 1 =", answer: "7"},
-        { problem: "4 + 4 =", answer: "8"},
-        { problem: "2 + 9 =", answer: "11"},
-        { problem: "5 + 4 =", answer: "9"},
-        { problem: "3 + 1 =", answer: "4"},
-        { problem: "7 + 3 =", answer: "10"},
-        { problem: "6 + 6 =", answer: "12"},
-        { problem: "2 + 1 =", answer: "3"},
-        
-      ]
+      
       
       $('.start').on('click',function() {
       $('.start').hide();
