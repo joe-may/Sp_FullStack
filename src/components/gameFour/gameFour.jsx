@@ -1,15 +1,24 @@
 
-import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import React, { Component, PropTypes } from 'react';
 
 import './gameFour.css';
 import $ from "jquery";
 
 
-class GameFour extends Component {
-    componentDidMount() {
-     
 
+
+
+class GameFour extends Component{
+
+  
+  
+    componentDidMount() {
+  
+     
+      const { answerset } = this.props;
+
+
+      
 
       $('.win').hide();
       $('.lose').hide();
@@ -29,18 +38,20 @@ class GameFour extends Component {
             $(".snowball").removeAttr('style');
         });
       });
+  
+
+      // function AnswerSetw(props) {
+      //  const answerset = {props.answerset};
+      // }
       
-      const answerset = [
-        { problem: "3 + 2 =", answer: "5"},
-        { problem: "6 + 1 =", answer: "7"},
-        { problem: "4 + 4 =", answer: "8"},
-        { problem: "1 + 2 =", answer: "3"},
-        { problem: "3 + 1 =", answer: "4"},
-        { problem: "7 + 3 =", answer: "10"},
-        { problem: "6 + 3 =", answer: "9"},
-        { problem: "2 + 4 =", answer: "6"},
+      // AnswerSetw();
+    
+    
         
-      ]
+    
+        
+   
+  
       
       $('.start').on('click',function() {
       $('.start').hide();
@@ -78,8 +89,12 @@ class GameFour extends Component {
           console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
         });
       
+
+        ///////////////////Trying stuff delete after
+
+        
        
-        var counter = 1000;
+        var counter = 30;
        
       
         
@@ -197,6 +212,7 @@ class GameFour extends Component {
     <div class="game4">
     
 <body>
+  
 <img class="backgroundSno2" src="../StudyPup_assets/Cozmo_Taxi_Background.png"alt=""/>
 <audio id="stormSong">
     <source src='../StudyPup_assets/Song_Snow-Con_Level_3.m4a' type="audio/mpeg"/>
@@ -235,4 +251,4 @@ class GameFour extends Component {
 
 }
 
-export default GameFour;
+export default GameFour ;

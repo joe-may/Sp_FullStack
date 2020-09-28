@@ -50,6 +50,8 @@ import PlanetsPageG1  from './components/planetsPageG1/planetsPageG1';
 
 
 
+
+
 class App extends Component {
   componentDidMount() {
     // $("button").click(function() {
@@ -127,12 +129,21 @@ class App extends Component {
       </section>
       <section>
           <Route exact path="/sno4" render={(props) => (
-              <GameFour
-                //passing user from app to home so i can access it in NavBar!! important!!
-                // user={this.state.user}
-                // handleLogout={this.handleLogout}
+              <GameFour answerset={[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+              
+              ]}
+              
+              
                 {...props} />
+                
                 )}/>
+                
       </section>
       <section>
       <Route exact path="/bbsno1" render={(props) => (
@@ -152,7 +163,8 @@ class App extends Component {
       <section>
       <Route exact path="/v1" render={(props) => (
               <VideoPlayer url= "https://www.youtube.com/watch?v=_WZem4eS5v8"
-               width= "100%"
+               width= "75%"
+               name= "fart"
                 {...props} />
                 )}/>
       </section>
