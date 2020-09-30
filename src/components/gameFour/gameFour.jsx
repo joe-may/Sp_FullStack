@@ -1,5 +1,6 @@
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes, }  from 'react';
+
 
 import './gameFour.css';
 import $ from "jquery";
@@ -16,6 +17,7 @@ class GameFour extends Component{
   
      
       const { answerset } = this.props;
+     
 
 
       
@@ -213,6 +215,7 @@ class GameFour extends Component{
     
 <body>
   
+
 <img class="backgroundSno2" src="../StudyPup_assets/Cozmo_Taxi_Background.png"alt=""/>
 <audio id="stormSong">
     <source src='../StudyPup_assets/Song_Snow-Con_Level_3.m4a' type="audio/mpeg"/>
@@ -230,18 +233,20 @@ class GameFour extends Component{
                 
                 <div class="lose">Try Again!</div>
                 
-                <a class="nextLevel" href="/snoconb3">Next Level!</a>
-          
+                <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
+               
           <div>
             <span id="timer">
               <span id="time">25</span>      
             </span>
           </div>
-        
+          
 </body>
 <div class="adBLock">ad</div>
 <div class="adBLock2">ad</div>
 <div class="bgbg"></div>
+
+
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
 </div>
 

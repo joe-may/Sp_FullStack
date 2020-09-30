@@ -220,7 +220,7 @@ class HotGameTwo extends Component {
         <div class="problem reset"></div>
     </div>
   </div>
-  <a class="nextLevel" href="/snoconb1">Next Level!</a>
+  <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
   <div>
       <span id="timer">
         <span id="time"></span>     

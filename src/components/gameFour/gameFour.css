@@ -10,7 +10,11 @@
   
 }
 
-   
+   .game4 .nww {
+       position: fixed;
+       bottom:20%;
+       z-index: 2400;
+   }
 .game4 #timer{
     color: blanchedalmond;
     font-size: 10vh;
@@ -29,6 +33,8 @@
       margin: 200px 0px 0px 0px;
   
   }
+ 
+  
   .adBLock {
       position: fixed;
       color: blanchedalmond;

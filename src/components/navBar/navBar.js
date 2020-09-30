@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './navBar.css';
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import Navbar from 'react-bootstrap/Navbar'
 import { Navbar,Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 
 
