@@ -11,6 +11,32 @@
         overflow: hidden;
 }
 
+.planetsPageG1  .planetContainer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  
+  
+}
+
+.planetsPageG1  .blueButtons{
+  position: relative;
+  width: 2vw;
+  left:-50%;
+
+
+
+}
+
+.planetsPageG1  .planets{
+ 
+  width: 741px;
+  height: 555.75px;
+  margin-left: 0px;
+  margin-top: 1px;
+  
+}
+
 
 .gradeLevels a  {
 position: fixed;

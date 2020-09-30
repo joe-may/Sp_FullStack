@@ -5,10 +5,12 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  
  
   li {
     padding: 18px 20px;
     color:white;
+    
   }
 
   @media (max-width: 768px) {
