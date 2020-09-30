@@ -212,7 +212,7 @@ console.log('keep playing');
 
                 <img src='../StudyPup_assets/Tumblewyld_Shooting_Nova_Slingshot.png' alt="" class='novaWithSling'/>
                 
-                <a class="nextLevel" href="/snoconb1">Next Level!</a>
+                <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           
           <div>
             <span id="timer">

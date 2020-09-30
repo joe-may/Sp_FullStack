@@ -208,7 +208,7 @@ class PupGameTwo extends Component {
                 
                 
                 <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game2.png' alt="" />
-                <a class="nextLevel" href="/snoconb1">Next Level!</a>
+                <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           
           <div>
             <span id="timer">

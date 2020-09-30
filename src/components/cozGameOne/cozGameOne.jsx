@@ -256,7 +256,7 @@ $('.countDown').click(function(){
 
      
         <img class="win" src='../StudyPup_assets/YOU_WON_Cozmo_Game3.png' alt="" />
-        <a class="nextLevel" href="/snoconb2">Next Level!</a>
+        <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
      
         
 

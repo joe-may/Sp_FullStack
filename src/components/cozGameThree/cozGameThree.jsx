@@ -229,7 +229,7 @@ console.log('keep playing');
 
                 <img src='../StudyPup_assets/Cozmo_Pizza_Nova.png' alt="" class='novaWithSling'/>
                 
-                <a class="nextLevel" href="/snoconb1">Next Level!</a>
+                <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
                 <img src='../StudyPup_assets/pizza.png' alt="" class='snowball'/>
           <div>
             <span id="timer">

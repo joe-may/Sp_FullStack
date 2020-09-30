@@ -239,7 +239,7 @@ console.log('keep playing');
                 
           <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game4.png' alt="" />
                 
-                <a class="nextLevel" href="/snoconb1">SAVE THE WORLD!</a>
+          <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           
           <div>
             <span id="timer">
