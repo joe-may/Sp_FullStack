@@ -355,9 +355,9 @@
       .wildGameOne .pinkBoxAndGif .pinkBox {
         position: fixed;
         width: 40%;
-        /* left: 11%;
+        left: 11%;
         top: 13%;
-        z-index: 1000; */
+        z-index: 1000;
   
       }
       .wildGameOne .pinkBoxAndGif .spinner{

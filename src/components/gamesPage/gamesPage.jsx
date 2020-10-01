@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./gamesPage.css"
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Navbars from "../navBar/navBar"
+
 
 
 
@@ -36,7 +36,7 @@ class GamesPage extends Component {
               <section>
               
               </section>
-              <Navbars/>
+            
 
           </Router>
           <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>

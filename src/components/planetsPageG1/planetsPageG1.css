@@ -11,30 +11,86 @@
         overflow: hidden;
 }
 
-.planetsPageG1  .planetContainer{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-  
-  
-}
 
-.planetsPageG1  .blueButtons{
+
+
+.planetsPageG1  .planetContainer {
+   
   position: relative;
-  width: 2vw;
-  left:-50%;
-
-
-
+  display: inline-block;
 }
 
-.planetsPageG1  .planets{
- 
-  width: 741px;
-  height: 555.75px;
+
+.planetsPageG1 .planetContainer .blueButton1 {
+  
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 79%;        
+  text-align: center;
+  top: 2%;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 6%;
+  
+}
+.planetsPageG1 .planetContainer .blueButton2 {
+  
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 61%;        
+  text-align: center;
+  top: 4.5%;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 6%;
+  
+}
+.planetsPageG1 .planetContainer .blueButton3 {
+  
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 48%;        
+  text-align: center;
+  top: 12%;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 6%;
+  
+}
+.planetsPageG1 .planetContainer .blueButton4 {
+  
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 44%;        
+  text-align: center;
+  top: 22%;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 6%;
+  
+}
+
+.planetsPageG1 .planetContainer  .planets{
+  
+  position: relative;
+  width: 799px;
+  height: 665.75px;
   margin-left: 0px;
   margin-top: 1px;
   
+}
+.planetsPageG1 .planetContainer .top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
 
 
@@ -206,4 +262,226 @@ top:50%;
     font-family: 'Titan One';
     color: rgb(90, 170, 207) ;
     z-index: 9000;
+  }
+
+  .planetsPageG1 .planetContainer .redButton5 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 57%;        
+    text-align: center;
+    top: 35%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+
+  .planetsPageG1 .planetContainer .redButton6 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 44%;
+    text-align: center;
+    top: 40.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageG1 .planetContainer .redButton7 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 32%;
+    text-align: center;
+    top: 48.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageG1 .planetContainer .redButton8 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 34%;
+    text-align: center;
+    top: 60.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageG1 .planetContainer .yellowButton9 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 22%;
+    text-align: center;
+    top: 63.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 5%;
+    
+  }
+  .planetsPageG1 .planetContainer .yellowButton10 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 13%;
+    text-align: center;
+    top: 57.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageG1 .planetContainer .yellowButton11 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -3%;
+    text-align: center;
+    top: 57.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageG1 .planetContainer .yellowButton12 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -14%;
+    text-align: center;
+    top: 63.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 5%;
+
+    
+  }
+  .planetsPageG1 .planetContainer .purpButton13 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -24%;
+    text-align: center;
+    top: 55.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  } .planetsPageG1 .planetContainer .purpButton14 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -28%;
+    text-align: center;
+    top: 47.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  } .planetsPageG1 .planetContainer .purpButton15{
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -37%;
+    text-align: center;
+    top: 39.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  } .planetsPageG1 .planetContainer .purpButton16 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -52%;
+    text-align: center;
+    top: 35.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageG1 .planetContainer .greenButton17 {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -36%;
+    text-align: center;
+    top: 26.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageG1 .planetContainer .greenButton18 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -37%;
+    text-align: center;
+    top: 14.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageG1 .planetContainer .greenButton19 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -49%;
+    text-align: center;
+    top: 5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageG1 .planetContainer .greenButton20 {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -65%;
+    text-align: center;
+    top: 1%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
   }

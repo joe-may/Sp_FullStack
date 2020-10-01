@@ -8,6 +8,22 @@
     top:100%;    
   }
   
+} 
+.game4 .gamebg {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: center;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+.game4 {
+    position: relative;
+    display: inline-block;
 }
 
    .game4 .nww {
@@ -63,14 +79,15 @@
   }
   
   .game4 body { 
-      position: fixed;
-    /* margin-top: 20%; */
-    left:20% ;
-    top:20%;
+  
+    position: relative;
+    width: 1499px;
+    height: 1065.75px;
+    margin-left: 100px;
+    margin-top: 200px;
     transform: scale(.6);
     transform-origin: 0 0;
-    width: 100vw;
-    height: 100vh;
+    
     /* background-repeat: center; */
     /* background-position: center; */
     /* background-attachment: fixed; */

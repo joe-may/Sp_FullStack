@@ -211,10 +211,11 @@ class GameFour extends Component{
 
  render() {
   return (
-    <div class="game4">
     
-<body>
+    <div class="game4">
   
+<body>
+
 
 <img class="backgroundSno2" src="../StudyPup_assets/Cozmo_Taxi_Background.png"alt=""/>
 <audio id="stormSong">
@@ -240,11 +241,9 @@ class GameFour extends Component{
               <span id="time">25</span>      
             </span>
           </div>
-          
+       
 </body>
-<div class="adBLock">ad</div>
-<div class="adBLock2">ad</div>
-<div class="bgbg"></div>
+
 
 
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
