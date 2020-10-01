@@ -514,3 +514,53 @@ top:50%;
     width: 6%;
     
   }
+  .planetsPageS .planetContainer .opCon {
+    position: absolute;
+    z-index: 999;
+    /* font-family: 'Nunito', sans-serif; */
+    border-radius: 10%;
+    left: 36%;
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
+    
+    text-align: center;
+    top: 3%;
+    /* font-family: Arial,sans-serif; */
+    color: #fff;
+   
+    width: 12vw;
+  }
+  .planetsPageS .planetContainer .opCon a {
+    padding-right: 13px;
+    
+    margin-left: 4px;
+    font-size: 5vh;
+    
+  }
+  .planetsPageS .opCon .opa{
+    /* font-family: 'Nunito', sans-serif; */
+    color: #fff;
+    
+  }
+  .planetsPageS .opCon .ops{
+
+    color: rgb(80, 162, 255);
+    
+  }
+  .planetsPageS .opCon .opm{
+
+    color: white;
+    
+  }
+  .planetsPageS .opCon .opd{
+
+    color: white;
+    
+  }
+  .planetsPageS .opCon .chg{
+    font-size: 2vh;
+    font-style: italic;
+    
+    color: #fff;
+    
+  }

@@ -92,9 +92,16 @@ class PlanetsPageD extends Component {
                 <img src='../StudyPup_assets/Studypup_MysticBadges_Number_20.png' alt=""  class='greenButton20'/>
                 </a>
                 </div>
-                <div class="op">DIVISION</div>
+               
+                <div class="opCon">
+                <div class="chg">CHANGE OPERATION</div>
+                  <a class="opa" href="/planetspagea">+</a>
+                  <a class="ops"href="/planetspages">-</a>
+                  <a class="opm" href="/planetspagem">x</a>
+                  <a class="opd" href="/planetspaged">÷</a>
+                </div>
                 
-                <a class='chgop' href="/opperation">change opperation</a>
+            
                 </div>
                 
                 
@@ -109,6 +116,7 @@ class PlanetsPageD extends Component {
 
             </Router>
             <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet"></link>
           
         </div>
         
