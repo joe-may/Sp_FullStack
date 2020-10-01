@@ -1,4 +1,4 @@
-.planetsPageG1 {
+.planetsPageD {
         width: 100vw;
         height: 100vh;
         background-repeat: center;
@@ -14,14 +14,37 @@
 
 
 
-.planetsPageG1  .planetContainer {
+.planetsPageD  .planetContainer {
    
   position: relative;
   display: inline-block;
 }
+.planetsPageD .op {
+  position: fixed;
+  bottom: 85%;
+  border-radius: 100% 100% 100% 100%;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #333;
+  text-shadow: 9px 5px #333;
+  color: rgb(247, 255, 228) ;
+  right:85.4%;
+  font-family: 'Titan One';
+  font-size: 4vh;
+}
+
+.planetsPageD .chgop {
+  position: fixed;
+  bottom: 78%;
+  border-radius: 30%;
+  
+  color:white;
+  right:85%;
+
+  font-size: 2vh;
+}
 
 
-.planetsPageG1 .planetContainer .blueButton1 {
+.planetsPageD .planetContainer .blueButton1 {
   
   position: absolute;
   z-index: 999;
@@ -35,7 +58,7 @@
   width: 6%;
   
 }
-.planetsPageG1 .planetContainer .blueButton2 {
+.planetsPageD .planetContainer .blueButton2 {
   
   position: absolute;
   z-index: 999;
@@ -49,7 +72,7 @@
   width: 6%;
   
 }
-.planetsPageG1 .planetContainer .blueButton3 {
+.planetsPageD .planetContainer .blueButton3 {
   
   position: absolute;
   z-index: 999;
@@ -63,7 +86,7 @@
   width: 6%;
   
 }
-.planetsPageG1 .planetContainer .blueButton4 {
+.planetsPageD .planetContainer .blueButton4 {
   
   position: absolute;
   z-index: 999;
@@ -77,17 +100,23 @@
   width: 6%;
   
 }
+.planetsPageD .planetContainer  .buttons{
+  
+ width:100%;
+ 
+  
+}
 
-.planetsPageG1 .planetContainer  .planets{
+.planetsPageD .planetContainer  .planets{
   
   position: relative;
   width: 799px;
   height: 665.75px;
   margin-left: 0px;
-  margin-top: 1px;
+  margin-top: 9px;
   
 }
-.planetsPageG1 .planetContainer .top-left {
+.planetsPageD .planetContainer .top-left {
   position: absolute;
   top: 8px;
   left: 16px;
@@ -264,7 +293,7 @@ top:50%;
     z-index: 9000;
   }
 
-  .planetsPageG1 .planetContainer .redButton5 {
+  .planetsPageD .planetContainer .redButton5 {
   
     position: absolute;
     z-index: 999;
@@ -279,7 +308,7 @@ top:50%;
     
   }
 
-  .planetsPageG1 .planetContainer .redButton6 {
+  .planetsPageD .planetContainer .redButton6 {
   
     position: absolute;
     z-index: 999;
@@ -293,7 +322,7 @@ top:50%;
     width: 6%;
     
   }
-  .planetsPageG1 .planetContainer .redButton7 {
+  .planetsPageD .planetContainer .redButton7 {
   
     position: absolute;
     z-index: 999;
@@ -307,7 +336,7 @@ top:50%;
     width: 6%;
     
   }
-  .planetsPageG1 .planetContainer .redButton8 {
+  .planetsPageD .planetContainer .redButton8 {
   
     position: absolute;
     z-index: 999;
@@ -321,7 +350,7 @@ top:50%;
     width: 6%;
     
   }
-  .planetsPageG1 .planetContainer .yellowButton9 {
+  .planetsPageD .planetContainer .yellowButton9 {
   
     position: absolute;
     z-index: 999;
@@ -335,7 +364,7 @@ top:50%;
     width: 5%;
     
   }
-  .planetsPageG1 .planetContainer .yellowButton10 {
+  .planetsPageD .planetContainer .yellowButton10 {
   
     position: absolute;
     z-index: 999;
@@ -349,7 +378,7 @@ top:50%;
     width: 6%;
     
   }
-  .planetsPageG1 .planetContainer .yellowButton11 {
+  .planetsPageD .planetContainer .yellowButton11 {
   
     position: absolute;
     z-index: 999;
@@ -363,7 +392,7 @@ top:50%;
     width: 6%;
     
   }
-  .planetsPageG1 .planetContainer .yellowButton12 {
+  .planetsPageD .planetContainer .yellowButton12 {
   
     position: absolute;
     z-index: 999;
@@ -378,7 +407,7 @@ top:50%;
 
     
   }
-  .planetsPageG1 .planetContainer .purpButton13 {
+  .planetsPageD .planetContainer .purpButton13 {
   
     position: absolute;
     z-index: 999;
@@ -391,7 +420,7 @@ top:50%;
     color: #fff;
     width: 6%;
     
-  } .planetsPageG1 .planetContainer .purpButton14 {
+  } .planetsPageD .planetContainer .purpButton14 {
   
     position: absolute;
     z-index: 999;
@@ -404,7 +433,7 @@ top:50%;
     color: #fff;
     width: 6%;
     
-  } .planetsPageG1 .planetContainer .purpButton15{
+  } .planetsPageD .planetContainer .purpButton15{
   
     position: absolute;
     z-index: 999;
@@ -417,7 +446,7 @@ top:50%;
     color: #fff;
     width: 6%;
     
-  } .planetsPageG1 .planetContainer .purpButton16 {
+  } .planetsPageD .planetContainer .purpButton16 {
   
     position: absolute;
     z-index: 999;
@@ -431,7 +460,7 @@ top:50%;
     width: 6%;
     
   }
-  .planetsPageG1 .planetContainer .greenButton17 {
+  .planetsPageD .planetContainer .greenButton17 {
     position: absolute;
     z-index: 999;
     margin: 0 auto;
@@ -444,7 +473,7 @@ top:50%;
     width: 6%;
     
   }
-  .planetsPageG1 .planetContainer .greenButton18 {
+  .planetsPageD .planetContainer .greenButton18 {
   
     position: absolute;
     z-index: 999;
@@ -458,7 +487,7 @@ top:50%;
     width: 6%;
     
   }
-  .planetsPageG1 .planetContainer .greenButton19 {
+  .planetsPageD .planetContainer .greenButton19 {
   
     position: absolute;
     z-index: 999;
@@ -472,7 +501,7 @@ top:50%;
     width: 6%;
     
   }
-  .planetsPageG1 .planetContainer .greenButton20 {
+  .planetsPageD .planetContainer .greenButton20 {
     position: absolute;
     z-index: 999;
     margin: 0 auto;

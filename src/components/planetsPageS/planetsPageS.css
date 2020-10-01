@@ -1,0 +1,516 @@
+.planetsPageS {
+        width: 100vw;
+        height: 100vh;
+        background-repeat: center;
+        background-position: center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+}
+
+
+
+
+.planetsPageS  .planetContainer {
+   
+  position: relative;
+  display: inline-block;
+}
+.planetsPageS .op {
+  position: fixed;
+  bottom: 85%;
+  border-radius: 100% 100% 100% 100%;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #333;
+  text-shadow: 9px 5px #333;
+  color: rgb(247, 255, 228) ;
+  right:83%;
+  font-family: 'Titan One';
+  font-size: 4vh;
+}
+
+.planetsPageS .chgop {
+  position: fixed;
+  bottom: 78%;
+  border-radius: 30%;
+  
+  color:white;
+  right:85%;
+
+  font-size: 2vh;
+}
+
+
+.planetsPageS .planetContainer .blueButton1 {
+  
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 79%;        
+  text-align: center;
+  top: 2%;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 6%;
+  
+}
+.planetsPageS .planetContainer .blueButton2 {
+  
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 61%;        
+  text-align: center;
+  top: 4.5%;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 6%;
+  
+}
+.planetsPageS .planetContainer .blueButton3 {
+  
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 48%;        
+  text-align: center;
+  top: 12%;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 6%;
+  
+}
+.planetsPageS .planetContainer .blueButton4 {
+  
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 44%;        
+  text-align: center;
+  top: 22%;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 6%;
+  
+}
+.planetsPageS .planetContainer  .buttons{
+  
+ width:100%;
+ 
+  
+}
+
+.planetsPageS .planetContainer  .planets{
+  
+  position: relative;
+  width: 799px;
+  height: 665.75px;
+  margin-left: 0px;
+  margin-top: 9px;
+  
+}
+.planetsPageS .planetContainer .top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+
+.gradeLevels a  {
+position: fixed;
+top:50%;
+}
+
+.select {
+    position: absolute;
+    color: whitesmoke;
+    width:40%;
+    font-size: 3vw ;
+    top:10%;
+    left: 0%;
+}
+.menu {
+    position: fixed;
+    font-size:7vh;
+    top:10%;
+    
+    width:100%;
+    text-align:center;
+    overflow: auto;
+    left:30%;
+  }
+  .menu a {
+    background-color:#e5e5e5;
+    padding:8px;
+    margin-top:7px;
+    width:100%;
+    color:black;
+  }
+  .game1g1 {
+      background-color: yellow;
+      padding: 10%;
+  }
+
+  .snoPlanetG1 {
+    width: 18vw;
+    position: fixed;
+    margin-left: -43%;
+    text-align: center;
+    top: 54%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+
+  .hotsvaPlanetG1 {
+    width: 18vw;
+    position: fixed;
+    margin-left: -23%;
+    text-align: center;
+    top: 24%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .linkL1G1 {
+    position: fixed;
+    width:4vw;
+    top: 50%;
+    left:5%;
+    background-color:whitesmoke ;
+    border-radius: 20%;
+  }
+
+  .tumblewildPlanetG1 {
+    width: 18vw;
+    position: fixed;
+    margin-left: 4%;
+    text-align: center;
+    top: 25%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+
+  .cosmoG1  {
+    width: 18vw;
+    position: fixed;
+    margin-left: 25%;
+    text-align: center;
+    top: 54%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .puptuneG1 {
+    width: 18vw;
+    position: fixed;
+    text-align: center;
+    left:40%;
+    top: 60%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+
+  .locktrans1 {
+    width: 18vw;
+    position: fixed;
+    text-align: center;
+    left:27%;
+    top: 20%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+
+  .locktrans2 {
+    width: 18vw;
+    position: fixed;
+    text-align: center;
+    left:54%;
+    top: 20%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .locktrans3 {
+    width: 18vw;
+    position: fixed;
+    text-align: center;
+    left:40%;
+    top: 58%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+
+  .locktrans4 {
+    width: 18vw;
+    position: fixed;
+    text-align: center;
+    left:75%;
+    top: 48%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .locktrans5 {
+    width: 4vw;
+    position: fixed;
+    text-align: center;
+    left:11%;
+    top: 48%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .locktrans6 {
+    width: 4vw;
+    position: fixed;
+    text-align: center;
+    left:16%;
+    top: 48%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+  .locktrans7 {
+    width: 4vw;
+    position: fixed;
+    text-align: center;
+    left:21%;
+    top: 48%;
+    font-family: 'Titan One';
+    color: rgb(90, 170, 207) ;
+    z-index: 9000;
+  }
+
+  .planetsPageS .planetContainer .redButton5 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 57%;        
+    text-align: center;
+    top: 35%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+
+  .planetsPageS .planetContainer .redButton6 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 44%;
+    text-align: center;
+    top: 40.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageS .planetContainer .redButton7 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 32%;
+    text-align: center;
+    top: 48.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageS .planetContainer .redButton8 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 34%;
+    text-align: center;
+    top: 60.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageS .planetContainer .yellowButton9 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 22%;
+    text-align: center;
+    top: 63.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 5%;
+    
+  }
+  .planetsPageS .planetContainer .yellowButton10 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 13%;
+    text-align: center;
+    top: 57.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageS .planetContainer .yellowButton11 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -3%;
+    text-align: center;
+    top: 57.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageS .planetContainer .yellowButton12 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -14%;
+    text-align: center;
+    top: 63.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 5%;
+
+    
+  }
+  .planetsPageS .planetContainer .purpButton13 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -24%;
+    text-align: center;
+    top: 55.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  } .planetsPageS .planetContainer .purpButton14 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -28%;
+    text-align: center;
+    top: 47.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  } .planetsPageS .planetContainer .purpButton15{
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -37%;
+    text-align: center;
+    top: 39.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  } .planetsPageS .planetContainer .purpButton16 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -52%;
+    text-align: center;
+    top: 35.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageS .planetContainer .greenButton17 {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -36%;
+    text-align: center;
+    top: 26.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageS .planetContainer .greenButton18 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -37%;
+    text-align: center;
+    top: 14.5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageS .planetContainer .greenButton19 {
+  
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -49%;
+    text-align: center;
+    top: 5%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }
+  .planetsPageS .planetContainer .greenButton20 {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: -65%;
+    text-align: center;
+    top: 1%;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 6%;
+    
+  }

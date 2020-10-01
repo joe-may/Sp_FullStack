@@ -39,7 +39,10 @@ import PackagesPage  from './components/packagesPage/packagesPage';
 import ContactUs  from './components/contactUs/contactUs';
 import QuestionsPage  from './components/questionsPage/questionsPage';
 import AboutUs  from './components/aboutUs/aboutUs';
-import PlanetsPageG1  from './components/planetsPageG1/planetsPageG1';
+import PlanetsPageA  from './components/planetsPageA/planetsPageA';
+import PlanetsPageS  from './components/planetsPageS/planetsPageS';
+import PlanetsPageM  from './components/planetsPageM/planetsPageM';
+import PlanetsPageD from './components/planetsPageD/planetsPageD';
 
 
 
@@ -1624,6 +1627,7 @@ class App extends Component {
                 )}/>
 
       </section>
+
       <section>
       <Route exact path="/videos" render={(props) => (
               <VideosPage
@@ -1634,6 +1638,7 @@ class App extends Component {
                 )}/>
 
       </section>
+      
       <section>
       <Route exact path="/premium" render={(props) => (
               <PackagesPage
@@ -1675,8 +1680,38 @@ class App extends Component {
 
       </section>
       <section>
-      <Route exact path="/planetsPageG1" render={(props) => (
-              <PlanetsPageG1
+      <Route exact path="/planetsPageA" render={(props) => (
+              <PlanetsPageA
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/planetsPageS" render={(props) => (
+              <PlanetsPageS
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/planetsPageM" render={(props) => (
+              <PlanetsPageM
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/planetsPageD" render={(props) => (
+              <PlanetsPageD
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}
