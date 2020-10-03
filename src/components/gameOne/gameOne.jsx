@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-
+import ReactPlayer from "react-player"
 import './gameOne.css';
 import $ from "jquery";
 
@@ -12,10 +12,18 @@ class GameOne extends Component {
       const { answerset } = this.props;
 
 
+      $('.skip').on('click',function() { 
+        $('.graystuff').remove();
+        $('iframe').remove();
+        $('.skip').remove();
+      });
 
+      
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
+$('.novaThrow').hide();
+$('.snowball').hide();
 
 
 $('.game1').on('click',function(e) {
@@ -43,6 +51,9 @@ $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
 $('audio#iglooSong')[0].play();
+$('iframe').hide();
+$('.novaThrow').show();
+$('.snowball').show();
 
 
 
@@ -202,16 +213,21 @@ console.log('keep playing');
  render() {
   return (
     <div class="game1">
-    
+    <div class="layer">
+    </div>
+  
 <body>
-
+  
+<button class="skip">Skip Video</button>
+<iframe title="rr" width="420" height="345" src="https://www.youtube.com/embed/-gWULW_aALc?modestbranding=1&showinfo=0&mute=0&fs=1&loop=1&playlist=-gWULW_aALc">
+</iframe>
 <audio id="iglooSong">
     <source src='../StudyPup_assets/Song_Snow-Con_Level_1.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="snowballThrow">
     <source src='../StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
   </audio>
- 
+  
          <img class="bg_game1" src='../StudyPup_assets/penguin-level-backdrop.jpeg' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
@@ -230,7 +246,7 @@ console.log('keep playing');
               <span id="time">10</span>      
             </span>
           </div>
-      
+    
           <img src='../StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
           <img src='../StudyPup_assets/Nova_standing.png' alt="" class='novaThrow'/>
           
@@ -249,7 +265,7 @@ console.log('keep playing');
           
           
 
-          
+        
   
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>

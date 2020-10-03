@@ -1,9 +1,10 @@
 
 import React, { Component, PropTypes, }  from 'react';
-
-
+import ReactPlayer from 'react-player'
 import './gameFour.css';
+import VideoPlayer from '../VideoPlayer/VideoPlayer'
 import $ from "jquery";
+
 
 
 
@@ -11,8 +12,7 @@ import $ from "jquery";
 
 class GameFour extends Component{
 
-  
-  
+
     componentDidMount() {
   
      
@@ -20,7 +20,7 @@ class GameFour extends Component{
      
 
 
-      
+     
 
       $('.win').hide();
       $('.lose').hide();
@@ -61,6 +61,8 @@ class GameFour extends Component{
       $('.lose').hide();
       $('audio#stormSong')[0].play();
       $('.nextLevel').hide();
+      
+    
       
       
       
@@ -241,8 +243,10 @@ class GameFour extends Component{
               <span id="time">25</span>      
             </span>
           </div>
+     
        
 </body>
+
 
 
 

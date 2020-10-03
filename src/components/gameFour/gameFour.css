@@ -25,6 +25,10 @@
     position: relative;
     display: inline-block;
 }
+.game4 .vid{
+    z-index: 2000;
+}
+ 
 
    .game4 .nww {
        position: fixed;
@@ -83,8 +87,8 @@
     position: relative;
     width: 1499px;
     height: 1065.75px;
-    margin-left: 100px;
-    margin-top: 200px;
+    margin-left: 250px;
+    margin-top: 10px;
     transform: scale(.6);
     transform-origin: 0 0;
     

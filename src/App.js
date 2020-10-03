@@ -112,6 +112,7 @@ class App extends Component {
       </section>
       <section>
           <Route exact path="/sno1" render={(props) => (
+           
               <GameOne
               answerset = {[
                 { problem: "3 + 2 =", answer: "5"},
@@ -320,6 +321,7 @@ class App extends Component {
       </section>
       <section>
           <Route exact path="/sno4" render={(props) => (
+            
               <GameFour answerset={[
                 { problem: "eee=", answer: "e"},
                 { problem: "poop", answer: "7"},
@@ -331,9 +333,9 @@ class App extends Component {
               ]}
               nxtlvl={'/v5#a'}
               
-              
+                 
                 {...props} />
-                
+               
                 )}/>
                 
       </section>
@@ -418,8 +420,6 @@ class App extends Component {
       <section>
       <Route exact path="/v1" render={(props) => (
               <VideoPlayer url= "https://www.youtube.com/watch?v=_WZem4eS5v8"
-               width= "75%"
-               name= "fart"
                 {...props} />
                 )}/>
       </section>
@@ -1575,14 +1575,14 @@ class App extends Component {
       <Route exact path="/pup4m" render={(props) => (
               <PupGameFour
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "3 x 2 =", answer: "5"},
+                { problem: "6 x 1 =", answer: "7"},
+                { problem: "4 x 4 =", answer: "8"},
+                { problem: "1 x 2 =", answer: "3"},
+                { problem: "3 x 1 =", answer: "4"},
+                { problem: "7 x 3 =", answer: "10"},
+                { problem: "6 x 3 =", answer: "9"},
+                { problem: "2 x 4 =", answer: "6"},
                 
               ]}
               nxtlvl={'/v18#m'}
