@@ -378,7 +378,7 @@ z-index: 2000;
   z-index: 900;
  }
  .hotGameThree .layer {
-  background-color: rgba(212, 247, 242, .95);
+  background-color: rgba(255, 117, 117, 0.65);
   position: absolute;
   top: 0;
   left: 0;
@@ -402,7 +402,7 @@ left: 38%;
 top: 84%;
 font-family: 'Titan One';
 font-size:2.5vw;
-color: rgb(90, 170, 207) ;
+color: rgb(175, 54, 54);
 border-radius: 30px 30px 30px 30px;
 z-index: 2000;
  }
