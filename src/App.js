@@ -184,7 +184,7 @@ class App extends Component {
                 )}/>
       </section>
       <section>
-          <Route exact path="/sno2" render={(props) => (
+          <Route exact path="/sno3" render={(props) => (
               <GameTwo
               answerset = {[
                 { problem: "3 + 2 =", answer: "5"},
@@ -256,15 +256,15 @@ class App extends Component {
                 )}/>
       </section>
       <section>
-          <Route exact path="/sno3" render={(props) => (
+          <Route exact path="/sno2" render={(props) => (
               <GameThree
               answerset={[
-                { problem: "2 + 2 =", answer: "5"},
-                { problem: "2 + 1 =", answer: "7"},
-                { problem: "2 + 4 =", answer: "8"},
-                { problem: "2 + 2 =", answer: "3"},
-                { problem: "2 + 1 =", answer: "4"},
-                { problem: "2 + 3 =", answer: "10"},
+                { problem: "2 + 2 =", answer: "4"},
+                { problem: "2 + 1 =", answer: "3"},
+                // { problem: "2 + 4 =", answer: "6"},
+                // { problem: "2 + 2 =", answer: "4"},
+                // { problem: "2 + 1 =", answer: "3"},
+                // { problem: "2 + 3 =", answer: "5"},
               
               ]}
               nxtlvl={'/v4#a'}

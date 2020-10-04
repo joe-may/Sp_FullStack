@@ -503,4 +503,32 @@
   height: 75%;
   z-index: 800;
  }
-  
+ .pupGameFour .layer {
+  background-color: rgba(41, 175, 75, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:2000;
+}
+.pupGameFour iframe { 
+position: fixed;
+left:20%;
+top:10%;
+width:60%;
+height:70%;
+z-index:2000 ;
+}
+
+.pupGameFour .skip{
+  position: fixed;
+width: 25%;
+left: 38%;
+top: 84%;
+font-family: 'Titan One';
+font-size:2.5vw;
+color:  rgb(35, 116, 53) ;
+border-radius: 30px 30px 30px 30px;
+z-index: 2000;
+ }

@@ -399,7 +399,7 @@
       font-size:5vw;
       color: rgb(175, 54, 54) ;
       border-radius: 30px 30px 30px 30px;
-      z-index: 1300;
+      z-index: 2000;
       cursor: pointer;
       
     }
@@ -495,8 +495,8 @@
      .wildGameOne .lose {
       position: fixed;
       width: 50%;
-      left:25%;
-      top:10%;
+      left:23%;
+      top:-1%;
       height: 70%;
       z-index: 1700;
      }
@@ -533,4 +533,34 @@
       cursor: pointer; 
      
        }
-     
+       .wildGameOne .layer {
+        background-color: rgba(214, 209, 186, 0.95);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index:2000;
+      }
+      .wildGameOne iframe { 
+      position: fixed;
+      left:20%;
+      top:10%;
+      width:60%;
+      height:70%;
+      z-index:2000 ;
+      }
+      
+      .wildGameOne .skip{
+        position: fixed;
+      width: 25%;
+      left: 38%;
+      top: 84%;
+      font-family: 'Titan One';
+      font-size:2.5vw;
+      color: #705101 ;
+      border-radius: 30px 30px 30px 30px;
+      z-index: 2000;
+       }
+        
+        

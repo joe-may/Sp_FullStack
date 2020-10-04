@@ -11,7 +11,15 @@ class HotGameThree extends Component {
 
       const { answerset } = this.props;
      
+      $('.start').hide();
 
+      $('.skip').on('click',function() { 
+        $('.layer').hide();
+        $('iframe').remove();
+        $('.skip').remove();
+        $('.start').show();
+      
+      });
 
 
 $('.win').hide();
@@ -184,6 +192,10 @@ console.log('keep playing');
     <div class="hotGameThree">
     
 <body>
+<div class="layer"></div>
+  <button class="skip">Skip Video</button>
+  <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/ub7Ox9SBZZw?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=ub7Ox9SBZZw" allowfullscreen></iframe>
+
 
 <audio id="torchSong">
     <source src='../StudyPup_assets/Hotsva_Cave_Torch_Song.m4a' type="audio/mpeg"/>

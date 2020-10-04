@@ -7,6 +7,16 @@ import $ from "jquery";
 class HotGameOne extends Component {
     componentDidMount() {
       const { answerset } = this.props;
+
+      $('.start').hide();
+
+      $('.skip').on('click',function() { 
+        $('.layer').hide();
+        $('iframe').remove();
+        $('.skip').remove();
+        $('.start').show();
+      
+      });
      
 $('.win').hide();
 $('.lose').hide();
@@ -72,6 +82,10 @@ console.log(randomProblemSelector);
           // $('#time').text(counter);
           console.log("you lose");
           $('.lose').show();
+          currentGameArray =null;
+          theAnswer = null;
+          selectedProblem = null;
+          randomProblemSelector = null;
           $('.restart3').show();
           $(".reset").html(" ");
           $('p').hide();
@@ -226,6 +240,10 @@ $('.countDown').click(function(){
   return (
     <div class="hotGameOne" style ={ { backgroundImage: "url('../StudyPup_assets/Hotsva_HotSauce_Background2.png')"} }>
     <body>
+    <div class="layer"></div>
+  <button class="skip">Skip Video</button>
+  <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/ub7Ox9SBZZw?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=ub7Ox9SBZZw" allowfullscreen></iframe>
+
   <audio id="swoopboop">
     <source src='../StudyPup_assets/Hotsva_HotSauce_Sound_Scream.mp3' type="audio/mpeg"/>
   </audio>

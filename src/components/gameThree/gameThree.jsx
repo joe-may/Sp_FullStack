@@ -7,6 +7,16 @@ import $ from "jquery";
 class GameThree extends Component {
     componentDidMount() {
       const { answerset } = this.props;
+
+      $('.start').hide();
+
+      $('.skip').on('click',function() { 
+        $('.layer').hide();
+        $('iframe').remove();
+        $('.skip').remove();
+        $('.start').show();
+      
+      });
      
 $('.win').hide();
 $('.lose').hide();
@@ -71,8 +81,12 @@ console.log(randomProblemSelector);
          clearInterval(interval);
           // $('#time').text(counter);
           console.log("you lose");
+          currentGameArray =null;
+          theAnswer = null;
+          selectedProblem = null;
+          randomProblemSelector = null;
           $('.lose').show();
-          $('.restart3').show();
+          $('.start').show();
           $(".reset").html(" ");
           $('p').hide();
           
@@ -196,10 +210,11 @@ $('.countDown').click(function(){
     clearInterval(interval);
     $('.win').show();
     $(".reset").html(" ");
-    $(".start").show();
+    
     $('.tryAgain').show();
     generateNextTurn();
     $('p').remove();
+    $('.layer').show();
     currentEquation = null;
     currentGameArray =null;
     theAnswer = null;
@@ -226,6 +241,9 @@ $('.countDown').click(function(){
   return (
     <div class="game3" style ={ { backgroundImage: "url('../StudyPup_assets/Snow_Con_Cocoa_Background.png')"} }>
     <body>
+    <div class="layer"></div>
+  <button class="skip">Skip Video</button>
+  <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/i4rz1p3Q32I?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=q8xvUq0UWFU" allowfullscreen></iframe>
   <audio id="swoopboop">
     <source src='../StudyPup_assets/Penguin_Gets_Ice_Cream.m4a' type="audio/mpeg"/>
   </audio>

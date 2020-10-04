@@ -194,4 +194,32 @@
     height: 70%;
     z-index: 800;
    }
-    
+   .cozGameTwo .layer {
+    background-color: rgba(219, 255, 195, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:2000;
+  }
+  .cozGameTwo iframe { 
+  position: fixed;
+  left:20%;
+  top:10%;
+  width:60%;
+  height:70%;
+  z-index:2000 ;
+  }
+  
+  .cozGameTwo .skip{
+    position: fixed;
+  width: 25%;
+  left: 38%;
+  top: 84%;
+  font-family: 'Titan One';
+  font-size:2.5vw;
+  color:  rgb(14, 150, 168) ;
+  border-radius: 30px 30px 30px 30px;
+  z-index: 2000;
+   }

@@ -10,12 +10,35 @@ class GameOne extends Component {
     componentDidMount() {
      
       const { answerset } = this.props;
-
-
+      
+      $('.snowball').hide();
+      $('.start').hide();
+      $('.treeOne').hide();
+      $('.treeTwo').hide();
+      $('.treeThree').hide();
+      $('.treeFour').hide();
+      $('.treeFive').hide();
+      $('.treeSix').hide();
+      $('.treeSeven').hide(); 
+      $('.treeEight').hide();
+      $('.treeNine').hide();
+      $('.treeTen').hide();
       $('.skip').on('click',function() { 
-        $('.graystuff').remove();
+        $('.layer').remove();
         $('iframe').remove();
         $('.skip').remove();
+        $('.treeOne').show();
+        $('.start').show();
+        $('.treeOne').show();
+        $('.treeTwo').show();
+        $('.treeThree').show();
+        $('.treeFour').show();
+        $('.treeFive').show();
+        $('.treeSix').show();
+        $('.treeSeven').show(); 
+        $('.treeEight').show();
+        $('.treeNine').show();
+        $('.treeTen').show();
       });
 
       
@@ -24,6 +47,21 @@ $('.lose').hide();
 $('.nextLevel').hide();
 $('.novaThrow').hide();
 $('.snowball').hide();
+
+
+
+
+
+
+$('.start').on('click',function() {
+$('.start').hide();
+$('.win').hide();
+$('.lose').hide();
+$('.nextLevel').hide();
+$('audio#iglooSong')[0].play();
+$('iframe').hide();
+$('.novaThrow').show();
+$('.snowball').show();
 
 
 $('.game1').on('click',function(e) {
@@ -42,19 +80,6 @@ $('.game1').on('click',function(e) {
       $(".snowball").removeAttr('style');
   });
 });
-
-
-
-$('.start').on('click',function() {
-$('.start').hide();
-$('.win').hide();
-$('.lose').hide();
-$('.nextLevel').hide();
-$('audio#iglooSong')[0].play();
-$('iframe').hide();
-$('.novaThrow').show();
-$('.snowball').show();
-
 
 
 
@@ -219,7 +244,8 @@ console.log('keep playing');
 <body>
   
 <button class="skip">Skip Video</button>
-<iframe title="rr" width="420" height="345" src="https://www.youtube.com/embed/-gWULW_aALc?modestbranding=1&showinfo=0&mute=0&fs=1&loop=1&playlist=-gWULW_aALc">
+<iframe title="rr" width="420" height="345" src="https://www.youtube.com/embed/q8xvUq0UWFU?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=q8xvUq0UWFU" allowfullscreen>
+
 </iframe>
 <audio id="iglooSong">
     <source src='../StudyPup_assets/Song_Snow-Con_Level_1.m4a' type="audio/mpeg"/>

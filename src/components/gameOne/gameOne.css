@@ -11,7 +11,7 @@
 
 }
 .game1 .layer {
-  background-color: rgba(212, 247, 242, 0.7);
+  background-color: rgba(212, 247, 242, .95);
   position: absolute;
   top: 0;
   left: 0;
@@ -20,9 +20,9 @@
 }
 .game1 iframe { 
 position: fixed;
-left:25%;
+left:20%;
 top:10%;
-width:50%;
+width:60%;
 height:70%;
 z-index:2000 ;
 }

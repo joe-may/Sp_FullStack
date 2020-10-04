@@ -12,6 +12,16 @@ class BossBattleSno extends Component {
 
       const { answerset } = this.props;
 
+      $('.start').hide();
+
+      $('.skip').on('click',function() { 
+        $('.layer').hide();
+        $('iframe').remove();
+        $('.skip').remove();
+        $('.start').show();
+      
+      });
+
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
@@ -47,6 +57,7 @@ $('.lose').hide();
 $('.nextLevel').hide();
 $('audio#raceMusic')[0].play();
 $('.snowball').hide();
+$('novaWithHose').show();
 
 
 
@@ -217,7 +228,9 @@ console.log('keep playing');
     <div class="bossBattleSno">
     
 <body>
-
+<div class="layer"></div>
+  <button class="skip">Skip Video</button>
+  <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/2kfx4Vj2vUQ?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=2kfx4Vj2vUQ" allowfullscreen></iframe>
 
 <audio id="raceMusic">
     <source src='../StudyPup_assets/Song_Snow-Con_Race.m4a' type="audio/mpeg"/>

@@ -8,12 +8,22 @@ class WildGameOne extends Component {
     componentDidMount() {
 
       const { answerset } = this.props;
+
+      $('.start').hide();
+
+      $('.skip').on('click',function() { 
+        $('.layer').hide();
+        $('iframe').remove();
+        $('.skip').remove();
+        $('.start').show();
+      
+      });
      
 $('.win').hide();
 $('.lose').hide();
 $('.create').hide();
 $('.nextLevel').hide();
-$('.restart3').hide();
+
 
 
 //////up counter 
@@ -73,7 +83,12 @@ console.log(randomProblemSelector);
           // $('#time').text(counter);
           console.log("you lose");
           $('.lose').show();
-          $('.restart3').show();
+          currentEquation = null;
+          currentGameArray =null;
+          theAnswer = null;
+          selectedProblem = null;
+          randomProblemSelector = null;
+         $('.start').show();
           $(".reset").html(" ");
           $('p').hide();
           $('audio#icecreamSong')[0].pause()
@@ -227,6 +242,11 @@ $('.countDown').click(function(){
   return (
     <div class="wildGameOne">
     <body>
+
+    <div class="layer"></div>
+  <button class="skip">Skip Video</button>
+  <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/ub7Ox9SBZZw?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=ub7Ox9SBZZw" allowfullscreen></iframe>
+
     <img class="backgroundSno2" src="../StudyPup_assets/Tumblewyld_Sass_Background.png"alt=""/>
   <audio id="swoopboop">
     <source src='../StudyPup_assets/Tumblewyld_Sass_Sound_Pour.png.mp3' type="audio/mpeg"/>
@@ -247,7 +267,7 @@ $('.countDown').click(function(){
       
       <div class="answers reset"></div>
       <button class="start">START</button>
-      <a class="restart3" href="/wild1">restart!</a>
+      
 
      
         <img class="win" src='../StudyPup_assets/YOU_WON_Tumblewyld_Game1.png' alt="" />

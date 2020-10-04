@@ -9,6 +9,17 @@ class GameTwo extends Component {
 
       const { answerset } = this.props;
 
+      $('.start').hide();
+
+      $('.skip').on('click',function() { 
+        $('.layer').remove();
+        $('iframe').remove();
+        $('.skip').remove();
+        $('.start').show();
+      
+      });
+
+
       $('.win').hide();
       $('.lose').hide();
       $('.nextLevel').hide();
@@ -195,7 +206,11 @@ class GameTwo extends Component {
  render() {
   return (
 <div class="game2">
+
   <body>
+  <div class="layer"></div>
+  <button class="skip">Skip Video</button>
+  <iframe title="rr" width="420" height="345" src="https://www.youtube.com/embed/yY-TWO79LfY?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;hd=1&amp;playlist=q8xvUq0UWFU" allowfullscreen></iframe>
   
   <img class="backgroundSno2" src="../StudyPup_assets/Snow_Con_Background_Race_Game_double_dude.png"alt=""/>
  <audio id="raceMusic">
