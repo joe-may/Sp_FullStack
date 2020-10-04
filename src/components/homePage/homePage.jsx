@@ -22,10 +22,7 @@ class HomePage extends Component {
             </section>
                 <section>
                 <p className="select">SELCET A GRADE LEVEL</p>
-                {/* <div className="gradLevels">
-                <p><a  href='/snocon'>1</a></p>
-                <p><a href='/snocon'>2</a></p>
-                </div> */}
+               
 
                   <div class="menu">
                     

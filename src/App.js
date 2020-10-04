@@ -34,6 +34,7 @@ import PupGameTwo  from './components/pupGameTwo/pupGameTwo';
 import PupGameThree  from './components/pupGameThree/pupGameThree';
 import PupGameFour  from './components/pupGameFour/pupGameFour';
 import HomePage  from './components/homePage/homePage';
+import FeedbackPage  from './components/feedbackPage/feedbackPage';
 import VideosPage  from './components/videosPage/videosPage';
 import PackagesPage  from './components/packagesPage/packagesPage';
 import ContactUs  from './components/contactUs/contactUs';
@@ -1620,6 +1621,16 @@ class App extends Component {
       <section>
       <Route exact path="/home" render={(props) => (
               <HomePage
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/feedback" render={(props) => (
+              <FeedbackPage
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}
