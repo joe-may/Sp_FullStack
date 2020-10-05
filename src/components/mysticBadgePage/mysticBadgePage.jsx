@@ -14,11 +14,13 @@ class MysticBadgePage extends Component {
     $('iframe').hide();
     $('.skipToGame').hide();
     $('.opCon').hide();
+    $('.backButton').hide();
 
     $('.newGame').on('click',function() { 
       $('.layerOp').show();
       $('iframe').show();
       $('.skipToGame').show();
+      $('.backButton').show();
      
     
     });
@@ -27,6 +29,15 @@ class MysticBadgePage extends Component {
       $('iframe').remove();
       $('.skipToGame').remove();
       $('.opCon').show();
+    
+    });
+    $('.backButton').on('click',function() { 
+     
+      $('iframe').hide();
+      $('.skipToGame').hide();
+      $('.backButton').hide();
+      $('.layerOp').hide();
+      
     
     });
 
@@ -48,6 +59,7 @@ class MysticBadgePage extends Component {
                 <div className="newGame">NEW GAME</div>
                 <a href="/planetspagea" className="selectGame">SELECT LEVEL</a>
                 <div class="layerOp"></div>
+                <div class="backButton">BACK</div>
 
                 <div class="opCon">
                 <div class="chg">CHOOSE OPERATION</div>

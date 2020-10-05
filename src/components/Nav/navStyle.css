@@ -2,3 +2,19 @@ a {
     
     color: white;
 }
+
+ a:focus {
+    color: #4286f4;
+  }
+  a:hover {
+    color: green;
+  }
+  a:active {
+    color: #4286f4;
+  }
+   a.selected{
+    color: #4286f4;
+ }
+ /* a:visited {
+   color:brown;
+    } */

@@ -92,6 +92,16 @@ top:50%;
   border-radius: 30px 30px 30px 30px;
   z-index: 2000;
    }
+   .mysticBadgePage .backButton {
+     position: fixed;
+    top:20%;
+    font-size: 40px;
+    width: 20vw;
+    color: white;
+    cursor: pointer;
+    z-index: 2000;
+
+  }
 
    .mysticBadgePage .opCon{
     position: absolute;

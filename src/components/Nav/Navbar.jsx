@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        Nav Bar
+      StudyPup
       </div>
       <Burger />
     </Nav>
