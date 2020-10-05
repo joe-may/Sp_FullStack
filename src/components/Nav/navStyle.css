@@ -7,7 +7,7 @@ a {
     color: #4286f4;
   }
   a:hover {
-    color: green;
+    color: rgb(72, 182, 255);
   }
   a:active {
     color: #4286f4;

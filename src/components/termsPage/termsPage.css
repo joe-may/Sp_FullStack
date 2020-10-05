@@ -1,16 +1,36 @@
-.feedbackPage {
+.termsPage {
         width: 100vw;
         height: 100vh;
-        background-repeat: center;
-        background-position: center;
-        background-attachment: fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        overflow: hidden;
+        overflow-x: hidden;
+        text-align: center;
+        color: white;
+  
+       
+       
 }
+.termsPage html {
+  height:100px;
+  width:100px;
+  font-size: 1vh;
 
+}
+/* .termsPage  html {
+  height: 100%;
+  margin: auto;
+  width: 960px;
+  overflow: visible;
+ 
+ 
+
+ 
+} */
+.termsPage .termsStyle {
+  height: 100%;
+  margin: auto;
+  width: 960px;
+  overflow: visible;
+  font-family: helvetica;
+}
 
 .gradeLevels a  {
 position: fixed;
@@ -49,15 +69,6 @@ top:50%;
       padding: 10%;
   }
 
-
-  .feedbackPage .powr-form-builder {
-    position: fixed;
-    left:13%;
-    width:70%;
-    height:70%;
-    z-index: 2000;
-  }
-  .feedbackPage .feedbackNav {
+  .homePage .homeNav {
     color: rgb(72, 182, 255);
   }
-

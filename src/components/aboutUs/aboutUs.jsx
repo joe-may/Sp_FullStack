@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./aboutUs.css"
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Navbar from '../Nav/Navbar';
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
@@ -19,9 +20,11 @@ class AboutUs extends Component {
 
           <section>
               
-
+          <Navbar/>
+          
           </section>
               <section>
+                
               <p className="select">Article About Us Goes Here</p>
              
 

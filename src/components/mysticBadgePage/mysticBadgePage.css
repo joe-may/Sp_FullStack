@@ -155,3 +155,13 @@ top:50%;
     color: #fff;
     
   }
+  .mysticBadgePage .mysticNav {
+    color: rgb(72, 182, 255);
+  }
+ 
+  .newGame:hover {
+    color: rgb(72, 182, 255);
+  }
+  .backButton:hover {
+    color: rgb(72, 182, 255);
+  }

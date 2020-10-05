@@ -45,6 +45,7 @@ import PlanetsPageA  from './components/planetsPageA/planetsPageA';
 import PlanetsPageS  from './components/planetsPageS/planetsPageS';
 import PlanetsPageM  from './components/planetsPageM/planetsPageM';
 import PlanetsPageD from './components/planetsPageD/planetsPageD';
+import TermsPage from "./components/termsPage/termsPage";
 
 
 
@@ -1623,6 +1624,16 @@ class App extends Component {
       <section>
       <Route exact path="/home" render={(props) => (
               <HomePage
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/terms" render={(props) => (
+              <TermsPage
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}
