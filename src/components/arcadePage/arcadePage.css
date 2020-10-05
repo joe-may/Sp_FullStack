@@ -1,5 +1,5 @@
 
-.aboutUs { 
+.arcadePage { 
   width: 100vw;
   height: 100vh;
   background-repeat: center;
@@ -18,12 +18,12 @@
     text-decoration: none;
 }
 
-.aboutUs .select {
+.arcadePage .select {
   position: relative;
 }
 
 
-  .aboutUs .aboutNav {
+  .arcadePage .aboutNav {
     color: rgb(72, 182, 255);
   }
 

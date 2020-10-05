@@ -1,0 +1,54 @@
+.privacyPage {
+        width: 100vw;
+        height: 100vh;
+        background-repeat: center;
+        background-position: center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow-x: hidden;
+}
+
+
+.gradeLevels a  {
+position: fixed;
+top:50%;
+}
+
+.select {
+    position: fixed;
+    color: whitesmoke;
+    width:100%;
+    font-size: 6vh;
+    display: inline-block;
+    top:20%;
+    left:0%;
+    text-align: center;
+}
+.menu {
+    position: fixed;
+    font-size:9vh;
+    top:50%;
+    float:left;
+    width:100%;
+    text-align:center;
+    overflow: auto;
+    left:0%;
+  }
+  .menu a {
+    background-color:#e5e5e5;
+    padding:8px;
+    margin-top:7px;
+    width:100%;
+    color:black;
+  }
+  .g1 {
+      background-color: yellow;
+      padding: 10%;
+  }
+
+  .homePage .homeNav {
+    color: rgb(72, 182, 255);
+  }

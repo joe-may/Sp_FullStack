@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./aboutUs.css"
+import "./arcadePage.css"
 
 import Navbar from '../Nav/Navbar';
 import FooterSpot from '../footer/footer';
@@ -9,21 +9,21 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
 
-class AboutUs extends Component {
+class ArcadePage extends Component {
   componentDidMount() {
     
   }
 
   render() {
     return (
-      <div class="aboutUs" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
+      <div class="arcadePage" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
           <Router>
 
           
               <body>
           <Navbar/>
 
-              <p className="select">Article About Us Goes Here</p>
+              <p className="select">Arcade Games Go Here</p>
               </body>
               <FooterSpot></FooterSpot>
              
@@ -41,4 +41,4 @@ class AboutUs extends Component {
   }
 }
   
-  export default AboutUs;
+  export default ArcadePage;

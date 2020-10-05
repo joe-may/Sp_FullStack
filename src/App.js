@@ -46,6 +46,8 @@ import PlanetsPageS  from './components/planetsPageS/planetsPageS';
 import PlanetsPageM  from './components/planetsPageM/planetsPageM';
 import PlanetsPageD from './components/planetsPageD/planetsPageD';
 import TermsPage from "./components/termsPage/termsPage";
+import PrivacyPage from "./components/privacyPage/privacyPage";
+import ArcadePage from "./components/arcadePage/arcadePage";
 
 
 
@@ -1624,6 +1626,26 @@ class App extends Component {
       <section>
       <Route exact path="/home" render={(props) => (
               <HomePage
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/arcade-play" render={(props) => (
+              <ArcadePage
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/privacy" render={(props) => (
+              <PrivacyPage
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}

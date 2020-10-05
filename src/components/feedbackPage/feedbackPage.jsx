@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./feedbackPage.css"
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Navbar from '../Nav/Navbar';
+import FooterSpot from '../footer/footer';
 
 
 
@@ -34,6 +35,7 @@ class FeedbackPage extends Component {
            
                 
                 </body>
+                <FooterSpot></FooterSpot>
 
             </Router>
             <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
