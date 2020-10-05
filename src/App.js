@@ -34,6 +34,7 @@ import PupGameTwo  from './components/pupGameTwo/pupGameTwo';
 import PupGameThree  from './components/pupGameThree/pupGameThree';
 import PupGameFour  from './components/pupGameFour/pupGameFour';
 import HomePage  from './components/homePage/homePage';
+import MysticBadgePage  from './components/mysticBadgePage/mysticBadgePage';
 import FeedbackPage  from './components/feedbackPage/feedbackPage';
 import VideosPage  from './components/videosPage/videosPage';
 import PackagesPage  from './components/packagesPage/packagesPage';
@@ -44,6 +45,7 @@ import PlanetsPageA  from './components/planetsPageA/planetsPageA';
 import PlanetsPageS  from './components/planetsPageS/planetsPageS';
 import PlanetsPageM  from './components/planetsPageM/planetsPageM';
 import PlanetsPageD from './components/planetsPageD/planetsPageD';
+
 
 
 
@@ -1621,6 +1623,16 @@ class App extends Component {
       <section>
       <Route exact path="/home" render={(props) => (
               <HomePage
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/mysticbadge-play" render={(props) => (
+              <MysticBadgePage
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}
