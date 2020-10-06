@@ -532,3 +532,16 @@ color:  rgb(35, 116, 53) ;
 border-radius: 30px 30px 30px 30px;
 z-index: 2000;
  }
+ .pupGameFour  .mapIcon {
+  position: fixed;
+  width:4%;
+  top:4%;
+  left: 2%;
+  z-index: 3000;
+}
+.pupGameFour  .gButton {
+  position: fixed;
+  top:10%;
+  left: 2%;
+  z-index: 3000;
+}

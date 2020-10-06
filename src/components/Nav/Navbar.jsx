@@ -11,6 +11,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   background-color:#00367F;
+  z-index:2200;
 
   .logo {
     padding: 15px 0;

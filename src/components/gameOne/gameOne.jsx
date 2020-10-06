@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import ReactPlayer from "react-player"
 import './gameOne.css';
+
 import $ from "jquery";
 
 
@@ -242,7 +243,7 @@ console.log('keep playing');
     </div>
   
 <body>
-  
+
 <button class="skip">Skip Video</button>
 <iframe title="rr" width="420" height="345" src="https://www.youtube.com/embed/q8xvUq0UWFU?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=q8xvUq0UWFU" allowfullscreen>
 
@@ -266,6 +267,10 @@ console.log('keep playing');
                 <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game1.png' alt="" />
                 
                 <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
+                <a class="gButton" href={this.props.gButton}>
+                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                </a>
+
           
           <div>
             <span id="timer">

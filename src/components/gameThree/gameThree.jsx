@@ -241,6 +241,9 @@ $('.countDown').click(function(){
   return (
     <div class="game3" style ={ { backgroundImage: "url('../StudyPup_assets/Snow_Con_Cocoa_Background.png')"} }>
     <body>
+    <a class="gButton" href={this.props.gButton}>
+                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                </a>
     <div class="layer"></div>
   <button class="skip">Skip Video</button>
   <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/i4rz1p3Q32I?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=q8xvUq0UWFU" allowfullscreen></iframe>

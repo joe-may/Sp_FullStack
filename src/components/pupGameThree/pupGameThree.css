@@ -226,4 +226,17 @@
   border-radius: 30px 30px 30px 30px;
   z-index: 2000;
    }
+   .pupGameThree .mapIcon {
+    position: fixed;
+    width:4%;
+    top:4%;
+    left: 2%;
+    z-index: 3000;
+  }
+  .pupGameThree .gButton {
+    position: fixed;
+    top:10%;
+    left: 2%;
+    z-index: 3000;
+  }
     

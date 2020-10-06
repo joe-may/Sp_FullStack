@@ -473,4 +473,15 @@ color: rgb(90, 170, 207) ;
 border-radius: 30px 30px 30px 30px;
 z-index: 2000;
  }
+ .game1 .gButton {
+  position: fixed;
+  top:10%;
+  left: 2%;
+}
+.game1 .mapIcon {
+  position: fixed;
+  width:4%;
+  top:4%;
+  left: 2%;
+}
   

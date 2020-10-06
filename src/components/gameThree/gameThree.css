@@ -555,3 +555,16 @@
       border-radius: 30px 30px 30px 30px;
       z-index: 2000;
        }
+       .game3 .mapIcon {
+        position: fixed;
+        width:4%;
+        top:4%;
+        left: 2%;
+        z-index: 2000;
+      }
+      .game3 .gButton {
+        position: fixed;
+        top:10%;
+        left: 2%;
+        z-index: 3000;
+      }

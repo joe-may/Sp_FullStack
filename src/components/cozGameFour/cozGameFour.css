@@ -516,4 +516,17 @@ color:  rgb(14, 150, 168) ;
 border-radius: 30px 30px 30px 30px;
 z-index: 2000;
  }
+ .cozGameFour  .mapIcon {
+  position: fixed;
+  width:4%;
+  top:4%;
+  left: 2%;
+  z-index: 3000;
+}
+.cozGameFour  .gButton {
+  position: fixed;
+  top:10%;
+  left: 2%;
+  z-index: 3000;
+}
   

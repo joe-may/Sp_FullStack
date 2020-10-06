@@ -48,6 +48,7 @@ import PlanetsPageD from './components/planetsPageD/planetsPageD';
 import TermsPage from "./components/termsPage/termsPage";
 import PrivacyPage from "./components/privacyPage/privacyPage";
 import ArcadePage from "./components/arcadePage/arcadePage";
+import GalaxyButton from "./components/galaxyButton/galaxyButton";
 
 
 
@@ -132,7 +133,13 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v2#a'}
+              gButton={'/planetspagea'}
+              
+              
+              
+           
                 {...props} />
+               
                 )}/>
       </section>
       <section>
@@ -150,6 +157,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v2#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
       </section>
@@ -168,6 +176,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v2#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
       </section>
@@ -186,6 +195,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v2#m'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
       </section>
@@ -204,6 +214,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v3#a'}
+              gButton={'/planetspagea'}
                 />
                 )}/>
       </section>
@@ -222,6 +233,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v3#s'}
+              gButton={'/planetspages'}
                 />
                 )}/>
       </section>
@@ -240,6 +252,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v3#m'}
+              gButton={'/planetspagem'}
                 />
                 )}/>
       </section>
@@ -258,6 +271,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v3#d'}
+              gButton={'/planetspaged'}
                 />
                 )}/>
       </section>
@@ -274,6 +288,7 @@ class App extends Component {
               
               ]}
               nxtlvl={'/v4#a'}
+              gButton={'/planetspagea'}
                 />
                 )}/>
       </section>
@@ -290,6 +305,7 @@ class App extends Component {
               
               ]}
               nxtlvl={'/v4#s'}
+              gButton={'/planetspages'}
                 />
                 )}/>
       </section>
@@ -306,6 +322,7 @@ class App extends Component {
               
               ]}
               nxtlvl={'/v4#m'}
+              gButton={'/planetspagem'}
                 />
                 )}/>
       </section>
@@ -322,6 +339,7 @@ class App extends Component {
               
               ]}
               nxtlvl={'/v4#d'}
+              gButton={'/planetspaged'}
                 />
                 )}/>
       </section>
@@ -338,6 +356,7 @@ class App extends Component {
               
               ]}
               nxtlvl={'/v5#a'}
+              gButton={'/planetspagea'}
               
                  
                 {...props} />
@@ -360,6 +379,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v5#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
       </section>
@@ -378,6 +398,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v5#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
       </section>
@@ -396,6 +417,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v5#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
       </section>
@@ -414,6 +436,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v5#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
       </section>
@@ -444,6 +467,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v6#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
       </section>
@@ -462,6 +486,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v6#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
       </section>
@@ -480,6 +505,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v6#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
       </section>
@@ -498,6 +524,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v6#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
       </section>
@@ -516,6 +543,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v7#a'}
+              gButton={'/planetspagea'}
 
                 {...props} />
                 )}/>
@@ -535,6 +563,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v7#s'}
+              gButton={'/planetspages'}
 
                 {...props} />
                 )}/>
@@ -554,6 +583,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v7#m'}
+              gButton={'/planetspagem'}
 
                 {...props} />
                 )}/>
@@ -573,6 +603,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v7#d'}
+              gButton={'/planetspaged'}
 
                 {...props} />
                 )}/>
@@ -592,6 +623,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v7#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
       </section>
@@ -610,6 +642,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v7#a'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
       </section>
@@ -628,6 +661,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v7#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
       </section>
@@ -646,6 +680,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v7#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
       </section>
@@ -664,6 +699,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v8#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
       </section>
@@ -682,6 +718,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v8#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
       </section>
@@ -700,6 +737,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v8#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
       </section>
@@ -718,6 +756,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v8#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
       </section>
@@ -737,6 +776,8 @@ class App extends Component {
                 { problem: "2 + 4 =", answer: "6"},
                 
               ]}
+              nxtlvl={'/v8#d'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
       </section>
@@ -756,6 +797,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v8#d'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
       </section>
@@ -775,6 +817,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v8#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
       </section>
@@ -794,6 +837,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v8#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
       </section>
@@ -812,6 +856,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v9#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
       </section>
@@ -830,6 +875,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v9#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
       </section>
@@ -848,6 +894,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v9#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
       </section>
@@ -865,6 +912,7 @@ class App extends Component {
                 { problem: "2 ÷ 4 =", answer: "6"},
               ]}
               nxtlvl={'/v9#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
       </section>
@@ -883,6 +931,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v10#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
       </section>
@@ -901,6 +950,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v10#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
       </section>
@@ -919,6 +969,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v10#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
       </section>
@@ -937,6 +988,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v10#a'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
       </section>
@@ -955,6 +1007,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v11#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
       </section>
@@ -973,6 +1026,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v11#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
       </section>
@@ -991,6 +1045,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v11#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
       </section>
@@ -1009,6 +1064,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v11#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
       </section>
@@ -1027,6 +1083,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v12#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
                 
@@ -1045,6 +1102,7 @@ class App extends Component {
                 { problem: "2 - 4 =", answer: "6"},
               ]}
               nxtlvl={'/v12#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
                 
@@ -1064,6 +1122,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v12#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
                 
@@ -1083,6 +1142,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v12#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
                 
@@ -1102,6 +1162,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v13#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
       </section>
@@ -1120,6 +1181,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v13#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
       </section>
@@ -1137,6 +1199,7 @@ class App extends Component {
                 { problem: "2 x 4 =", answer: "6"},
               ]}
               nxtlvl={'/v13#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
       </section>
@@ -1155,6 +1218,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v13#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
       </section>
@@ -1173,6 +1237,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v14#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
 
@@ -1192,6 +1257,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v14#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
 
@@ -1210,6 +1276,7 @@ class App extends Component {
                 { problem: "2 x 4 =", answer: "6"},
               ]}
               nxtlvl={'/v14#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
 
@@ -1228,6 +1295,7 @@ class App extends Component {
                 { problem: "2 ÷ 4 =", answer: "6"},
               ]}
               nxtlvl={'/v14#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
 
@@ -1247,6 +1315,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v15#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
 
@@ -1266,6 +1335,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v15#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
 
@@ -1284,6 +1354,7 @@ class App extends Component {
                 { problem: "2 x 4 =", answer: "6"},
               ]}
               nxtlvl={'/v15#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
 
@@ -1302,6 +1373,7 @@ class App extends Component {
                 { problem: "2 ÷ 4 =", answer: "6"},
               ]}
               nxtlvl={'/v15#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
 
@@ -1321,6 +1393,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v16#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
 
@@ -1341,6 +1414,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v16#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
 
@@ -1361,6 +1435,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v16#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
 
@@ -1380,6 +1455,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v16#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
 
@@ -1400,6 +1476,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v17#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
 
@@ -1419,6 +1496,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v17#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
 
@@ -1438,6 +1516,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v17#s'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
 
@@ -1456,6 +1535,7 @@ class App extends Component {
                 { problem: "2 ÷ 4 =", answer: "6"},
                 
               ]}
+              gButton={'/planetspaged'}
               nxtlvl={'/v17#d'}
                 {...props} />
                 )}/>
@@ -1478,6 +1558,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v18#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
 
@@ -1497,6 +1578,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v18#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
 
@@ -1516,6 +1598,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v18#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
 
@@ -1535,6 +1618,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v18#m'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
 
@@ -1554,6 +1638,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v18#a'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
 
@@ -1573,6 +1658,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v18#s'}
+              gButton={'/planetspages'}
                 {...props} />
                 )}/>
 
@@ -1592,6 +1678,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v18#m'}
+              gButton={'/planetspagem'}
                 {...props} />
                 )}/>
 
@@ -1611,6 +1698,7 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/v18#d'}
+              gButton={'/planetspaged'}
                 {...props} />
                 )}/>
 
@@ -1685,7 +1773,7 @@ class App extends Component {
       </section>
 
       <section>
-      <Route exact path="/videos" render={(props) => (
+      <Route exact path="/all-videos" render={(props) => (
               <VideosPage
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}

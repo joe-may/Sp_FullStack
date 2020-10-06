@@ -208,6 +208,9 @@ class GameTwo extends Component {
 <div class="game2">
 
   <body>
+  <a class="gButton" href={this.props.gButton}>
+                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                </a>
   <div class="layer"></div>
   <button class="skip">Skip Video</button>
   <iframe title="rr" width="420" height="345" src="https://www.youtube.com/embed/yY-TWO79LfY?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;hd=1&amp;playlist=q8xvUq0UWFU" allowfullscreen></iframe>

@@ -231,6 +231,9 @@ console.log('keep playing');
     <div class="pupGameFour">
     
 <body>
+<a class="gButton" href={this.props.gButton}>
+                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+   </a>
 
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
