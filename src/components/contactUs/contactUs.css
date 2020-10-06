@@ -1,4 +1,4 @@
-/* 
+
 .contactUs { 
   width: 100vw;
   height: 100vh;
@@ -9,30 +9,19 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-
-
-  a:link {
-    text-decoration: none;
-}
-
-
-  
-  .storyGame {
-    position: fixed;
-    color: whitesmoke;
-    width: 100%;
-    top:70%;
-    left:-30%;
+.contactUs .powr-form-builder {
+    position: relative;
+    left:13%;
+    width:70%;
+    height:70%;
+    z-index: 2000;
   }
-  .arcadeMode{
-    position: fixed;
-    color: whitesmoke;
-    width: 100%;
-    top:70%;
-    left:30%;
+.contactUs .contactNav {
+    color: rgb(72, 182, 255);
   }
 
- */
+
+

@@ -41,7 +41,7 @@ const RightNav = ({ open }) => {
       <li><a class="videosNav" href="/all-videos">VIDEOS</a></li>
       <li><a class="arcadeNav" href="/arcade-play">ARCADE</a></li>
       <li><a class="mysticNav" href="/mysticbadge-play">MYSTIC BADGES</a></li>
-      <li><a class="feedbackNav" href="/feedback">FEEDBACK</a></li>
+      <li><a class="contactNav" href="/contact">CONTACT US</a></li>
       <li><a class="aboutNav" href="/about">ABOUT</a></li>
     </Ul>
   )
