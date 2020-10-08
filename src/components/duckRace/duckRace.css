@@ -1,0 +1,619 @@
+.duckRace { 
+    
+  width: 100vw;
+  height: 100vh;
+  background-repeat: center;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+  
+  
+  .duckRace .footer { 
+        height: 200px;
+        bottom: 0;
+        width:100%;
+        left:0;
+        text-align: center;
+        margin: 200px 0px 0px 0px;
+    
+    }
+  
+    .duckRace .brownBox {
+      position: fixed;
+      top: -20%;
+      left: 62%;
+      z-index: 1000;
+      width: 44%;
+    }
+
+    .duckRace .brownBox .smokers {
+      position: fixed;
+      margin-top:-37%;
+      left: 60%;
+      z-index: 500;
+      width: 30%;
+    }
+    
+
+    .duckRace .brownBox .ybox {
+      position: relative;
+      width: 34%;
+      left: 20%;
+      margin-top: 21%;
+      height: 150%;
+      z-index: 300;
+  }
+  
+  .duckRace .create {
+    position: absolute;
+    width: 32%;
+    left: 112%;
+    background-color: white;
+    top: 142%;
+    margin-left: -59%;
+    font-family: 'Titan One';
+    font-size: 3.2vw;
+    color: #29a510;
+    border-radius: 13%;
+    z-index: 1500;
+    cursor: pointer;
+  
+  }
+    
+  .duckRace .cocoaAndOutput {
+      position: relative;
+      margin-top: -57%;
+      width: 100%;
+      color: white;
+      height: 33%;
+      z-index: 900;
+      margin-left: -9%;
+  }
+  
+  .duckRace .cocoa {
+    position: relative;
+    margin-top: 16%;
+    left: -3%;
+    width: 30%;
+    }
+  
+    .duckRace .output {
+      margin-top: 25%;
+      left: 28%;
+      font-size: 6vw;
+      position: relative;
+    }
+    
+  .duckRace .greenBoxAndGif {
+    position: relative;
+    top: 51%;
+    left: 5%;
+    z-index: 1000;
+    width: 30%;
+  }
+
+    .duckRace .greenBox {
+      position: fixed;
+      top: 51%;
+      left: 5%;
+      z-index: 1000;
+      width: 30%;
+    }
+    .duckRace .greenBox .choco {
+      position: fixed;
+      top: 65%;
+      left: -.4%;
+      z-index: 1200;
+      width: 10%;
+    }
+  
+    .duckRace .greenBox .gbox {
+      position: relative;
+      width:50vw;
+      height: 100vh;
+      margin-top:-69%;
+      margin-left: -15%;
+      z-index: 300;
+    }
+    
+  
+  
+  
+    .duckRace .penguinIcecream {
+      margin-top: -85%;
+      left: -22%;
+      width: 78vw;
+      /* background: black; */
+      height: 115vh;
+      z-index: 1200;
+      position: absolute;
+    } 
+  
+  
+    .duckRace .container {position: relative;}
+  
+    
+  
+    .duckRace .greenLight {
+      height: 100px; 
+      width: 100px; 
+      background-color: #777;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      opacity: 0;
+      z-index: 1000;
+  }
+  
+  
+  
+  
+  .duckRace .createMachine {
+      position: fixed;
+      width: 38%;
+      height: 27%;
+      left: 3%;
+      top: 56%;
+      background: lightgrey;
+      z-index: 400;
+    }
+  
+    @-webkit-keyframes demo {
+      0% {
+          background-color: green;
+          opacity:1;
+      }
+      22% {
+          background-color: greenyellow;
+      }
+      77% {
+          background-color: greenyellow;
+      }
+      100% {
+          background-color: greenyellow;
+      }
+  }
+      
+  .duckRace .demo {
+      -webkit-animation-name: demo;
+      -webkit-animation-duration: 900ms;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease-in-out;
+  }    
+  
+  
+  
+  
+  .duckRace  { 
+      background-image: ('../StudyPup_assets/Ice_Cream_Game_Background.png');
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      overflow: hidden;
+    }
+/*     
+    .duckRace #timer{
+        
+      font-size: 30px;
+      z-index: 1000;
+      position: fixed;
+      top: 0%;
+      left: 50%;
+  
+    } */
+    
+    /* .snowball {
+        width: 5%;
+        position:absolute;
+          top:90%;
+          left:40%;
+          z-index:1000;
+  
+    } */
+    .duckRace body {
+       
+        font-family: 'Titan One';
+        /* overflow: hidden; */
+      }
+  
+      .duckRace .hide {
+         display: none;
+     }
+     .duckRace .penguin {
+      background-repeat: no-repeat;
+      z-index: 1000;
+     }
+      /* .answers {
+          position: fixed;
+          font-size: 5vh;
+          height: 20%;
+          top: 29%;
+          width: 67%;
+          z-index: 800;
+          display: flex;
+          flex-wrap: wrap;
+    
+      } */
+  
+      /* .house {
+        position: relative;
+        width: 38%;
+        height: 59%;
+        right: -73%;
+        bottom: 141%;
+        cursor: crosshair;
+            
+      } */
+  
+      .duckRace .guessCounter {
+        position: relative;
+        left:6%;
+        margin-top: 9%;  
+        width:30vw;
+        z-index: 1000;
+      }
+  
+      .duckRace .countDown {
+        position: absolute;
+        width: 17%;
+        margin-top: -36%;
+        left: 83%;
+        z-index: 1000;
+      }
+  
+      .duckRace .countDownClicked {
+        position: absolute;
+        width: 16%;
+        margin-top: -36%;
+        left: 83%;
+        z-index: 900;
+      }
+  
+  
+  
+      .duckRace .countUp {
+        position: absolute;
+        width: 17%;
+        margin-top: -75%;
+        left: 83%;
+        z-index: 1000;
+      }
+  
+      .duckRace .countUpClicked{
+        position: absolute;
+        width: 15%;
+        margin-top: -74%;
+        left: 83%;
+        z-index: 900;
+    }
+  
+  
+    .duckRace .house .iglooWrapper {
+          width:90%;  
+          display: inline-block;
+          position: relative;
+         
+      }
+  
+      .duckRace .house .iglooWrapper .scoop {
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+      .duckRace .house .iglooWrapper .answer {
+        position: absolute;
+        color: #333;
+        font-size: 5vh;
+        left: 45%;
+        margin-top: 11%;
+      }
+      .duckRace .house .iglooWrapper .penguin {
+          position: absolute;
+          width: 50%;
+          margin-top: 16%;
+  
+      }
+    
+      
+      /* .answers div {
+          font-size: 7vh;
+          font-family: 'Titan One', cursive;
+          width: 20%;
+          color: black;
+          cursor: crosshair;
+          z-index: 600;
+      } */
+
+      .duckRace .pinkBoxAndGif {
+        position: fixed;
+        width: 40%;
+        left: 11%;
+        top: 7%;
+        z-index: 1000;
+      }
+      .duckRace .pinkBoxAndGif .pinkBox {
+        position: fixed;
+        width: 40%;
+        /* left: 11%;
+        top: 13%;
+        z-index: 1000; */
+  
+      }
+      .duckRace .pinkBoxAndGif .spinner{
+        position: fixed;
+        margin-top: 17%;
+        left:15%;
+        z-index: 500;
+        width: 23%;
+      }
+  
+      .duckRace .pinkBox img {
+        position: relative;
+        width: 77%;
+        height: 100%;
+      }
+     
+      .duckRace .problem p {
+        position: absolute;
+        width: 68%;
+        left: 19%;
+        top: -18%;
+        font-size: 9vw;
+        color: black;
+        border-radius: 30px 30px 30px 30px;
+        z-index: 1200;
+        cursor: pointer
+    }
+      
+     
+      
+    .duckRace .start {
+      position: fixed;
+      width: 20%;
+      left: 50%;
+      top: 50%;
+      margin-left: -10%;
+      font-family: 'Titan One';
+      font-size:5vw;
+      color: rgb(14, 150, 168) ;
+      border-radius: 30px 30px 30px 30px;
+      z-index: 2300;
+      cursor: pointer;
+      
+    }
+    .duckRace .buggies{
+      position: absolute;
+      width: 54%;
+      left: 5%;
+      top: 67%;
+      height: 45%;
+      margin-left: 15%;
+      font-family: 'Titan One';
+      font-size: 5vw;
+      color: rgb(175, 54, 54);
+      border-radius: 30px 30px 30px 30px;
+      z-index: 1300;
+      cursor: pointer;
+      
+    }
+    
+   
+    
+    .duckRace .boss {
+      position: fixed;
+      width: 30%;
+      left: 50%;
+      top: 0;
+      margin-left: -15%;
+      z-index: 900;
+    }
+   
+    /* .snowmen {
+        /* background-size: 75% 75%;
+        background-repeat: no-repeat;
+        background-image: url(https://i.imgur.com/peo6gAS.gif); */
+        /* cursor: url("https://i.imgur.com/PFfe6oi.png") , auto; */
+        
+   
+  
+  
+        .duckRace .house .a0 {
+      /* width: 92%;
+      top: -24%; */
+      
+  }
+   
+   
+  
+  .duckRace .house .a1 {
+      /* width: 80%;
+      top: -24%; */
+  }
+   
+    
+  .duckRace .house .a2 {
+      /* width: 79%;
+      top: -32%;
+      left: 27%; */
+  }
+    
+  
+  
+  
+  .duckRace .house .a3 {
+      /* width: 94%;
+      top: -3%;
+      left: -3%; */
+  }
+   
+  
+  .duckRace .house .a4 {
+      /* width: 127%;
+      top: -14%; */
+  }
+   
+  
+  .duckRace .house .a5 {
+      /* width: 102%;
+      top: -63%; */
+  }
+   
+  .duckRace .house .a6 {
+      /* width: 112%;
+      top: -43%;
+      left: 24%; */
+  }
+    
+  
+  .duckRace .house .a7 {
+      /* width: 128%;
+      top: 10%;
+      left: -26%; */
+  }
+    
+    
+    
+ 
+    
+  .duckRace .win 
+     {
+      position: fixed;
+      width: 50%;
+      left:25%;
+      top:10%;
+      height: 70%;
+      z-index: 1700;
+     }
+    
+     .duckRace .lose {
+      position: fixed;
+      width: 50%;
+      left:25%;
+      top:-2%;
+      height: 70%;
+      z-index: 1700;
+     }
+      
+     .duckRace .nextLevel {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+    text-shadow: 9px 5px #333;
+    position: fixed;
+    width: 40%;
+    left: 30%;
+    top:60%;
+    font-family: 'Titan One';
+    font-size:5vw;
+    color: rgb(175, 54, 54) ;
+    border-radius: 30px 30px 30px 30px;
+    z-index: 2200;
+    cursor: pointer; 
+   
+     }
+     .duckRace .restart3 {
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: #333;
+      text-shadow: 9px 5px #333;
+      position: fixed;
+      width: 40%;
+      left: 31.5%;
+      top:64%;
+      font-family: 'Titan One';
+      font-size:5vw;
+      color: rgb(175, 54, 54) ;
+      border-radius: 30px 30px 30px 30px;
+      z-index: 2200;
+      cursor: pointer; 
+     
+       }
+       .duckRace .layer {
+        background-color: rgba(219, 255, 195, 0.95);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index:2000;
+      }
+      .duckRace iframe { 
+      position: fixed;
+      left:20%;
+      top:10%;
+      width:60%;
+      height:70%;
+      z-index:2000 ;
+      }
+      
+      .duckRace .skip{
+        position: fixed;
+      width: 25%;
+      left: 38%;
+      top: 84%;
+      font-family: 'Titan One';
+      font-size:2.5vw;
+      color:  rgb(14, 150, 168) ;
+      border-radius: 30px 30px 30px 30px;
+      z-index: 2000;
+       }
+       .duckRace  .mapIcon {
+        position: fixed;
+        width:4%;
+        top:4%;
+        left: 2%;
+        z-index: 3000;
+      }
+      .duckRace  .gButton {
+        position: fixed;
+        top:10%;
+        left: 2%;
+        z-index: 3000;
+      }
+      .duckRace .kart1 {
+        background-position: bottom;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        width: 8%;
+        position: fixed;
+        left: 0%;
+        bottom: 19%;
+        z-index: 800;
+    }
+    .duckRace .kart2 {
+    background-position: bottom;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 8%;
+    position: fixed;
+    left: 0%;
+    bottom: 58%;
+    z-index: 400;
+  }
+  .duckRace .kart3 {
+    background-position: bottom;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 8%;
+    position: fixed;
+    left: 0%;
+    bottom:2%;
+    z-index: 400;
+  }
+  .duckRace .kart4 {
+    background-position: bottom;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 8%;
+    position: fixed;
+    left: 0%;
+    bottom: 38%;
+    z-index: 400;
+  }

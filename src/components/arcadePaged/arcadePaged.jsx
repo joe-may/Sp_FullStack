@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./arcadePage.css"
+import "./arcadePaged.css"
 
 import Navbar from '../Nav/Navbar';
 import FooterSpot from '../footer/footer';
@@ -9,14 +9,14 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
 
-class ArcadePage extends Component {
+class ArcadePaged extends Component {
   componentDidMount() {
     
   }
 
   render() {
     return (
-      <div class="arcadePage" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
+      <div class="arcadePaged" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
           <Router>
 
           
@@ -49,4 +49,4 @@ class ArcadePage extends Component {
   }
 }
   
-  export default ArcadePage;
+  export default ArcadePaged;

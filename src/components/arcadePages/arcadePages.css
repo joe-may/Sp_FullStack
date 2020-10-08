@@ -1,5 +1,5 @@
 
-.arcadePage { 
+.arcadePages { 
   width: 100vw;
   height: 100vh;
   background-repeat: center;
@@ -18,16 +18,16 @@
     text-decoration: none;
 }
 
-.arcadePage .select {
+.arcadePages .select {
   position: relative;
 }
 
 
-  .arcadePage .arcadeNav {
+  .arcadePages .arcadeNav {
     color: rgb(72, 182, 255);
   }
 
-  .arcadePage .opCon {
+  .arcadePages .opCon {
     position: absolute;
     z-index: 999;
     /* font-family: 'Nunito', sans-serif; */
@@ -44,41 +44,41 @@
     width: 12vw;
   }
 
-  .arcadePage.opCon .chg{
+  .arcadePages.opCon .chg{
     font-size: 2vh;
     font-style: italic;
     
     color: #fff;
     
   }
-  .arcadePage .opCon a {
+  .arcadePages .opCon a {
     padding-right: 13px;
     
     margin-left: 4px;
     font-size: 5vh;
     
   }
-  .arcadePage .opCon .opa{
+  .arcadePages .opCon .opa{
     /* font-family: 'Nunito', sans-serif; */
-    color: rgb(80, 162, 255);;
+    color: white;
     
   }
-  .arcadePage .opCon .ops{
+  .arcadePages .opCon .ops{
+
+    color: rgb(80, 162, 255);
+    
+  }
+  .arcadePages .opCon .opm{
 
     color: #fff;
     
   }
-  .arcadePage .opCon .opm{
+  .arcadePages .opCon .opd{
 
     color: #fff;
     
   }
-  .arcadePage .opCon .opd{
-
-    color: #fff;
-    
-  }
-  .arcadePage .opCon .chg{
+  .arcadePages .opCon .chg{
     font-size: 2vh;
     font-style: italic;
     

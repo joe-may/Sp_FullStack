@@ -102,7 +102,7 @@ class PlanetsPageM extends Component {
                 
                 
                 
-                <a class='chgop' href="/opperation">change opperation</a>
+                
                 </div>
                 
                 
