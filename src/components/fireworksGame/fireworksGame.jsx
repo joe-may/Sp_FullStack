@@ -20,25 +20,7 @@ $('.nextLevel').hide();
 
 
 
-// $('.b').on('click',function(e) {
-//   $('.snowball').show();
-//   console.log('FIRRRRRREEE');
-//   var parentOffset = $(this).parent().offset();
-//    var relX = e.pageX - parentOffset.left;
-//    var relY = e.pageY - parentOffset.top;
-//    $('audio#snowballThrow')[0].play();
-//    $('audio#snowballThrow')[0].currentTime = 0
-//   $(".snowball").animate({
-//       width: '10px',
-//       left: relX,
-//       top: relY
-//   }, 100, function() {
-  
-//       $(".snowball").removeAttr('style');
-      
 
-//   });
-// });
 
 
 $('.start').on('click',function() {
@@ -46,8 +28,8 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-$("audio#SlingSong").prop("volume", 0.29);
-$('audio#raceMusic')[0].play();
+// $("audio#SlingSong").prop("volume", 0.29);
+// $('audio#raceMusic')[0].play();
 $('.snowball').hide();
 
 
@@ -78,7 +60,7 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='../StudyPup_assets/Puptune_Boss_Robo_Tootles.gif' class='snowman'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='../StudyPup_assets/efad.gif' class='snowman'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
     
   });
@@ -252,12 +234,9 @@ console.log('keep playing');
               <span id="time">25</span>      
             </span>
           </div>
-      <div class="cocoNova">
-          <img src='../StudyPup_assets/hotCocoSquirt.png' alt="" class='snowball'/>
-          <img src='../StudyPup_assets/Puptune_Boss_Nova_w_Trophy.png' alt="" class='novaWithHose'/>
-     </div>
+    
      <img class="mountains" src='../StudyPup_assets/Puptune_Boss_Foreground.png' alt="" />
-     <img src='../StudyPup_assets/Puptune_Boss_Tootles.gif' alt="" class='tootles'/>
+    
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
 </div>

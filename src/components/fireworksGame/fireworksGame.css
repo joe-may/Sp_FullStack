@@ -1,46 +1,46 @@
 @keyframes azero {
   0%   { left:0%; top:211%;}
 
-  100% { left:190%; top:-391%;}
+  100% { left:0%; top:-101%;}
 }
 
 @keyframes aone {
   0%   { left:0%; top:211%;}
 
-  100% { left:-90%; top:-391%;}
+  100% { left:0%; top:-65%;}
 }
 
 
 @keyframes atwo {
   0%   { left:0%; top:211%;}
 
-  100% { left:-90%; top:-391%;}
+  100% { left:0%; top:-68%;}
 }
 
 @keyframes athree {
   0%   { left:0%; top:211%;}
 
-  100% { left:-90%; top:-391%;}
+  100% { left:0%; top:-101%;}
 }
 @keyframes afour {
-  0%   { left:0%; top:211%;}
+  0%   { left:50%; top:211%;}
 
-  100% { left:190%; top:-391%;}
+  100% { left:50%; top:-101%;}
 }
 @keyframes afive {
-  0%   { left:0%; top:211%;}
+  0%   { left:30%; top:111%;}
 
-  100% { left:0%; top:-421%;}
+  100% { left:30%; top:-101%;}
 }
 @keyframes asix {
-  0%   { left:0%; top:211%;}
+  0%   { left:30%; top:211%;}
 
-  100% { left:-20%; top:-341%;}
+  100% { left:30%; top:-101%;}
 }
 @keyframes aseven {
-  0%   { left:0%; top:211%;}
+  0%   { left:-20%; top:211%;}
 
-  100% { left:120%; top:-341%;}
+  100% { left:-30%; top:-101%;}
   
 }
 
@@ -198,11 +198,11 @@
 
   .fireworksGame .problem p {
     position: fixed;
-    background-image: url(https://i.imgur.com/asCGPxU.png);
+ 
     background-size: 42vw 29vh;
     background-position-y: -60px;
     background-repeat: no-repeat;
-    color: rgb(8, 8, 8);
+    color: white;
     font-size:80px;
     width: 43%;
     left: 35%;
@@ -253,10 +253,11 @@
 }
 
 .fireworksGame .house .a0 {
-  width: 92%;
+  width: 35%;
   top: -211%;
+  transform: rotate(310deg);
   animation-name: azero;
-  animation-duration: 11s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
   
 }
@@ -277,11 +278,12 @@
 
 
 .fireworksGame .house .a1 {
-  width: 80%;
-  top: -200%;
+  width: 35%;
+  top: -300%;
+  transform: rotate(310deg);
   animation-name: aone;
-  animation-duration: 11s;
-  animation-delay: 5s;
+  animation-duration:6s;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
 }
 
@@ -303,12 +305,13 @@
 }
 
 .fireworksGame .house .a2 {
-  width: 79%;
-  top: -193%;
+  width: 35%;
+  top: -300%;
   left: 27%;
+  transform: rotate(310deg);
   animation-name: atwo;
-  animation-delay: 10s;
-  animation-duration: 11s;
+  animation-delay: 4s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
 }
 .fireworksGame .house .a2 .snowman {
@@ -333,12 +336,13 @@
 
 
 .fireworksGame .house .a3 {
-  width: 100%;
-  top: -175%;
+  width: 35%;
+  top: -300%;
   left: -3%;
+  transform: rotate(310deg);
   animation-name: athree;
   animation-delay: 10s;
-  animation-duration: 11s;
+  animation-duration: 5.4s;
   animation-iteration-count: infinite;
 }
 
@@ -361,11 +365,13 @@
 
 
 .fireworksGame .house .a4 {
-  width: 100%;
-  top: -114%;
+  width: 35%;
+  top: -400%;
+  transform: rotate(310deg);
   animation-name: afour;
-  animation-duration: 11s;
-  animation-delay: 10s;
+
+  animation-duration: 8s;
+  animation-delay: 3s;
   animation-iteration-count: infinite;
 }
 
@@ -389,11 +395,12 @@
 }
 
 .fireworksGame .house .a5 {
-  width: 100%;
-  top: -160%;
+  width: 35%;
+  top: -400%;
   animation-name: afive;
   animation-delay: 8s;
-  animation-duration: 11s;
+  transform: rotate(310deg);
+  animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 
@@ -417,12 +424,13 @@
 }
 
 .fireworksGame .house .a6 {
-  width: 100%;
-  top: -185%;
+  width: 35%;
+  top: -400%;
+  transform: rotate(310deg);
   left: 24%;
   animation-name: asix;
-  animation-delay: 8s;
-  animation-duration: 11s;
+  animation-delay: 5s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
 }
 
@@ -443,12 +451,13 @@
 }
 
 .fireworksGame .house .a7 {
-  width: 100%;
-  top: -165%;
+  width: 35%;
+  top: -400%;
   left: -20%;
+  transform: rotate(310deg);
   animation-name: aseven;
-  animation-delay: 2s;
-  animation-duration: 11s;
+  animation-delay: 4s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 
