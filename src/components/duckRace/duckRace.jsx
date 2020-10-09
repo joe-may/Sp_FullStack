@@ -32,7 +32,7 @@ $('.countDown').click(function() {
 
 ////snowball throw
 
-
+const lemons = Math.floor(Math.random() * 50000) + 29000 ;
 
 
 $('.start').on('click',function() {
@@ -53,19 +53,19 @@ $('.kart1').finish().css('left', '0%');
 setTimeout(function() {
   $('.kart2').animate({
         left: "45%"
-    }, 40000);
+    }, Math.floor(Math.random() * 50000) + 29000);
   
 });
 setTimeout(function() {
   $('.kart3').animate({
         left: "45%"
-    }, 55000);
+    }, Math.floor(Math.random() * 50000) + 29000);
   
 });
 setTimeout(function() {
   $('.kart4').animate({
         left: "45%"
-    }, 45000);
+    }, Math.floor(Math.random() * 50000) + 29000);
   
 });
 

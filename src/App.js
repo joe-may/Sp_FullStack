@@ -52,6 +52,7 @@ import ArcadePages from "./components/arcadePages/arcadePages";
 import ArcadePagem from "./components/arcadePagem/arcadePagem";
 import ArcadePaged from "./components/arcadePaged/arcadePaged";
 import DuckRace from "./components/duckRace/duckRace";
+import FireworksGame from "./components/fireworksGame/fireworksGame";
 
 
 
@@ -1769,6 +1770,26 @@ class App extends Component {
       <section>
       <Route exact path="/arcade-ducka" render={(props) => (
               <DuckRace
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
+              // nxtlvl={'/v18#a'}
+              // gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/arcade-fireworksa" render={(props) => (
+              <FireworksGame
               answerset = {[
                 { problem: "3 + 2 =", answer: "5"},
                 { problem: "6 + 1 =", answer: "7"},
