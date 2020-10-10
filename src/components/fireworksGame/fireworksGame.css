@@ -1,43 +1,43 @@
-@keyframes azero {
+@keyframes  azeroFire {
   0%   { left:0%; top:211%;}
 
   100% { left:0%; top:-101%;}
 }
 
-@keyframes aone {
+@keyframes aoneFire {
   0%   { left:0%; top:211%;}
 
   100% { left:0%; top:-65%;}
 }
 
 
-@keyframes atwo {
+@keyframes atwoFire {
   0%   { left:0%; top:211%;}
 
   100% { left:0%; top:-68%;}
 }
 
-@keyframes athree {
+ @keyframes athreeFire {
   0%   { left:0%; top:211%;}
 
   100% { left:0%; top:-101%;}
 }
-@keyframes afour {
+@keyframes afourFire {
   0%   { left:50%; top:211%;}
 
   100% { left:50%; top:-101%;}
 }
-@keyframes afive {
-  0%   { left:30%; top:111%;}
+ @keyframes afiveFireFire {
+  0%   { left:40%; top:111%;}
 
-  100% { left:30%; top:-101%;}
+  100% { left:40%; top:-101%;}
 }
-@keyframes asix {
+ @keyframes asixFire {
   0%   { left:30%; top:211%;}
 
-  100% { left:30%; top:-101%;}
+  100% { left:30%; top:-121%;}
 }
-@keyframes aseven {
+@keyframes asevenFire {
   0%   { left:-20%; top:211%;}
 
   100% { left:-30%; top:-101%;}
@@ -222,7 +222,7 @@
   font-size:5vw;
   color: rgb(175, 54, 54)  ;
   border-radius: 30px 30px 30px 30px;
-  z-index: 1000;
+  z-index: 2500;
   cursor: pointer;
   }
   
@@ -256,7 +256,7 @@
   width: 35%;
   top: -211%;
   transform: rotate(310deg);
-  animation-name: azero;
+  animation-name: azeroFire;
   animation-duration: 7s;
   animation-iteration-count: infinite;
   
@@ -281,7 +281,7 @@
   width: 35%;
   top: -300%;
   transform: rotate(310deg);
-  animation-name: aone;
+  animation-name: aoneFire;
   animation-duration:6s;
   animation-delay: 2s;
   animation-iteration-count: infinite;
@@ -309,7 +309,7 @@
   top: -300%;
   left: 27%;
   transform: rotate(310deg);
-  animation-name: atwo;
+  animation-name: atwoFire;
   animation-delay: 4s;
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -340,7 +340,7 @@
   top: -300%;
   left: -3%;
   transform: rotate(310deg);
-  animation-name: athree;
+  animation-name: athreeFire;
   animation-delay: 10s;
   animation-duration: 5.4s;
   animation-iteration-count: infinite;
@@ -368,7 +368,7 @@
   width: 35%;
   top: -400%;
   transform: rotate(310deg);
-  animation-name: afour;
+  animation-name: afourFire;
 
   animation-duration: 8s;
   animation-delay: 3s;
@@ -397,7 +397,7 @@
 .fireworksGame .house .a5 {
   width: 35%;
   top: -400%;
-  animation-name: afive;
+  animation-name: afiveFire;
   animation-delay: 8s;
   transform: rotate(310deg);
   animation-duration: 6s;
@@ -428,7 +428,7 @@
   top: -400%;
   transform: rotate(310deg);
   left: 24%;
-  animation-name: asix;
+  animation-name: asixFire;
   animation-delay: 5s;
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -455,7 +455,7 @@
   top: -400%;
   left: -20%;
   transform: rotate(310deg);
-  animation-name: aseven;
+  animation-name: asevenFire;
   animation-delay: 4s;
   animation-duration: 6s;
   animation-iteration-count: infinite;

@@ -7,12 +7,12 @@ import $ from "jquery";
 class DuckRace extends Component {
     componentDidMount() {
 
-      const { answerset } = this.props;
+      var { answerset } = this.props;
 
 
    
  
-     
+ var levelCont =  1  
 $('.win').hide();
 $('.lose').hide();
 $('.create').hide();
@@ -36,6 +36,7 @@ const lemons = Math.floor(Math.random() * 50000) + 29000 ;
 
 
 $('.start').on('click',function() {
+  changeAnswerset();
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
@@ -255,6 +256,7 @@ var boost = 5
     console.log('keep playing');
     console.log(currentGameArray);
     console.log('you win');
+    levelCont = levelCont + 1
     $('audio#icecreamSong')[0].pause()
     $('audio#icecreamSong')[0].currentTime = 0
 
@@ -262,6 +264,20 @@ var boost = 5
 }
   
 }); 
+var changeAnswerset = function () {
+  if (levelCont === 2) {
+    answerset = [
+     { problem: "ppoo =", answer: "5"},
+     { problem: "poo=", answer: "7"},
+     { problem: "poo =", answer: "8"},
+     { problem: " =", answer: "3"},
+     { problem: "poo=", answer: "4"},
+     { problem: "poo=", answer: "10"},
+     { problem: "oppoejfw =", answer: "9"},
+     { problem: "mbkwjbd=", answer: "6"},
+     
+   ]
+}};
 
 
 

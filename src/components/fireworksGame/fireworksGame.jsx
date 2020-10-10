@@ -9,11 +9,26 @@ import $ from "jquery";
 class FireworksGame extends Component {
     componentDidMount() {
      
-      const { answerset } = this.props;
+      var { answerset } = this.props;
 
      
+      var changeAnswerset = function () {
+        if (levelCont === 2) {
+          answerset = [
+           { problem: "ppoo =", answer: "5"},
+           { problem: "poo=", answer: "7"},
+           { problem: "poo =", answer: "8"},
+           { problem: " =", answer: "3"},
+           { problem: "poo=", answer: "4"},
+           { problem: "poo=", answer: "10"},
+           { problem: "oppoejfw =", answer: "9"},
+           { problem: "mbkwjbd=", answer: "6"},
+           
+         ]
+      }};
+      
 
-
+var levelCont =  1  
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
@@ -24,6 +39,7 @@ $('.nextLevel').hide();
 
 
 $('.start').on('click',function() {
+  changeAnswerset();
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
@@ -95,7 +111,11 @@ console.log(currentGameArray);
  ///////////////random movement
 
 
+////////////////change answerset
 
+
+
+    
  
  
   
@@ -188,6 +208,10 @@ console.log('keep playing');
     clearInterval(interval);
     $('audio#raceMusic')[0].pause()
     $('audio#raceMusic')[0].currentTime = 0
+    
+    levelCont = levelCont + 1
+    console.log(levelCont);
+
     console.log('you win')
     // generateHearts();
     
@@ -197,6 +221,10 @@ console.log('keep playing');
 }
   
 }); 
+
+
+
+
 
 
  }
@@ -227,7 +255,7 @@ console.log('keep playing');
                 
           <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game4.png' alt="" />
                 
-          <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
+          
           
           <div>
             <span id="timer">
