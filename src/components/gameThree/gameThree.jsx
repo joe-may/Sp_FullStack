@@ -215,8 +215,10 @@ $('.countDown').click(function(){
     generateNextTurn();
     $('p').remove();
     $('.layer').show();
+    $('audio#icecreamSong')[0].pause()
+    $('audio#icecreamSong')[0].currentTime = 0
     currentEquation = null;
-    currentGameArray =null;
+    currentGameArray = null;
     theAnswer = null;
     selectedProblem = null;
     randomProblemSelector = null;
@@ -304,7 +306,7 @@ $('.countDown').click(function(){
     <div class='greenBoxAndGif'></div>
     <div class='greenBox'>
       
-        <img src='../StudyPup_assets/Snow_Con_Cocoa_Box3.png' alt="" class='gbox'/>
+        <img src='../StudyPup_assets/Snow_Con_Cocoa_Box3_NEW.png' alt="" class='gbox'/>
         <img src='../StudyPup_assets/Snow_Con_Cocoa_Steam.gif'alt=""  class='smoke'/>
       
   </div>

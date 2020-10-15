@@ -137,7 +137,7 @@ class App extends Component {
                 { problem: "2 + 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/sno3'}
+              nxtlvl={'/sno2'}
               gButton={'/planetspagea'}
               
               
@@ -161,7 +161,7 @@ class App extends Component {
                 { problem: "2 - 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/sno3s'}
+              nxtlvl={'/sno2s'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -180,7 +180,7 @@ class App extends Component {
                 { problem: "2 x 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/sno3m'}
+              nxtlvl={'/sno2m'}
               gButton={'/planetspagem'}
                 {...props} />
                 )}/>
@@ -199,7 +199,7 @@ class App extends Component {
                 { problem: "2 ÷ 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/sno3d'}
+              nxtlvl={'/sno2d'}
               gButton={'/planetspaged'}
                 {...props} />
                 )}/>
@@ -218,13 +218,13 @@ class App extends Component {
                 { problem: "2 + 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v3#a'}
+              nxtlvl={'/bbsno1'}
               gButton={'/planetspagea'}
                 />
                 )}/>
       </section>
       <section>
-          <Route exact path="/sno2s" render={(props) => (
+          <Route exact path="/sno3s" render={(props) => (
               <GameTwo
               answerset = {[
                 { problem: "3 - 2 =", answer: "5"},
@@ -237,13 +237,13 @@ class App extends Component {
                 { problem: "2 - 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v3#s'}
+              nxtlvl={'/bbsno1s'}
               gButton={'/planetspages'}
                 />
                 )}/>
       </section>
       <section>
-          <Route exact path="/sno2m" render={(props) => (
+          <Route exact path="/sno3m" render={(props) => (
               <GameTwo
               answerset = {[
                 { problem: "3 x 2 =", answer: "5"},
@@ -256,13 +256,13 @@ class App extends Component {
                 { problem: "2 x 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v3#m'}
+              nxtlvl={'/bbsno1m'}
               gButton={'/planetspagem'}
                 />
                 )}/>
       </section>
       <section>
-          <Route exact path="/sno2d" render={(props) => (
+          <Route exact path="/sno3d" render={(props) => (
               <GameTwo
               answerset = {[
                 { problem: "3 ÷ 2 =", answer: "5"},
@@ -275,7 +275,7 @@ class App extends Component {
                 { problem: "2 ÷ 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v3#d'}
+              nxtlvl={'/bbsno1d'}
               gButton={'/planetspaged'}
                 />
                 )}/>
@@ -286,19 +286,19 @@ class App extends Component {
               answerset={[
                 { problem: "2 + 2 =", answer: "4"},
                 { problem: "2 + 1 =", answer: "3"},
-                // { problem: "2 + 4 =", answer: "6"},
-                // { problem: "2 + 2 =", answer: "4"},
-                // { problem: "2 + 1 =", answer: "3"},
-                // { problem: "2 + 3 =", answer: "5"},
+                { problem: "2 + 4 =", answer: "6"},
+                { problem: "2 + 2 =", answer: "4"},
+                { problem: "2 + 1 =", answer: "3"},
+                { problem: "2 + 3 =", answer: "5"},
               
               ]}
-              nxtlvl={'/v4#a'}
+              nxtlvl={'/sno3'}
               gButton={'/planetspagea'}
                 />
                 )}/>
       </section>
       <section>
-          <Route exact path="/sno3s" render={(props) => (
+          <Route exact path="/sno2s" render={(props) => (
               <GameThree
               answerset={[
                 { problem: "2 - 2 =", answer: "5"},
@@ -309,13 +309,13 @@ class App extends Component {
                 { problem: "2 - 3 =", answer: "10"},
               
               ]}
-              nxtlvl={'/v4#s'}
+              nxtlvl={'/sno3s'}
               gButton={'/planetspages'}
                 />
                 )}/>
       </section>
       <section>
-          <Route exact path="/sno3m" render={(props) => (
+          <Route exact path="/sno2m" render={(props) => (
               <GameThree
               answerset={[
                 { problem: "2 x 2 =", answer: "5"},
@@ -326,13 +326,13 @@ class App extends Component {
                 { problem: "2 x 3 =", answer: "10"},
               
               ]}
-              nxtlvl={'/v4#m'}
+              nxtlvl={'/sno3m'}
               gButton={'/planetspagem'}
                 />
                 )}/>
       </section>
       <section>
-          <Route exact path="/sno3d" render={(props) => (
+          <Route exact path="/sno2d" render={(props) => (
               <GameThree
               answerset={[
                 { problem: "2 ÷ 2 =", answer: "5"},
@@ -343,7 +343,7 @@ class App extends Component {
                 { problem: "2 ÷ 3 =", answer: "10"},
               
               ]}
-              nxtlvl={'/v4#d'}
+              nxtlvl={'/sno3d'}
               gButton={'/planetspaged'}
                 />
                 )}/>
@@ -383,7 +383,7 @@ class App extends Component {
                 { problem: "2 + 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v5#a'}
+              nxtlvl={'/hot1'}
               gButton={'/planetspagea'}
                 {...props} />
                 )}/>
@@ -402,7 +402,7 @@ class App extends Component {
                 { problem: "2 - 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v5#s'}
+              nxtlvl={'/hot1s'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -421,7 +421,7 @@ class App extends Component {
                 { problem: "2 x 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v5#m'}
+              nxtlvl={'/hot1m'}
               gButton={'/planetspagem'}
                 {...props} />
                 )}/>
@@ -440,7 +440,7 @@ class App extends Component {
                 { problem: "2 ÷ 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v5#d'}
+              nxtlvl={'/hot1d'}
               gButton={'/planetspaged'}
                 {...props} />
                 )}/>

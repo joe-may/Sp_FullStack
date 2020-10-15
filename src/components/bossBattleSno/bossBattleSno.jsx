@@ -153,7 +153,10 @@ console.log(currentGameArray);
   }, 1500)
 
     if (clickedAnswer === theAnswer) {
-      
+      $('p').remove();
+          currentGameArray.splice(randomProblemSelector,1);
+          console.log(currentGameArray.length);
+          generateNextTurn();
 
       console.log("Correct!");
       $(this).fadeOut(1800, function() {
@@ -164,11 +167,9 @@ console.log(currentGameArray);
        
         
 
-        $('p').remove();
-          currentGameArray.splice(randomProblemSelector,1);
-          console.log(currentGameArray.length);
+      
           winningCheck();
-          generateNextTurn();
+          
           console.log($(this).parent());
          
       });

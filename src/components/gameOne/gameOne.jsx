@@ -28,7 +28,7 @@ class GameOne extends Component {
       $('.treeNine').hide();
       $('.treeTen').hide();
       $('.skip').on('click',function() { 
-        $('.layer').remove();
+        $('.layer').hide();
         $('iframe').remove();
         $('.skip').remove();
         $('.treeOne').show();
@@ -84,6 +84,7 @@ $('iframe').hide();
 $('.novaThrow').show();
 $('#timer').show();
 $('p').hide();
+$('.layer').hide();
 $('p').show();
 
 
@@ -118,7 +119,7 @@ console.log(currentGameArray);
   });
 
  
-  var counter = 10;
+  var counter = 40;
  
 
   
@@ -133,6 +134,17 @@ console.log(currentGameArray);
           $(".reset").html(" ");
           $('#timer').hide();
           $(".start").show();
+           
+          $('.treeOne').hide();
+          $('.treeTwo').hide();
+          $('.treeThree').hide();
+          $('.treeFour').hide();
+          $('.treeFive').hide();
+          $('.treeSix').hide();
+          $('.treeSeven').hide(); 
+          $('.treeEight').hide();
+          $('.treeNine').hide();
+          $('.treeTen').hide();
           $('p').remove();
           $('p').hide();
           $('audio#iglooSong')[0].pause()
@@ -235,6 +247,17 @@ console.log('keep playing');
     $(".start").show();
     $('.tryAgain').show();
     $('p').hide();
+   
+    $('.treeOne').hide();
+    $('.treeTwo').hide();
+    $('.treeThree').hide();
+    $('.treeFour').hide();
+    $('.treeFive').hide();
+    $('.treeSix').hide();
+    $('.treeSeven').hide(); 
+    $('.treeEight').hide();
+    $('.treeNine').hide();
+    $('.treeTen').hide();
     clearInterval(interval);
     $('audio#iglooSong')[0].pause()
     $('audio#iglooSong')[0].currentTime = 0

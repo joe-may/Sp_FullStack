@@ -110,11 +110,13 @@
 .planetsPageM .planetContainer  .planets{
   
   position: relative;
-  width: 799px;
-  height: 665.75px;
+  width: 60vw;
+  height: 95vh;
   margin-left: 0px;
   margin-top: 9px;
-  
+  max-height: 1000px;
+  max-width: 1200px;
+  min-width: 780px; 
 }
 .planetsPageM .planetContainer .top-left {
   position: absolute;
@@ -530,12 +532,15 @@ top:50%;
     color: #fff;
    
     width: 12vw;
+    min-width: 200px;
+    max-height: 200px;
   }
   .planetsPageM .planetContainer .opCon a {
     padding-right: 13px;
     
     margin-left: 4px;
     font-size: 5vh;
+    font-size: 4.5vh;
     
   }
   .planetsPageM .opCon .opa{

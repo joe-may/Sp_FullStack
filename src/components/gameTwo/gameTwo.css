@@ -94,12 +94,14 @@
       display: flex;
       flex-flow: row wrap; 
       position: fixed;
-      background-image: url(https://i.imgur.com/DZanh1O.png);
-      background-size: 65vw 20vh;
+      -webkit-text-stroke-width: 4px;
+      -webkit-text-stroke-color: rgb(255, 255, 255);
+      text-shadow: 10px 5px rgb(136, 207, 255);
+      color: rgb(34, 42, 43);
       width: 65%;
-      height: 20%;
+      height: 15%;
       margin-left: 19%;
-      top: 85%;
+      top: 87%;
       font-family: 'Titan One';
       z-index: 800;
       
@@ -121,15 +123,19 @@
     }
   
     .game2 .problem p {
-      position: fixed;
-      border-radius: 5%;
-      color: black; 
-      font-size:7vw;
-      width: 25%;
-      margin-left: 40%;
-      top: -7%;
-      font-family: 'Titan One';
-      z-index: 800;
+         position: fixed;
+        border-radius: 0%;
+        color: white;
+        text-shadow: 20px 20px 20px black, 0 0 5px blue, 0 0 5px darkblue;
+        font-size:11vw;
+        width: 40%;
+        left: 35%;
+        top: 5%;
+        font-family: 'Titan One';
+        z-index: 800;
+        cursor: crosshair; 
+        margin-top: 0%;
+        margin-bottom: 0%;
 	}
 	
   
@@ -174,28 +180,20 @@
   
   .game2 .win 
    {
-    width: 50%;
     position: fixed;
-    left:26%;
-    text-align: center;
-    top: 3%;
-    font-family: 'Titan One';
-    font-size: 5vh;
-    color:rgb(90, 170, 207) ;
-    border-radius: 5%;
+    width: 50%;
+    left:24%;
+    top:11%;
+    height: 60%;
     z-index: 1000;
    }
    .game2 .lose {
-    width: 45%;
     position: fixed;
-    left:26%;
-    text-align: center;
-    top: 1%;
-    font-family: 'Titan One';
-    font-size: 5vh;
-    color:rgb(90, 170, 207) ;
-    border-radius: 5%;
-    z-index: 800;
+    width: 43%;
+    left:27%;
+    top:6%;
+    height: 60%;
+    z-index: 500;
    }
     
   
