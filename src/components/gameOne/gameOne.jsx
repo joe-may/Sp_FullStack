@@ -11,6 +11,9 @@ class GameOne extends Component {
     componentDidMount() {
      
       const { answerset } = this.props;
+
+
+
       
       $('.snowball').hide();
       $('.start').hide();
@@ -47,22 +50,6 @@ $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
 $('.novaThrow').hide();
-$('.snowball').hide();
-
-
-
-
-
-
-$('.start').on('click',function() {
-$('.start').hide();
-$('.win').hide();
-$('.lose').hide();
-$('.nextLevel').hide();
-$('audio#iglooSong')[0].play();
-$('iframe').hide();
-$('.novaThrow').show();
-$('.snowball').show();
 
 
 $('.game1').on('click',function(e) {
@@ -81,6 +68,24 @@ $('.game1').on('click',function(e) {
       $(".snowball").removeAttr('style');
   });
 });
+
+
+
+
+
+
+$('.start').on('click',function() {
+$('.start').hide();
+$('.win').hide();
+$('.lose').hide();
+$('.nextLevel').hide();
+$('audio#iglooSong')[0].play();
+$('iframe').hide();
+$('.novaThrow').show();
+
+
+
+
 
 
 
@@ -110,7 +115,7 @@ console.log(currentGameArray);
   });
 
  
-  var counter = 30;
+  var counter = 40;
  
 
   
@@ -127,6 +132,7 @@ console.log(currentGameArray);
           $('p').hide();
           $('audio#iglooSong')[0].pause()
           $('audio#iglooSong')[0].currentTime = 0
+          
           
         return;
     }else{
@@ -273,8 +279,8 @@ console.log('keep playing');
 
           
           <div>
-            <span id="timer">
-              <span id="time">10</span>      
+            <span id="timer">00:
+              <span id="time"></span>      
             </span>
           </div>
     
@@ -300,6 +306,7 @@ console.log('keep playing');
   
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
 </div>
     
 );

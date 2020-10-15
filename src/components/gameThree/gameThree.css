@@ -207,15 +207,21 @@
     }
     
     .game3 #timer{
-        
-      font-size: 30px;
+      color:whitesmoke;
       z-index: 1000;
       position: fixed;
-      top: 0%;
-      left: 50%;
-  
+      font-size: 2vw;
+      top:2%;
+      left:92%;
+      font-family: 'Orbitron';
+    
+    
     }
     
+    .game3 #time{
+      color: whitesmoke;
+      font-size: 2vw;
+    }
     /* .snowball {
         width: 5%;
         position:absolute;

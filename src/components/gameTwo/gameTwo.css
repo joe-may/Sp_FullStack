@@ -16,19 +16,21 @@
   height:100%;
   left: 0%;
 }
-.game2 #timer {
-  font-size: 30px;
+.game2 #timer{
+  color:black;
   z-index: 1000;
   position: fixed;
-  top: 95%;
-  color: rgb(25, 150, 199);
-  left: 90%;
-  z-index: 1000;
+  font-size: 2vw;
+  top:2%;
+  left:92%;
+  font-family: 'Orbitron';
+
 
 }
-.game2 .time {
-	font-size: 30px;
-  }
+.game2 #time{
+  color: black;
+  font-size: 2vw;
+}
 
   .game2 .footer { 
       height: 200px;

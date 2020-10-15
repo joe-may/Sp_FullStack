@@ -236,7 +236,7 @@ class GameTwo extends Component {
   </div>
   <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
   <div>
-      <span id="timer">
+      <span id="timer">00:
         <span id="time"></span>     
       </span>
   </div>
@@ -248,6 +248,7 @@ class GameTwo extends Component {
 
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
     
 </body>
 </div>

@@ -74,7 +74,22 @@
 
 }
 
-   
+.bossBattleSno #timer{
+  color: black;
+  z-index: 1000;
+  position: fixed;
+  font-size: 2vw;
+  top:2%;
+  left:92%;
+  font-family: 'Orbitron';
+
+
+}
+
+.bossBattleSno #time{
+  color: black;
+  font-size: 2vw;
+}
 .bossBattleSno .novaWithHose {
   width: 13%;
   position: fixed;
@@ -82,15 +97,7 @@
   left: 46%;
   z-index: 1000;
 }
-.bossBattleSno #timer{
-  font-size: 30px;
-  z-index: 1000;
-  position: fixed;
-  top: 95%;
-  color: rgb(25, 150, 199);
-  left: 90%;
 
-}
 .bossBattleSno .backbutton{
     position: fixed;
     top:0%;
@@ -106,10 +113,6 @@
   overflow: hidden;
 }
 
-.bossBattleSno #time{
-    
-  font-size: 30px;
-}
 
 .bossBattleSno .snowball {
   width: 1%;
