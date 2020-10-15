@@ -82,6 +82,9 @@ $('.nextLevel').hide();
 $('audio#iglooSong')[0].play();
 $('iframe').hide();
 $('.novaThrow').show();
+$('#timer').show();
+$('p').hide();
+$('p').show();
 
 
 
@@ -115,20 +118,22 @@ console.log(currentGameArray);
   });
 
  
-  var counter = 40;
+  var counter = 10;
  
 
   
   var interval = setInterval(function() {
     counter--;
     // Display 'counter' wherever you want to display it.
-    if (counter <= 0 && currentGameArray.length > 0) {
+    if (counter <= 0 && currentGameArray.length > 0 ) {
          clearInterval(interval);
           // $('#time').text(counter);
           console.log("you lose");
           $('.lose').show();
           $(".reset").html(" ");
+          $('#timer').hide();
           $(".start").show();
+          $('p').remove();
           $('p').hide();
           $('audio#iglooSong')[0].pause()
           $('audio#iglooSong')[0].currentTime = 0
@@ -167,28 +172,32 @@ console.log(currentGameArray);
 
     if (clickedAnswer === theAnswer) {
       
-
+      $('p').remove();
+      currentGameArray.splice(randomProblemSelector,1);
+      console.log(currentGameArray.length);
+      winningCheck();
+      generateNextTurn();
       console.log("Correct!");
-      $(this).find('.answer').fadeOut(1000, function() {
+      $(this).find('.answer').fadeOut(800, function() {
         $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
         console.log(currentGameArray.length);
         var penguin = $(this).parent().find('.penguin');
         penguin.attr("src", "../StudyPup_assets/Penguin_Walk_Gif_Faster.gif");
-        $('p').remove();
+       
               
         
        
         
 
 
-          currentGameArray.splice(randomProblemSelector,1);
-          console.log(currentGameArray.length);
-          winningCheck();
-          generateNextTurn();
+          // currentGameArray.splice(randomProblemSelector,1);
+          // console.log(currentGameArray.length);
+          // winningCheck();
+          // generateNextTurn();
           console.log($(this).parent());
           setTimeout(function() {
             penguin.attr("src", "").remove();
-        }, 1800)
+        }, 1700)
       });
 
   
