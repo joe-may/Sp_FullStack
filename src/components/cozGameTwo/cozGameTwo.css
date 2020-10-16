@@ -18,17 +18,17 @@
   left: 0%;
 }
 .cozGameTwo #timer {
-  font-size: 30px;
-  z-index: 1000;
-  position: fixed;
-  top: 95%;
-  color: rgb(175, 54, 54);
-  left: 90%;
-  z-index: 1000;
-
+  color:white;
+      z-index: 1000;
+      position: fixed;
+      font-size: 2vw;
+      top:2%;
+      left:92%;
+      font-family: 'Orbitron';
 }
 .cozGameTwo .time {
-	font-size: 30px;
+  color: whitesmoke;
+  font-size: 2vw;
   }
 
   .cozGameTwo .footer { 
@@ -73,20 +73,19 @@
     }
 
     .cozGameTwo .nextLevel {
-   -webkit-text-stroke-width: 3px;
-   -webkit-text-stroke-color: #333;
-   text-shadow: 9px 5px #333;
-    position: fixed;
-    width: 17%;
-    left: 50%;
-    top: 50%;
-    margin-left: -10%;
-    font-family: 'Titan One';
-    font-size:3.5vw;
-    color: rgb(175, 54, 54) ;
-    border-radius: 30px 30px 30px 30px;
-    z-index: 1900;
-    cursor: pointer;
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: #333;
+      text-shadow: 9px 5px #333;
+      position: fixed;
+      width: 40%;
+      left: 28%;
+      top:50%;
+      font-family: 'Titan One';
+      font-size:4vw;
+      color: rgb(175, 54, 54) ;
+      border-radius: 30px 30px 30px 30px;
+      z-index: 2200;
+      cursor: pointer; 
       }
   
     .cozGameTwo .answers {
@@ -123,14 +122,18 @@
   
     .cozGameTwo .problem p {
       position: fixed;
-      border-radius: 5%;
-      color: WHITE; 
-      font-size:7vw;
-      width: 25%;
-      margin-left: 40%;
-      top: -7%;
+      border-radius: 0%;
+      color: white;
+      text-shadow: 20px 20px 20px black, 0 0 5px rgb(211, 179, 111), 0 0 5px darkblue;
+      font-size:11vw;
+      width: 40%;
+      left: 30%;
+      top: 5%;
       font-family: 'Titan One';
       z-index: 800;
+      cursor: crosshair; 
+      margin-top: 0%;
+      margin-bottom: 0%;
 	}
 	
   
@@ -143,7 +146,7 @@
       margin-left: -10%;
       font-family: 'Titan One';
       font-size:5vw;
-      color: rgb(14, 150, 168)  ;
+      color: rgb(11, 160, 165)  ;
       border-radius: 30px 30px 30px 30px;
       z-index: 900;
   }

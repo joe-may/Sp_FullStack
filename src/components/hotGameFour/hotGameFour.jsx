@@ -106,6 +106,7 @@ console.log(currentGameArray);
           $('.lose').show();
           $(".reset").html(" ");
           $(".start").show();
+          
           $('#timer').hide();
           $('p').hide();
           $('audio#moltaMusic')[0].pause()

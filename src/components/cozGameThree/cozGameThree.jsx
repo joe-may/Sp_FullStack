@@ -252,8 +252,8 @@ console.log('keep playing');
                 <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
                 <img src='../StudyPup_assets/pizza.png' alt="" class='snowball'/>
           <div>
-            <span id="timer">
-              <span id="time">10</span>      
+            <span id="timer">00:
+              <span id="time">30</span>      
             </span>
           </div>
       
@@ -269,6 +269,7 @@ console.log('keep playing');
   
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
 </div>
     
 );

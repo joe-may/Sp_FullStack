@@ -24,7 +24,7 @@ $('.win').hide();
 $('.lose').hide();
 $('.create').hide();
 $('.nextLevel').hide();
-$('.restart3').hide();
+
 
 
 //////up counter 
@@ -83,13 +83,15 @@ console.log(randomProblemSelector);
          clearInterval(interval);
           // $('#time').text(counter);
           console.log("you lose");
+          $('.start').show();
+          $('#timer').hide();
           $('.lose').show();
           currentEquation = null;
           currentGameArray =null;
           theAnswer = null;
           selectedProblem = null;
           randomProblemSelector = null;
-          $('.restart3').show();
+         
           $(".reset").html(" ");
           $('p').hide();
           $('audio#icecreamSong')[0].pause()
@@ -221,7 +223,7 @@ $('.countDown').click(function(){
     clearInterval(interval);
     $('.win').show();
     $(".reset").html(" ");
-    $(".start").show();
+
     $('.tryAgain').show();
     generateNextTurn();
     $('p').remove();
@@ -276,7 +278,7 @@ $('.countDown').click(function(){
       
       <div class="answers reset"></div>
       <button class="start">START</button>
-      <a class="restart3" href="/coz1">restart!</a>
+     
 
      
         <img class="win" src='../StudyPup_assets/YOU_WON_Cozmo_Game3.png' alt="" />
@@ -319,11 +321,12 @@ $('.countDown').click(function(){
       <img src='../StudyPup_assets/Cozmo_Elevator_Buggies.png' alt="" class='buggies'/>
 
       <div>
-        <span id="timer">
-          <span id="time">25</span>      
+        <span id="timer">00:
+          <span id="time">35</span>      
         </span>
       </div>
       <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+      <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
   </body>
   </div>
 );

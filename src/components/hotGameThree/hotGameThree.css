@@ -372,16 +372,13 @@ z-index: 2000;
   z-index: 2200;
  }
  .hotGameThree .lose {
-  width: 45%;
   position: fixed;
-  left:27%;
-  text-align: center;
-  top: 5%;
-  font-family: 'Titan One';
-  font-size: 5vh;
-  color:rgb(90, 170, 207) ;
-  border-radius: 5%;
-  z-index: 900;
+  width: 50%;
+ 
+  left:24%;
+  top:7%;
+  height: 60%;
+  z-index: 1700;
  }
  .hotGameThree .layer {
   background-color: rgba(255, 117, 117, 0.65);

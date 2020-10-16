@@ -78,6 +78,7 @@ class HotGameTwo extends Component {
                 console.log("you lose");
                 $('.lose').show();
                 $(".reset").html(" ");
+                $('#timer').hide();
                 $(".start").show();
                 $('p').hide();
                 $('audio#raceMusic')[0].pause()
