@@ -18,6 +18,7 @@ class HotGameFour extends Component {
         $('iframe').remove();
         $('.skip').remove();
         $('.start').show();
+        
       
       });
 
@@ -57,6 +58,7 @@ $('.lose').hide();
 $('.nextLevel').hide();
 $('audio#moltaMusic')[0].play();
 $('.snowball').hide();
+$('#timer').show();
 
 
 
@@ -104,6 +106,7 @@ console.log(currentGameArray);
           $('.lose').show();
           $(".reset").html(" ");
           $(".start").show();
+          $('#timer').hide();
           $('p').hide();
           $('audio#moltaMusic')[0].pause()
           $('audio#moltaMusic')[0].currentTime = 0
@@ -155,8 +158,10 @@ console.log(currentGameArray);
 
 
     if (clickedAnswer === theAnswer) {
-      
-
+      currentGameArray.splice(randomProblemSelector,1);
+      $('p').remove();
+      winningCheck();
+      generateNextTurn();
       console.log("Correct!");
       $('audio#sizzle')[0].play();
       $('audio#sizzle')[0].currentTime = 0
@@ -168,11 +173,10 @@ console.log(currentGameArray);
        
         
 
-        $('p').remove();
-          currentGameArray.splice(randomProblemSelector,1);
+        
+         
           console.log(currentGameArray.length);
-          winningCheck();
-          generateNextTurn();
+         
           console.log($(this).parent());
          
       });
@@ -259,8 +263,8 @@ console.log('keep playing');
           <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           
           <div>
-            <span id="timer">
-              <span id="time">25</span>      
+            <span id="timer">00:
+              <span id="time">30</span>      
             </span>
           </div>
 
@@ -274,6 +278,7 @@ console.log('keep playing');
   
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
 </div>
     
 );

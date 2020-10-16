@@ -208,12 +208,18 @@
     
     .hotGameOne #timer{
         
-      font-size: 30px;
+      color:white;
       z-index: 1000;
       position: fixed;
-      top: 0%;
-      left: 50%;
+      font-size: 2vw;
+      top:2%;
+      left:92%;
+      font-family: 'Orbitron';
   
+    }
+    .hotGameOne #time{
+      color: whitesmoke;
+      font-size: 2vw;
     }
     
     /* .snowball {
@@ -392,7 +398,7 @@
       font-size:5vw;
       color: rgb(175, 54, 54) ;
       border-radius: 30px 30px 30px 30px;
-      z-index: 1300;
+      z-index: 2500;
       cursor: pointer;
       
     }
@@ -480,16 +486,16 @@
       position: fixed;
       width: 50%;
       left:20%;
-      top:20%;
-      height: 50%;
+      top:15%;
+      height: 60%;
       z-index: 1700;
      }
     
      .hotGameOne .lose {
       position: fixed;
       width: 50%;
-      left:20%;
-      top:20%;
+      left:25%;
+      top:4%;
       height: 60%;
       z-index: 1700;
      }
@@ -510,22 +516,7 @@
     cursor: pointer; 
    
      }
-     .hotGameOne .restart3 {
-      -webkit-text-stroke-width: 3px;
-      -webkit-text-stroke-color: #333;
-      text-shadow: 9px 5px #333;
-      position: fixed;
-      width: 40%;
-      left: 25%;
-      top:67%;
-      font-family: 'Titan One';
-      font-size:5vw;
-      color: rgb(175, 54, 54) ;
-      border-radius: 30px 30px 30px 30px;
-      z-index: 2200;
-      cursor: pointer; 
-     
-       }
+  
      
        .hotGameOne .layer {
         background-color: rgba(255, 117, 117, 0.65);;

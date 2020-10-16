@@ -191,7 +191,7 @@ class HotGameTwo extends Component {
           $('.win').show();
           $('.nextLevel').show();
           $(".reset").html(" ");
-          $(".start").show();
+          $(".start").hide();
           $('.tryAgain').show();
           $('audio#raceMusic')[0].pause()
           $('audio#raceMusic')[0].currentTime = 0
@@ -238,7 +238,7 @@ class HotGameTwo extends Component {
   </div>
   <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
   <div>
-      <span id="timer">
+      <span id="timer">00:
         <span id="time"></span>     
       </span>
   </div>
@@ -250,6 +250,7 @@ class HotGameTwo extends Component {
 
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
     
 </body>
 </div>

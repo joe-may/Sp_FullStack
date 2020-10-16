@@ -71,7 +71,7 @@ console.log(randomProblemSelector);
 
 
  
-  var counter = 25  ;
+  var counter = 35  ;
  
 ////////////timer
   var interval = setInterval(function() {
@@ -87,7 +87,10 @@ console.log(randomProblemSelector);
           selectedProblem = null;
           randomProblemSelector = null;
           $('.restart3').show();
+          $('#timer').hide();
+
           $(".reset").html(" ");
+          $('.start').show();
           $('p').hide();
           $('audio#icecreamSong')[0].pause()
           $('audio#icecreamSong')[0].currentTime = 0
@@ -212,7 +215,7 @@ $('.countDown').click(function(){
     clearInterval(interval);
     $('.win').show();
     $(".reset").html(" ");
-    $(".start").show();
+    $('.start').hide();
     $('.tryAgain').show();
     generateNextTurn();
     $('p').remove();
@@ -266,7 +269,7 @@ $('.countDown').click(function(){
       
       <div class="answers reset"></div>
       <button class="start">START</button>
-      <a class="restart3" href="/hot1">restart!</a>
+      
 
      
         <img class="win" src='../StudyPup_assets/YOU_WON_Hotsva_Game1.png' alt="" />
@@ -313,11 +316,12 @@ $('.countDown').click(function(){
      
 
       <div>
-        <span id="timer">
+        <span id="timer">00:
           <span id="time">25</span>      
         </span>
       </div>
       <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+      <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
   </body>
   </div>
 );

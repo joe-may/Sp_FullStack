@@ -63,7 +63,7 @@ console.log(currentGameArray);
   });
 
  
-  var counter = 3000;
+  var counter = 30;
  
 
   
@@ -78,6 +78,7 @@ console.log(currentGameArray);
           $(".reset").html(" ");
           $(".start").show();
           $('p').hide();
+          $('#timer').hide();
           $('audio#torchSong')[0].pause()
           $('audio#torchSong')[0].currentTime = 0
           
@@ -221,8 +222,8 @@ console.log('keep playing');
                 <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           
           <div>
-            <span id="timer">
-              <span id="time">10</span>      
+            <span id="timer">00:
+              <span id="time">30</span>      
             </span>
           </div>
       
@@ -238,6 +239,7 @@ console.log('keep playing');
   
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
 </div>
     
 );
