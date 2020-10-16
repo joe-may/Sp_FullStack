@@ -149,11 +149,15 @@ console.log(currentGameArray);
 
     if (clickedAnswer === theAnswer) {
       
-
+      $('p').remove();
+      currentGameArray.splice(randomProblemSelector,1);
+      console.log(currentGameArray.length);
+      winningCheck();
+      generateNextTurn();
       console.log("Correct!");
       $('audio#sizzle')[0].play();
       $('audio#sizzle')[0].currentTime = 0
-      $(this).fadeOut(50, function() {
+      $(this).fadeOut(600, function() {
        
         console.log(currentGameArray.length);
         
@@ -161,11 +165,7 @@ console.log(currentGameArray);
        
         
 
-        $('p').remove();
-          currentGameArray.splice(randomProblemSelector,1);
-          console.log(currentGameArray.length);
-          winningCheck();
-          generateNextTurn();
+        
           console.log($(this).parent());
          
       });
@@ -254,8 +254,8 @@ console.log('keep playing');
           <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           
           <div>
-            <span id="timer">
-              <span id="time">25</span>      
+            <span id="timer">00:
+              <span id="time">35</span>      
             </span>
           </div>
 
@@ -269,6 +269,7 @@ console.log('keep playing');
   
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
 </div>
     
 );

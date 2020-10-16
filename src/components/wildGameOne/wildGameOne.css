@@ -215,12 +215,18 @@
     
     .wildGameOne #timer{
         
-      font-size: 30px;
+      color:white;
       z-index: 1000;
       position: fixed;
-      top: 0%;
-      left: 50%;
+      font-size: 2vw;
+      top:2%;
+      left:92%;
+      font-family: 'Orbitron';
   
+    }
+    .WildGameOne #time{
+      color: whitesmoke;
+      font-size: 2vw;
     }
     
     /* .snowball {

@@ -76,6 +76,7 @@ console.log(currentGameArray);
           console.log("you lose");
           $('.lose').show();
           $(".reset").html(" ");
+          
           $(".start").show();
           $('p').hide();
           $('#timer').hide();

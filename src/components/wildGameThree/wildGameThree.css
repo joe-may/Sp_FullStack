@@ -18,17 +18,18 @@
   left: 0%;
 }
 .wildGameThree #timer {
-  font-size: 30px;
+  color:white;
   z-index: 1000;
   position: fixed;
-  top: 95%;
-  color: rgb(175, 54, 54);
-  left: 90%;
-  z-index: 1000;
+  font-size: 2vw;
+  top:2%;
+  left:92%;
+  font-family: 'Orbitron';
 
 }
 .wildGameThree .time {
-	font-size: 30px;
+  color: whitesmoke;
+  font-size: 2vw;
   }
 
   .wildGameThree .footer { 
@@ -93,14 +94,18 @@
       display: flex;
       flex-flow: row wrap; 
       position: fixed;
-      background-image: url(https://i.imgur.com/39A2DK1.png);
-      background-size: 65vw 15vh;
-      width: 65%;
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: rgb(0, 0, 0);
+      text-shadow: 10px 5px rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      width: 90%;
       height: 15%;
-      margin-left: 19%;
-      top: 85%;
+      
+      margin-left: 9%;
+      top: 87%;
       font-family: 'Titan One';
       z-index: 800;
+      
       
     }
   
@@ -111,7 +116,7 @@
         height: 9.5%;
         margin-left: 1.5%;
         width: 9.2%;
-        color: black;
+        color: rgb(209, 159, 66);
         text-align: center;
         vertical-align: middle;
         cursor: crosshair;
@@ -121,14 +126,18 @@
   
     .wildGameThree .problem p {
       position: fixed;
-      border-radius: 5%;
-      color: rgb(175, 54, 54); 
-      font-size:7vw;
-      width: 25%;
-      margin-left: 40%;
-      top: -7%;
+      border-radius: 0%;
+      color: white;
+      text-shadow: 20px 20px 20px black, 0 0 5px rgb(211, 179, 111), 0 0 5px darkblue;
+      font-size:11vw;
+      width: 40%;
+      left: 35%;
+      top: 5%;
       font-family: 'Titan One';
       z-index: 800;
+      cursor: crosshair; 
+      margin-top: 0%;
+      margin-bottom: 0%;
 	}
 	
   

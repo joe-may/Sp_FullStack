@@ -84,6 +84,8 @@ class WildGameThree extends Component {
                 $(".reset").html(" ");
                 $(".start").show();
                 $('p').hide();
+                $('#timer').hide();
+
                 $('audio#raceMusic')[0].pause()
                 $('audio#raceMusic')[0].currentTime = 0
                 clearInterval(interval);
@@ -255,6 +257,7 @@ class WildGameThree extends Component {
 
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
     
 </body>
 </div>
