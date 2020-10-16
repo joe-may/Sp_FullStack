@@ -56,6 +56,7 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
+$("audio#moltaMusic").prop("volume", 0.19);
 $('audio#moltaMusic')[0].play();
 $('.snowball').hide();
 $('#timer').show();

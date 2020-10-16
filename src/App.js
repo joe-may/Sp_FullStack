@@ -68,6 +68,7 @@ import FireworksGame from "./components/fireworksGame/fireworksGame";
 
 
 
+
 class App extends Component {
   componentDidMount() {
     // $("button").click(function() {
@@ -1726,6 +1727,7 @@ class App extends Component {
                 )}/>
 
       </section>
+    
       <section>
       <Route exact path="/arcade-play" render={(props) => (
               <ArcadePage

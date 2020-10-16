@@ -30,6 +30,7 @@ class HotGameTwo extends Component {
       $('.win').hide();
       $('.lose').hide();
       $('audio#raceMusic')[0].play();
+      $("audio#raceMusic").prop("volume", 0.19);
       $('.nextLevel').hide();
       $('li').first().remove();
       $('li').first().remove();

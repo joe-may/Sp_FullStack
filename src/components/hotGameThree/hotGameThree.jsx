@@ -36,6 +36,7 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
+$("audio#torchSong").prop("volume", 0.19);
 $('audio#torchSong')[0].play();
 
 

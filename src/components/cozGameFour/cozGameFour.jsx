@@ -56,6 +56,7 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
+$("audio#raceMusic").prop("volume", 0.19);
 $('audio#raceMusic')[0].play();
 $('.snowball').hide();
 

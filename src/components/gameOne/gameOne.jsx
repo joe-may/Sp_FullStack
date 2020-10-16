@@ -56,7 +56,7 @@ class GameOne extends Component {
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-$('.novaThrow').hide();
+$('.novaThrow').show();
 
 
 
@@ -295,7 +295,7 @@ console.log('keep playing');
 <body>
 
 <button class="skip">Skip Video</button>
-<iframe title="rr" width="420" height="345" src="https://www.youtube.com/embed/q8xvUq0UWFU?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=q8xvUq0UWFU" allowfullscreen>
+<iframe title="rr" width="420" height="345" src="https://www.youtube.com/embed/q8xvUq0UWFU?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;controls=0&amp;modestbranding=1&amp;loop=1&amp;playlist=q8xvUq0UWFU&amp;autoplay=1&amp;allow=autoplay" allowfullscreen>
 
 </iframe>
 <audio id="iglooSong">
