@@ -106,7 +106,6 @@ console.log(currentGameArray);
           $('.lose').show();
           $(".reset").html(" ");
           $(".start").show();
-          
           $('#timer').hide();
           $('p').hide();
           $('audio#moltaMusic')[0].pause()
@@ -243,7 +242,7 @@ console.log('keep playing');
 
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
-  <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/ub7Ox9SBZZw?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=ub7Ox9SBZZw" allowfullscreen></iframe>
+  <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/9OCZyQ_YaAE?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=9OCZyQ_YaAE" allowfullscreen></iframe>
 
 
 <audio id="moltaMusic">
