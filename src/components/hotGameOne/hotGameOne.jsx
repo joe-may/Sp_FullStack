@@ -46,6 +46,7 @@ $('.win').hide();
 $('.lose').hide();
 $('.create').show();
 $('.nextLevel').hide();
+$("audio#icecreamSong").prop("volume", 0.19);
 $('audio#icecreamSong')[0].play();
 
 
@@ -217,6 +218,7 @@ $('.countDown').click(function(){
     $(".reset").html(" ");
     $('.start').hide();
     $('.tryAgain').show();
+    
     generateNextTurn();
     $('p').remove();
     currentEquation = null;

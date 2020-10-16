@@ -59,6 +59,7 @@ class GameFour extends Component{
       $('.start').hide();
       $('.win').hide();
       $('.lose').hide();
+      $("audio#stormSong").prop("volume", 0.19);
       $('audio#stormSong')[0].play();
       $('.nextLevel').hide();
       

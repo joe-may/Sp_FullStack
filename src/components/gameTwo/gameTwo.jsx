@@ -30,6 +30,7 @@ class GameTwo extends Component {
       $('.start').hide();
       $('.win').hide();
       $('.lose').hide();
+      $("audio#raceMusic").prop("volume", 0.19);
       $('audio#raceMusic')[0].play();
       $('.nextLevel').hide();
       $('li').first().remove();

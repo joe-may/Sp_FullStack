@@ -13,8 +13,9 @@ class GameOne extends Component {
       const { answerset } = this.props;
 
 
-
       
+      $("audio#snowballThrow").prop("volume", 0.0);
+      $('.novaIntro').hide();
       $('.snowball').hide();
       $('.start').hide();
       $('.treeOne').hide();
@@ -43,6 +44,12 @@ class GameOne extends Component {
         $('.treeEight').show();
         $('.treeNine').show();
         $('.treeTen').show();
+        $('.novaIntro').show();
+        setTimeout(function() {
+          $('.novaIntro').animate({
+            left: "85%"
+          }, 2000);
+      });
       });
 
       
@@ -50,6 +57,7 @@ $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
 $('.novaThrow').hide();
+
 
 
 $('.game1').on('click',function(e) {
@@ -79,13 +87,17 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
+$("audio#iglooSong").prop("volume", 0.19);
 $('audio#iglooSong')[0].play();
+$("audio#snowballThrow").prop("volume", 0.18);
+
 $('iframe').hide();
 $('.novaThrow').show();
 $('#timer').show();
 $('p').hide();
 $('.layer').hide();
 $('p').show();
+$('.novaIntro').hide();
 
 
 
@@ -318,6 +330,8 @@ console.log('keep playing');
     
           <img src='../StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
           <img src='../StudyPup_assets/Nova_standing.png' alt="" class='novaThrow'/>
+          <img src='../StudyPup_assets/Nova_standing.png' alt="" class='novaIntro'/>
+          
           
 
           

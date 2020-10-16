@@ -145,6 +145,14 @@ z-index:2000 ;
   z-index:1000;
 
 }
+.game1 .novaIntro {
+  width: 13%;
+  position:absolute;
+  top:65%;
+  left:103%;
+  z-index:1000;
+
+}
 .game1 .snowball {
     width: 5%;
     position:absolute;

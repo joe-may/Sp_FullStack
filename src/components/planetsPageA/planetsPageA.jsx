@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./planetsPageA.css"
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Navbar from '../Nav/Navbar';
-
+import FooterSpot from '../footer/footer';
 
 
 
@@ -107,7 +107,7 @@ class PlanetsPageA extends Component {
                 
                 </section>
                 <section>
-                
+                <FooterSpot></FooterSpot>
                 </section>
                
 
