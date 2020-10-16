@@ -47,6 +47,7 @@ class PupGameTwo extends Component {
       $('.start').on('click',function() {
       $('.start').hide();
       $('.win').hide();
+      $('#timer').show();
       $('.lose').hide();
       $("audio#stormSong").prop("volume", 0.19);
       $('audio#stormSong')[0].play();
@@ -82,7 +83,7 @@ class PupGameTwo extends Component {
         });
       
        
-        var counter = 40;
+        var counter = 30;
        
       
         
@@ -96,6 +97,7 @@ class PupGameTwo extends Component {
                 $('.lose').show();
                 $(".reset").html(" ");
                 $(".start").show();
+                $('#timer').hide();
                 
               return;
           }else{
@@ -228,8 +230,8 @@ class PupGameTwo extends Component {
                 <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           
           <div>
-            <span id="timer">
-              <span id="time">40</span>      
+            <span id="timer">00:
+              <span id="time">30</span>      
             </span>
           </div>
           
@@ -239,6 +241,7 @@ class PupGameTwo extends Component {
   
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
 </div>
     
 );

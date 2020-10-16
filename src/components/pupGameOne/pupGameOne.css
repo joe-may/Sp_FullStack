@@ -25,12 +25,13 @@
 
    
 .pupGameOne #timer{
-  font-size: 30px;
+  color:white;
   z-index: 1000;
   position: fixed;
-  top: 0%;
-  left: 70%;
-
+  font-size: 2vw;
+  top:2%;
+  left:92%;
+  font-family: 'Orbitron';
 }
 .pupGameOne .backbutton{
     position: fixed;
@@ -48,7 +49,8 @@
 }
 
 .pupGameOne #time{
-  font-size: 30px;
+  color: whitesmoke;
+  font-size: 2vw;
 }
 
 
@@ -126,19 +128,19 @@
 
 
   .pupGameOne .problem p {
-      position: fixed;
-      background-image: url(https://i.imgur.com/o5EvVl4.png);
-      background-size: 35vw 29vh;
-      background-position-y: 90%;
-      color: black;
-      font-size:80px;
-      width: 35%;
-      height: 19%;
-      left: 35%;
-      top:-9%;
-      font-family: 'Titan One';
-      z-index: 800;
-      cursor: crosshair; 
+    position: fixed;
+    border-radius: 0%;
+    color: white;
+    text-shadow: 20px 20px 20px black, 0 0 5px rgb(247, 72, 2), 0 0 5px darkblue;
+    font-size:9vw;
+    width: 40%;
+    left: 33%;
+    top: 5%;
+    font-family: 'Titan One';
+    z-index: 800;
+    cursor: crosshair; 
+    margin-top: 0%;
+    margin-bottom: 0%;
   }
 
  

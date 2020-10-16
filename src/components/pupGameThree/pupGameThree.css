@@ -19,17 +19,18 @@
   left: 0%;
 }
 .pupGameThree #timer {
-  font-size: 30px;
+  color:white;
   z-index: 1000;
   position: fixed;
-  top: 95%;
-  color: rgb(175, 54, 54);
-  left: 90%;
-  z-index: 1000;
+  font-size: 2vw;
+  top:2%;
+  left:92%;
+  font-family: 'Orbitron';
 
 }
 .pupGameThree .time {
-	font-size: 30px;
+  color: whitesmoke;
+  font-size: 2vw;
   }
 
   .pupGameThree .footer { 
@@ -93,18 +94,17 @@
   
     .pupGameThree .answers {
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: row wrap; 
       position: fixed;
-      border-radius: 19%;
-      background-color: rgb(216, 216, 81);
-      /* background-image: url(https://i.imgur.com/o5EvVl4.png);
-      background-size: 65vw 32.8vh;
-      background-position-y: -390%; */
-      background-position-x: 80%;
-      width: 65%;
-      height: 10%;
-      margin-left: 19%;
-      top: 85%;
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: rgb(0, 0, 0);
+      text-shadow: 10px 5px rgb(255, 255, 254);
+      color: rgb(255, 255, 255);
+      width: 90%;
+      height: 15%;
+      
+      margin-left: 11%;
+      top: 87%;
       font-family: 'Titan One';
       z-index: 800;
       
@@ -119,7 +119,7 @@
         
         margin-left: 1.5%;
         width: 9.2%;
-        color: black;
+        color: rgb(45, 151, 12);
         text-align: center;
         vertical-align: middle;
         cursor: crosshair;
@@ -129,15 +129,18 @@
   
     .pupGameThree .problem p {
       position: fixed;
-      text-shadow: 20px 20px 20px black, 0 0 5px black, 0 0 5px black;
-      border-radius: 5%;
-      color: white; 
-      font-size:10vw;
-      width: 55%;
-      margin-left: 25%;
-      top: -7%;
+      border-radius: 0%;
+      color: white;
+      text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue;
+      font-size:11vw;
+      width: 40%;
+      left: 35%;
+      top: 5%;
       font-family: 'Titan One';
       z-index: 800;
+      cursor: crosshair; 
+      margin-top: 0%;
+      margin-bottom: 0%;
 	}
 	
   

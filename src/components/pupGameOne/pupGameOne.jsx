@@ -37,6 +37,7 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
+$('#timer').show();
 $("audio#SlingSong").prop("volume", 0.29);
 $('audio#SlingSong')[0].play();
 
@@ -83,6 +84,7 @@ console.log(currentGameArray);
           $('.lose').show();
           $(".reset").html(" ");
           $(".start").show();
+          $('#timer').hide();
           $('p').hide();
           $('audio#SlingSong')[0].pause()
           $('audio#SlingSong')[0].currentTime = 0
@@ -230,7 +232,7 @@ console.log('keep playing');
                 <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           
           <div>
-            <span id="timer">
+            <span id="timer">00:
               <span id="time">30</span>      
             </span>
           </div>
@@ -247,6 +249,7 @@ console.log('keep playing');
   
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
 </div>
     
 );

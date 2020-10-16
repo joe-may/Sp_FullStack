@@ -1397,7 +1397,7 @@ class App extends Component {
                 { problem: "2 + 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v16#a'}
+              nxtlvl={'/pup2'}
               gButton={'/planetspagea'}
                 {...props} />
                 )}/>
@@ -1418,7 +1418,7 @@ class App extends Component {
                 
                 
               ]}
-              nxtlvl={'/v16#s'}
+              nxtlvl={'/pup2s'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -1439,7 +1439,7 @@ class App extends Component {
                 
                 
               ]}
-              nxtlvl={'/v16#m'}
+              nxtlvl={'/pup2m'}
               gButton={'/planetspagem'}
                 {...props} />
                 )}/>
@@ -1459,7 +1459,7 @@ class App extends Component {
                 { problem: "2 ÷ 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v16#d'}
+              nxtlvl={'/pup2d'}
               gButton={'/planetspaged'}
                 {...props} />
                 )}/>
@@ -1480,7 +1480,7 @@ class App extends Component {
                 { problem: "2 + 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v17#a'}
+              nxtlvl={'/pup3'}
               gButton={'/planetspagea'}
                 {...props} />
                 )}/>
@@ -1500,7 +1500,7 @@ class App extends Component {
                 { problem: "2 - 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v17#s'}
+              nxtlvl={'/pup3s'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -1520,7 +1520,7 @@ class App extends Component {
                 { problem: "2 x 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v17#s'}
+              nxtlvl={'/pup3m'}
               gButton={'/planetspagem'}
                 {...props} />
                 )}/>
@@ -1541,7 +1541,7 @@ class App extends Component {
                 
               ]}
               gButton={'/planetspaged'}
-              nxtlvl={'/v17#d'}
+              nxtlvl={'/pup3d'}
                 {...props} />
                 )}/>
 
@@ -1562,7 +1562,7 @@ class App extends Component {
                 { problem: "2 + 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v18#a'}
+              nxtlvl={'/pup4'}
               gButton={'/planetspagea'}
                 {...props} />
                 )}/>
@@ -1582,7 +1582,7 @@ class App extends Component {
                 { problem: "2 - 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v18#s'}
+              nxtlvl={'/pup4s'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -1602,7 +1602,7 @@ class App extends Component {
                 { problem: "2 x 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v18#m'}
+              nxtlvl={'/pup4m'}
               gButton={'/planetspagem'}
                 {...props} />
                 )}/>
@@ -1622,7 +1622,7 @@ class App extends Component {
                 { problem: "2 ÷ 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v18#m'}
+              nxtlvl={'/pup4d'}
               gButton={'/planetspaged'}
                 {...props} />
                 )}/>
@@ -1642,7 +1642,7 @@ class App extends Component {
                 { problem: "2 + 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v18#a'}
+              nxtlvl={'/credits'}
               gButton={'/planetspagea'}
                 {...props} />
                 )}/>
@@ -1662,7 +1662,7 @@ class App extends Component {
                 { problem: "2 - 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v18#s'}
+              nxtlvl={'/credits'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -1682,7 +1682,7 @@ class App extends Component {
                 { problem: "2 x 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v18#m'}
+              nxtlvl={'/credits'}
               gButton={'/planetspagem'}
                 {...props} />
                 )}/>
@@ -1702,7 +1702,7 @@ class App extends Component {
                 { problem: "2 ÷ 4 =", answer: "6"},
                 
               ]}
-              nxtlvl={'/v18#d'}
+              nxtlvl={'/credits'}
               gButton={'/planetspaged'}
                 {...props} />
                 )}/>

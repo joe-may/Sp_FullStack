@@ -255,11 +255,11 @@ console.log('keep playing');
                 
           <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game4.png' alt="" />
                 
-          <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
+          <a class="nextLevel" href={this.props.nxtlvl}>Save The World!!</a>
           
           <div>
-            <span id="timer">
-              <span id="time">25</span>      
+            <span id="timer">00:
+              <span id="time">30</span>      
             </span>
           </div>
       <div class="cocoNova">
@@ -270,6 +270,7 @@ console.log('keep playing');
      <img src='../StudyPup_assets/Puptune_Boss_Tootles.gif' alt="" class='tootles'/>
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
 </div>
     
 );

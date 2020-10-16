@@ -31,6 +31,7 @@ class PupGameThree extends Component {
       
       $('.start').on('click',function() {
       $('.start').hide();
+      $('#timer').show();
       $('.win').hide();
       $('.lose').hide();
       $("audio#raceMusic").prop("volume", 0.19);
@@ -74,7 +75,7 @@ class PupGameThree extends Component {
         },29999);
         /////////////
       /////timer and lose logic
-      var counter = 20;
+      var counter = 30;
       var interval = setInterval(function() {
           counter--;
           // Display 'counter' wherever you want to display it.
@@ -82,6 +83,7 @@ class PupGameThree extends Component {
                clearInterval(interval);
                 $('#timer').html("");
                 console.log("you lose");
+                $('#timer').hide();
                 $('.lose').show();
                 $(".reset").html(" ");
                 $(".start").show();
@@ -245,7 +247,7 @@ class PupGameThree extends Component {
   </div>
   <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
   <div>
-      <span id="timer">
+      <span id="timer">00:
         <span id="time"></span>     
       </span>
   </div>
@@ -258,6 +260,7 @@ class PupGameThree extends Component {
 
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
     
 </body>
 </div>
