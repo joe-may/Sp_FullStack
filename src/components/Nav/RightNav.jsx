@@ -12,6 +12,9 @@ const Ul = styled.ul`
   li {
     padding: 9px 20px;
     color:white;
+    z-index:900;
+    font-size:1.6vw;
+    font-family: chaloops, sans-serif;
     
   }
 
@@ -37,6 +40,7 @@ const Ul = styled.ul`
 
 const RightNav = ({ open }) => {
   return (
+    <div>
     <Ul open={open}>
       <li><a  class="homeNav" href="/home" >HOME</a></li>
       <li><a class="videosNav" href="/all-videos">VIDEOS</a></li>
@@ -45,6 +49,11 @@ const RightNav = ({ open }) => {
       <li><a class="contactNav" href="/contact">CONTACT US</a></li>
       <li><a class="aboutNav" href="/about">ABOUT</a></li>
     </Ul>
+    <link rel="stylesheet" href="https://use.typekit.net/wug4dcf.css"></link>
+
+    </div>
+   
+     
   )
 }
 

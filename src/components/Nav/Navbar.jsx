@@ -4,16 +4,22 @@ import Burger from './Burger';
 
 const Nav = styled.nav`
   width: 100%;
-  height: 55px;
+  height: 85px;
  
-  border-bottom: 2px solid #f1f1f1;
+  // border-bottom: 2px solid #f1f1f1;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  background-color:#00367F;
+  background-color:#3D2798;
   z-index:2200;
 
   .logo {
+    position: relative;
+    width:16vw;
+    max-width:350px;
+    min-width:200px;
+
+    top:0;
     padding: 15px 0;
     color:white;
   }
@@ -22,9 +28,9 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <div className="logo">
-      StudyPup
-      </div>
+      <a href="/sno2s">
+                <img src='../StudyPup_assets/StudyPup_LogoPup.png' alt=""  class='logo'/>
+                </a>
       <Burger />
     </Nav>
   )

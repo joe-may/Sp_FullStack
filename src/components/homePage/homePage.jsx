@@ -20,10 +20,10 @@ class HomePage extends Component {
          <body>
          <Navbar/>
          <a href="/mysticbadge-play">
-                <img src='../StudyPup_assets/StoryGamesNewt.png' alt=""  class='storyGames'/>
+                <img src='../StudyPup_assets/play_story_button.png' alt=""  class='storyGames'/>
                 </a>
                 <a href="/arcade-play">
-                <img src='../StudyPup_assets/Arcade_Gamesv2.png' alt=""  class='arcadeGames'/>
+                <img src='../StudyPup_assets/play_arcade_button.png' alt=""  class='arcadeGames'/>
                 </a>
                 <p class="edutain">Edu-taining math games and videos for kids K-4th Grade!</p>
                   </body>
