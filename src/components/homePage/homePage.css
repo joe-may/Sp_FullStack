@@ -12,6 +12,14 @@
    text-align: center;
    color: #ffffff;
 } */
+.homePage .edutain {
+font-family: chaloops, sans-serif;
+color:white;
+font-weight: 700;
+
+font-style: normal;
+
+}
 .homePage body {
   display: block;
   height: 100%;
@@ -36,6 +44,31 @@
   .homePage .homeNav {
     color: rgb(72, 182, 255);
   }
+
+  .homePage .storyGames {
+    position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 10%;
+         
+  text-align: center;
+  top: 20%;
+ 
+  width: 40%;
+  }
+
+  .homePage .arcadeGames {
+    position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 50%;
+        
+  text-align: center;
+  top: 10%;
+  
+ 
+  width: 40%;
+  }
 /* 
   @media (max-width: 979px) {
     .homePage .storyGames {
@@ -48,6 +81,9 @@
       width: 600px;
   } */
 /* } */
+/* 
+
+
 
 @media (max-width: 600px) {
   .homePage .storyGames {
@@ -89,13 +125,24 @@
 }
 @media (min-width: 1000px) {
   .homePage .storyGames {
-    width: 55vw;
-    height: 75vh;
-    margin-left: 0px;
-    margin-top: -2.5%;
+    width: 52vw;
+    height: 73vh;
+    left: -2%;
+    margin-top: -3.5%;
     max-height: 1000px;
     max-width: 1200px;
     min-width: 580px; 
+  }
+}
+@media (min-width: 1300px) {
+  .homePage .storyGames {
+    width: 39vw;
+    height: 76vh;
+    margin-left: 20px;
+    margin-top: -5%;
+    max-height: 900px;
+    max-width: 1200px;
+    min-width: 680px; 
   }
 }
 @media (min-width: 1800px) {
@@ -143,7 +190,7 @@
   .homePage .arcadeGames {
     width: 46vw;
     height: 76vh;
-    margin-left: 20px;
+    left:50%;
     margin-top: -5%;
     max-height: 900px;
     max-width: 1200px;
@@ -251,7 +298,7 @@
   .homePage body {
     height: 100%;
   }
-}
+} */
 
 
 

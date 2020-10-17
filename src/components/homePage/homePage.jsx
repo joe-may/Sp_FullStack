@@ -19,10 +19,10 @@ class HomePage extends Component {
 
          <body>
          <Navbar/>
-         <a href="/sno1m">
-                <img src='../StudyPup_assets/Story_Games2x.png' alt=""  class='storyGames'/>
+         <a href="/mysticbadge-play">
+                <img src='../StudyPup_assets/StoryGamesNewt.png' alt=""  class='storyGames'/>
                 </a>
-                <a href="/sno1m">
+                <a href="/arcade-play">
                 <img src='../StudyPup_assets/Arcade_Gamesv2.png' alt=""  class='arcadeGames'/>
                 </a>
                 <p class="edutain">Edu-taining math games and videos for kids K-4th Grade!</p>
@@ -35,6 +35,7 @@ class HomePage extends Component {
 
             </Router>
             <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+            <link rel="stylesheet" href="https://use.typekit.net/wug4dcf.css"></link>
         </div>
         
       );

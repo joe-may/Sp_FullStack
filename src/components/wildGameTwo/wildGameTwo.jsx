@@ -70,7 +70,7 @@ console.log(currentGameArray);
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
   }); 
  
-  var counter = 3;
+  var counter = 30;
  
 
   
