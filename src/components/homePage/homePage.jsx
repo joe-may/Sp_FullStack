@@ -14,13 +14,18 @@ class HomePage extends Component {
 
     render() {
       return (
-        <div class="homePage" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
+        <div class="homePage" style ={ { backgroundImage: "url('../StudyPup_assets/BG_Purple_Pattern_niew.png')"} }>
             <Router>
 
          <body>
          <Navbar/>
-                <p className="select">SELCET A GRADE LEVEL</p>
-               
+         <a href="/sno1m">
+                <img src='../StudyPup_assets/Story_Games2x.png' alt=""  class='storyGames'/>
+                </a>
+                <a href="/sno1m">
+                <img src='../StudyPup_assets/Arcade_Gamesv2.png' alt=""  class='arcadeGames'/>
+                </a>
+                <p class="edutain">Edu-taining math games and videos for kids K-4th Grade!</p>
                   </body>
                  
                 <FooterSpot></FooterSpot>

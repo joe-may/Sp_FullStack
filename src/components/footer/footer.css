@@ -1,12 +1,11 @@
 
 .footerPage {
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 24%;
 }
-#footerblurb { background:#26272b;color:darkgrey; } 
+#footerblurb { background:#26272b;color:darkgrey;}
 
 #footerblurb-inner { margin:0 auto; width:1022px; padding:0px;}
-#footerblurb .column { margin-left:250px; text-align:justify; float:left;width:200px;padding:0 40px; display: block;}
+#footerblurb .column { margin-left:250px; text-align:justify; float:left;width:200px;padding:0 20px; display: block;}
 #footerblurb .column a{ padding: 0px; display: block; color: rgb(74, 148, 182);}
 #footerblurb .column h2{ padding: 0px; display: block; color: white;}
 /* Footer */

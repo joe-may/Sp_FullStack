@@ -1,9 +1,23 @@
 .homePage {
         width: 100vw;
         height: 100vh;
-   
+        position: relative;
+        min-height: 100vh;
         overflow-x: hidden;
+        color:white;
 }
+/* .homePage p{
+  line-height: 60px;
+  font-weight: 500;
+   text-align: center;
+   color: #ffffff;
+} */
+.homePage body {
+  display: block;
+  height: 100%;
+
+}
+
 
 .homePage .select {
   position: relative;
@@ -22,3 +36,249 @@
   .homePage .homeNav {
     color: rgb(72, 182, 255);
   }
+/* 
+  @media (max-width: 979px) {
+    .homePage .storyGames {
+        width: 800px;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 679px) {
+  .homePage .storyGames {
+      width: 600px;
+  } */
+/* } */
+
+@media (max-width: 600px) {
+  .homePage .storyGames {
+    position: absolute;
+    width: 80vw;
+    height:40vh;
+    left: 47px;
+    top: 106.47px;
+  }
+}
+@media (min-width: 600px) {
+  .homePage .storyGames {
+    position: absolute;
+    width: 50vw;
+    height:43vh;
+    left: 47px;
+    top: 106.47px;
+  }
+}
+@media (min-width: 950px) {
+  .homePage .storyGames {
+    position: absolute;
+    width: 55vw;
+    height:57vh;
+    left: 27px;
+    top: 106.47px;
+  }
+}
+@media (min-width: 1300px) {
+  .homePage .storyGames {
+    width: 40vw;
+    height: 75vh;
+    margin-left: 0px;
+    margin-top: -40px;
+    max-height: 1000px;
+    max-width: 1200px;
+    min-width: 780px; 
+  }
+}
+@media (min-width: 1000px) {
+  .homePage .storyGames {
+    width: 55vw;
+    height: 75vh;
+    margin-left: 0px;
+    margin-top: -2.5%;
+    max-height: 1000px;
+    max-width: 1200px;
+    min-width: 580px; 
+  }
+}
+@media (min-width: 1800px) {
+  .homePage .storyGames {
+    width: 50vw;
+    height: 75vh;
+    margin-left: 0px;
+    margin-top: 9px;
+    max-height: 1000px;
+    max-width: 1200px;
+    min-width: 780px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .homePage .arcadeGames {
+    position: absolute;
+    width: 65vw;
+    height:36vh;
+    left: 85px;
+    top: 380.47px;
+  }
+}
+@media (min-width: 600px) {
+  .homePage .arcadeGames {
+    position: absolute;
+    width: 45vw;
+    height:43vh;
+    right: 3%;
+    top: 80.47px;
+  }
+}
+@media (min-width: 950px) {
+  .homePage .arcadeGames {
+    width: 43vw;
+    height: 64vh;
+    margin-left: 20px;
+    margin-top: -5%;
+    max-height: 900px;
+    max-width: 1200px;
+    min-width: 380px; 
+  }
+}
+@media (min-width: 1000px) {
+  .homePage .arcadeGames {
+    width: 46vw;
+    height: 76vh;
+    margin-left: 20px;
+    margin-top: -5%;
+    max-height: 900px;
+    max-width: 1200px;
+    min-width: 480px; 
+  }
+}
+@media (min-width: 1300px) {
+  .homePage .arcadeGames {
+    width: 40vw;
+    height: 76vh;
+    margin-left: 20px;
+    margin-top: -5%;
+    max-height: 900px;
+    max-width: 1200px;
+    min-width: 680px; 
+  }
+}
+@media (min-width: 1800px) {
+  .homePage .arcadeGames {
+    position: absolute;
+    width: 40vw;
+    height: 75vh;
+    margin-left: 0px;
+    margin-top: -1%;
+    max-height: 1000px;
+    max-width: 1200px;
+    min-width: 380px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .homePage .edutain{
+    line-height: 30px;
+    font-weight: 500;
+     text-align: center;
+     color: #ffffff;
+  }
+}
+@media (min-width: 600px) {
+  .homePage .edutain{
+    position: absolute;
+    line-height: 30px;
+    font-size: 30px;
+     text-align: center;
+     color: #ffffff;
+     width:70%;
+     height: 140px;
+     left: 20%;
+     top:60%;
+  }
+}
+@media (min-width: 950px) {
+  .homePage .edutain{
+    position: absolute;
+    line-height: 30px;
+    font-size: 30px;
+     text-align: center;
+     color: #ffffff;
+     width:70%;
+     height: 140px;
+     left: 20%;
+     top:75%;
+  }
+}
+@media (min-width: 950px) {
+  .homePage .edutain{
+    position: absolute;
+    line-height: 30px;
+    font-size: 26px;
+     text-align: center;
+     color: #ffffff;
+     width:50%;
+     height: 140px;
+     left: 25%;
+     top:80%;
+  }
+}
+@media (min-width: 1100px) {
+  .homePage .edutain{
+    position: absolute;
+    line-height: 30px;
+    font-size: 26px;
+     text-align: center;
+     color: #ffffff;
+     width:50%;
+     height: 140px;
+     left: 25%;
+     top:80%;
+  }
+}
+@media (min-width: 1800px) {
+  .homePage .edutain{
+    position: absolute;
+    line-height: 50px;
+    font-size: 46px;
+     text-align: center;
+     color: #ffffff;
+     width:50%;
+     height: 140px;
+     left: 25%;
+     top:80%;
+  }
+}
+@media (min-width: 600px) {
+  .homePage body {
+    height: 100%;
+  }
+}
+
+
+
+/* .homePage p {
+position: absolute;
+width: 1220px;
+height: 240px;
+left: 355px;
+top: 771px;
+
+font-family: Chaloops;
+font-style: normal;
+font-weight: 500;
+font-size: 60px;
+line-height: 60px;
+text-align: center;
+
+color: #FFFFFF;
+} */
+/* @media (max-width: 979px) {
+  .homePage .arcadeGames {
+      width: 800px;
+      padding-bottom: 20px;
+  }
+}
+@media (max-width: 679px) {
+.homePage .arcadeGames {
+    width: 600px;
+}
+} */
