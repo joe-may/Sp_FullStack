@@ -222,9 +222,7 @@ class WildGameThree extends Component {
 
   <div class="layer"></div>
   <button class="skip">Skip Video</button>
-  <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/5kubdvH9x10?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=5kubdvH9x10" allowfullscreen></iframe>
-
-  
+  <iframe src="https://player.vimeo.com/video/469149361" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
   <img class="backgroundSno2" src="../StudyPup_assets/Tumblewyld_MineCart_Background.png"alt=""/>
  <audio id="raceMusic">
     <source src='../StudyPup_assets/Tumblewyld_MineCart_Song.m4a' type="audio/mpeg"/>

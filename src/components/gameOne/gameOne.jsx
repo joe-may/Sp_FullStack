@@ -295,9 +295,7 @@ console.log('keep playing');
 <body>
 
 <button class="skip">Skip Video</button>
-<iframe title="rr" width="420" height="345" src="https://www.youtube.com/embed/q8xvUq0UWFU?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;controls=0&amp;modestbranding=1&amp;loop=1&amp;playlist=q8xvUq0UWFU&amp;autoplay=1&amp;allow=autoplay" allowfullscreen>
-
-</iframe>
+<iframe src="https://player.vimeo.com/video/469147642" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="iglooSong">
     <source src='../StudyPup_assets/Song_Snow-Con_Level_1.m4a' type="audio/mpeg"/>
   </audio>

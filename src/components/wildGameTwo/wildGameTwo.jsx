@@ -210,8 +210,7 @@ console.log('keep playing');
 
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
-  <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/98xSoQKBh6Y?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=98xSoQKBh6Y" allowfullscreen></iframe>
-
+  <iframe src="https://player.vimeo.com/video/469148997" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="SlingSong">
     <source src='../StudyPup_assets/Tumblewyld_Shooting_Song_NEW.m4a' type="audio/mpeg"/>
   </audio>
