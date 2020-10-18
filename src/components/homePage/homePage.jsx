@@ -14,7 +14,7 @@ class HomePage extends Component {
 
     render() {
       return (
-        <div class="homePage" style ={ { backgroundImage: "url('../StudyPup_assets/BG_Purple_Pattern_niew.png')"} }>
+        <div class="homePage" style ={ { backgroundImage: "url('../StudyPup_assets/Planet_Galaxy_Background.png')"} }>
             <Router>
 
          <body>

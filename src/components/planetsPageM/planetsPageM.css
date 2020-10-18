@@ -519,16 +519,17 @@ top:50%;
 
   .planetsPageM .planetContainer .opCon {
     position: absolute;
-    z-index: 999;
-    /* font-family: 'Nunito', sans-serif; */
-    border-radius: 10%;
+    background: #000000;
+    border: 5px solid #747474;
+    box-sizing: border-box;
+    box-shadow: 0px 9px 0px #000000;
+    border-radius: 24px;
     left: 36%;
-    background-color: black;
-    font-family: 'Nunito', sans-serif;
+   
     
     text-align: center;
     top: 3%;
-    /* font-family: Arial,sans-serif; */
+  
     color: #fff;
    
     width: 12vw;
@@ -546,27 +547,41 @@ top:50%;
   .planetsPageM .opCon .opa{
     /* font-family: 'Nunito', sans-serif; */
     color: #fff;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
     
   }
   .planetsPageM .opCon .ops{
 
-    color: #fff;
+    color: white;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
     
   }
   .planetsPageM .opCon .opm{
 
-    color: rgb(80, 162, 255);
+    color: #DD1D29;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
     
   }
   .planetsPageM .opCon .opd{
 
-    color: #fff;
+    color: white;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
     
   }
   .planetsPageM .opCon .chg{
+  
     font-size: 2vh;
-    font-style: italic;
-    
-    color: #fff;
+    font-family: marvin, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: gray;
     
   }

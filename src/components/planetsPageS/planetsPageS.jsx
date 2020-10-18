@@ -28,7 +28,7 @@ class PlanetsPageS extends Component {
                 <section>
                   <div class="planetContainer">
           
-                <img src='../StudyPup_assets/StudyPup_MysticBadges_PLANET_MAP.png' alt=""  class='planets'/>
+                <img src='../StudyPup_assets/StudyPup_MysticBadges_PLANET_MAP_NEW.png' alt=""  class='planets'/>
                 {/* <div class="top-left">Top Left</div> */}
                 <div class="buttons">
                 <a href="/sno1s">

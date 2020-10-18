@@ -8,26 +8,32 @@ import $ from "jquery";
 
 
 
+
+
 class MysticBadgePage extends Component {
   componentDidMount() {
 
+  
+
     $('.layerOp').hide();
-    $('iframe').hide();
+
     $('.skipToGame').hide();
     $('.opCon').hide();
     $('.backButton').hide();
 
     $('.newGame').on('click',function() { 
-      // $('.layerOp').show();
-      $('iframe').show();
+      $('.layerOp').show();
+      
+      
+      $('body').append("<iframe src='https://player.vimeo.com/video/469147995'width='640' height='480' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe>");;
+
       $('.skipToGame').show();
       $('.backButton').show();
      
     
     });
     $('.skipToGame').on('click',function() { 
-      
-      $('iframe').hide();
+      $('iframe').remove();
       $('.skipToGame').hide();
       $('.opCon').show();
     
@@ -37,7 +43,7 @@ class MysticBadgePage extends Component {
       $('iframe').hide();
       $('.skipToGame').hide();
       $('.backButton').hide();
-      // $('.layerOp').hide();
+      $('.layerOp').hide();
       $('.opCon').hide();
       
     
@@ -49,19 +55,23 @@ class MysticBadgePage extends Component {
 
     render() {
       return (
-        <div class="mysticBadgePage" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
+        <div class="mysticBadgePage" style ={ { backgroundImage: "url('../StudyPup_assets/MB_START_MENU_BACKGROUNDall.png')"} }>
             <Router>
               <body>
             <Navbar/>
               <div class="layerOp"></div>
               <button class="skipToGame">Skip To Game</button>
-              <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/ub7Ox9SBZZw?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=ub7Ox9SBZZw" allowfullscreen></iframe>
-
+              
         
                 <section>
 
-                <div className="newGame">NEW GAME</div>
-                <a href="/planetspagea" className="selectGame">SELECT LEVEL</a>
+                
+                
+                <img src='../StudyPup_assets/MB_START_MENU_Button_New_Game.png' alt=""  class='newGame'/>
+                <a href="/planetspagea">
+                <img src='../StudyPup_assets/MB_START_MENU_Button_Select_Level.png' alt=""  class='selectGame'/>
+                </a>
+                
                 {/* <div class="layerOp"></div> */}
                 <div class="backButton">BACK</div>
 
@@ -81,7 +91,11 @@ class MysticBadgePage extends Component {
 
             </Router>
             <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+            <link rel="stylesheet" href="https://use.typekit.net/wug4dcf.css"></link>
             <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet"></link>
+            <link rel="stylesheet" href="https://use.typekit.net/wug4dcf.css"></link>
+
+
         </div>
       );
     }
