@@ -29,7 +29,7 @@ top:50%;
   left: 10;
   right: 35%;        
   text-align: center;
-  top: 55%;
+  top: 54%;
   font-family: Arial,sans-serif;
   color: #fff;
   width: 30vw;
@@ -50,10 +50,24 @@ top:50%;
   left: 10;
   right: 35%;        
   text-align: center;
-  top: 70%;
+  top: 67%;
   font-family: Arial,sans-serif;
   color: #fff;
   width: 30vw;
+  cursor: pointer;
+  z-index: 200;
+}
+.arcadePlay {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 35%;
+  right: 35%;        
+  text-align: center;
+  top: 80%;
+  font-family: Arial,sans-serif;
+  color: #fff;
+  width: 25vw;
   cursor: pointer;
   z-index: 200;
 }

@@ -53,6 +53,7 @@ import ArcadePagem from "./components/arcadePagem/arcadePagem";
 import ArcadePaged from "./components/arcadePaged/arcadePaged";
 import DuckRace from "./components/duckRace/duckRace";
 import FireworksGame from "./components/fireworksGame/fireworksGame";
+import SlamDunk from "./components/slamDunk/slamDunk";
 
 
 
@@ -1711,14 +1712,14 @@ class App extends Component {
       </section>
       <section>
       <Route exact path="/" render={(props) => (
-              <HomePage
+              <MysticBadgePage
               
                 {...props} />
                 )}/>
 
       </section>
       <section>
-      <Route exact path="/home" render={(props) => (
+      <Route exact path="/h" render={(props) => (
               <HomePage
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
@@ -1809,6 +1810,26 @@ class App extends Component {
                 )}/>
 
       </section>
+      <section>
+      <Route exact path="/arcade-slama" render={(props) => (
+              <SlamDunk
+              answerset = {[
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 4 =", answer: "8"},
+                { problem: "1 + 2 =", answer: "3"},
+                { problem: "3 + 1 =", answer: "4"},
+                { problem: "7 + 3 =", answer: "10"},
+                { problem: "6 + 3 =", answer: "9"},
+                { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
+              // nxtlvl={'/v18#a'}
+              // gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+
+      </section>
 
 
   
@@ -1833,7 +1854,7 @@ class App extends Component {
 
       </section>
       <section>
-      <Route exact path="/mysticbadge-play" render={(props) => (
+      <Route exact path="/home" render={(props) => (
               <MysticBadgePage
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
