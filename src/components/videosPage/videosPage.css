@@ -9,14 +9,20 @@
         -o-background-size: cover;
         background-size: cover;
         overflow: hidden;
+        display: inline-block;
+}
+.videosPage .arcadeBanner {
+  position: relative;
+      width: 39vw;
+      margin-left: 0px;
+      max-height: 500px;
+      max-width: 1200px;
+      min-width: 280px; 
 }
 
-.boxey {
-  position: fixed;
-  width:30%;
-  height: 40%;
-  top:40%;
-  left:20%;
-  background-color: whitesmoke;
-  border-radius: 20%;
-}
+/* .videosPage .mathButton {
+  padding-top: 20%;
+  position: relative;
+  margin-top: 20%;
+  width: 20vw;
+} */

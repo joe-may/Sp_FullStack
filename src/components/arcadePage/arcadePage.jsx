@@ -16,22 +16,35 @@ class ArcadePage extends Component {
 
   render() {
     return (
-      <div class="arcadePage" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
+      <div class="arcadePage" style ={ { backgroundImage: "url('../StudyPup_assets/BG_Purple_Pattern_niew.png')"} }>
           <Router>
 
           
               <body>
           <Navbar/>
 
-              <p className="select">Arcade Games Go Here</p>
+          <a href="/arcade-play">
+                <img src='../StudyPup_assets/ARCADE_HEADER_IMAGE.png' alt=""  class='arcadeBanner'/>
+                </a>
+                
               <div class="opCon">
-                <div class="chg">CHANGE OPERATION</div>
+              <div class="chg">SELECT OPERATION</div>
                   <a class="opa" href="/arcade-play">+</a>
                   <a class="ops"href="/arcade-plays">-</a>
                   <a class="opm" href="/arcade-playm">x</a>
                   <a class="opd" href="/arcade-playd">÷</a>
                 </div>
-              </body>
+                <a href="/arcade-ducka">
+                <img src='../StudyPup_assets/thumbnail_duck_race.png' alt=""  class='duckThumb'/>
+                </a>
+                <a href="/arcade-slama">
+                <img src='../StudyPup_assets/thumbnail_SJS.png' alt=""  class='sjsThumb'/>
+                </a>
+                <a href="/arcade-fireworksa">
+                <img src='../StudyPup_assets/thumbnail_firework.png' alt=""  class='fwThumb'/>
+                </a>
+               
+              </body> 
               <FooterSpot></FooterSpot>
              
 
@@ -44,6 +57,8 @@ class ArcadePage extends Component {
           </Router>
           <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
           <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet"></link>
+            <link rel="stylesheet" href="https://use.typekit.net/wug4dcf.css"></link>
       </div>
     );
   }
