@@ -8,7 +8,7 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        overflow: hidden;
+        overflow-x: hidden;
         display: inline-block;
 }
 .videosPage .arcadeBanner {
@@ -26,3 +26,58 @@
   margin-top: 20%;
   width: 20vw;
 } */
+
+.videosPage  .opCon {
+  display: inline-block;
+  width:100%;
+
+}
+.videosPage  .vidCon {
+  margin-top: 5%;
+  display: inline-block;
+  width:100%;
+
+}
+
+.videosPage .opCon .mathButton {
+  width: 20vw;
+  display: inline;
+  margin: 0 5px;
+  
+
+}
+.videosPage .opCon .englishButton {
+  width: 20vw;
+  display: inline;
+  margin: 0 5px;
+}
+.videosPage .opCon .scienceButton {
+  width: 20vw;
+  display: inline;
+  margin: 0 5px;
+
+}
+
+.videosPage .vidCon .doublesThumb {
+  width: 20vw;
+  display: inline;
+  margin: 0 20px;
+  
+
+}
+.videosPage .vidCon .comThumb {
+  width: 20vw;
+  display: inline;
+  margin: 0 20px;
+  
+
+}
+.videosPage .vidCon .fivesThumb {
+  width: 20vw;
+  display: inline;
+  margin: 0 20px;
+  
+
+}
+
+

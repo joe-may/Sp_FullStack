@@ -12,7 +12,7 @@
   overflow-x: hidden;
 }
 .arcadePage body{ 
-height: 700px;
+height: 120%;
 }
 
 .arcadePage .fwThumb:hover{ 

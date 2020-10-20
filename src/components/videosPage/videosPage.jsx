@@ -26,11 +26,26 @@ class VideosPage extends Component {
   <img src='../StudyPup_assets/Video_Header_Image.png' alt=""  class='arcadeBanner'/>
   </a>
   
+  <div class="opCon">
+             
+                 <a  href="/arcade-play">
+                    <img src='../StudyPup_assets/Video_Button_Math.png' alt="" class="mathButton" />
+                 </a>
+                 <a  href="/arcade-play">
+                    <img src='../StudyPup_assets/Video_Button_English.png' alt="" class="englishButton" />
+                 </a>
+                 <a  href="/arcade-play">
+                    <img src='../StudyPup_assets/Video_Button_Science.png' alt="" class="scienceButton" />
+                 </a>
+  </div>
+  <div class="vidCon">
+      <img src='../StudyPup_assets/thumbnail_doubles.png' alt="" class="doublesThumb" />
+      <img src='../StudyPup_assets/thumbnail_commutative.png' alt="" class="comThumb" />
+      <img src='../StudyPup_assets/thumbnail_fives.png' alt="" class="fivesThumb" />
+  </div>
+    
 
-
-    <a  href="/arcade-play">
-    <img src='../StudyPup_assets/Video_Button_Math.png' alt="" class="mathButton" />
-    </a>
+  
  
 
   {/* <a href="/arcade-ducka">
