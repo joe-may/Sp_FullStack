@@ -1,5 +1,6 @@
 
 .arcadePage { 
+
   width: 100vw;
   height: 100vh;
   background-repeat: center;
@@ -10,9 +11,12 @@
   -o-background-size: cover;
   background-size: cover;
   overflow-x: hidden;
+
 }
 .arcadePage body{ 
+
 height: 120%;
+
 }
 
 .arcadePage .fwThumb:hover{ 
@@ -100,6 +104,7 @@ height: 120%;
     
   }
   .arcadePage .opCon .chg{
+
     position: rel;
     font-size: 1.3vw;
     font-family: marvin, sans-serif;
@@ -113,18 +118,20 @@ height: 120%;
   }
 
   .arcadePage .arcadeBanner {
+
     /* position: relative; */
-  width: 39vw;
+  width: 45vw;
   /* padding-top: 2%; */
 /* padding-bottom: 11%; */
   margin-left: 0px;
-  margin-top: -30px;
+  margin-top: -50px;
   max-height: 500px;
   max-width: 1200px;
   min-width: 280px; 
     
   }
   .arcadePage .duckThumb {
+
 position: relative;
 width: 22vw;
  /* padding-top: 2%; */
@@ -137,6 +144,7 @@ width: 22vw;
     
   }
   .arcadePage .sjsThumb {
+
     position: relative;
     width: 22vw;
      /* padding-top: 2%; */
@@ -149,6 +157,7 @@ width: 22vw;
         
       }
       .arcadePage .fwThumb {
+
         position: relative;
          width: 22vw;
          /* padding-top: 2%; */
@@ -159,7 +168,7 @@ width: 22vw;
          max-width: 1200px;
          min-width: 80px; 
             
-          }
-    
+       }
+        
 
 

@@ -28,7 +28,7 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <a href="/sno2s">
+      <a href="/home">
                 <img src='../StudyPup_assets/StudyPup_LogoPup.png' alt=""  class='logo'/>
                 </a>
       <Burger />

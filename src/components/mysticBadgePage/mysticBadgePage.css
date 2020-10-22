@@ -36,10 +36,7 @@ top:50%;
   cursor: pointer;
   z-index: 200;
 }
-.mysticBadgePage img:hover{ 
-  animation: pulse 1s infinite;
-  animation-timing-function: linear;   
-}
+
 
 
 
@@ -194,3 +191,15 @@ top:50%;
   }
 
   
+  .mysticBadgePage .newGame:hover{ 
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;   
+  }
+  .mysticBadgePage .selectGame:hover{ 
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;   
+  }
+  .mysticBadgePage .arcadePlay:hover{ 
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;   
+  }

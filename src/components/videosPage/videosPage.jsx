@@ -15,7 +15,7 @@ class VideosPage extends Component {
 
     render() {
       return (
-        <div class="videosPage" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
+        <div class="videosPage" style ={ { backgroundImage: "url('../StudyPup_assets/BG_Purple_Pattern_niew.png')"} }>
           <Router>
 
           

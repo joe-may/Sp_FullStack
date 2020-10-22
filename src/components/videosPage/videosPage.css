@@ -43,6 +43,7 @@
   width: 20vw;
   display: inline;
   margin: 0 5px;
+  transition: all .2s ease-in-out;
   
 
 }
@@ -50,11 +51,13 @@
   width: 20vw;
   display: inline;
   margin: 0 5px;
+  transition: all .2s ease-in-out;
 }
 .videosPage .opCon .scienceButton {
   width: 20vw;
   display: inline;
   margin: 0 5px;
+  transition: all .2s ease-in-out;
 
 }
 
@@ -62,6 +65,7 @@
   width: 20vw;
   display: inline;
   margin: 0 20px;
+  transition: all .2s ease-in-out;
   
 
 }
@@ -69,6 +73,7 @@
   width: 20vw;
   display: inline;
   margin: 0 20px;
+  transition: all .2s ease-in-out;
   
 
 }
@@ -76,8 +81,39 @@
   width: 20vw;
   display: inline;
   margin: 0 20px;
+  transition: all .2s ease-in-out;
   
 
+}
+.videosPage .fivesThumb:hover{ 
+  transform: scale(1.1); 
+  cursor: pointer;
+
+}
+.videosPage .comThumb:hover{ 
+  transform: scale(1.1); 
+  cursor: pointer;
+ 
+}
+.videosPage .doublesThumb:hover{ 
+  transform: scale(1.1); 
+  cursor: pointer;
+ 
+}
+.videosPage .mathButton:hover{ 
+  transform: scale(0.9); 
+  cursor: pointer;
+ 
+}
+.videosPage .englishButton:hover{ 
+  transform: scale(0.9); 
+  cursor: pointer;
+ 
+}
+.videosPage .scienceButton:hover{ 
+  transform: scale(0.9); 
+  cursor: pointer;
+ 
 }
 
 

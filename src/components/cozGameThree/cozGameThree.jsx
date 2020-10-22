@@ -227,7 +227,6 @@ console.log('keep playing');
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
   <iframe src="https://player.vimeo.com/video/469319770" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
 <audio id="SlingSong">
     <source src='../StudyPup_assets/Cozmo_Pizza_Song.m4a' type="audio/mpeg"/>
   </audio>
