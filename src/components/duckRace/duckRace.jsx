@@ -43,9 +43,9 @@ $('.lose').hide();
 $('.create').show();
 $('.nextLevel').hide();
 $('audio#icecreamSong')[0].play();
-$('.kart2').finish().css('left', '0');
-$('.kart3').finish().css('left', '0');
-$('.kart4').finish().css('left', '0');
+$('.kart2').finish().css('left', '0%');
+$('.kart3').finish().css('left', '0%');
+$('.kart4').finish().css('left', '0%');
 $('.kart1').finish().css('left', '0%');
 
 
@@ -53,20 +53,20 @@ $('.kart1').finish().css('left', '0%');
 //////animate karts
 setTimeout(function() {
   $('.kart2').animate({
-        left: "45%"
-    }, Math.floor(Math.random() * 50000) + 29000);
+        left: "75%"
+    }, Math.floor(Math.random() * 30000) + 29000);
   
 });
 setTimeout(function() {
   $('.kart3').animate({
-        left: "45%"
-    }, Math.floor(Math.random() * 50000) + 29000);
+        left: "75%"
+    }, Math.floor(Math.random() * 35000) + 30000);
   
 });
 setTimeout(function() {
   $('.kart4').animate({
-        left: "45%"
-    }, Math.floor(Math.random() * 50000) + 29000);
+        left: "75%"
+    }, Math.floor(Math.random() * 35000) + 30000);
   
 });
 
@@ -93,7 +93,7 @@ console.log(randomProblemSelector);
 
 
  
-  var counter = 300000;
+  var counter = 35;
  
 ////////////timer
   var interval = setInterval(function() {
@@ -230,7 +230,7 @@ var boost = 5
 
     var problemHtml = $('<p></p>').html(selectedProblem);
     $(".problem").append(problemHtml);
-    boost = boost + 5;
+    boost = boost + 10;
     
   }
   
@@ -352,6 +352,8 @@ var changeAnswerset = function () {
     <img class="wave2" src='../StudyPup_assets/WAVE_2.png' alt="" />
     <img class="wave3" src='../StudyPup_assets/WAVE_3.png' alt="" />
     {/* <img class="wave4" src='../StudyPup_assets/WAVE_3.png' alt="" /> */}
+
+    <img class="finishDuck" src="../StudyPup_assets/FinishLineDuck.png"alt=""/>
 
       <img class="lose" src='../StudyPup_assets/YOU_LOSE_Cozmo_Game3.png' alt="" />
       <img class="kart3" src="../StudyPup_assets/YELLOW_DUCK_A.png"alt=""/>
