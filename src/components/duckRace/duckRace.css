@@ -47,8 +47,8 @@
       border-radius: 0%;
       color: black;
       width: 20%;
-      left: 49%;
-      top: 16%;
+      left: 58%;
+      top: 6%;
       z-index: 800;
       cursor: crosshair; 
       margin-top: 0%;
@@ -56,22 +56,29 @@
   }
   
   .duckRace .create {
-    position: absolute;
-    width: 32%;
-    left: 112%;
-    background-color: white;
-    top: 142%;
-    margin-left: -59%;
+    position: fixed;
+    border-radius: 0%;
+    color: black;
+    /* text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue; */
+    font-size:10vw;
+    width: 13%;
+    left: 62.5%;
+    top: 14%;
+    margin-top: 18%;
+ 
     font-family: 'Titan One';
     font-size: 3.2vw;
     color: #29a510;
-    border-radius: 13%;
+    
     z-index: 1500;
     cursor: pointer;
   
   }
+
+
+
     
-  .duckRace .cocoaAndOutput {
+  /* .duckRace .cocoaAndOutput {
       position: relative;
       margin-top: -57%;
       width: 100%;
@@ -79,7 +86,7 @@
       height: 33%;
       z-index: 900;
       margin-left: -9%;
-  }
+  } */
   
   .duckRace .cocoa {
     position: relative;
@@ -89,10 +96,27 @@
     }
   
     .duckRace .output {
-      margin-top: 25%;
-      left: 28%;
-      font-size: 6vw;
-      position: relative;
+      position: fixed;
+      border-radius: 0%;
+      color: black;
+      /* text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue; */
+      font-size:10vw;
+      width: 13%;
+      left: 50;
+      top: 8%;
+     
+      z-index: 800;
+      cursor: pointer; 
+      margin-top: 1%;
+      margin-bottom: 0%; 
+      font-family: marvin-round, sans-serif;
+
+        font-style: normal;
+    
+
+
+     
+    
     }
     
   .duckRace .greenBoxAndGif {
@@ -235,7 +259,7 @@
       background-repeat: no-repeat;
       z-index: 1000;
      }
-      /* .answers {
+      .answers {
           position: fixed;
           font-size: 5vh;
           height: 20%;
@@ -245,7 +269,7 @@
           display: flex;
           flex-wrap: wrap;
     
-      } */
+      }
   
       /* .house {
         position: relative;
@@ -257,67 +281,60 @@
             
       } */
   
-      .duckRace .guessCounter {
+      /* .duckRace .guessCounter {
         position: relative;
         left:6%;
         margin-top: 9%;  
         width:30vw;
         z-index: 1000;
-      }
+      } */
   
-      .duckRace .countDown {
+      /* .duckRace .countDown {
+        position: absolute;
+        width: 17%;
+        margin-top: -75%;
+        left: 83%;
+        z-index: 500;
+      } */
+  
+      .duckRace .countDown{
         position: fixed;
         border-radius: 0%;
         color: black;
         /* text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue; */
         font-size:10vw;
         width: 13%;
-        left: 53%;
-        top: 33%;
+        left: 62%;
+        top: 8%;
        
-        z-index: 800;
+        z-index: 900;
         cursor: pointer; 
-        margin-top: 0%;
-        margin-bottom: 0%;
-      }
-  
-      .duckRace .countDownClicked {
-        position: fixed;
-        border-radius: 0%;
-        color: black;
-        /* text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue; */
-        font-size:10vw;
-        width: 13%;
-        left: 53%;
-        top: 33%;
-       
-        z-index: 800;
-        cursor: pointer; 
-        margin-top: 0%;
-        margin-bottom: 0%;
+        margin-top: 15%;
+        margin-bottom: 0%; 
+      
       }
   
   
   
-      .duckRace .countUp {
+      /* .duckRace .countUp {
         position: absolute;
         width: 17%;
         margin-top: -75%;
         left: 83%;
         z-index: 500;
       }
-  
-      .duckRace .countUpClicked{
+   */
+      .duckRace .countUp{
         position: fixed;
         border-radius: 0%;
         color: black;
         /* text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue; */
         font-size:10vw;
         width: 13%;
-        left: 53%;
-        top: 18%;
+        left: 62%;
+        top: 8%;
        
-        z-index: 800;
+        z-index: 900;
         cursor: pointer; 
         margin-top: 0%;
         margin-bottom: 0%;
@@ -343,6 +360,7 @@
         font-size: 5vh;
         left: 45%;
         margin-top: 11%;
+        z-index: 1000;
       }
       .duckRace .house .iglooWrapper .penguin {
           position: absolute;
@@ -352,14 +370,14 @@
       }
     
       
-      /* .answers div {
+      .answers div {
           font-size: 7vh;
           font-family: 'Titan One', cursive;
           width: 20%;
           color: black;
           cursor: crosshair;
-          z-index: 600;
-      } */
+          z-index: 800;
+      }
 
       .duckRace .pinkBoxAndGif {
         position: fixed;
@@ -397,8 +415,8 @@
         /* text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue; */
         font-size:10vw;
         width: 40%;
-        left: 13%;
-        top: 18%;
+        left: 20%;
+        top: 8%;
        
         z-index: 800;
         cursor: crosshair; 

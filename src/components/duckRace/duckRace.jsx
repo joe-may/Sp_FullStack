@@ -93,7 +93,7 @@ console.log(randomProblemSelector);
 
 
  
-  var counter = 30;
+  var counter = 300000;
  
 ////////////timer
   var interval = setInterval(function() {
@@ -327,11 +327,11 @@ var changeAnswerset = function () {
       <img src='../StudyPup_assets/BOX.png' alt="" class='ybox'/>
        <div class="guessCounter">
     
-          {/* <img src='../StudyPup_assets/UP_BUTTON.png'alt=""  class='countUp'/> */}
-          <img src='../StudyPup_assets/UP_BUTTON.png'alt=""  class='countUpClicked'/>
+          <img src='../StudyPup_assets/UP_BUTTON.png'alt=""  class='countUp'/>
+          {/* <img src='../StudyPup_assets/UP_BUTTON.png'alt=""  class='countUpClicked'/> */}
   
           <img src='../StudyPup_assets/DOWN_BUTTON.png'alt=""  class='countDown'/>
-          <img src='../StudyPup_assets/DOWN_BUTTON.png'alt=""  class='countDownClicked'/>
+          {/* <img src='../StudyPup_assets/DOWN_BUTTON.png'alt=""  class='countDownClicked'/> */}
 
 
        
@@ -354,9 +354,9 @@ var changeAnswerset = function () {
     {/* <img class="wave4" src='../StudyPup_assets/WAVE_3.png' alt="" /> */}
 
       <img class="lose" src='../StudyPup_assets/YOU_LOSE_Cozmo_Game3.png' alt="" />
-      <img class="kart1" src="../StudyPup_assets/YELLOW_DUCK_A.png"alt=""/>
+      <img class="kart3" src="../StudyPup_assets/YELLOW_DUCK_A.png"alt=""/>
  
-    <img class="kart3" src="../StudyPup_assets/PURPLE_DUCK.png"alt=""/>
+    <img class="kart1" src="../StudyPup_assets/PURPLE_DUCK.png"alt=""/>
     <img class="kart4" src="../StudyPup_assets/YELLOW_DUCK_B.png"alt=""/>
      
 
