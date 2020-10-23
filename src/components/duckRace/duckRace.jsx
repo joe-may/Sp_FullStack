@@ -285,7 +285,7 @@ var changeAnswerset = function () {
 
  render() {
   return (
-    <div class="duckRace" style ={ { backgroundImage: "url('../StudyPup_assets/vector-cartoon-blue-ocean-waves-cartoon-blue-ocean-waves-154050621.jpg')"} }>
+    <div class="duckRace" style ={ { backgroundImage: "url('../StudyPup_assets/BG.png')"} }>
     <body>
     <a class="gButton" href={this.props.gButton}>
                 <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
@@ -324,14 +324,14 @@ var changeAnswerset = function () {
   
      <div class="brownBox">
       <button class="create">GO!</button>
-      <img src='../StudyPup_assets/Cozmo_Elevator_Box.png' alt="" class='ybox'/>
+      <img src='../StudyPup_assets/BOX.png' alt="" class='ybox'/>
        <div class="guessCounter">
     
-          <img src='../StudyPup_assets/Cozmo_Elevator_Button_Up_Unclicked.png'alt=""  class='countUp'/>
-          <img src='../StudyPup_assets/Cozmo_Elevator_Button_Up_Clicked.png'alt=""  class='countUpClicked'/>
+          {/* <img src='../StudyPup_assets/UP_BUTTON.png'alt=""  class='countUp'/> */}
+          <img src='../StudyPup_assets/UP_BUTTON.png'alt=""  class='countUpClicked'/>
   
-          <img src='../StudyPup_assets/Cozmo_Elevator_Button_Down_Unclicked.png'alt=""  class='countDown'/>
-          <img src='../StudyPup_assets/Cozmo_Elevator_Button_Down_Clicked.png'alt=""  class='countDownClicked'/>
+          <img src='../StudyPup_assets/DOWN_BUTTON.png'alt=""  class='countDown'/>
+          <img src='../StudyPup_assets/DOWN_BUTTON.png'alt=""  class='countDownClicked'/>
 
 
        
@@ -348,12 +348,16 @@ var changeAnswerset = function () {
       
       
 
- 
+    <img class="wave1" src='../StudyPup_assets/WAVE_1.png' alt="" />
+    <img class="wave2" src='../StudyPup_assets/WAVE_2.png' alt="" />
+    <img class="wave3" src='../StudyPup_assets/WAVE_3.png' alt="" />
+    {/* <img class="wave4" src='../StudyPup_assets/WAVE_3.png' alt="" /> */}
+
       <img class="lose" src='../StudyPup_assets/YOU_LOSE_Cozmo_Game3.png' alt="" />
-      <img class="kart1" src="../StudyPup_assets/5c3a4514105804a817f548915be28107-removebg-preview.png"alt=""/>
-    <img class="kart2" src="../StudyPup_assets/5c3a4514105804a817f548915be28107-removebg-preview.png"alt=""/>
-    <img class="kart3" src="../StudyPup_assets/5c3a4514105804a817f548915be28107-removebg-preview.png"alt=""/>
-    <img class="kart4" src="../StudyPup_assets/5c3a4514105804a817f548915be28107-removebg-preview.png"alt=""/>
+      <img class="kart1" src="../StudyPup_assets/YELLOW_DUCK_A.png"alt=""/>
+ 
+    <img class="kart3" src="../StudyPup_assets/PURPLE_DUCK.png"alt=""/>
+    <img class="kart4" src="../StudyPup_assets/YELLOW_DUCK_B.png"alt=""/>
      
 
       <div>
@@ -362,6 +366,9 @@ var changeAnswerset = function () {
         </span>
       </div>
       <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+      <link rel="stylesheet" href="https://use.typekit.net/wug4dcf.css"></link>
+
+
   </body>
   </div>
 );

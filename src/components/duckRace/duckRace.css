@@ -43,12 +43,16 @@
     
 
     .duckRace .brownBox .ybox {
-      position: relative;
-      width: 34%;
-      left: 20%;
-      margin-top: 21%;
-      height: 150%;
-      z-index: 300;
+      position: fixed;
+      border-radius: 0%;
+      color: black;
+      width: 20%;
+      left: 49%;
+      top: 16%;
+      z-index: 800;
+      cursor: crosshair; 
+      margin-top: 0%;
+      margin-bottom: 0%;
   }
   
   .duckRace .create {
@@ -262,19 +266,35 @@
       }
   
       .duckRace .countDown {
-        position: absolute;
-        width: 17%;
-        margin-top: -36%;
-        left: 83%;
-        z-index: 1000;
+        position: fixed;
+        border-radius: 0%;
+        color: black;
+        /* text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue; */
+        font-size:10vw;
+        width: 13%;
+        left: 53%;
+        top: 33%;
+       
+        z-index: 800;
+        cursor: pointer; 
+        margin-top: 0%;
+        margin-bottom: 0%;
       }
   
       .duckRace .countDownClicked {
-        position: absolute;
-        width: 16%;
-        margin-top: -36%;
-        left: 83%;
-        z-index: 900;
+        position: fixed;
+        border-radius: 0%;
+        color: black;
+        /* text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue; */
+        font-size:10vw;
+        width: 13%;
+        left: 53%;
+        top: 33%;
+       
+        z-index: 800;
+        cursor: pointer; 
+        margin-top: 0%;
+        margin-bottom: 0%;
       }
   
   
@@ -284,15 +304,23 @@
         width: 17%;
         margin-top: -75%;
         left: 83%;
-        z-index: 1000;
+        z-index: 500;
       }
   
       .duckRace .countUpClicked{
-        position: absolute;
-        width: 15%;
-        margin-top: -74%;
-        left: 83%;
-        z-index: 900;
+        position: fixed;
+        border-radius: 0%;
+        color: black;
+        /* text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue; */
+        font-size:10vw;
+        width: 13%;
+        left: 53%;
+        top: 18%;
+       
+        z-index: 800;
+        cursor: pointer; 
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
   
   
@@ -363,15 +391,26 @@
       }
      
       .duckRace .problem p {
-        position: absolute;
-        width: 68%;
-        left: 19%;
-        top: -18%;
-        font-size: 9vw;
+        position: fixed;
+        border-radius: 0%;
         color: black;
-        border-radius: 30px 30px 30px 30px;
-        z-index: 1200;
-        cursor: pointer
+        /* text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue; */
+        font-size:10vw;
+        width: 40%;
+        left: 13%;
+        top: 18%;
+       
+        z-index: 800;
+        cursor: crosshair; 
+        margin-top: 0%;
+        margin-bottom: 0%;
+        cursor: pointer;
+        font-family: marvin-round, sans-serif;
+
+        font-weight: 400;
+
+        font-style: normal;
+
     }
       
      
@@ -579,41 +618,61 @@
       }
       .duckRace .kart1 {
         background-position: bottom;
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
         width: 8%;
         position: fixed;
         left: 0%;
-        bottom: 19%;
-        z-index: 800;
+        bottom:14%;
+        z-index: 600;
     }
-    .duckRace .kart2 {
-    background-position: bottom;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    width: 8%;
-    position: fixed;
-    left: 0%;
-    bottom: 58%;
-    z-index: 400;
-  }
+
   .duckRace .kart3 {
     background-position: bottom;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
     width: 8%;
     position: fixed;
     left: 0%;
     bottom:2%;
-    z-index: 400;
+    z-index: 900;
   }
   .duckRace .kart4 {
     background-position: bottom;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
     width: 8%;
     position: fixed;
     left: 0%;
-    bottom: 38%;
-    z-index: 400;
+    bottom:27%;
+    z-index: 500;
   }
+  .duckRace .wave1 {
+    background-position: bottom;
+    width: 100%;
+    position: fixed;
+    left: 0%;
+    bottom:0%;
+    z-index: 1000;
+  }
+  .duckRace .wave2 {
+    background-position: bottom;
+    width: 100%;
+    position: fixed;
+    height: 14%;
+    left: 0%;
+    bottom:3%;
+    z-index: 900;
+}
+.duckRace .wave3 {
+  background-position: bottom;
+  width: 100%;
+  position: fixed;
+  height: 30%;
+  left: 0%;
+  bottom:2%;
+  z-index: 600;
+}
+/* .duckRace .wave4 {
+  background-position: bottom;
+  width: 100%;
+  height:30%;
+  position: fixed;
+  left: 0%;
+  top: 24%;
+  z-index: 200;
+} */
