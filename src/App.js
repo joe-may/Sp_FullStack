@@ -1785,7 +1785,7 @@ class App extends Component {
                 
               ]}
               // nxtlvl={'/v18#a'}
-              // gButton={'/planetspagea'}
+              gButton={'/arcade-play'}
                 {...props} />
                 )}/>
 

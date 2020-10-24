@@ -13,19 +13,19 @@
 }
 @keyframes dunker {
   
-  0%   { position: fixed; transform: rotate(180deg); left:110%; top:60%;}
+  0%   { position: relative; transform: rotate(180deg); right:-100%; bottom:40%;}
   
   /* 25%  { left:17%; top:50%;}
   50%  {left:22%; top:12%;} */
   
-  100% {position: fixed;transform: rotate(-20deg); left:11%; top:12%;}
+  100% {position: relative;transform: rotate(-20deg); right:35%; bottom:40%;}
 }
 @keyframes hoopster {
-  0%   { left:20%; top:-10%;}
+  0%   { right:70%; bottom:40%;}
   /* 25%  { left:17%; top:50%;}
   50%  {left:22%; top:12%;} */
   
-  100% { left:-60%; top:-50%;}
+  100% { right:17%; bottom:40%;}
 }
 .slamDunk .backgroundSno2 {
   position: fixed;
@@ -118,7 +118,7 @@
       height: 15%;
       
       margin-left: -2%;
-      top: 87%;
+      top: 57%;
       font-family: 'Titan One';
       z-index: 800;
       
@@ -148,7 +148,7 @@
       font-size:11vw;
       width: 40%;
       left: 35%;
-      top: 65%;
+      top: 35%;
       font-family: 'Titan One';
       z-index: 800;
       cursor: crosshair; 
@@ -191,22 +191,28 @@
 
 }  
 .slamDunk .hoop {
-  background-position: bottom;
-  width: 45%;
+
+  width: 23%;
   position: relative;
-  left: -23%;
-  top: -52%;
+  right:17%;
+  bottom: 40%;
+  animation-name: hoopster;
+  animation-duration: 1s;
+  /* animation-iteration-count: infinite; */
+  animation-timing-function: linear;
+  
   z-index: 400;
      
-  z-index: 400;
+ 
  
 }
 .slamDunk .stars {
   background-position: bottom;
-  width: 45%;
+  width: 100%;
   position: absolute;
   left: 7%;
   top: -13%;
+  height: 110%;
   z-index: 400;
      
   z-index: 400;

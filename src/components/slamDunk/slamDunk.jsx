@@ -12,7 +12,7 @@ class SlamDunk extends Component {
       
 
     
-      
+      $('.hoop').hide();
       $('.win').hide();
       $('.lose').hide();
       $('.nextLevel').hide();
@@ -23,8 +23,8 @@ class SlamDunk extends Component {
       $('.start').hide();
       $('.win').hide();
       $('.lose').hide();
-      $('audio#raceMusic')[0].play();
-      $("audio#raceMusic").prop("volume", 0.19);
+      // $('audio#raceMusic')[0].play();
+      // $("audio#raceMusic").prop("volume", 0.19);
       $('.nextLevel').hide();
       $('li').first().remove();
       $('li').first().remove();
@@ -132,22 +132,42 @@ class SlamDunk extends Component {
           var clickedAnswer = $(this).text();
           
           if (clickedAnswer === theAnswer) {
+          
+            $('.problem').hide();
+            $('.answers').hide();
+            
+
             $('body').append(" <img class='kart1' src='../StudyPup_assets/slamin-spaceman.png'alt=''/>");
+            setTimeout(function() {
+              $('.hoop').show();
+             
+            }, 100);
+            
         
             setTimeout(function() {
               $('.kart1').remove();
              
-            }, 3050);
+            }, 3150);
             setTimeout(function() {
-              $('body').append(" <iframe class='stars' src='https://giphy.com/embed/PnmBWJdi6FnhoUgwDN' width='480' height='470' frameBorder='0' class='giphy-embed' allowFullScreen></iframe><p><a href='https://giphy.com/gifs/jason-clarke-stars-fx-effects-PnmBWJdi6FnhoUgwDN'>via GIPHY</a></p>");
+              $('.hoop').hide();
+             
+            }, 3150);
+            setTimeout(function() {
+              
+              $('.problem').show();
+              $('.answers').show();
+             
+            }, 2900);
+            setTimeout(function() {
+              $('body').append(" <img class='stars' src='../StudyPup_assets/SJS_slam_times.gif'alt=''/>");
 
              
 
-            }, 2250);
+            }, 2950);
             setTimeout(function() {
               $('.stars').remove();
              
-            }, 3450);
+            }, 3950);
 
             console.log("Correct!");
 
@@ -157,8 +177,8 @@ class SlamDunk extends Component {
                 winningCheck();
                 $('p').remove();
                 generateNextTurn();
-                $('audio#boardBoost')[0].play();
-                $('audio#boardBoost')[0].currentTime = 0
+                // $('audio#boardBoost')[0].play();
+                // $('audio#boardBoost')[0].currentTime = 0
                 console.log(currentGameArray.length + "Current game array");
                
            
@@ -230,7 +250,7 @@ class SlamDunk extends Component {
  
   
  
-  <img class="backgroundSno2" src="../StudyPup_assets/30.jpg"alt=""/>
+  <img class="backgroundSno2" src="../StudyPup_assets/galaxyDunk.png"alt=""/>
  <audio id="raceMusic">
     <source src='../StudyPup_assets/Hotsva_Racing_Song.m4a' type="audio/mpeg"/>
   </audio>
@@ -257,9 +277,8 @@ class SlamDunk extends Component {
   </div>
    <img class="lose" src='../StudyPup_assets/YOU_LOSE_Hotsva_Game2.png' alt="" />
 
-   <img class="astroid" src="../StudyPup_assets/456-removebg-preview.png"alt=""/>
 
-   <img class="hoop" src="../StudyPup_assets/hooprrr.png"alt=""/>
+   <img class="hoop" src="../StudyPup_assets/planet_hoop_1.png"alt=""/>
 {/* 
     <img class="kart1" src="../StudyPup_assets/slamin-spaceman.png"alt=""/> */}
    

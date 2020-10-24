@@ -624,6 +624,7 @@
         top:10%;
         left: 2%;
         z-index: 3000;
+        cursor: pointer;
       }
       .duckRace .kart1 {
         background-position: bottom;
