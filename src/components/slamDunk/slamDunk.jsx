@@ -157,7 +157,7 @@ class SlamDunk extends Component {
               $('.problem').show();
               $('.answers').show();
              
-            }, 2900);
+            }, 3000);
             setTimeout(function() {
               $('body').append(" <img class='stars' src='../StudyPup_assets/SJS_slam_times.gif'alt=''/>");
 
@@ -287,6 +287,9 @@ class SlamDunk extends Component {
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
+    <link rel="stylesheet" href="https://use.typekit.net/wug4dcf.css"></link>
+
+
     
 </body>
 </div>

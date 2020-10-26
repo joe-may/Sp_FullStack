@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/wug4dcf.css");
+
 .slamDunk { 
     
   width: 100vw;
@@ -111,15 +113,15 @@
       flex-flow: row wrap; 
       position: fixed;
       -webkit-text-stroke-width: 3px;
-      -webkit-text-stroke-color: rgb(255, 255, 255);
+      -webkit-text-stroke-color: rgb(0, 0, 0);
       text-shadow: 10px 5px rgb(0, 0, 0);
       color: rgb(255, 255, 255);
       width: 90%;
       height: 15%;
-      
+
       margin-left: -2%;
       top: 57%;
-      font-family: 'Titan One';
+     
       z-index: 800;
       
     }
@@ -128,11 +130,13 @@
     .slamDunk .answers div {
         font-size:7vw;
         padding-left: 74px;
-        font-family: 'Titan One', cursive;
+        font-family: peachy-keen-jf, sans-serif;
+        font-weight: 400;
+        font-style: normal;
         height: 9.5%;
         margin-left: 2.5%;
         width: 9.2%;
-        color: red;
+        color: rgb(226, 138, 6);
         text-align: center;
         vertical-align: middle;
         cursor: crosshair;
@@ -149,11 +153,15 @@
       width: 40%;
       left: 35%;
       top: 35%;
-      font-family: 'Titan One';
+   
       z-index: 800;
       cursor: crosshair; 
       margin-top: 0%;
       margin-bottom: 0%;
+      font-family: peachy-keen-jf, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      
 	}
 	
   
@@ -208,9 +216,9 @@
 }
 .slamDunk .stars {
   background-position: bottom;
-  width: 100%;
+  width: 150%;
   position: absolute;
-  left: 7%;
+  left: -3%;
   top: -13%;
   height: 110%;
   z-index: 400;

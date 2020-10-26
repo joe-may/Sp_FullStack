@@ -44,8 +44,8 @@ $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
-// $("audio#SlingSong").prop("volume", 0.29);
-// $('audio#raceMusic')[0].play();
+$("audio#raceMusic").prop("volume", 0.29);
+$('audio#raceMusic')[0].play();
 $('.snowball').hide();
 
 
@@ -141,15 +141,19 @@ console.log(currentGameArray);
 
 
     if (clickedAnswer === theAnswer) {
+  
       $(this).find('.snowman').remove();
+      
       $(this).find('.answer').remove();
       $(this).prepend("<img src='' class='splash'>");
       var splash = $(this).parent().find('.splash');
-      splash.attr("src", "../StudyPup_assets/Puptune_Boss_Robo_Tootles_Explode.gif");
+      splash.attr("src", "../StudyPup_assets/firework_exploding.gif");
       setTimeout(function() {
         splash.attr("src", "").remove();
     }, 1250)
+    $('audio#snowballThrow').prop("volume", 0.99);
    $('audio#snowballThrow')[0].play();
+
    $('audio#snowballThrow')[0].currentTime = 0
       console.log("Correct!");
       
@@ -241,13 +245,13 @@ console.log('keep playing');
 
 
 <audio id="raceMusic">
-    <source src='../StudyPup_assets/Puptune_Boss_Song.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/firework_song.mp3' type="audio/mpeg"/>
   </audio>
   <audio id="snowballThrow">
-    <source src='../StudyPup_assets/Puptune_Boss_Sound_Effect.m4a' type="audio/mpeg"/>
+    <source src='../StudyPup_assets/firework_sound_effect.mp3' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_bb1" src='../StudyPup_assets/Puptune_Boss_Background.png' alt="" />
+         <img class="bg_bb1" src='../StudyPup_assets/firework-background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
         <img class="win" src='../StudyPup_assets/YOU_WON_Puptune_Game4.png' alt="" />
