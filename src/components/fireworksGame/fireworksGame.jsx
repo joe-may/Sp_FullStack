@@ -150,7 +150,7 @@ console.log(currentGameArray);
       splash.attr("src", "../StudyPup_assets/firework_exploding.gif");
       setTimeout(function() {
         splash.attr("src", "").remove();
-    }, 1250)
+    }, 1050)
     $('audio#snowballThrow').prop("volume", 0.99);
    $('audio#snowballThrow')[0].play();
 
