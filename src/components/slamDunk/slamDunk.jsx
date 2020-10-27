@@ -7,11 +7,18 @@ import $ from "jquery";
 class SlamDunk extends Component {
     componentDidMount() {
 
-      const { answerset } = this.props;
+      var { answerset } = this.props;
+      var { answerset2 } = this.props;
+
+      var changeAnswerset = function () {
+        if (levelCont === 2) {
+          answerset = answerset2
+      }};
+      
 
       
 
-    
+    var levelCont =  1  
       $('.hoop').hide();
       $('.win').hide();
       $('.lose').hide();
@@ -20,6 +27,7 @@ class SlamDunk extends Component {
  
       
       $('.start').on('click',function() {
+        changeAnswerset();
       $('.start').hide();
       $('.win').hide();
       $('.lose').hide();
@@ -223,12 +231,14 @@ class SlamDunk extends Component {
       console.log('keep playing');
         } else {
           $('.win').show();
-          $('.nextLevel').show();
+          // $('.nextLevel').show();
           $(".reset").html(" ");
-          $(".start").hide();
+          $(".start").show();
           $('.tryAgain').show();
           $('audio#raceMusic')[0].pause()
           $('audio#raceMusic')[0].currentTime = 0
+          levelCont = levelCont + 1
+          console.log(levelCont);
           
           clearInterval(interval);
           
@@ -269,7 +279,7 @@ class SlamDunk extends Component {
         <div class="problem reset"></div>
     </div>
   </div>
-  <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
+  {/* <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a> */}
   <div>
       <span id="timer">00:
         <span id="time"></span>     

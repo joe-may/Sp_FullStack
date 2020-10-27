@@ -1784,6 +1784,110 @@ class App extends Component {
                 { problem: "2 + 4 =", answer: "6"},
                 
               ]}
+              answerset2 = {[
+                { problem: "3 32r 2 =", answer: "5"},
+                { problem: "6 +eg 1 =", answer: "7"},
+                { problem: "4 +er 4 =", answer: "8"},
+                { problem: "1 +erg 2 =", answer: "3"},
+                { problem: "3 +er 1 =", answer: "4"},
+                { problem: "7 er+ 3 =", answer: "10"},
+                { problem: "6 er+ 3 =", answer: "9"},
+                { problem: "2 +er 4 =", answer: "6"},
+                
+              ]}
+              // nxtlvl={'/v18#a'}
+              gButton={'/arcade-play'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/arcade-ducks" render={(props) => (
+              <DuckRace
+              answerset = {[
+                { problem: "3 - 2 =", answer: "5"},
+                { problem: "6 - 1 =", answer: "7"},
+                { problem: "4 - 4 =", answer: "8"},
+                { problem: "1 - 2 =", answer: "3"},
+                { problem: "3 - 1 =", answer: "4"},
+                { problem: "7 - 3 =", answer: "10"},
+                { problem: "6 - 3 =", answer: "9"},
+                { problem: "2 - 4 =", answer: "6"},
+                
+              ]}
+              answerset2 = {[
+                { problem: "wwww", answer: "5"},
+                { problem: "ewfwef =", answer: "7"},
+                { problem: "www=", answer: "8"},
+                { problem: "wwww =", answer: "3"},
+                { problem: "www =", answer: "4"},
+                { problem: "www", answer: "10"},
+                { problem: "www", answer: "9"},
+                { problem: "wwww", answer: "6"},
+                
+              ]}
+              // nxtlvl={'/v18#a'}
+              gButton={'/arcade-play'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/arcade-duckm" render={(props) => (
+              <DuckRace
+              answerset = {[
+                { problem: "3 x 2 =", answer: "5"},
+                { problem: "6 x 1 =", answer: "7"},
+                { problem: "4 x 4 =", answer: "8"},
+                { problem: "1 x 2 =", answer: "3"},
+                { problem: "3 x 1 =", answer: "4"},
+                { problem: "7 x 3 =", answer: "10"},
+                { problem: "6 x 3 =", answer: "9"},
+                { problem: "2 x 4 =", answer: "6"},
+                
+              ]}
+              answerset2 = {[
+                { problem: "x", answer: "5"},
+                { problem: "x", answer: "7"},
+                { problem: "x", answer: "8"},
+                { problem: "x", answer: "3"},
+                { problem: "wx", answer: "4"},
+                { problem: "x", answer: "10"},
+                { problem: "x", answer: "9"},
+                { problem: "x", answer: "6"},
+                
+              ]}
+              // nxtlvl={'/v18#a'}
+              gButton={'/arcade-play'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/arcade-duckd" render={(props) => (
+              <DuckRace
+              answerset = {[
+                { problem: "3  2 =", answer: "5"},
+                { problem: "6  1 =", answer: "7"},
+                { problem: "4  4 =", answer: "8"},
+                { problem: "1  2 =", answer: "3"},
+                { problem: "3  1 =", answer: "4"},
+                { problem: "7  3 =", answer: "10"},
+                { problem: "6  3 =", answer: "9"},
+                { problem: "2  4 =", answer: "6"},
+                
+              ]}
+              answerset2 = {[
+                { problem: "xd", answer: "5"},
+                { problem: "xd", answer: "7"},
+                { problem: "xd", answer: "8"},
+                { problem: "xd", answer: "3"},
+                { problem: "wxd", answer: "4"},
+                { problem: "xd", answer: "10"},
+                { problem: "xd", answer: "9"},
+                { problem: "xd", answer: "6"},
+                
+              ]}
               // nxtlvl={'/v18#a'}
               gButton={'/arcade-play'}
                 {...props} />
@@ -1804,6 +1908,114 @@ class App extends Component {
                 { problem: "2 + 4 =", answer: "6"},
                 
               ]}
+              answerset2 = {[
+                { problem: "3 + fer2 =", answer: "5"},
+                { problem: "6 ree+ 1 =", answer: "7"},
+                { problem: "4 re+ 4 =", answer: "8"},
+                { problem: "1 +e 2 =", answer: "3"},
+                { problem: "3 +er 1 =", answer: "4"},
+                { problem: "7 +er 3 =", answer: "10"},
+                { problem: "6 +er 3 =", answer: "9"},
+                { problem: "2 +er 4 =", answer: "6"},
+                
+              ]}
+              
+              // nxtlvl={'/v18#a'}
+              // gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/arcade-fireworkss" render={(props) => (
+              <FireworksGame
+              answerset = {[
+                { problem: "3 - 2 =", answer: "5"},
+                { problem: "6 - 1 =", answer: "7"},
+                { problem: "4 - 4 =", answer: "8"},
+                { problem: "1 - 2 =", answer: "3"},
+                { problem: "3 - 1 =", answer: "4"},
+                { problem: "7 - 3 =", answer: "10"},
+                { problem: "6 - 3 =", answer: "9"},
+                { problem: "2 - 4 =", answer: "6"},
+                
+              ]}
+              answerset2 = {[
+                { problem: "-=", answer: "5"},
+                { problem: "6 -ee+ 1 =", answer: "7"},
+                { problem: "4 re+- 4 =", answer: "8"},
+                { problem: "1-+e 2 =", answer: "3"},
+                { problem: "3 --+er 1 =", answer: "4"},
+                { problem: "7 +--er 3 =", answer: "10"},
+                { problem: "6 +--er 3 =", answer: "9"},
+                { problem: "2 +--er 4 =", answer: "6"},
+                
+              ]}
+              
+              // nxtlvl={'/v18#a'}
+              // gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/arcade-fireworksm" render={(props) => (
+              <FireworksGame
+              answerset = {[
+                { problem: "3 -x2 =", answer: "5"},
+                { problem: "6 x 1 =", answer: "7"},
+                { problem: "4 x 4 =", answer: "8"},
+                { problem: "1 x 2 =", answer: "3"},
+                { problem: "3 x 1 =", answer: "4"},
+                { problem: "7 x 3 =", answer: "10"},
+                { problem: "6 x 3 =", answer: "9"},
+                { problem: "2 x 4 =", answer: "6"},
+                
+              ]}
+              answerset2 = {[
+                { problem: "-=", answer: "5"},
+                { problem: "x=", answer: "7"},
+                { problem: "x=", answer: "8"},
+                { problem: "x =", answer: "3"},
+                { problem: "x =", answer: "4"},
+                { problem: "x =", answer: "10"},
+                { problem: "x =", answer: "9"},
+                { problem: "x=", answer: "6"},
+                
+              ]}
+              
+              // nxtlvl={'/v18#a'}
+              // gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/arcade-fireworksd" render={(props) => (
+              <FireworksGame
+              answerset = {[
+                { problem: "3d =", answer: "5"},
+                { problem: "6 dx 1 =", answer: "7"},
+                { problem: "4 xd 4 =", answer: "8"},
+                { problem: "1 xd 2 =", answer: "3"},
+                { problem: "3 xd 1 =", answer: "4"},
+                { problem: "7 x d3 =", answer: "10"},
+                { problem: "6 xd 3 =", answer: "9"},
+                { problem: "2 xd 4 =", answer: "6"},
+                
+              ]}
+              answerset2 = {[
+                { problem: "-dd=", answer: "5"},
+                { problem: "x=dd", answer: "7"},
+                { problem: "xdd=", answer: "8"},
+                { problem: "xdd =", answer: "3"},
+                { problem: "xdd =", answer: "4"},
+                { problem: "xdd =", answer: "10"},
+                { problem: "xdd =", answer: "9"},
+                { problem: "xdd=", answer: "6"},
+                
+              ]}
+              
               // nxtlvl={'/v18#a'}
               // gButton={'/planetspagea'}
                 {...props} />
@@ -1822,6 +2034,110 @@ class App extends Component {
                 { problem: "7 + 3 =", answer: "10"},
                 { problem: "6 + 3 =", answer: "9"},
                 { problem: "2 + 4 =", answer: "6"},
+                
+              ]}
+              answerset2 = {[
+                { problem: "3 + erv2 =", answer: "5"},
+                { problem: "6 rere+ 1 =", answer: "7"},
+                { problem: "4 +rf 4 =", answer: "8"},
+                { problem: "1 + rfe2 =", answer: "3"},
+                { problem: "3 +rer 1 =", answer: "4"},
+                { problem: "7 re+ 3 =", answer: "10"},
+                { problem: "6 +re 3 =", answer: "9"},
+                { problem: "2 +er 4 =", answer: "6"},
+                
+              ]}
+              // nxtlvl={'/v18#a'}
+              // gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/arcade-slams" render={(props) => (
+              <SlamDunk
+              answerset = {[
+                { problem: "3 - 2 =", answer: "5"},
+                { problem: "6 - 1 =", answer: "7"},
+                { problem: "4 - 4 =", answer: "8"},
+                { problem: "1 - 2 =", answer: "3"},
+                { problem: "3 - 1 =", answer: "4"},
+                { problem: "7 - 3 =", answer: "10"},
+                { problem: "6 - 3 =", answer: "9"},
+                { problem: "2 - 4 =", answer: "6"},
+                
+              ]}
+              answerset2 = {[
+                { problem: "3 + ---erv2 =", answer: "5"},
+                { problem: "6 re--re+ 1 =", answer: "7"},
+                { problem: "4 +r--f 4 =", answer: "8"},
+                { problem: "1 + --rfe2 =", answer: "3"},
+                { problem: "3 +--rer 1 =", answer: "4"},
+                { problem: "7 r--+ 3 =", answer: "10"},
+                { problem: "6 +--re 3 =", answer: "9"},
+                { problem: "2--- 4 =", answer: "6"},
+                
+              ]}
+              // nxtlvl={'/v18#a'}
+              // gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/arcade-slamm" render={(props) => (
+              <SlamDunk
+              answerset = {[
+                { problem: "3 x 2 =", answer: "5"},
+                { problem: "6 x 1 =", answer: "7"},
+                { problem: "4 x 4 =", answer: "8"},
+                { problem: "1 x 2 =", answer: "3"},
+                { problem: "3 x 1 =", answer: "4"},
+                { problem: "7 x 3 =", answer: "10"},
+                { problem: "6 x 3 =", answer: "9"},
+                { problem: "2 x 4 =", answer: "6"},
+                
+              ]}
+              answerset2 = {[
+                { problem: "3 + xx---erv2 =", answer: "5"},
+                { problem: "6 rexx--re+ 1 =", answer: "7"},
+                { problem: "4 +rxx--f 4 =", answer: "8"},
+                { problem: "1 + xx--rfe2 =", answer: "3"},
+                { problem: "3 +xxxx--rer 1 =", answer: "4"},
+                { problem: "7 r--+xx 3 =", answer: "10"},
+                { problem: "6 +xxre 3 =", answer: "9"},
+                { problem: "2-xx =", answer: "6"},
+                
+              ]}
+              // nxtlvl={'/v18#a'}
+              // gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/arcade-slamd" render={(props) => (
+              <SlamDunk
+              answerset = {[
+                { problem: "3 d 2 =", answer: "5"},
+                { problem: "6 d 1 =", answer: "7"},
+                { problem: "4 d 4 =", answer: "8"},
+                { problem: "1 d 2 =", answer: "3"},
+                { problem: "3 d 1 =", answer: "4"},
+                { problem: "7 d 3 =", answer: "10"},
+                { problem: "6 d 3 =", answer: "9"},
+                { problem: "2 d 4 =", answer: "6"},
+                
+              ]}
+              answerset2 = {[
+                { problem: "3 +dv2 =", answer: "5"},
+                { problem: "6d 1 =", answer: "7"},
+                { problem: "4 +d 4 =", answer: "8"},
+                { problem: "1 +d =", answer: "3"},
+                { problem: "3 d 1 =", answer: "4"},
+                { problem: "7 d", answer: "10"},
+                { problem: "6d", answer: "9"},
+                { problem: "2d", answer: "6"},
                 
               ]}
               // nxtlvl={'/v18#a'}

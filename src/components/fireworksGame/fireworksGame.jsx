@@ -10,21 +10,12 @@ class FireworksGame extends Component {
     componentDidMount() {
      
       var { answerset } = this.props;
+      var { answerset2 } = this.props;
 
      
       var changeAnswerset = function () {
         if (levelCont === 2) {
-          answerset = [
-           { problem: "ppoo =", answer: "5"},
-           { problem: "poo=", answer: "7"},
-           { problem: "poo =", answer: "8"},
-           { problem: " =", answer: "3"},
-           { problem: "poo=", answer: "4"},
-           { problem: "poo=", answer: "10"},
-           { problem: "oppoejfw =", answer: "9"},
-           { problem: "mbkwjbd=", answer: "6"},
-           
-         ]
+          answerset = answerset2
       }};
       
 
