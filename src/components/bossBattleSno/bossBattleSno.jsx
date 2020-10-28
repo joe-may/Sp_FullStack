@@ -104,6 +104,8 @@ console.log(currentGameArray);
           console.log("you lose");
           $('.lose').show();
           $(".reset").html(" ");
+          $('audio#loseSound')[0].play();
+          $("audio#loseSound").prop("volume", 0.75);
           $(".start").show();
           $('p').hide();
           $('audio#raceMusic')[0].pause()
@@ -205,6 +207,8 @@ console.log('keep playing');
     $('.win').show();
     $('.nextLevel').show();
     $(".reset").html(" ");
+    $('audio#winSound')[0].play();
+    $("audio#winSound").prop("volume", 0.75);
     $(".start").show();
     $('.tryAgain').show();
     $('p').hide();
@@ -240,6 +244,12 @@ console.log('keep playing');
   </audio>
   <audio id="snowballThrow">
     <source src='../StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="winSound">
+    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="loseSound">
+    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
  
          <img class="bg_bb1" src='../StudyPup_assets/Snow_Con_Boss_Background.png' alt="" />

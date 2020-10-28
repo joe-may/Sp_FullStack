@@ -85,6 +85,8 @@ class WildGameThree extends Component {
                 $(".start").show();
                 $('p').hide();
                 $('#timer').hide();
+                $('audio#loseSound')[0].play();
+                $("audio#loseSound").prop("volume", 0.75);
 
                 $('audio#raceMusic')[0].pause()
                 $('audio#raceMusic')[0].currentTime = 0
@@ -194,6 +196,8 @@ class WildGameThree extends Component {
       console.log('keep playing');
         } else {
           $('.win').show();
+          $('audio#winSound')[0].play();
+          $("audio#winSound").prop("volume", 0.75);
           $('.nextLevel').show();
           $(".reset").html(" ");
           $(".start").show();
@@ -226,6 +230,12 @@ class WildGameThree extends Component {
   <img class="backgroundSno2" src="../StudyPup_assets/Tumblewyld_MineCart_Background.png"alt=""/>
  <audio id="raceMusic">
     <source src='../StudyPup_assets/Tumblewyld_MineCart_Song.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="winSound">
+    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="loseSound">
+    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   
   

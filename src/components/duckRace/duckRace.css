@@ -614,10 +614,11 @@
        }
        .duckRace  .mapIcon {
         position: fixed;
-        width:4%;
-        top:4%;
-        left: 2%;
+        width:15%;
+        top:1%;
+        left: -5%;
         z-index: 3000;
+        transform: rotateY(180deg);
       }
       .duckRace  .gButton {
         position: fixed;

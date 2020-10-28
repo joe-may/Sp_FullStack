@@ -82,6 +82,8 @@ class HotGameTwo extends Component {
                 $('#timer').hide();
                 $(".start").show();
                 $('p').hide();
+                $('audio#loseSound')[0].play();
+                $("audio#loseSound").prop("volume", 0.75);
                 $('audio#raceMusic')[0].pause()
                 $('audio#raceMusic')[0].currentTime = 0
                 clearInterval(interval);
@@ -191,6 +193,8 @@ class HotGameTwo extends Component {
       console.log('keep playing');
         } else {
           $('.win').show();
+          $('audio#winSound')[0].play();
+          $("audio#winSound").prop("volume", 0.75);
           $('.nextLevel').show();
           $(".reset").html(" ");
           $(".start").hide();
@@ -224,6 +228,12 @@ class HotGameTwo extends Component {
   </audio>
   <audio id="boardBoost">
     <source src='../StudyPup_assets/Hotsva_Racing_Sound_Balloon.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="winSound">
+    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="loseSound">
+    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   
 

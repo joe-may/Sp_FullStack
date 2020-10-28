@@ -95,6 +95,8 @@ class PupGameTwo extends Component {
                 // $('#time').text(counter);
                 console.log("you lose");
                 $('.lose').show();
+                $('audio#loseSound')[0].play();
+                $("audio#loseSound").prop("volume", 0.75);
                 $(".reset").html(" ");
                 $(".start").show();
                 $('#timer').hide();
@@ -184,6 +186,8 @@ class PupGameTwo extends Component {
           $('.win').show();
           $(".reset").html(" ");
           $(".start").show();
+          $('audio#winSound')[0].play();
+          $("audio#winSound").prop("volume", 0.75);
           $('.tryAgain').show();
           $('.nextLevel').show();
           clearInterval(interval);
@@ -218,6 +222,12 @@ class PupGameTwo extends Component {
   </audio>
   <audio id="wrongWhoosh">
     <source src='../StudyPup_assets/Wrong_Ice.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="winSound">
+    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="loseSound">
+    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
         <div class="answers reset"></div>
         <button class="start">START</button>

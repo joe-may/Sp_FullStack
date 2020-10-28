@@ -1,5 +1,6 @@
 
 .arcadePages { 
+
   width: 100vw;
   height: 100vh;
   background-repeat: center;
@@ -10,12 +11,37 @@
   -o-background-size: cover;
   background-size: cover;
   overflow-x: hidden;
+
+}
+.arcadePages body{ 
+
+height: 120%;
+
 }
 
-
-
+.arcadePages .fwThumb:hover{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
+.arcadePages .sjsThumb:hover{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
+.arcadePages .duckThumb:hover{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
   a:link {
     text-decoration: none;
+}
+.arcadePages .opCon .opd:hover{ 
+  color: #A252D3;
+}
+.arcadePages .opCon .opm:hover{ 
+  color: #DD1D29;
+}
+.arcadePages .opCon .opa:hover{ 
+  color: rgb(80, 162, 255);
 }
 
 .arcadePages .select {
@@ -27,63 +53,131 @@
     color: rgb(72, 182, 255);
   }
 
-  .arcadePages .opCon {
-    position: absolute;
-    z-index: 999;
-    /* font-family: 'Nunito', sans-serif; */
-    border-radius: 10%;
-    left: 42%;
-    background-color: black;
-    font-family: 'Nunito', sans-serif;
+  .arcadePages  .opCon {
+    /* position: relative; */
+    width: 39vw;
     
-    text-align: center;
-    top: 20%;
-    /* font-family: Arial,sans-serif; */
-    color: #fff;
-   
-    width: 12vw;
+    /* padding-top: 2%; */
+  /* padding-bottom: 11%; */
+    margin-left: 30%;
+    margin-top: -6%;
+    max-height: 500px;
+    max-width: 1200px;
+    min-width: 80px; 
+    
   }
+  .arcadePages  .opCon a {
+    padding-right: 20px;
+    
+    margin-left: 20px;
+    font-size: 4.5vw;
+    max-width: 1000px;
+    min-width: 280px; 
+    
+    
 
-  .arcadePages.opCon .chg{
-    font-size: 2vh;
-    font-style: italic;
     
-    color: #fff;
-    
-  }
-  .arcadePages .opCon a {
-    padding-right: 13px;
-    
-    margin-left: 4px;
-    font-size: 5vh;
-    
+
   }
   .arcadePages .opCon .opa{
-    /* font-family: 'Nunito', sans-serif; */
     color: white;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+   
     
   }
   .arcadePages .opCon .ops{
 
-    color: rgb(80, 162, 255);
+    color: #FFB343;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  
     
   }
   .arcadePages .opCon .opm{
 
-    color: #fff;
-    
+    color:white;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
   }
   .arcadePages .opCon .opd{
 
-    color: #fff;
+    color: white;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+   
     
   }
   .arcadePages .opCon .chg{
-    font-size: 2vh;
-    font-style: italic;
+
+    position: rel;
+    font-size: 1.3vw;
+    font-family: marvin, sans-serif;
+    font-weight: 400;
     
-    color: #fff;
+   
+    font-style: normal;
+   
+    color: white;
     
   }
+
+  .arcadePages .arcadeBanner {
+
+    /* position: relative; */
+  width: 45vw;
+  /* padding-top: 2%; */
+/* padding-bottom: 11%; */
+  margin-left: 0px;
+  margin-top: -50px;
+  max-height: 500px;
+  max-width: 1200px;
+  min-width: 280px; 
+    
+  }
+  .arcadePages .duckThumb {
+
+position: relative;
+width: 22vw;
+ /* padding-top: 2%; */
+/* padding-bottom: 11%; */
+ right: 5%;
+ margin-top: 1%;
+ max-height: 500px;
+ max-width: 1200px;
+ min-width: 80px; 
+    
+  }
+  .arcadePages .sjsThumb {
+
+    position: relative;
+    width: 22vw;
+     /* padding-top: 2%; */
+    /* padding-bottom: 11%; */
+     left: -1%;
+     margin-top: 1%;
+     max-height: 500px;
+     max-width: 1200px;
+     min-width: 80px; 
+        
+      }
+      .arcadePages .fwThumb {
+
+        position: relative;
+         width: 22vw;
+         /* padding-top: 2%; */
+        /* padding-bottom: 11%; */
+         left: 3%;
+         margin-top: 1%;
+         max-height: 500px;
+         max-width: 1200px;
+         min-width: 80px; 
+            
+       }
+        
 
 

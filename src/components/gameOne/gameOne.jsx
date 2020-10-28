@@ -89,7 +89,9 @@ $('.lose').hide();
 $('.nextLevel').hide();
 $("audio#iglooSong").prop("volume", 0.19);
 $('audio#iglooSong')[0].play();
-$("audio#snowballThrow").prop("volume", 0.18);
+$("audio#snowballThrow").prop("volume", 0.75);
+
+
 
 $('iframe').hide();
 $('.novaThrow').show();
@@ -161,6 +163,8 @@ console.log(currentGameArray);
           $('p').hide();
           $('audio#iglooSong')[0].pause()
           $('audio#iglooSong')[0].currentTime = 0
+          $('audio#loseSound')[0].play();
+          $("audio#loseSound").prop("volume", 0.75);
           
           
         return;
@@ -253,6 +257,8 @@ console.log(currentGameArray);
 console.log('keep playing');
   } else {
     $('.lose').hide();
+    $('audio#winSound')[0].play();
+    $("audio#winSound").prop("volume", 0.75);
     $('.win').show();
     $('.nextLevel').show();
     $(".reset").html(" ");
@@ -298,6 +304,12 @@ console.log('keep playing');
 <iframe src="https://player.vimeo.com/video/469147642" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="iglooSong">
     <source src='../StudyPup_assets/Song_Snow-Con_Level_1.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="winSound">
+    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="loseSound">
+    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="snowballThrow">
     <source src='../StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>

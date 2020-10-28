@@ -93,6 +93,8 @@ console.log(randomProblemSelector);
           $(".reset").html(" ");
           $('.start').show();
           $('p').hide();
+          $('audio#loseSound')[0].play();
+          $("audio#loseSound").prop("volume", 0.75);
           $('audio#icecreamSong')[0].pause()
           $('audio#icecreamSong')[0].currentTime = 0
           
@@ -215,6 +217,8 @@ $('.countDown').click(function(){
     $('.nextLevel').show();
     clearInterval(interval);
     $('.win').show();
+    $('audio#winSound')[0].play();
+    $("audio#winSound").prop("volume", 0.75);
     $(".reset").html(" ");
     $('.start').hide();
     $('.tryAgain').show();
@@ -260,6 +264,12 @@ $('.countDown').click(function(){
   </audio>
   <audio id="icecreamSong">
     <source src='../StudyPup_assets/Hotsva_HotSauce_Song.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="winSound">
+    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="loseSound">
+    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="wrongDing">
     <source src='../StudyPup_assets/Wrong_Ding.m4a' type="audio/mpeg"/>

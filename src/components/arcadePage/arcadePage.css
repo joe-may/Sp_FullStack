@@ -34,6 +34,15 @@ height: 120%;
   a:link {
     text-decoration: none;
 }
+.arcadePage .opCon .opd:hover{ 
+  color: #A252D3;
+}
+.arcadePage .opCon .opm:hover{ 
+  color: #DD1D29;
+}
+.arcadePage .opCon .ops:hover{ 
+  color: #FFB343;
+}
 
 .arcadePage .select {
   position: relative;
@@ -80,7 +89,7 @@ height: 120%;
   }
   .arcadePage .opCon .ops{
 
-    color: #FFB343;
+    color: white;
     font-family: sweet-square-pro, sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -89,14 +98,14 @@ height: 120%;
   }
   .arcadePage .opCon .opm{
 
-    color:#DD1D29;
+    color:white;
     font-family: sweet-square-pro, sans-serif;
     font-weight: 900;
     font-style: normal;
   }
   .arcadePage .opCon .opd{
 
-    color: #A252D3;
+    color: white;
     font-family: sweet-square-pro, sans-serif;
     font-weight: 900;
     font-style: normal;

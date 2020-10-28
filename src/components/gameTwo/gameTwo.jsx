@@ -70,7 +70,7 @@ class GameTwo extends Component {
         },29999);
         /////////////
       /////timer and lose logic
-      var counter = 20;
+      var counter = 30;
       var interval = setInterval(function() {
           counter--;
           // Display 'counter' wherever you want to display it.
@@ -79,6 +79,8 @@ class GameTwo extends Component {
                 $('#timer').html("");
                 console.log("you lose");
                 $('.lose').show();
+                $('audio#loseSound')[0].play();
+                $("audio#loseSound").prop("volume", 0.75);
                 $(".reset").html(" ");
                 $(".start").show();
                 $('p').hide();
@@ -139,7 +141,7 @@ class GameTwo extends Component {
           
           if (clickedAnswer === theAnswer) {
             console.log("Correct!");
-            $(this).fadeOut(200, function() {
+            $(this).fadeOut(0, function() {
                 currentGameArray.splice(randomProblemSelector,1);
                 winningCheck();
                 $('p').remove();
@@ -190,6 +192,8 @@ class GameTwo extends Component {
         } else {
           $('.win').show();
           $('.nextLevel').show();
+          $('audio#winSound')[0].play();
+          $("audio#winSound").prop("volume", 0.75);
           $(".reset").html(" ");
           $(".start").show();
           $('.tryAgain').show();
@@ -218,6 +222,12 @@ class GameTwo extends Component {
   <img class="backgroundSno2" src="../StudyPup_assets/Snow_Con_Background_Race_Game_double_dude.png"alt=""/>
  <audio id="raceMusic">
     <source src='../StudyPup_assets/Song_Snow-Con_Race.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="winSound">
+    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="loseSound">
+    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="boardBoost">
     <source src='../StudyPup_assets/Sound_Snowboard_Boost.m4a' type="audio/mpeg"/>

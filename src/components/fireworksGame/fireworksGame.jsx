@@ -230,7 +230,7 @@ console.log('keep playing');
     
 <body>
 <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                <img src='../StudyPup_assets/791-removebg-preview.png' alt=""  class='mapIcon'/>
    </a>
 
 

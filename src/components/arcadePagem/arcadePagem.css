@@ -1,5 +1,6 @@
 
 .arcadePagem { 
+
   width: 100vw;
   height: 100vh;
   background-repeat: center;
@@ -10,12 +11,40 @@
   -o-background-size: cover;
   background-size: cover;
   overflow-x: hidden;
+
+}
+.arcadePagem body{ 
+
+height: 120%;
+
 }
 
-
-
+.arcadePagem .fwThumb:hover{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
+.arcadePagem .sjsThumb:hover{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
+.arcadePagem .duckThumb:hover{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
   a:link {
     text-decoration: none;
+}
+.arcadePagem .opCon .opd:hover{ 
+  color: #A252D3;
+}
+.arcadePagem .opCon .opm:hover{ 
+  color: #DD1D29;
+}
+.arcadePagem .opCon .ops:hover{ 
+  color: #FFB343;
+}
+.arcadePagem .opCon .opa:hover{ 
+  color: rgb(72, 182, 255);
 }
 
 .arcadePagem .select {
@@ -23,67 +52,135 @@
 }
 
 
-  .arcadePagem .arcadeNav {
-    color: rgb(72, 182, 255);
+.arcadePagem .arcadeNav {
+    color: white;
   }
 
-  .arcadePagem .opCon {
-    position: absolute;
-    z-index: 999;
-    /* font-family: 'Nunito', sans-serif; */
-    border-radius: 10%;
-    left: 42%;
-    background-color: black;
-    font-family: 'Nunito', sans-serif;
+.arcadePagem  .opCon {
+    /* position: relative; */
+    width: 39vw;
     
-    text-align: center;
-    top: 20%;
-    /* font-family: Arial,sans-serif; */
-    color: #fff;
+    /* padding-top: 2%; */
+  /* padding-bottom: 11%; */
+    margin-left: 30%;
+    margin-top: -6%;
+    max-height: 500px;
+    max-width: 1200px;
+    min-width: 80px; 
+    
+  }
+.arcadePagem  .opCon a {
+    padding-right: 20px;
+    
+    margin-left: 20px;
+    font-size: 4.5vw;
+    max-width: 1000px;
+    min-width: 280px; 
+    
+    
+
+    
+
+  }
+.arcadePagem .opCon .opa{
+    color: white;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
    
-    width: 12vw;
+    
+  }
+.arcadePagem .opCon .ops{
+
+    color: white;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  
+    
+  }
+.arcadePagem .opCon .opm{
+
+    color:#DD1D29;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+.arcadePagem .opCon .opd{
+
+    color: white;
+    font-family: sweet-square-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+   
+    
+  }
+.arcadePagem .opCon .chg{
+
+    position: rel;
+    font-size: 1.3vw;
+    font-family: marvin, sans-serif;
+    font-weight: 400;
+    
+   
+    font-style: normal;
+   
+    color: white;
+    
   }
 
-  .arcadePagem.opCon .chg{
-    font-size: 2vh;
-    font-style: italic;
-    
-    color: #fff;
-    
-  }
-  .arcadePagem .opCon a {
-    padding-right: 13px;
-    
-    margin-left: 4px;
-    font-size: 5vh;
-    
-  }
-  .arcadePagem .opCon .opa{
-    /* font-family: 'Nunito', sans-serif; */
-    color: #fff;
-    
-  }
-  .arcadePagem .opCon .ops{
+.arcadePagem .arcadeBanner {
 
-    color: #fff;
+    /* position: relative; */
+  width: 45vw;
+  /* padding-top: 2%; */
+/* padding-bottom: 11%; */
+  margin-left: 0px;
+  margin-top: -50px;
+  max-height: 500px;
+  max-width: 1200px;
+  min-width: 280px; 
     
   }
-  .arcadePagem .opCon .opm{
-    color: rgb(80, 162, 255);
-    
-    
-  }
-  .arcadePagem .opCon .opd{
+.arcadePagem .duckThumb {
 
-    color: #fff;
+position: relative;
+width: 22vw;
+ /* padding-top: 2%; */
+/* padding-bottom: 11%; */
+ right: 5%;
+ margin-top: 1%;
+ max-height: 500px;
+ max-width: 1200px;
+ min-width: 80px; 
     
   }
-  .arcadePagem .opCon .chg{
-    font-size: 2vh;
-    font-style: italic;
-    
-    color: #fff;
-    
-  }
+.arcadePagem .sjsThumb {
+
+    position: relative;
+    width: 22vw;
+     /* padding-top: 2%; */
+    /* padding-bottom: 11%; */
+     left: -1%;
+     margin-top: 1%;
+     max-height: 500px;
+     max-width: 1200px;
+     min-width: 80px; 
+        
+      }
+.arcadePagem .fwThumb {
+
+        position: relative;
+         width: 22vw;
+         /* padding-top: 2%; */
+        /* padding-bottom: 11%; */
+         left: 3%;
+         margin-top: 1%;
+         max-height: 500px;
+         max-width: 1200px;
+         min-width: 80px; 
+            
+       }
+        
 
 

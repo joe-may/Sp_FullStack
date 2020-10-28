@@ -82,6 +82,8 @@ console.log(currentGameArray);
           // $('#time').text(counter);
           console.log("you lose");
           $('.lose').show();
+          $('audio#loseSound')[0].play();
+          $("audio#loseSound").prop("volume", 0.75);
           $(".reset").html(" ");
           $(".start").show();
           $('#timer').hide();
@@ -177,6 +179,8 @@ console.log('keep playing');
   } else {
     $('.lose').hide();
     $('.win').show();
+    $('audio#winSound')[0].play();
+    $("audio#winSound").prop("volume", 0.75);
     $('.start').hide();
     $('.nextLevel').show();
     $(".reset").html(" ");
@@ -216,6 +220,12 @@ console.log('keep playing');
   </audio>
   <audio id="torchLight">
     <source src='../StudyPup_assets/Tumblewyld_Shooting_Sound_Effect_NEW.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="winSound">
+    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="loseSound">
+    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
  
          <img class="bg_wildGameTwo" src='../StudyPup_assets/Tumblewyld_Shooting_Background_NEW.png' alt="" />

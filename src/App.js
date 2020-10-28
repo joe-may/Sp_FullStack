@@ -1827,7 +1827,7 @@ class App extends Component {
                 
               ]}
               // nxtlvl={'/v18#a'}
-              gButton={'/arcade-play'}
+              gButton={'/arcade-plays'}
                 {...props} />
                 )}/>
 
@@ -1858,7 +1858,7 @@ class App extends Component {
                 
               ]}
               // nxtlvl={'/v18#a'}
-              gButton={'/arcade-play'}
+              gButton={'/arcade-playm'}
                 {...props} />
                 )}/>
 
@@ -1889,7 +1889,7 @@ class App extends Component {
                 
               ]}
               // nxtlvl={'/v18#a'}
-              gButton={'/arcade-play'}
+              gButton={'/arcade-playd'}
                 {...props} />
                 )}/>
 
@@ -1921,7 +1921,7 @@ class App extends Component {
               ]}
               
               // nxtlvl={'/v18#a'}
-              // gButton={'/planetspagea'}
+              gButton={'/arcade-play'}
                 {...props} />
                 )}/>
 
@@ -1953,7 +1953,7 @@ class App extends Component {
               ]}
               
               // nxtlvl={'/v18#a'}
-              // gButton={'/planetspagea'}
+              gButton={'/arcade-plays'}
                 {...props} />
                 )}/>
 
@@ -1985,7 +1985,7 @@ class App extends Component {
               ]}
               
               // nxtlvl={'/v18#a'}
-              // gButton={'/planetspagea'}
+              gButton={'/arcade-playm'}
                 {...props} />
                 )}/>
 
@@ -2017,7 +2017,7 @@ class App extends Component {
               ]}
               
               // nxtlvl={'/v18#a'}
-              // gButton={'/planetspagea'}
+              gButton={'/arcade-playd'}
                 {...props} />
                 )}/>
 
@@ -2048,7 +2048,7 @@ class App extends Component {
                 
               ]}
               // nxtlvl={'/v18#a'}
-              // gButton={'/planetspagea'}
+              gButton={'/arcade-play'}
                 {...props} />
                 )}/>
 
@@ -2079,7 +2079,7 @@ class App extends Component {
                 
               ]}
               // nxtlvl={'/v18#a'}
-              // gButton={'/planetspagea'}
+              gButton={'/arcade-plays'}
                 {...props} />
                 )}/>
 
@@ -2110,7 +2110,7 @@ class App extends Component {
                 
               ]}
               // nxtlvl={'/v18#a'}
-              // gButton={'/planetspagea'}
+              gButton={'/arcade-playm'}
                 {...props} />
                 )}/>
 
@@ -2141,7 +2141,7 @@ class App extends Component {
                 
               ]}
               // nxtlvl={'/v18#a'}
-              // gButton={'/planetspagea'}
+              gButton={'/arcade-playd'}
                 {...props} />
                 )}/>
 

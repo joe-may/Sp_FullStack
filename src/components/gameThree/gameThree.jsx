@@ -87,6 +87,8 @@ console.log(randomProblemSelector);
           selectedProblem = null;
           randomProblemSelector = null;
           $('.lose').show();
+          $('audio#loseSound')[0].play();
+          $("audio#loseSound").prop("volume", 0.75);
           $('.start').show();
           $(".reset").html(" ");
           $('p').hide();
@@ -211,6 +213,8 @@ $('.countDown').click(function(){
     clearInterval(interval);
     $('.win').show();
     $(".reset").html(" ");
+    $('audio#winSound')[0].play();
+    $("audio#winSound").prop("volume", 0.75);
     
     $('.tryAgain').show();
     generateNextTurn();
@@ -255,6 +259,12 @@ $('.countDown').click(function(){
   </audio>
   <audio id="buttonSound">
     <source src='../StudyPup_assets/Button_Click_Up.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="winSound">
+    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="loseSound">
+    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="icecreamSong">
     <source src='../StudyPup_assets/Song_Snow-Con_IceCream_Level.m4a' type="audio/mpeg"/>

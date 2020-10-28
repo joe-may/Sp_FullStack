@@ -97,6 +97,8 @@ class CozGameTwo extends Component {
                 $('#timer').html("");
                 console.log("you lose");
                 $('.lose').show();
+                $('audio#loseSound')[0].play();
+                $("audio#loseSound").prop("volume", 0.75);
                 $(".reset").html(" ");
                 $(".start").show();
                 $('p').hide();
@@ -208,6 +210,8 @@ class CozGameTwo extends Component {
       console.log('keep playing');
         } else {
           $('.win').show();
+          $('audio#winSound')[0].play();
+          $("audio#winSound").prop("volume", 0.75);
           $('.nextLevel').show();
           $(".reset").html(" ");
           $(".start").show();
@@ -238,6 +242,12 @@ class CozGameTwo extends Component {
   <img class="backgroundSno2" src="../StudyPup_assets/Cozmo_Taxi_Background.png"alt=""/>
  <audio id="raceMusic">
     <source src='../StudyPup_assets/Cozmo_Taxi_Song_Sounds.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="winSound">
+    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="loseSound">
+    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   
   
