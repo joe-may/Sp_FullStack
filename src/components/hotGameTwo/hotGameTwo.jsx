@@ -217,23 +217,23 @@ class HotGameTwo extends Component {
 <div class="hotGameTwo">
   <body>
   <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
                 </a>
   <div class="layer"></div>
   <button class="skip">Skip Video</button>
   <iframe src="https://player.vimeo.com/video/469145128" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-  <img class="backgroundSno2" src="../StudyPup_assets/Hotsva_Racing_Background.png"alt=""/>
+  <img class="backgroundSno2" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Racing_Background.png"alt=""/>
  <audio id="raceMusic">
-    <source src='../StudyPup_assets/Hotsva_Racing_Song.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Racing_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="boardBoost">
-    <source src='../StudyPup_assets/Hotsva_Racing_Sound_Balloon.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Racing_Sound_Balloon.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="winSound">
-    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="loseSound">
-    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   
 
@@ -242,7 +242,7 @@ class HotGameTwo extends Component {
   <div class="answers reset"></div>
   <button class="start">START</button>
   <div class="footer">
-  <img class="win" src='../StudyPup_assets/YOU_WON_Hotsva_Game2.png' alt="" />
+  <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Hotsva_Game2.png' alt="" />
   
         <div class="problem reset"></div>
     </div>
@@ -253,11 +253,11 @@ class HotGameTwo extends Component {
         <span id="time"></span>     
       </span>
   </div>
-   <img class="lose" src='../StudyPup_assets/YOU_LOSE_Hotsva_Game2.png' alt="" />
-    <img class="kart1" src="../StudyPup_assets/Hotsva_Racing_Nova_Balloon.gif"alt=""/>
+   <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Hotsva_Game2.png' alt="" />
+    <img class="kart1" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Racing_Nova_Balloon.gif"alt=""/>
     
    
-    <img class="groundSno" src="../StudyPup_assets/Hotsva_Racing_Foreground.png"alt=""/>
+    <img class="groundSno" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Racing_Foreground.png"alt=""/>
 
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>

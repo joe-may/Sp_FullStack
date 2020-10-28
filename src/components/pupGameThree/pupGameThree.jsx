@@ -224,24 +224,24 @@ class PupGameThree extends Component {
 <div class="pupGameThree">
   <body>
   <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
    </a>
   <div class="layer"></div>
   <button class="skip">Skip Video</button>
   <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/ub7Ox9SBZZw?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=ub7Ox9SBZZw" allowfullscreen></iframe>
 
-  <img class="backgroundSno2" src="../StudyPup_assets/Puptune_Race_Background.png"alt=""/>
+  <img class="backgroundSno2" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Race_Background.png"alt=""/>
  <audio id="raceMusic">
-    <source src='../StudyPup_assets/Puptune_Race_Song.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Race_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="boardBoost">
-    <source src='../StudyPup_assets/Puptune_Race_Sound_Effect.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Race_Sound_Effect.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="winSound">
-    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="loseSound">
-    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   
 
@@ -250,7 +250,7 @@ class PupGameThree extends Component {
   <div class="answers reset"></div>
   <button class="start">START</button>
   <div class="footer">
-  <img class="win" src='../StudyPup_assets/YOU_WON_Puptune_Game3.png' alt="" />
+  <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Puptune_Game3.png' alt="" />
   
         <div class="problem reset"></div>
     </div>
@@ -261,12 +261,12 @@ class PupGameThree extends Component {
         <span id="time"></span>     
       </span>
   </div>
-   <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game3.png' alt="" />
-    <img class="kart1" src="../StudyPup_assets/Puptune_Race_Nova_NEW.gif"alt=""/>
-    <img class="kart2" src="../StudyPup_assets/Puptune_Race_Dipster.gif"alt=""/>
+   <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Puptune_Game3.png' alt="" />
+    <img class="kart1" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Race_Nova_NEW.gif"alt=""/>
+    <img class="kart2" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Race_Dipster.gif"alt=""/>
     
    
-    <img class="groundSno" src="../StudyPup_assets/Puptune_Race_Foreground_NEWNEW.png"alt=""/>
+    <img class="groundSno" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Race_Foreground_NEWNEW.png"alt=""/>
 
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>

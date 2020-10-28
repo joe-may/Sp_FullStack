@@ -90,7 +90,7 @@ class GameFour extends Component{
       console.log(currentGameArray);
       
         $.each(currentGameArray, function(index,value){
-          $(".answers").append("<div class='house'><div class='icecubeWrapper "+'a'+index+"'><img src='../StudyPup_assets/ice_block_1.png' class='icecube'><div class='answer'>" + value.answer + "</div></div></div>");
+          $(".answers").append("<div class='house'><div class='icecubeWrapper "+'a'+index+"'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/ice_block_1.png' class='icecube'><div class='answer'>" + value.answer + "</div></div></div>");
           console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
         });
       
@@ -149,7 +149,7 @@ class GameFour extends Component{
               $(this).parent('.icecubeWrapper').prepend("<img src='' class='net'>");
               console.log(currentGameArray.length);
               var net = $(this).parent().find('.net');
-              net.attr("src", "../StudyPup_assets/Net_Scoop_Ice_1.gif");
+              net.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Net_Scoop_Ice_1.gif");
               $('p').remove();
               
               
@@ -220,15 +220,15 @@ class GameFour extends Component{
 <body>
 <iframe src="https://player.vimeo.com/video/469148229" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<img class="backgroundSno2" src="../StudyPup_assets/Cozmo_Taxi_Background.png"alt=""/>
+<img class="backgroundSno2" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Taxi_Background.png"alt=""/>
 <audio id="stormSong">
-    <source src='../StudyPup_assets/Song_Snow-Con_Level_3.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Song_Snow-Con_Level_3.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="whoosh">
-    <source src='../StudyPup_assets/Net_Woosh_Slower.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Net_Woosh_Slower.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="wrongWhoosh">
-    <source src='../StudyPup_assets/Wrong_Ice.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Wrong_Ice.m4a' type="audio/mpeg"/>
   </audio>
         <div class="answers reset"></div>
         <button class="start">START</button>

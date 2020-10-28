@@ -11,17 +11,17 @@ class SnowCon extends Component {
 
     render() {
       return (
-        <div className="landing" style ={ { backgroundImage: "url('../StudyPup_assets/Background_Galaxy.png')"} }>
+        <div className="landing" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Background_Galaxy.png')"} }>
             <Router>
             <audio id="snoconSong">
-                 <source src='../StudyPup_assets/Song_Snow-Con_Planet.m4a' type="audio/mpeg"/>
+                 <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Song_Snow-Con_Planet.m4a' type="audio/mpeg"/>
             </audio>
             <div class='planetWrapper'>
-            <img class="snoconPlanet" src="../StudyPup_assets/Sno-con_planet_forground.png" alt=""/>
+            <img class="snoconPlanet" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Sno-con_planet_forground.png" alt=""/>
             <a href="/sno1">
-            <img class="greenLevel1" src="../StudyPup_assets/Snow-con_Level1_On.png"alt=""/>
+            <img class="greenLevel1" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snow-con_Level1_On.png"alt=""/>
             </a>
-            <img class="glitter" src="../StudyPup_assets/Snow-con_Level2_On_Deco.gif" alt=""/>
+            <img class="glitter" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snow-con_Level2_On_Deco.gif" alt=""/>
 
             </div>
             

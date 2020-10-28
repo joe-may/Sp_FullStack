@@ -12,6 +12,7 @@ class CozGameFour extends Component {
       const { answerset } = this.props;
      
       $('.start').hide();
+      $("audio#snowballThrow").prop("volume", 0.19);
 
       $('.skip').on('click',function() { 
         $('.layer').hide();
@@ -88,7 +89,7 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='../StudyPup_assets/Cozmo_Boss_Rat_Minion_Jetpack.gif' class='snowman'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Boss_Rat_Minion_Jetpack.gif' class='snowman'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
     
   });
@@ -155,10 +156,11 @@ console.log(currentGameArray);
       $(this).find('.answer').remove();
       $(this).prepend("<img src='' class='splash'>");
       var splash = $(this).parent().find('.splash');
-      splash.attr("src", "../StudyPup_assets/Cozmo_Boss_Rat_Minion_Jetpack_Cheese.gif");
+      splash.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Boss_Rat_Minion_Jetpack_Cheese.gif");
       setTimeout(function() {
         splash.attr("src", "").remove();
     }, 1250)
+    $("audio#snowballThrow").prop("volume", 0.19);
    $('audio#snowballThrow')[0].play();
    $('audio#snowballThrow')[0].currentTime = 0
       console.log("Correct!");
@@ -239,32 +241,32 @@ console.log('keep playing');
     
 <body>
 <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
   </a>
 
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
   <iframe src="https://player.vimeo.com/video/470865925" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="raceMusic">
-    <source src='../StudyPup_assets/Cozmo_Boss_Song.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Boss_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="snowballThrow">
-    <source src='../StudyPup_assets/Cozmo_Boss_Sound_Effect.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Boss_Sound_Effect.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="winSound">
-    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="loseSound">
-    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_bb1" src='../StudyPup_assets/Cozmo_Boss_Background.png' alt="" />
+         <img class="bg_bb1" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Boss_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
-        <img class="win" src='../StudyPup_assets/YOU_WON_Cozmo_Game4.png' alt="" />
+        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Cozmo_Game4.png' alt="" />
           <div class="problem reset"></div>
                 
-          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Cozmo_Game4.png' alt="" />
+          <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Cozmo_Game4.png' alt="" />
                 
           <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           
@@ -274,8 +276,8 @@ console.log('keep playing');
             </span>
           </div>
       <div class="cocoNova">
-          <img src='../StudyPup_assets/hotCocoSquirt.png' alt="" class='snowball'/>
-          <img src='../StudyPup_assets/Cozmo_Boss_Nova_w_Cheese.png' alt="" class='novaWithHose'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/hotCocoSquirt.png' alt="" class='snowball'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Boss_Nova_w_Cheese.png' alt="" class='novaWithHose'/>
      </div>
   
 </body>

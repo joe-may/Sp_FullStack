@@ -12,7 +12,7 @@ class GamesPage extends Component {
 
   render() {
     return (
-      <div class="games" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
+      <div class="games" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Background.png')"} }>
           <Router>
 
           <section>

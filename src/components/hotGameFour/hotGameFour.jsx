@@ -89,7 +89,7 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='../StudyPup_assets/Hotsva_Boss_Battle_Flame.gif' class='flame'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Flame.gif' class='flame'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
     
   });
@@ -152,7 +152,7 @@ console.log(currentGameArray);
     var clickedAnswer = $(this).text();
     $(this).prepend("<img src='' class='waterSplash'>");
     var splash = $(this).parent().find('.waterSplash');
-    splash.attr("src", "../StudyPup_assets/Hotsva_Boss_Battle_Water_Splat.gif");
+    splash.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Water_Splat.gif");
     setTimeout(function() {
       splash.attr("src", "").remove();
   }, 1300)
@@ -242,32 +242,32 @@ console.log('keep playing');
     
 <body>
 <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
                 </a>
 
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
   <iframe src="https://player.vimeo.com/video/469146958" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="moltaMusic">
-    <source src='../StudyPup_assets/Hotsva_Boss_Battle_Song.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="sizzle">
-    <source src='../StudyPup_assets/Hotsva_Boss_Battle_Sound_Sizzle.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Sound_Sizzle.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="winSound">
-    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="loseSound">
-    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_bb1" src='../StudyPup_assets/Hotsva_Boss_Battle_Background.png' alt="" />
+         <img class="bg_bb1" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
-        <img class="win" src='../StudyPup_assets/YOU_WON_Hotsva_Game4.png' alt="" />
+        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Hotsva_Game4.png' alt="" />
           <div class="problem reset"></div>
                 
-          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Hotsva_Game4.png' alt="" />
+          <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Hotsva_Game4.png' alt="" />
                 
           <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           
@@ -278,11 +278,11 @@ console.log('keep playing');
           </div>
 
           
-          <img class="molta" src='../StudyPup_assets/Hotsva_Boss_Battle_Molta.gif' alt="" />
+          <img class="molta" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Molta.gif' alt="" />
 
       <div class="cocoNova">
-          <img src='../StudyPup_assets/Hotsva_Boss_Battle_Water_Squirt.png' alt="" class='snowball'/>
-          <img src='../StudyPup_assets/Hotsva_Boss_Battle_Nova_Hose.png' alt="" class='novaWithHoseMolta'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Water_Squirt.png' alt="" class='snowball'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Nova_Hose.png' alt="" class='novaWithHoseMolta'/>
      </div>
   
 </body>

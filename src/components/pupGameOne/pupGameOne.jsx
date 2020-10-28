@@ -66,7 +66,7 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/Puptune_Camp_Tent_1.png' class='igloo'><img src='../StudyPup_assets/Puptune_Camp_Trash.png' class='trash'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Camp_Tent_1.png' class='igloo'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Camp_Trash.png' class='trash'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
   }); 
 
@@ -207,37 +207,37 @@ console.log('keep playing');
     
 <body>
 <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
    </a>
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
   <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/ub7Ox9SBZZw?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=ub7Ox9SBZZw" allowfullscreen></iframe>
 
 <audio id="SlingSong">
-    <source src='../StudyPup_assets/Puptune_Camp_Song.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Camp_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="torchLight">
-    <source src='../StudyPup_assets/Puptune_Camp_Sound_Effect.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Camp_Sound_Effect.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="winSound">
-    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="loseSound">
-    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_pupGameOne" src='../StudyPup_assets/Puptune_Camp_Background.png' alt="" />
+         <img class="bg_pupGameOne" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Camp_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
           
-          <img class="win" src='../StudyPup_assets/YOU_WON_Puptune_Game1.png' alt="" />
+          <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Puptune_Game1.png' alt="" />
 
           <div class="problem reset"></div>
                 
                 
-                <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game1.png' alt="" />
+                <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Puptune_Game1.png' alt="" />
 {/* 
-                <img src='../StudyPup_assets/Tumblewyld_Shooting_Nova_Slingshot.png' alt="" class='novaWithSling'/> */}
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Shooting_Nova_Slingshot.png' alt="" class='novaWithSling'/> */}
                 
                 <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           

@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <Nav>
       <a href="/home">
-                <img src='../StudyPup_assets/StudyPup_LogoPup.png' alt=""  class='logo'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/StudyPup_LogoPup.png' alt=""  class='logo'/>
                 </a>
       <Burger />
     </Nav>

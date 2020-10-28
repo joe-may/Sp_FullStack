@@ -11,24 +11,24 @@ class SnowConb1 extends Component {
 
         render() {
           return (
-            <div className="landingb1" style ={ { backgroundImage: "url('../StudyPup_assets/Background_Galaxy.png')"} }>
+            <div className="landingb1" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Background_Galaxy.png')"} }>
                 <Router>
             <audio id="snoconSong">
-                 <source src='../StudyPup_assets/Song_Snow-Con_Planet.m4a' type="audio/mpeg"/>
+                 <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Song_Snow-Con_Planet.m4a' type="audio/mpeg"/>
             </audio>
                 <div class='planetWrapper'>
-                <img class="snoconPlanet" src="../StudyPup_assets/Sno-con_planet_forground.png" alt=""/>
+                <img class="snoconPlanet" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Sno-con_planet_forground.png" alt=""/>
 
                 <a href="/sno1">
-                <img class="blueLevel1" src="../StudyPup_assets/Snow-con_Level1_Complete.png"alt=""/>
+                <img class="blueLevel1" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snow-con_Level1_Complete.png"alt=""/>
                 </a>
 
 
 
                 <a href="/sno3">
-                <img class="greenLevel2" src="../StudyPup_assets/Snow-con_Level2_On.png"alt=""/>
+                <img class="greenLevel2" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snow-con_Level2_On.png"alt=""/>
                 </a>
-                <img class="glitter2" src="../StudyPup_assets/Snow-con_Level2_On_Deco.gif" alt=""/>
+                <img class="glitter2" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snow-con_Level2_On_Deco.gif" alt=""/>
                 
   
     

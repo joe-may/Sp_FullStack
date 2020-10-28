@@ -84,7 +84,7 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/Cozmo_Pizza_House2.png' class='igloo'><img src='../StudyPup_assets/Tumblewyld_Shooting_Bottle_Fall.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Pizza_House2.png' class='igloo'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Shooting_Bottle_Fall.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
   }); 
  
@@ -143,7 +143,7 @@ console.log(currentGameArray);
         $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
         console.log(currentGameArray.length);
         var penguin = $(this).parent().find('.penguin');
-        penguin.attr("src", "../StudyPup_assets/Cozmo_Pizza_Bug_Jump.gif");
+        penguin.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Pizza_Bug_Jump.gif");
         
         $('audio#torchLight')[0].play();
         $('audio#torchLight')[0].currentTime = 0
@@ -226,39 +226,39 @@ console.log('keep playing');
     
 <body>
 <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
   </a>
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
   <iframe src="https://player.vimeo.com/video/469319770" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="SlingSong">
-    <source src='../StudyPup_assets/Cozmo_Pizza_Song.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Pizza_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="torchLight">
-    <source src='../StudyPup_assets/Cozmo_Pizza_Sound_Effect.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Pizza_Sound_Effect.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="winSound">
-    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="loseSound">
-    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_cozGameThree" src='../StudyPup_assets/Cozmo_Pizza_Background.png' alt="" />
+         <img class="bg_cozGameThree" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Pizza_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
           
-          <img class="win" src='../StudyPup_assets/YOU_WON_Cozmo_Game1.png' alt="" />
+          <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Cozmo_Game1.png' alt="" />
 
           <div class="problem reset"></div>
                 
                 
-                <img class="lose" src='../StudyPup_assets/YOU_LOSE_Cozmo_Game4.png' alt="" />
+                <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Cozmo_Game4.png' alt="" />
 
-                <img src='../StudyPup_assets/Cozmo_Pizza_Nova.png' alt="" class='novaWithSling'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Pizza_Nova.png' alt="" class='novaWithSling'/>
                 
                 <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
-                <img src='../StudyPup_assets/pizza.png' alt="" class='snowball'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/pizza.png' alt="" class='snowball'/>
           <div>
             <span id="timer">00:
               <span id="time">30</span>      

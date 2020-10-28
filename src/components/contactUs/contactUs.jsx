@@ -16,7 +16,7 @@ class ContactUs extends Component {
 
   render() {
     return (
-      <div class="contactUs" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
+      <div class="contactUs" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/BG_Purple_Pattern_niew.png')"} }>
           <Router>
                 <body>
              

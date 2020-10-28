@@ -17,7 +17,7 @@ class FeedbackPage extends Component {
 
     render() {
       return (
-        <div class="feedbackPage" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
+        <div class="feedbackPage" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Background.png')"} }>
             <Router>
 <header>
 

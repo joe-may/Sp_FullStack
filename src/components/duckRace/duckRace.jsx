@@ -278,24 +278,24 @@ var changeAnswerset = function () {
 
  render() {
   return (
-    <div class="duckRace" style ={ { backgroundImage: "url('../StudyPup_assets/BG.png')"} }>
+    <div class="duckRace" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/BG.png')"} }>
     <body>
     <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/791-removebg-preview.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/791-removebg-preview.png' alt=""  class='mapIcon'/>
    </a>
 
   
   <audio id="swoopboop">
-    <source src='../StudyPup_assets/Cozmo_Elevator_Sound_Effect.mp3' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Elevator_Sound_Effect.mp3' type="audio/mpeg"/>
   </audio>
   <audio id="buttonSound">
-    <source src='../StudyPup_assets/Button_Click_Up.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Button_Click_Up.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="icecreamSong">
-    <source src='../StudyPup_assets/Cozmo_Elevator_Song.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Elevator_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="wrongDing">
-    <source src='../StudyPup_assets/Wrong_Ding.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Wrong_Ding.m4a' type="audio/mpeg"/>
   </audio>
  
   
@@ -307,7 +307,7 @@ var changeAnswerset = function () {
       <a class="restart3" href="/coz1">restart!</a>
 
      
-        <img class="win" src='../StudyPup_assets/YOU_WON_Cozmo_Game3.png' alt="" />
+        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Cozmo_Game3.png' alt="" />
         <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
      
         
@@ -317,14 +317,14 @@ var changeAnswerset = function () {
   
      <div class="brownBox">
       <button class="create">GO!</button>
-      <img src='../StudyPup_assets/BOX.png' alt="" class='ybox'/>
+      <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/BOX.png' alt="" class='ybox'/>
        <div class="guessCounter">
     
-          <img src='../StudyPup_assets/UP_BUTTON.png'alt=""  class='countUp'/>
-          {/* <img src='../StudyPup_assets/UP_BUTTON.png'alt=""  class='countUpClicked'/> */}
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/UP_BUTTON.png'alt=""  class='countUp'/>
+          {/* <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/UP_BUTTON.png'alt=""  class='countUpClicked'/> */}
   
-          <img src='../StudyPup_assets/DOWN_BUTTON.png'alt=""  class='countDown'/>
-          {/* <img src='../StudyPup_assets/DOWN_BUTTON.png'alt=""  class='countDownClicked'/> */}
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/DOWN_BUTTON.png'alt=""  class='countDown'/>
+          {/* <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/DOWN_BUTTON.png'alt=""  class='countDownClicked'/> */}
 
 
        
@@ -341,18 +341,18 @@ var changeAnswerset = function () {
       
       
 
-    <img class="wave1" src='../StudyPup_assets/WAVE_1.png' alt="" />
-    <img class="wave2" src='../StudyPup_assets/WAVE_2.png' alt="" />
-    <img class="wave3" src='../StudyPup_assets/WAVE_3.png' alt="" />
-    {/* <img class="wave4" src='../StudyPup_assets/WAVE_3.png' alt="" /> */}
+    <img class="wave1" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/WAVE_1.png' alt="" />
+    <img class="wave2" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/WAVE_2.png' alt="" />
+    <img class="wave3" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/WAVE_3.png' alt="" />
+    {/* <img class="wave4" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/WAVE_3.png' alt="" /> */}
 
-    <img class="finishDuck" src="../StudyPup_assets/FinishLineDuck.png"alt=""/>
+    <img class="finishDuck" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/FinishLineDuck.png"alt=""/>
 
-      <img class="lose" src='../StudyPup_assets/YOU_LOSE_Cozmo_Game3.png' alt="" />
-      <img class="kart3" src="../StudyPup_assets/YELLOW_DUCK_A.png"alt=""/>
+      <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Cozmo_Game3.png' alt="" />
+      <img class="kart3" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YELLOW_DUCK_A.png"alt=""/>
  
-    <img class="kart1" src="../StudyPup_assets/PURPLE_DUCK.png"alt=""/>
-    <img class="kart4" src="../StudyPup_assets/YELLOW_DUCK_B.png"alt=""/>
+    <img class="kart1" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/PURPLE_DUCK.png"alt=""/>
+    <img class="kart4" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YELLOW_DUCK_B.png"alt=""/>
      
 
       <div>

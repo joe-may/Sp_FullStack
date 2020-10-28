@@ -67,7 +67,7 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='../StudyPup_assets/efad.gif' class='snowman'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/efad.gif' class='snowman'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
     
   });
@@ -138,7 +138,7 @@ console.log(currentGameArray);
       $(this).find('.answer').remove();
       $(this).prepend("<img src='' class='splash'>");
       var splash = $(this).parent().find('.splash');
-      splash.attr("src", "../StudyPup_assets/firework_exploding.gif");
+      splash.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/firework_exploding.gif");
       setTimeout(function() {
         splash.attr("src", "").remove();
     }, 1050)
@@ -230,25 +230,25 @@ console.log('keep playing');
     
 <body>
 <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/791-removebg-preview.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/791-removebg-preview.png' alt=""  class='mapIcon'/>
    </a>
 
 
 
 <audio id="raceMusic">
-    <source src='../StudyPup_assets/firework_song.mp3' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/firework_song.mp3' type="audio/mpeg"/>
   </audio>
   <audio id="snowballThrow">
-    <source src='../StudyPup_assets/firework_sound_effect.mp3' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/firework_sound_effect.mp3' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_bb1" src='../StudyPup_assets/firework-background.png' alt="" />
+         <img class="bg_bb1" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/firework-background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
-        <img class="win" src='../StudyPup_assets/YOU_WON_Puptune_Game4.png' alt="" />
+        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Puptune_Game4.png' alt="" />
           <div class="problem reset"></div>
                 
-          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game4.png' alt="" />
+          <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Puptune_Game4.png' alt="" />
                 
           
           
@@ -258,7 +258,7 @@ console.log('keep playing');
             </span>
           </div>
     
-     <img class="mountains" src='../StudyPup_assets/Puptune_Boss_Foreground.png' alt="" />
+     <img class="mountains" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Foreground.png' alt="" />
     
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>

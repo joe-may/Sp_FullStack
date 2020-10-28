@@ -89,7 +89,7 @@ $('.lose').hide();
 $('.nextLevel').hide();
 $("audio#iglooSong").prop("volume", 0.19);
 $('audio#iglooSong')[0].play();
-$("audio#snowballThrow").prop("volume", 0.75);
+$("audio#snowballThrow").prop("volume", 0.);
 
 
 
@@ -128,7 +128,7 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='../StudyPup_assets/igloo.png' class='igloo'><img src='../StudyPup_assets/Penguin_Walk_Gif_Faster.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/igloo.png' class='igloo'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Penguin_Walk_Gif_Faster.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
   });
 
@@ -164,7 +164,7 @@ console.log(currentGameArray);
           $('audio#iglooSong')[0].pause()
           $('audio#iglooSong')[0].currentTime = 0
           $('audio#loseSound')[0].play();
-          $("audio#loseSound").prop("volume", 0.75);
+          $("audio#loseSound").prop("volume", 0.);
           
           
         return;
@@ -193,7 +193,7 @@ console.log(currentGameArray);
     var clickedAnswer = $(this).text();
     $(this).prepend("<img src='' class='splash'>");
     var splash = $(this).parent().find('.splash');
-    splash.attr("src", "../StudyPup_assets/snowball_hit_delay2.gif");
+    splash.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/snowball_hit_delay2.gif");
     setTimeout(function() {
       splash.attr("src", "").remove();
   }, 1000)
@@ -210,7 +210,7 @@ console.log(currentGameArray);
         $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
         console.log(currentGameArray.length);
         var penguin = $(this).parent().find('.penguin');
-        penguin.attr("src", "../StudyPup_assets/Penguin_Walk_Gif_Faster.gif");
+        penguin.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Penguin_Walk_Gif_Faster.gif");
        
               
         
@@ -258,7 +258,7 @@ console.log('keep playing');
   } else {
     $('.lose').hide();
     $('audio#winSound')[0].play();
-    $("audio#winSound").prop("volume", 0.75);
+    $("audio#winSound").prop("volume", 0.);
     $('.win').show();
     $('.nextLevel').show();
     $(".reset").html(" ");
@@ -303,32 +303,32 @@ console.log('keep playing');
 <button class="skip">Skip Video</button>
 <iframe src="https://player.vimeo.com/video/469147642" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="iglooSong">
-    <source src='../StudyPup_assets/Song_Snow-Con_Level_1.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Song_Snow-Con_Level_1.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="winSound">
-    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="loseSound">
-    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="snowballThrow">
-    <source src='../StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
   </audio>
   
-         <img class="bg_game1" src='../StudyPup_assets/penguin-level-backdrop.jpeg' alt="" />
+         <img class="bg_game1" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/penguin-level-backdrop.jpeg' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
           
-          <img class="win" src='../StudyPup_assets/YOU_WON_Snowcon_Game1.png' alt="" />
+          <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Snowcon_Game1.png' alt="" />
 
           <div class="problem reset"></div>
                 
                 
-                <img class="lose" src='../StudyPup_assets/YOU_LOSE_Snowcon_Game1.png' alt="" />
+                <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Snowcon_Game1.png' alt="" />
                 
                 <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
                 <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
                 </a>
 
           
@@ -338,23 +338,23 @@ console.log('keep playing');
             </span>
           </div>
     
-          <img src='../StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
-          <img src='../StudyPup_assets/Nova_standing.png' alt="" class='novaThrow'/>
-          <img src='../StudyPup_assets/Nova_standing.png' alt="" class='novaIntro'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Nova_standing.png' alt="" class='novaThrow'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Nova_standing.png' alt="" class='novaIntro'/>
           
           
 
           
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeOne'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeTwo'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeThree'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeFour'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeFive'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeSix'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeSeven'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeEight'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeNine'/>
-          <img src='../StudyPup_assets/snow_con_tree.png' alt="" class='treeTen'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/snow_con_tree.png' alt="" class='treeOne'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/snow_con_tree.png' alt="" class='treeTwo'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/snow_con_tree.png' alt="" class='treeThree'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/snow_con_tree.png' alt="" class='treeFour'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/snow_con_tree.png' alt="" class='treeFive'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/snow_con_tree.png' alt="" class='treeSix'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/snow_con_tree.png' alt="" class='treeSeven'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/snow_con_tree.png' alt="" class='treeEight'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/snow_con_tree.png' alt="" class='treeNine'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/snow_con_tree.png' alt="" class='treeTen'/>
           
           
 

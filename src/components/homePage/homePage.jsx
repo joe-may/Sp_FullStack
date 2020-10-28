@@ -14,16 +14,16 @@ class HomePage extends Component {
 
     render() {
       return (
-        <div class="homePage" style ={ { backgroundImage: "url('../StudyPup_assets/Planet_Galaxy_Background.png')"} }>
+        <div class="homePage" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Planet_Galaxy_Background.png')"} }>
             <Router>
 
          <body>
          <Navbar/>
          <a href="/mysticbadge-play">
-                <img src='../StudyPup_assets/play_story_button.png' alt=""  class='storyGames'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/play_story_button.png' alt=""  class='storyGames'/>
                 </a>
                 <a href="/arcade-play">
-                <img src='../StudyPup_assets/play_arcade_button.png' alt=""  class='arcadeGames'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/play_arcade_button.png' alt=""  class='arcadeGames'/>
                 </a>
                 <p class="edutain">Edu-taining math games and videos for kids K-4th Grade!</p>
                   </body>

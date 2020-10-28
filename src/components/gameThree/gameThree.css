@@ -198,7 +198,7 @@
   
   
   .game3  { 
-      background-image: ('../StudyPup_assets/Ice_Cream_Game_Background.png');
+      background-image: ('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Ice_Cream_Game_Background.png');
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;

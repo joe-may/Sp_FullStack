@@ -85,7 +85,7 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='../StudyPup_assets/Puptune_Boss_Robo_Tootles.gif' class='snowman'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Robo_Tootles.gif' class='snowman'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
     
   });
@@ -152,7 +152,7 @@ console.log(currentGameArray);
       $(this).find('.answer').remove();
       $(this).prepend("<img src='' class='splash'>");
       var splash = $(this).parent().find('.splash');
-      splash.attr("src", "../StudyPup_assets/Puptune_Boss_Robo_Tootles_Explode.gif");
+      splash.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Robo_Tootles_Explode.gif");
       setTimeout(function() {
         splash.attr("src", "").remove();
     }, 1250)
@@ -236,7 +236,7 @@ console.log('keep playing');
     
 <body>
 <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
    </a>
 
 <div class="layer"></div>
@@ -245,25 +245,25 @@ console.log('keep playing');
 
 
 <audio id="raceMusic">
-    <source src='../StudyPup_assets/Puptune_Boss_Song.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="snowballThrow">
-    <source src='../StudyPup_assets/Puptune_Boss_Sound_Effect.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Sound_Effect.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="winSound">
-    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="loseSound">
-    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
  
-         <img class="bg_bb1" src='../StudyPup_assets/Puptune_Boss_Background.png' alt="" />
+         <img class="bg_bb1" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
-        <img class="win" src='../StudyPup_assets/YOU_WON_Puptune_Game4.png' alt="" />
+        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Puptune_Game4.png' alt="" />
           <div class="problem reset"></div>
                 
-          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Puptune_Game4.png' alt="" />
+          <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Puptune_Game4.png' alt="" />
                 
           <a class="nextLevel" href={this.props.nxtlvl}>Save The World!!</a>
           
@@ -273,11 +273,11 @@ console.log('keep playing');
             </span>
           </div>
       <div class="cocoNova">
-          <img src='../StudyPup_assets/hotCocoSquirt.png' alt="" class='snowball'/>
-          <img src='../StudyPup_assets/Puptune_Boss_Nova_w_Trophy.png' alt="" class='novaWithHose'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/hotCocoSquirt.png' alt="" class='snowball'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Nova_w_Trophy.png' alt="" class='novaWithHose'/>
      </div>
-     <img class="mountains" src='../StudyPup_assets/Puptune_Boss_Foreground.png' alt="" />
-     <img src='../StudyPup_assets/Puptune_Boss_Tootles.gif' alt="" class='tootles'/>
+     <img class="mountains" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Foreground.png' alt="" />
+     <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Tootles.gif' alt="" class='tootles'/>
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
 <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>

@@ -55,7 +55,7 @@ class MysticBadgePage extends Component {
 
     render() {
       return (
-        <div class="mysticBadgePage" style ={ { backgroundImage: "url('../StudyPup_assets/MB_START_MENU_BACKGROUNDpure.png')"} }>
+        <div class="mysticBadgePage" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/MB_START_MENU_BACKGROUNDpure.png')"} }>
             <Router>
               <body>
             <Navbar/>
@@ -67,13 +67,13 @@ class MysticBadgePage extends Component {
 
                 
                 
-                <img src='../StudyPup_assets/MB_START_MENU_Button_New_Game.png' alt=""  class='newGame'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/MB_START_MENU_Button_New_Game.png' alt=""  class='newGame'/>
                 <a href="/planetspagea">
-                <img src='../StudyPup_assets/MB_START_MENU_Button_Select_Level.png' alt=""  class='selectGame'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/MB_START_MENU_Button_Select_Level.png' alt=""  class='selectGame'/>
                 </a>
                 
                 <a href="/arcade-play">
-                <img src='../StudyPup_assets/MB_START_MENU_Button_ARCADE.png' alt=""  class='arcadePlay'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/MB_START_MENU_Button_ARCADE.png' alt=""  class='arcadePlay'/>
                 </a>
 
                 {/* <div class="layerOp"></div> */}

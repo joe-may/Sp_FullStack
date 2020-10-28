@@ -80,7 +80,7 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='../StudyPup_assets/Tumblewyld_Boss_Gem3.png' class='flame'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='snowmanWrapper "+'a'+index+"'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Boss_Gem3.png' class='flame'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
     
   });
@@ -142,7 +142,7 @@ console.log(currentGameArray);
     var clickedAnswer = $(this).text();
     $(this).prepend("<img src='' class='waterSplash'>");
     var splash = $(this).parent().find('.waterSplash');
-    splash.attr("src", "../StudyPup_assets/Tumblewyld_Boss_Pickaxe.gif");
+    splash.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Boss_Pickaxe.gif");
     setTimeout(function() {
       splash.attr("src", "").remove();
   }, 800)
@@ -231,7 +231,7 @@ console.log('keep playing');
     
 <body>
 <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
                 </a>
 
 
@@ -239,27 +239,27 @@ console.log('keep playing');
   <button class="skip">Skip Video</button>
   <iframe src="https://player.vimeo.com/video/469149786" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="moltaMusic">
-    <source src='../StudyPup_assets/Tumblewyld_Boss_Song.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Boss_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="sizzle">
-    <source src='../StudyPup_assets/Tumblewyld_Boss_Sound_Pickaxe_Hit.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Boss_Sound_Pickaxe_Hit.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="winSound">
-    <source src='../StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="loseSound">
-    <source src='../StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
 
-         <img class="bg_bb1" src='../StudyPup_assets/Tumblewyld_Boss_Background.png' alt="" />
-         <img class="dusty" src='../StudyPup_assets/Tumblewyld_Boss_Dusty.gif' alt="" />
+         <img class="bg_bb1" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Boss_Background.png' alt="" />
+         <img class="dusty" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Boss_Dusty.gif' alt="" />
 
         <div class="answers reset"></div>
         <button class="start">START</button>
-        <img class="win" src='../StudyPup_assets/YOU_WON_Tumblewyld_Game4.png' alt="" />
+        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Tumblewyld_Game4.png' alt="" />
           <div class="problem reset"></div>
                 
-          <img class="lose" src='../StudyPup_assets/YOU_LOSE_Tumblewyld_Game4.png' alt="" />
+          <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Tumblewyld_Game4.png' alt="" />
                 
           <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
           
@@ -270,10 +270,10 @@ console.log('keep playing');
           </div>
 
           
-          <img class="caveStuff" src='../StudyPup_assets/Tumblewyld_Boss_Foreground.png' alt="" />
+          <img class="caveStuff" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Boss_Foreground.png' alt="" />
 
       <div class="cocoNova">
-          <img src='../StudyPup_assets/Hotsva_Boss_Battle_Water_Squirt.png' alt="" class='snowball'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Water_Squirt.png' alt="" class='snowball'/>
           
      </div>
   

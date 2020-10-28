@@ -16,14 +16,14 @@ class ArcadePagem extends Component {
 
   render() {
     return (
-      <div class="arcadePagem" style ={ { backgroundImage: "url('../StudyPup_assets/Puptune_Boss_Background.png')"} }>
+      <div class="arcadePagem" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/BG_Purple_Pattern_niew.png')"} }>
           <Router>
 
           
               <body>
           <Navbar/>
           <a href="/arcade-play">
-                <img src='../StudyPup_assets/ARCADE_HEADER_IMAGE.png' alt=""  class='arcadeBanner'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/ARCADE_HEADER_IMAGE.png' alt=""  class='arcadeBanner'/>
                 </a>
                 
               <div class="opCon">
@@ -33,14 +33,14 @@ class ArcadePagem extends Component {
                   <a class="opm" href="/arcade-playm">x</a>
                   <a class="opd" href="/arcade-playd">÷</a>
                 </div>
-                <a href="/arcade-ducks">
-                <img src='../StudyPup_assets/thumbnail_duck_race.png' alt=""  class='duckThumb'/>
+                <a href="/arcade-duckm">
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_duck_race.png' alt=""  class='duckThumb'/>
                 </a>
-                <a href="/arcade-slams">
-                <img src='../StudyPup_assets/thumbnail_SJS.png' alt=""  class='sjsThumb'/>
+                <a href="/arcade-slamm">
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_SJS.png' alt=""  class='sjsThumb'/>
                 </a>
-                <a href="/arcade-fireworkss">
-                <img src='../StudyPup_assets/thumbnail_firework.png' alt=""  class='fwThumb'/>
+                <a href="/arcade-fireworksm">
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_firework.png' alt=""  class='fwThumb'/>
                 </a>
                
               </body> 

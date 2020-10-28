@@ -145,7 +145,7 @@ class SlamDunk extends Component {
             $('.answers').hide();
             
 
-            $('body').append(" <img class='kart1' src='../StudyPup_assets/slamin-spaceman.png'alt=''/>");
+            $('body').append(" <img class='kart1' src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/slamin-spaceman.png'alt=''/>");
             setTimeout(function() {
               $('.hoop').show();
              
@@ -167,7 +167,7 @@ class SlamDunk extends Component {
              
             }, 3000);
             setTimeout(function() {
-              $('body').append(" <img class='stars' src='../StudyPup_assets/SJS_slam_times.gif'alt=''/>");
+              $('body').append(" <img class='stars' src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/SJS_slam_times.gif'alt=''/>");
 
              
 
@@ -255,17 +255,17 @@ class SlamDunk extends Component {
 <div class="slamDunk">
   <body>
   <a class="gButton" href={this.props.gButton}>
-                <img src='../StudyPup_assets/791-removebg-preview.png' alt=""  class='mapIcon'/>
+                <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/791-removebg-preview.png' alt=""  class='mapIcon'/>
                 </a>
  
   
  
-  <img class="backgroundSno2" src="../StudyPup_assets/galaxyDunk.png"alt=""/>
+  <img class="backgroundSno2" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/galaxyDunk.png"alt=""/>
  <audio id="raceMusic">
-    <source src='../StudyPup_assets/Hotsva_Racing_Song.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Racing_Song.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="boardBoost">
-    <source src='../StudyPup_assets/Hotsva_Racing_Sound_Balloon.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Racing_Sound_Balloon.m4a' type="audio/mpeg"/>
   </audio>
   
 
@@ -274,7 +274,7 @@ class SlamDunk extends Component {
   <div class="answers reset"></div>
   <button class="start">START</button>
   <div class="footer">
-  <img class="win" src='../StudyPup_assets/YOU_WON_Hotsva_Game2.png' alt="" />
+  <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Hotsva_Game2.png' alt="" />
   
         <div class="problem reset"></div>
     </div>
@@ -285,12 +285,12 @@ class SlamDunk extends Component {
         <span id="time"></span>     
       </span>
   </div>
-   <img class="lose" src='../StudyPup_assets/YOU_LOSE_Hotsva_Game2.png' alt="" />
+   <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Hotsva_Game2.png' alt="" />
 
 
-   <img class="hoop" src="../StudyPup_assets/planet_hoop_1.png"alt=""/>
+   <img class="hoop" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/planet_hoop_1.png"alt=""/>
 {/* 
-    <img class="kart1" src="../StudyPup_assets/slamin-spaceman.png"alt=""/> */}
+    <img class="kart1" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/slamin-spaceman.png"alt=""/> */}
    
    
     

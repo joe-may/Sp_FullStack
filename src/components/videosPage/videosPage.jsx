@@ -15,7 +15,7 @@ class VideosPage extends Component {
 
     render() {
       return (
-        <div class="videosPage" style ={ { backgroundImage: "url('../StudyPup_assets/BG_Purple_Pattern_niew.png')"} }>
+        <div class="videosPage" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/BG_Purple_Pattern_niew.png')"} }>
           <Router>
 
           
@@ -23,25 +23,25 @@ class VideosPage extends Component {
 <Navbar/>
 
 <a href="/arcade-play">
-  <img src='../StudyPup_assets/Video_Header_Image.png' alt=""  class='arcadeBanner'/>
+  <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Video_Header_Image.png' alt=""  class='arcadeBanner'/>
   </a>
   
   <div class="opCon">
              
                  <a  href="/arcade-play">
-                    <img src='../StudyPup_assets/Video_Button_Math.png' alt="" class="mathButton" />
+                    <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Video_Button_Math.png' alt="" class="mathButton" />
                  </a>
                  <a  href="/arcade-play">
-                    <img src='../StudyPup_assets/Video_Button_English.png' alt="" class="englishButton" />
+                    <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Video_Button_English.png' alt="" class="englishButton" />
                  </a>
                  <a  href="/arcade-play">
-                    <img src='../StudyPup_assets/Video_Button_Science.png' alt="" class="scienceButton" />
+                    <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Video_Button_Science.png' alt="" class="scienceButton" />
                  </a>
   </div>
   <div class="vidCon">
-      <img src='../StudyPup_assets/thumbnail_doubles.png' alt="" class="doublesThumb" />
-      <img src='../StudyPup_assets/thumbnail_commutative.png' alt="" class="comThumb" />
-      <img src='../StudyPup_assets/thumbnail_fives.png' alt="" class="fivesThumb" />
+      <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_doubles.png' alt="" class="doublesThumb" />
+      <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_commutative.png' alt="" class="comThumb" />
+      <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_fives.png' alt="" class="fivesThumb" />
   </div>
     
 
@@ -49,13 +49,13 @@ class VideosPage extends Component {
  
 
   {/* <a href="/arcade-ducka">
-  <img src='../StudyPup_assets/thumbnail_duck_race.png' alt=""  class='duckThumb'/>
+  <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_duck_race.png' alt=""  class='duckThumb'/>
   </a>
   <a href="/arcade-slama">
-  <img src='../StudyPup_assets/thumbnail_SJS.png' alt=""  class='sjsThumb'/>
+  <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_SJS.png' alt=""  class='sjsThumb'/>
   </a>
   <a href="/arcade-fireworksa">
-  <img src='../StudyPup_assets/thumbnail_firework.png' alt=""  class='fwThumb'/>
+  <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_firework.png' alt=""  class='fwThumb'/>
   </a> */}
  
 </body> 
