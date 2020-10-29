@@ -23,15 +23,16 @@ const Ul = styled.ul`
     background-color: #0D2538;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: -10;
+    top: -3;
     right: 0;
     height: 100vh;
     width: 300px;
-    padding-top: 3.5rem;
+    padding-top: 1.5rem;
     transition: transform 0.3s ease-in-out;
     z-index:2200;
 
     li {
+      font-size:7.6vw;
       color: white;
     }
     
@@ -42,12 +43,13 @@ const RightNav = ({ open }) => {
   return (
     <div>
     <Ul open={open}>
-      <li><a  class="homeNav" href="/home" >HOME</a></li>
+      <li><a  class="homeNav" href="/home" >MYSTIC BADGES</a></li>
       <li><a class="videosNav" href="/all-videos">VIDEOS</a></li>
       <li><a class="arcadeNav" href="/arcade-play">ARCADE</a></li>
       {/* <li><a class="mysticNav" href="/mysticbadge-play">MYSTIC BADGES</a></li> */}
-      <li><a class="contactNav" href="/contact">CONTACT US</a></li>
       <li><a class="aboutNav" href="/about">ABOUT</a></li>
+      <li><a class="contactNav" href="/contact">CONTACT US</a></li>
+      
     </Ul>
     <link rel="stylesheet" href="https://use.typekit.net/wug4dcf.css"></link>
 

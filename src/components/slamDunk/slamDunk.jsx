@@ -15,7 +15,7 @@ class SlamDunk extends Component {
           answerset = answerset2
       }};
       
-
+    
       
 
     var levelCont =  1  
@@ -24,11 +24,17 @@ class SlamDunk extends Component {
       $('.lose').hide();
       $('.nextLevel').hide();
 
+     
+      
+
  
       
       $('.start').on('click',function() {
+        var wrongCount = 0;
         changeAnswerset();
       $('.start').hide();
+      $("audio#slamSong").prop("volume", 0.19);
+      $('audio#slamSong')[0].play();
       $('.win').hide();
       $('.lose').hide();
       // $('audio#raceMusic')[0].play();
@@ -44,16 +50,15 @@ class SlamDunk extends Component {
       $('.backgroundSno2').finish().css('left','0%');
       
       
+    
       
-      
-      
+      var addOneWrong = function () {
+        var wrongCount = wrongCount + 1;
+       };
       ///// animate kart2
       
-      setTimeout(function() {
-          $('.kart2').animate({
-              left: "45%"
-          }, 20000);
-      });
+    
+ 
       ///////// finish line
       $( ".fline" ).delay( 15000 ).animate({  
           left: "55%"
@@ -69,30 +74,9 @@ class SlamDunk extends Component {
          
         /////////////
       /////timer and lose logic
-      var counter = 20000;
-      var interval = setInterval(function() {
-          counter--;
-          // Display 'counter' wherever you want to display it.
-          if (counter <= 0 && currentGameArray.length > 0) {
-               clearInterval(interval);
-                $('#timer').html("");
-                console.log("you lose");
-                $('.lose').show();
-                $(".reset").html(" ");
-                $('#timer').hide();
-                $(".start").show();
-                $('p').hide();
-                $('audio#raceMusic')[0].pause()
-                $('audio#raceMusic')[0].currentTime = 0
-                clearInterval(interval);
+      
 
-                
-              return;
-          }else{
-            $('#time').text(counter);
-            console.log("Timer --> " + counter);
-          }
-      }, 1100);
+      
       
       
       
@@ -148,8 +132,18 @@ class SlamDunk extends Component {
             $('body').append(" <img class='kart1' src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/slamin-spaceman.png'alt=''/>");
             setTimeout(function() {
               $('.hoop').show();
+
+             
+              
              
             }, 100);
+            setTimeout(function() {
+              
+
+              $('audio#dunkNoise')[0].play();
+              
+             
+            }, 2300);
             
         
             setTimeout(function() {
@@ -198,13 +192,48 @@ class SlamDunk extends Component {
             // get new problem/answer 
       
           } else {
+            $('.problem').hide();
+            $('.answers').hide();
+            $('body').append(" <img class='kart2' src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/slamin-spaceman.png'alt=''/>");
+             setTimeout(function() {
+              $('.kart2').remove();
+              $('.problem').show();
+              $('.answers').show();
+             
+            }, 2450);
           
+            wrongCount = wrongCount + 1
+            
             console.log("False");
+            console.log(wrongCount);
           };
           
       
         });
-      
+        var counter = 20000;
+        var interval = setInterval(function() {
+            counter--;
+            // Display 'counter' wherever you want to display it.
+            if ( ( counter <= 0 && currentGameArray.length > 0 ) || (wrongCount === 3) ) {
+                 clearInterval(interval);
+                  $('#timer').html("");
+                  console.log("you lose");
+                  $('.lose').show();
+                  $(".reset").html(" ");
+                  $('#timer').hide();
+                  $(".start").show();
+                  $('p').hide();
+                  $('audio#raceMusic')[0].pause()
+                  $('audio#raceMusic')[0].currentTime = 0
+                  clearInterval(interval);
+  
+                  
+                return;
+            }else{
+              $('#time').text(counter);
+              console.log("Timer --> " + counter);
+            }
+        }, 1100);
        
         
       
@@ -268,6 +297,12 @@ class SlamDunk extends Component {
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Racing_Sound_Balloon.m4a' type="audio/mpeg"/>
   </audio>
   
+  <audio id="dunkNoise">
+    <source src='../sounds/SLAM_DUNK_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="slamSong">
+    <source src='../sounds/Scratch_the_Itch.mp3' type="audio/mpeg"/>
+  </audio>
 
 <div class="floor"></div>
   <div>

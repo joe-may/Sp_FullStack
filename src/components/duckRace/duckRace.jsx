@@ -286,17 +286,18 @@ var changeAnswerset = function () {
 
   
   <audio id="swoopboop">
-    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Elevator_Sound_Effect.mp3' type="audio/mpeg"/>
+    <source src='../sounds/duck_moves.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="buttonSound">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Button_Click_Up.m4a' type="audio/mpeg"/>
   </audio>
   <audio id="icecreamSong">
-    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Elevator_Song.m4a' type="audio/mpeg"/>
+    <source src='../sounds/Robot_City.mp3' type="audio/mpeg"/>
   </audio>
   <audio id="wrongDing">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Wrong_Ding.m4a' type="audio/mpeg"/>
   </audio>
+  
  
   
     
@@ -307,7 +308,7 @@ var changeAnswerset = function () {
       <a class="restart3" href="/coz1">restart!</a>
 
      
-        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Cozmo_Game3.png' alt="" />
+        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/duck_race_you_won.png' alt="" />
         <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
      
         

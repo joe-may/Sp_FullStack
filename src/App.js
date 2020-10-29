@@ -2037,14 +2037,14 @@ class App extends Component {
                 
               ]}
               answerset2 = {[
-                { problem: "3 + erv2 =", answer: "5"},
-                { problem: "6 rere+ 1 =", answer: "7"},
-                { problem: "4 +rf 4 =", answer: "8"},
-                { problem: "1 + rfe2 =", answer: "3"},
-                { problem: "3 +rer 1 =", answer: "4"},
-                { problem: "7 re+ 3 =", answer: "10"},
-                { problem: "6 +re 3 =", answer: "9"},
-                { problem: "2 +er 4 =", answer: "6"},
+                { problem: "3 ++ 2 =", answer: "5"},
+                { problem: "6 ++ 1 =", answer: "7"},
+                { problem: "4 ++ 4 =", answer: "8"},
+                { problem: "1 ++ 2 =", answer: "3"},
+                { problem: "3 ++1 =", answer: "4"},
+                { problem: "7 ++ 3 =", answer: "10"},
+                { problem: "6 ++ 3 =", answer: "9"},
+                { problem: "2 ++ 4 =", answer: "6"},
                 
               ]}
               // nxtlvl={'/v18#a'}
