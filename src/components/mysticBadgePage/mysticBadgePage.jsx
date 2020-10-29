@@ -88,8 +88,11 @@ class MysticBadgePage extends Component {
                 </div>
             
                 </section>
+                
                 </body>
+                <footer>
                 <FooterSpot></FooterSpot>
+                </footer>
              
               
 

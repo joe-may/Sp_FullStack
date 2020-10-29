@@ -9,7 +9,9 @@
         -o-background-size: cover;
         background-size: cover;
         overflow-x: hidden;
+        display: inline-block;
 }
+
 
 @keyframes pulse {
   0% { transform: scale(1); }
@@ -22,9 +24,26 @@ position: fixed;
 top:50%;
 }
 
+.mysticBadgePage body {
+  padding-bottom: 20%;
+  height:900px;
+  z-index: 100;
+}
+
+.mysticBadgePage footer {
+ position: relative;
+  z-index: 1000;
+  
+}
+
+
 .newGame {
+  /* width: 20vw;
+  display: inline;
+  margin: 0 5px;
+  transition: all .2s ease-in-out; */
   position: absolute;
-  z-index: 999;
+
   margin: 0 auto;
   left: 10;
   right: 35%;        
@@ -34,7 +53,7 @@ top:50%;
   color: #fff;
   width: 30vw;
   cursor: pointer;
-  z-index: 200;
+  z-index: 100;
 }
 
 
@@ -42,7 +61,7 @@ top:50%;
 
 .selectGame {
   position: absolute;
-  z-index: 999;
+  
   margin: 0 auto;
   left: 10;
   right: 35%;        
@@ -52,22 +71,24 @@ top:50%;
   color: #fff;
   width: 30vw;
   cursor: pointer;
-  z-index: 200;
+  z-index: 100;
 }
 .arcadePlay {
   position: absolute;
-  z-index: 999;
+  
   margin: 0 auto;
   left: 35%;
   right: 35%;        
   text-align: center;
+  
   top: 80%;
-  font-family: Arial,sans-serif;
+  /* font-family: Arial,sans-serif; */
   color: #fff;
   width: 25vw;
   cursor: pointer;
-  z-index: 200;
+  z-index: 100;
 }
+
 
 
  
