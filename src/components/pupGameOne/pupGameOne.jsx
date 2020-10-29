@@ -211,8 +211,7 @@ console.log('keep playing');
    </a>
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
-  <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/ub7Ox9SBZZw?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=ub7Ox9SBZZw" allowfullscreen></iframe>
-
+  <iframe src="https://player.vimeo.com/video/473257649" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="SlingSong">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Camp_Song.m4a' type="audio/mpeg"/>
   </audio>
