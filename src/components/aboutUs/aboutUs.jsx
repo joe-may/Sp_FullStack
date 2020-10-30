@@ -27,8 +27,15 @@ class AboutUs extends Component {
               We provide Videos, Aracde games, and most of all, our Story Game "StudyPup and the Quest for the Mystic Badges!" This game takes children on a journey through the galaxy as our protagantist Nova earns pins to save the galaxy. 
               Each level increases difficultly allowing the child to progress in the subject all the while progessing in the story.  </p>
 
-              <h2 class="fam">The Family</h2>
+              <h2 class="fam">The Team</h2>
               <img class="familyPic" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/IMG_1348.jpeg' alt="" />
+              <p className="select">Karen May founded StudyPup when she was a 1st grade teacher in the San Fransico Bay Area. 
+              She found her self trying to find extra resorces for her students beyond what her class room could offer. 
+              After weeks of struggling to find content that was entertaining, ingaging, funny, and followed the common core standards she came up with an idea to create StudyPup.
+              Her Sons, Joe and Josh having the same passion for the vision, both went to school to become programmers to make studyPup a reality. With the prospective of an educator, 
+              the technial know-how of her sons, and the story telling ability of the talented Aubrey Huntsman, and the adorble face of their dog Obie StudyPup was Born.
+
+             </p>
  
 {/*      
                <div class="vidCon">
@@ -55,6 +62,10 @@ class AboutUs extends Component {
 
           </Router>
           <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+            <link rel="stylesheet" href="https://use.typekit.net/wug4dcf.css"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet"></link>
+            <link rel="stylesheet" href="https://use.typekit.net/wug4dcf.css"></link>
       </div>
     );
   }
