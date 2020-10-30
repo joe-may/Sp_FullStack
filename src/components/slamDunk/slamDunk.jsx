@@ -52,9 +52,7 @@ class SlamDunk extends Component {
       
     
       
-      var addOneWrong = function () {
-        var wrongCount = wrongCount + 1;
-       };
+     
       ///// animate kart2
       
     

@@ -11,7 +11,10 @@
   background-size: cover;
   overflow-x: hidden;
 }
-
+.aboutUs body {
+  position: relative;
+  height: 2200px;
+}
 
 
   a:link {
@@ -20,11 +23,97 @@
 
 .aboutUs .select {
   position: relative;
+  font-size: 2vw;
+  width:70vw;
+  top: 5%;
 }
+
+
+
+/* 
+  .aboutUs  .vidCon {
+    margin-top: 23%;
+    margin-left: 13%;
+  
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    
+  
+    padding: 10px;
+    width:80%;
+
+    color: white;
+    
+  }
+  .aboutUs .vidCon .doublesThumb {
+    width: 20vw;
+    flex-grow: 1;
+    display: grid ;
+    margin: 0 20px;
+    transition: all .2s ease-in-out;
+  }
+  .aboutUs .vidCon .momThumb {
+  
+    flex-grow: 1;
+    width: 20vw;
+    display: grid;
+    margin: 0 20px;
+    transition: all .2s ease-in-out;
+  }
+  .aboutUs .vidCon .comThumb {
+    flex-grow: 1;
+    width: 20vw;
+    display: grid;
+    margin: 0 20px;
+    transition: all .2s ease-in-out;
+    
+  
+  }
+  .aboutUs .vidCon .fivesThumb {
+    width: 20vw;
+    flex-grow: 1;
+    display: grid;
+    padding-top: 3%;
+    margin: 40 40px;
+    transition: all .2s ease-in-out;
+    
+  
+  }
+     */
+  
+
 
 
   .aboutUs .aboutNav {
     color: rgb(72, 182, 255);
+  }
+
+  .aboutUs .collage {
+    position: relative;
+    width:70vw;
+    top:30px;
+  
+  }
+  .aboutUs .familyPic {
+    position: relative;
+    width:50vw;
+    margin-top: 8%;
+    top:0%;
+  
+  }
+  .aboutUs .fam {
+    position: relative;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    width:50vw;
+    margin-top: 8%;
+    left:23%;
+    margin-top:29%;
+    
+  
   }
 
 
