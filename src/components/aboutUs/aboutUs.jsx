@@ -35,7 +35,7 @@ class AboutUs extends Component {
               She found her self trying to find extra resorces for her students beyond what her class room could offer. 
               After weeks of struggling to find content that was entertaining, ingaging, funny, and followed the common core standards she came up with an idea to create StudyPup.
               Her Sons, Joe and Josh having the same passion for the vision, both went to school to become programmers to make studyPup a reality. With the prospective of an educator, 
-              the technial know-how of her sons, and the story telling ability of the talented Aubrey Huntsman, and the adorble face of their dog Obie StudyPup was Born.
+              the technial know-how of her sons, and the story telling ability of the talented Aubrey Huntsman, and the adorble face of their dog Obie StudyPup was born.
 
              </p>
  
