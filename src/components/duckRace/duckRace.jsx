@@ -106,6 +106,8 @@ console.log(randomProblemSelector);
          clearInterval(interval);
           // $('#time').text(counter);
           console.log("you lose");
+          // $('audio#loseSound')[0].play();
+          // $("audio#loseSound").prop("volume", 0.7);
           $('.lose').show();
           currentEquation = null;
           currentGameArray =null;
@@ -246,6 +248,8 @@ var boost = 5
    
     clearInterval(interval);
     $('.win').show();
+    // $('audio#winSound')[0].play();
+    // $("audio#winSound").prop("volume", 0.7);
     $(".reset").html(" ");
     $(".start").show();
     $('.tryAgain').show();
@@ -308,7 +312,7 @@ var changeAnswerset = function () {
       <a class="restart3" href="/coz1">restart!</a>
 
      
-        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/duck_race_you_won.png' alt="" />
+        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/duck_race_you_won_NEW+(1).png' alt="" />
         <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
      
         
@@ -349,17 +353,22 @@ var changeAnswerset = function () {
 
     <img class="finishDuck" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/FinishLineDuck.png"alt=""/>
 
-      <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Cozmo_Game3.png' alt="" />
+      <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/duck_race_you_lose_NEW.png' alt="" />
       <img class="kart3" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YELLOW_DUCK_A.png"alt=""/>
  
     <img class="kart1" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/PURPLE_DUCK.png"alt=""/>
     <img class="kart4" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YELLOW_DUCK_B.png"alt=""/>
      
-
+    {/* <audio id="winSound">
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>
+  </audio>
+  <audio id="loseSound">
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
+  </audio> */}
       <div>
-        <span id="timer">
+        {/* <span id="timer">
           <span id="time">25</span>      
-        </span>
+        </span> */}
       </div>
       <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
       <link rel="stylesheet" href="https://use.typekit.net/wug4dcf.css"></link>

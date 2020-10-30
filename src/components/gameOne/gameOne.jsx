@@ -258,7 +258,7 @@ console.log('keep playing');
   } else {
     $('.lose').hide();
     $('audio#winSound')[0].play();
-    $("audio#winSound").prop("volume", 0.);
+    $("audio#winSound").prop("volume", 0.6);
     $('.win').show();
     $('.nextLevel').show();
     $(".reset").html(" ");

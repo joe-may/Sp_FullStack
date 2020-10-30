@@ -62,12 +62,13 @@
 
    
 .fireworksGame #timer{
-  font-size: 30px;
+  color:rgb(255, 255, 255);
   z-index: 1000;
   position: fixed;
-  top: 95%;
-  color: rgb(25, 150, 199);
-  left: 90%;
+  font-size: 2vw;
+  top:2%;
+  left:92%;
+  font-family: 'Orbitron';
 
 }
 .fireworksGame .backbutton{

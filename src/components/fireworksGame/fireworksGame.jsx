@@ -73,7 +73,7 @@ console.log(currentGameArray);
   });
 
  ///////////////////////////////timer
-  var counter = 30000;
+  var counter = 30;
  
   var interval = setInterval(function() {
     counter--;
@@ -245,16 +245,16 @@ console.log('keep playing');
          <img class="bg_bb1" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/firework-background.png' alt="" />
         <div class="answers reset"></div>
         <button class="start">START</button>
-        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Puptune_Game4.png' alt="" />
+        <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/firework_you_won_NEW.png' alt="" />
           <div class="problem reset"></div>
                 
-          <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Puptune_Game4.png' alt="" />
+          <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/firework_you_lose_NEW.png' alt="" />
                 
           
           
           <div>
-            <span id="timer">
-              <span id="time">25</span>      
+            <span id="timer">00:
+              <span id="time"></span>      
             </span>
           </div>
     
@@ -262,6 +262,7 @@ console.log('keep playing');
     
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
 </div>
     
 );

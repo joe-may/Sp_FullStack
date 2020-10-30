@@ -307,18 +307,18 @@ class SlamDunk extends Component {
   <div class="answers reset"></div>
   <button class="start">START</button>
   <div class="footer">
-  <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Hotsva_Game2.png' alt="" />
+  <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/sjs_you_won_NEW.png' alt="" />
   
         <div class="problem reset"></div>
     </div>
   </div>
   {/* <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a> */}
   <div>
-      <span id="timer">00:
+      {/* <span id="timer">00:
         <span id="time"></span>     
-      </span>
+      </span> */}
   </div>
-   <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Hotsva_Game2.png' alt="" />
+   <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/sjs_you_lose_NEW.png' alt="" />
 
 
    <img class="hoop" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/planet_hoop_1.png"alt=""/>
