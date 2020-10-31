@@ -1,12 +1,12 @@
 
-@keyframes animate
+@keyframes animateWild
 {
   0% {
       top:-10%;
   }
   100% {
          
-    top:100%;    
+    top:70%;    
   }
   
 }
@@ -125,16 +125,18 @@
       flex-wrap: wrap;
   }
 
-  .wildGameFour .house {
+  /* .wildGameFour .house {
       width: 25%;
       cursor: crosshair;  
-  }
+      z-index: 100;
+  } */
 
 
   .wildGameFour .house .snowmanWrapper {
       width:0%;
       display: inline-block;
       position: relative;
+      
   }
 
   .wildGameFour .house .snowmanWrapper .flame {
@@ -149,6 +151,7 @@
       font-size: 8vh;
       margin-left: -37%;
       margin-top: 43%;
+      z-index: 1500;
   }
   .wildGameFour .house .snowmanWrapper .penguin {
       position: absolute;
@@ -226,16 +229,16 @@
 .wildGameFour .house .a0 {
   position: fixed;
   width: 17%;
-  top: 40%;
-  animation: animate 15s linear infinite;
+  top: 35%;
+  left: 55%;
+  animation: animateWild 19s linear infinite;
 
- 
-  
-  
+
 }
 
+
 .wildGameFour .house .a0 .answer {
-  left:56%;
+  left: 56%;
   
 } 
 
@@ -244,6 +247,11 @@
   left:-7%;
   margin-top:10%
 }
+.wildGameFour .house .a0 .penguin {
+  width: 43%;
+  margin-top: 22%;
+  margin-left: -45%;
+} 
 
 
 .wildGameFour .house .a1 {
@@ -251,18 +259,20 @@
   width: 17%;
   left:25%;
   top: -24%;
-  animation: animate 25s linear infinite;
+  animation: animateWild 25s linear infinite;
   
 }
 
 .wildGameFour .house .a1 .answer {
   left: 56%;
+  z-index: 1500;
 } 
 .wildGameFour .house .a1 .penguin {
   width: 41%;
   margin-top: 24%;
   margin-left: 3%;
   transform: rotateY(180deg);
+  z-index: 200;
 } 
 .wildGameFour .house .a1 .splash {
   position: absolute;
@@ -271,11 +281,11 @@
 }
 
 .wildGameFour .house .a2 {
-  position:fixed;
+  position: fixed;
   width: 17%;
-  top: -52%;
-  margin-left: 17%;
-  animation: animate 13s linear infinite;
+  top: 35%;
+  left: 20%;
+  animation: animateWild 10s linear infinite;
  
   
 }
@@ -283,7 +293,7 @@
   transform: rotateY(180deg);
 }
 .wildGameFour .house .a2 .answer {
-  left: 53%;
+  left: 56%;
 } 
 .wildGameFour .house .a2 .penguin {
   width: 43%;
@@ -302,8 +312,8 @@
   position: fixed;
   width: 17%;
   top: 35%;
-  left: 85%;
-  animation: animate 29s linear infinite;
+  left: 80%;
+  animation: animateWild 20s linear infinite;
  
   
   
@@ -332,7 +342,7 @@
   position: fixed;
   width: 17%;
   top: -14%;
-  animation: animate 28s linear infinite;
+  animation: animateWild 28s linear infinite;
   
   
 }
@@ -357,7 +367,7 @@
   width: 17%;
   margin-left:-10%;
   top: -63%;
-  animation: animate 13s linear infinite;
+  animation: animateWild 13s linear infinite;
 }
 
 .wildGameFour .house .a5 .answer {
@@ -381,7 +391,7 @@
   width: 17%;
   top: -43%;
   left: 72%;
-  animation: animate 15s linear infinite;
+  animation: animateWild 15s linear infinite;
 }
 .wildGameFour .house .a6 .snowman {
   transform: rotateY(180deg);
@@ -405,7 +415,7 @@
   width: 17%;
   top: 0%;
   left: 69%;
-  animation: animate 25s linear infinite;
+  animation: animateWild 25s linear infinite;
 }
 .wildGameFour .house .a7 .snowman {
   transform: rotateY(180deg);

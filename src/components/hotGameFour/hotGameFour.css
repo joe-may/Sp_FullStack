@@ -1,12 +1,12 @@
 
-@keyframes animate
+@keyframes animateHot
 {
   0% {
       top:-10%;
   }
   100% {
          
-    top:100%;    
+    top:70%;    
   }
   
 }
@@ -213,16 +213,16 @@
 .hotGameFour .house .a0 {
   position: fixed;
   width: 17%;
-  top: 40%;
-  animation: animate 15s linear infinite;
+  top: 35%;
+  left: 60%;
+  animation: animateHot 19s linear infinite;
 
- 
-  
-  
+
 }
 
+
 .hotGameFour .house .a0 .answer {
-  left:56%;
+  left: 56%;
   
 } 
 
@@ -231,6 +231,11 @@
   left:-7%;
   margin-top:10%
 }
+.hotGameFour .house .a0 .penguin {
+  width: 43%;
+  margin-top: 22%;
+  margin-left: -45%;
+} 
 
 
 .hotGameFour .house .a1 {
@@ -238,7 +243,7 @@
   width: 17%;
   left:25%;
   top: -24%;
-  animation: animate 25s linear infinite;
+  animation: animateHot 25s linear infinite;
   
 }
 
@@ -258,11 +263,11 @@
 }
 
 .hotGameFour .house .a2 {
-  position:fixed;
+  position: fixed;
   width: 17%;
-  top: -52%;
-  left: 87%;
-  animation: animate 14s linear infinite;
+  top: 35%;
+  left: 20%;
+  animation: animateHot 10s linear infinite;
  
   
 }
@@ -270,7 +275,7 @@
   transform: rotateY(180deg);
 }
 .hotGameFour .house .a2 .answer {
-  left: 53%;
+  left: 56%;
 } 
 .hotGameFour .house .a2 .penguin {
   width: 43%;
@@ -290,7 +295,7 @@
   width: 17%;
   top: 35%;
   left: 85%;
-  animation: animate 29s linear infinite;
+  animation: animateHot 29s linear infinite;
  
   
   
@@ -319,7 +324,7 @@
   position: fixed;
   width: 17%;
   top: -14%;
-  animation: animate 28s linear infinite;
+  animation: animateHot 28s linear infinite;
   
   
 }
@@ -344,7 +349,7 @@
   width: 17%;
   top: -63%;
   margin-left:-20%;
-  animation: animate 13s linear infinite;
+  animation: animateHot 13s linear infinite;
 }
 
 .hotGameFour .house .a5 .answer {
@@ -368,7 +373,7 @@
   width: 17%;
   top: -43%;
   left: 72%;
-  animation: animate 17s linear infinite;
+  animation: animateHot 17s linear infinite;
 }
 .hotGameFour .house .a6 .snowman {
   transform: rotateY(180deg);
@@ -392,7 +397,7 @@
   width: 17%;
   top: 0%;
   left: 79%;
-  animation: animate 25s linear infinite;
+  animation: animateHot 25s linear infinite;
 }
 .hotGameFour .house .a7 .snowman {
   transform: rotateY(180deg);
