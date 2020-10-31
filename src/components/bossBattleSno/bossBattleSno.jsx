@@ -240,7 +240,7 @@ console.log('keep playing');
                 </a>
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
-  <iframe src="https://player.vimeo.com/video/469148229" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/469148229" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="raceMusic">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snow_con_boss_song.mp3' type="audio/mpeg"/>
   </audio>

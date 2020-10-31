@@ -247,7 +247,7 @@ console.log('keep playing');
 
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
-  <iframe src="https://player.vimeo.com/video/469146958" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/469146958" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="moltaMusic">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Song.m4a' type="audio/mpeg"/>
   </audio>

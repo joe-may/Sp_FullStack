@@ -218,8 +218,7 @@ class GameFour extends Component{
     <div class="game4">
   
 <body>
-<iframe src="https://player.vimeo.com/video/469148229" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
+<iframe src="https://player.vimeo.com/video/469148229" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <img class="backgroundSno2" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Taxi_Background.png"alt=""/>
 <audio id="stormSong">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Song_Snow-Con_Level_3.m4a' type="audio/mpeg"/>
