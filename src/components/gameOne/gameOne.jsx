@@ -89,7 +89,7 @@ $('.lose').hide();
 $('.nextLevel').hide();
 $("audio#iglooSong").prop("volume", 0.19);
 $('audio#iglooSong')[0].play();
-$("audio#snowballThrowd").prop("volume", 0.);
+$("audio#snowballThrowd").prop("volume", 0.7);
 
 
 
