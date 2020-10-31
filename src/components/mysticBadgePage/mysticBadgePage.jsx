@@ -25,7 +25,7 @@ class MysticBadgePage extends Component {
       $('.layerOp').show();
       
       
-      $('body').append("<iframe src='https://player.vimeo.com/video/469147995'width='640' height='480' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe>");;
+      $('body').append("<iframe src='https://player.vimeo.com/video/474079873' width='640' height='360' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe>");;
 
       $('.skipToGame').show();
       $('.backButton').show();

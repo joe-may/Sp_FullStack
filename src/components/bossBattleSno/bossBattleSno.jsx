@@ -242,10 +242,10 @@ console.log('keep playing');
   <button class="skip">Skip Video</button>
   <iframe src="https://player.vimeo.com/video/469148229" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="raceMusic">
-    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Song_Snow-Con_Race.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snow_con_boss_song.mp3' type="audio/mpeg"/>
   </audio>
   <audio id="snowballThrow">
-    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Sound_Sizzle+(1).m4a' type="audio/mpeg"/>
   </audio>
   <audio id="winSound">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WIN_SOUND.m4a' type="audio/mpeg"/>

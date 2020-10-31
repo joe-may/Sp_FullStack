@@ -12,15 +12,27 @@ class PupGameFour extends Component {
       const { answerset } = this.props;
 
       $('.start').hide();
+      $('.nextLevel').on('click',function() { 
+        $('.layer').show();
+        $('.finalVid').show();
+        $('.skip').remove();
+        $('.win').hide();
+        $('.nextLevel').hide();
+
+      
+       
+      
+      });
 
       $('.skip').on('click',function() { 
         $('.layer').hide();
-        $('iframe').remove();
+        $('.vid1').remove();
         $('.skip').remove();
         $('.start').show();
       
       });
 
+$('.finalVid').hide();
 $('.win').hide();
 $('.lose').hide();
 $('.nextLevel').hide();
@@ -241,9 +253,8 @@ console.log('keep playing');
 
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
-  <iframe title="rr" width="720" height="480" src="https://www.youtube.com/embed/ub7Ox9SBZZw?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1&amp;loop=1&amp;playlist=ub7Ox9SBZZw" allowfullscreen></iframe>
-
-
+  <iframe class="vid1" src="https://player.vimeo.com/video/474078529" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  <iframe  class="finalVid" src="https://player.vimeo.com/video/474081107" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <audio id="raceMusic">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Puptune_Boss_Song.m4a' type="audio/mpeg"/>
   </audio>
@@ -265,7 +276,7 @@ console.log('keep playing');
                 
           <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Puptune_Game4.png' alt="" />
                 
-          <a class="nextLevel" href={this.props.nxtlvl}>Save The World!!</a>
+          <div class="nextLevel">Save The World!!</div>
           
           <div>
             <span id="timer">00:
