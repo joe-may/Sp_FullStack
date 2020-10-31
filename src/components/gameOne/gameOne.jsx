@@ -14,7 +14,7 @@ class GameOne extends Component {
 
 
       
-      $("audio#snowballThrow").prop("volume", 0.0);
+      $("audio#snowballThrowd").prop("volume", 0.7);
       $('.novaIntro').hide();
       $('.snowball').hide();
       $('.start').hide();
@@ -65,8 +65,8 @@ $('.game1').on('click',function(e) {
   var parentOffset = $(this).parent().offset();
    var relX = e.pageX - parentOffset.left;
    var relY = e.pageY - parentOffset.top;
-   $('audio#snowballThrow')[0].play();
-   $('audio#snowballThrow')[0].currentTime = 0
+   $('audio#snowballThrowd')[0].play();
+   $('audio#snowballThrowd')[0].currentTime = 0
   $(".snowball").animate({
       width: '10px',
       left: relX,
@@ -89,7 +89,7 @@ $('.lose').hide();
 $('.nextLevel').hide();
 $("audio#iglooSong").prop("volume", 0.19);
 $('audio#iglooSong')[0].play();
-$("audio#snowballThrow").prop("volume", 0.);
+$("audio#snowballThrowd").prop("volume", 0.);
 
 
 
@@ -311,8 +311,8 @@ console.log('keep playing');
   <audio id="loseSound">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
-  <audio id="snowballThrow">
-    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snowball_Throw.m4a' type="audio/mpeg"/>
+  <audio id="snowballThrowd">
+    <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Nova_Throws_Snow.m4a' type="audio/mpeg"/>
   </audio>
   
          <img class="bg_game1" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/penguin-level-backdrop.jpeg' alt="" />
@@ -340,7 +340,7 @@ console.log('keep playing');
     
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Nova_standing.png' alt="" class='novaThrow'/>
-          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Nova_standing.png' alt="" class='novaIntro'/>
+          {/* <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Nova_standing.png' alt="" class='novaIntro'/> */}
           
           
 

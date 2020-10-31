@@ -18,11 +18,9 @@
 
 
 @keyframes atwo {
-  0%   { left:43%; top:-160%;}
-  25%  { left:57%; top:-135%;}
-  50%  {left:22%; top:-129%;}
-  75%  {left:65%; top:-115%;}
-  100% { left:43%; top:-160%;}
+  0%   { left:30%; top:-160%;}
+  
+  100% { left:20%; top:-150%;}
 }
 
 @keyframes athree {
@@ -152,7 +150,7 @@
       top: 50%;
       left: 0%;
       width: 100%;
-      z-index: 800;
+      z-index:800;
       display: flex;
       flex-wrap: wrap;
   }
@@ -313,11 +311,12 @@
   animation-iteration-count: infinite;
 }
 .cozGameFour .house .a2 .snowman {
-  
+  /* z-index: ; */
 }
 .cozGameFour .house .a2 .answer {
   left: 46%;
   margin-top:30%;
+  z-index: 1700;
 } 
 .cozGameFour .house .a2 .penguin {
   width: 43%;
