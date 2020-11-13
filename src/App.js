@@ -1962,8 +1962,8 @@ class App extends Component {
       <Route exact path="/arcade-fireworksm" render={(props) => (
               <FireworksGame
               answerset = {[
-                { problem: "3 -x2 =", answer: "5"},
-                { problem: "6 x 1 =", answer: "7"},
+                { problem: "what color is an apple", answer: "Red"},
+                { problem: "6 x 3=", answer: "18"},
                 { problem: "4 x 4 =", answer: "8"},
                 { problem: "1 x 2 =", answer: "3"},
                 { problem: "3 x 1 =", answer: "4"},
