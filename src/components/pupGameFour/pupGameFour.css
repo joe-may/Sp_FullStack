@@ -38,18 +38,18 @@
   100% { left:0%; top:-150%;}
 }
 @keyframes afive {
-  0%   { left:0%; top:-175%;}
-  45%  { left:50%; top:-175%;}
-  75%  {left:50%; top:-125%;}
-  65%  {left:50%; top:-175%;}
-  100% { left:0%; top:-175%;}
+  0%   { left:0%; top:-95%;}
+  45%  { left:50%; top:-95%;}
+  75%  {left:50%; top:-95%;}
+  65%  {left:50%; top:-85%;}
+  100% { left:0%; top:-95%;}
 }
 @keyframes asix {
-  0%   { left:0%; top:-150%;}
-  45%  { left:40%; top:-160%;}
-  75%  {left:30%; top:-150%;}
-  65%  {left:15%; top:-140%;}
-  100% { left:0%; top:-150%;}
+  0%   { left:60%; top:-90%;}
+  45%  { left:60%; top:-90%;}
+  75%  {left:60%; top:-90%;}
+  65%  {left:65%; top:-90%;}
+  100% { left:60%; top:-90%;}
 }
 @keyframes aseven {
   0%   { left:0%; top:-160%;}

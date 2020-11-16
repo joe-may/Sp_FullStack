@@ -10,6 +10,17 @@
   }
   
 }
+@keyframes animateWildn
+{
+  0% {
+      top:-10%;
+  }
+  100% {
+         
+    top:45%;    
+  }
+  
+}
 
 .wildGameFour .caveStuff {
   position: fixed;
@@ -231,7 +242,7 @@
   width: 17%;
   top: 35%;
   left: 55%;
-  animation: animateWild 19s linear infinite;
+  animation: animateWildn 15s linear infinite;
 
 
 }
@@ -285,7 +296,7 @@
   width: 17%;
   top: 35%;
   left: 20%;
-  animation: animateWild 10s linear infinite;
+  animation: animateWildn 10s linear infinite;
  
   
 }

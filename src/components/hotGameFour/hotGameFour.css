@@ -6,8 +6,21 @@
   }
   100% {
          
-    top:70%;    
+    top:60%;    
   }
+  
+  
+}
+@keyframes animateHotfive
+{
+  0% {
+      top:-10%;
+  }
+  100% {
+         
+    top:50%;    
+  }
+  
   
 }
 
@@ -215,7 +228,7 @@
   width: 17%;
   top: 35%;
   left: 60%;
-  animation: animateHot 19s linear infinite;
+  animation: animateHotfive 15s linear infinite;
 
 
 }

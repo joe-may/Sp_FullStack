@@ -218,7 +218,7 @@ class GameTwo extends Component {
                 </a>
   <div class="layer"></div>
   <button class="skip">Skip Video</button>
-  <iframe src="https://player.vimeo.com/video/469147818" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/469147995" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
   <img class="backgroundSno2" src="https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snow_Con_Background_Race_Game_double_dude.png"alt=""/>
  <audio id="raceMusic">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Song_Snow-Con_Race.m4a' type="audio/mpeg"/>

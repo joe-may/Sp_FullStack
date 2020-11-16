@@ -253,7 +253,8 @@ $('.countDown').click(function(){
                 </a>
     <div class="layer"></div>
   <button class="skip">Skip Video</button>
-  <iframe src="https://player.vimeo.com/video/469147995" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/469147818" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
   <audio id="swoopboop">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Penguin_Gets_Ice_Cream.m4a' type="audio/mpeg"/>
   </audio>

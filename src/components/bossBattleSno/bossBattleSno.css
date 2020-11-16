@@ -8,9 +8,9 @@
 
 @keyframes aone {
   0%   { left:0%; top:-190%;}
-  45%  { left:-26%; top:-140%;}
-  75%  {left:45%; top:-130%;}
-  75%  {left:-15%; top:-125%;}
+  45%  { left:-26%; top:-190%;}
+  75%  {left:45%; top:-190%;}
+  75%  {left:-15%; top:-195%;}
   100% { left:0%; top:-190%;}
 }
 
@@ -36,11 +36,11 @@
   100% { left:0%; top:-150%;}
 }
 @keyframes afive {
-  0%   { left:0%; top:-175%;}
+  0%   { left:50%; top:-175%;}
   45%  { left:50%; top:-175%;}
   75%  {left:50%; top:-125%;}
   65%  {left:50%; top:-175%;}
-  100% { left:0%; top:-175%;}
+  100% { left:50%; top:-175%;}
 }
 @keyframes asix {
   0%   { left:0%; top:-150%;}
