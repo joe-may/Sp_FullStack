@@ -14,6 +14,7 @@ class MysticBadgePage extends Component {
   componentDidMount() {
 
   
+ 
 
     $('.layerOp').hide();
 
@@ -61,11 +62,14 @@ class MysticBadgePage extends Component {
             <Navbar/>
               <div class="layerOp"></div>
               <button class="skipToGame">Skip To Game</button>
+            
               
         
                 <section>
 
-                
+                <div class="mobileLayer">
+                <p class="mobileInfo">For the best gaming experience, please visit this site on a laptop or tablet</p>
+                </div>
                 
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/MB_START_MENU_Button_New_Game.png' alt=""  class='newGame'/>
                 <a href="/planetspagea">

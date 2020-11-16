@@ -21,6 +21,9 @@ class ArcadePage extends Component {
 
           
               <body>
+              <div class="mobileLayer">
+                <p class="mobileInfo">For the best gaming experience, please visit this site on a laptop or tablet</p>
+                </div>
           <Navbar/>
 
           <a href="/arcade-play">

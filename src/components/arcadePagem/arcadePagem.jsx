@@ -21,6 +21,9 @@ class ArcadePagem extends Component {
 
           
               <body>
+              <div class="mobileLayer">
+                <p class="mobileInfo">For the best gaming experience, please visit this site on a laptop or tablet</p>
+                </div>
           <Navbar/>
           <a href="/arcade-play">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/ARCADE_HEADER_IMAGE.png' alt=""  class='arcadeBanner'/>
