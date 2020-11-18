@@ -30,7 +30,6 @@
 .videosPage  .opCon {
   display: inline-block;
   width:100%;
-
 }
 .videosPage  .vidCon {
   margin-top: 5%;
@@ -42,21 +41,20 @@
 .videosPage .opCon .mathButton {
   width: 20vw;
   display: inline;
-  margin: 0 5px;
+  margin: 0 -30px;
   transition: all .2s ease-in-out;
-  
-
 }
+
 .videosPage .opCon .englishButton {
   width: 20vw;
   display: inline;
-  margin: 0 5px;
+  margin: 0 0px;
   transition: all .2s ease-in-out;
 }
 .videosPage .opCon .scienceButton {
   width: 20vw;
   display: inline;
-  margin: 0 5px;
+  margin: 0 -30px;
   transition: all .2s ease-in-out;
 
 }
@@ -113,6 +111,18 @@
 .videosPage .scienceButton:hover{ 
   transform: scale(0.9); 
   cursor: pointer;
+ 
+}
+
+@media screen and (max-width: 700px) {
+  .videosPage .opCon .englishButton {width: 38vw;}
+  .videosPage .opCon .scienceButton {width: 38vw;}
+  .videosPage .opCon .mathButton {width: 38vw;}
+  .videosPage body{ height: 1200px;}
+  .videosPage .vidCon {width: 50%;}
+  .videosPage .vidCon .fivesThumb {width: 50vw; padding-top: 20%;}
+  .videosPage .vidCon .comThumb {width: 50vw;padding-top: 20%;}
+  .videosPage .vidCon .doublesThumb {width: 50vw;padding-top: 20%;}
  
 }
 

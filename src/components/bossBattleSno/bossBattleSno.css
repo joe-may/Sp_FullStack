@@ -36,11 +36,11 @@
   100% { left:0%; top:-150%;}
 }
 @keyframes afive {
-  0%   { left:50%; top:-175%;}
-  45%  { left:50%; top:-175%;}
+  0%   { left:50%; top:-135%;}
+  45%  { left:50%; top:-145%;}
   75%  {left:50%; top:-125%;}
-  65%  {left:50%; top:-175%;}
-  100% { left:50%; top:-175%;}
+  65%  {left:50%; top:-140%;}
+  100% { left:50%; top:-145%;}
 }
 @keyframes asix {
   0%   { left:0%; top:-150%;}
@@ -91,7 +91,7 @@
 .bossBattleSno .novaWithHose {
   width: 13%;
   position: fixed;
-  top: 83%;
+  top: 89%;
   left: 46%;
   z-index: 1000;
 }
@@ -383,7 +383,7 @@
 
 .bossBattleSno .house .a5 {
   width: 100%;
-  top: -160%;
+  top: -130%;
   animation-name: afive;
   animation-duration: 7s;
   animation-iteration-count: infinite;

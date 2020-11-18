@@ -114,6 +114,8 @@
  }
 
  .hotGameFour .answers {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(255, 0, 0);
       position: fixed;
       font-size: 5vh;
       height: 50%;

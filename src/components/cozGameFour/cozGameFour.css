@@ -37,19 +37,19 @@
   75%  {left:50%; top:-125%;}
   100% { left:0%; top:-150%;}
 }
-@keyframes afive {
-  0%   { left:0%; top:-175%;}
-  45%  { left:50%; top:-175%;}
-  75%  {left:50%; top:-125%;}
-  65%  {left:50%; top:-175%;}
-  100% { left:0%; top:-175%;}
+@keyframes afivesd {
+  0%   { left:0%; top:-125%;}
+  45%  { left:50%; top:-135%;}
+  75%  {left:50%; top:-135%;}
+  65%  {left:50%; top:-125%;}
+  100% { left:0%; top:-135%;}
 }
-@keyframes asix {
-  0%   { left:0%; top:-150%;}
-  45%  { left:40%; top:-160%;}
-  75%  {left:30%; top:-150%;}
-  65%  {left:15%; top:-140%;}
-  100% { left:0%; top:-150%;}
+@keyframes asixsd {
+  0%   { left:0%; top:-140%;}
+  45%  { left:40%; top:-140%;}
+  75%  {left:30%; top:-130%;}
+  65%  {left:15%; top:-120%;}
+  100% { left:0%; top:-130%;}
 }
 @keyframes aseven {
   0%   { left:0%; top:-160%;}
@@ -118,7 +118,7 @@
 .cozGameFour .novaWithHose {
   width: 13%;
   position: fixed;
-  top: 73%;
+  top: 86%;
   left: 46%;
   z-index: 1000;
 
@@ -150,7 +150,7 @@
       top: 50%;
       left: 0%;
       width: 100%;
-      z-index:800;
+      z-index:7900;
       display: flex;
       flex-wrap: wrap;
   }
@@ -158,6 +158,7 @@
   .cozGameFour .house {
       width: 25%;
       cursor: crosshair;  
+      z-index: 100;
   }
 
 
@@ -223,7 +224,7 @@
   font-size:5vw;
   color: rgb(11, 160, 165)  ;
   border-radius: 30px 30px 30px 30px;
-  z-index: 1000;
+  z-index: 7900;
   cursor: pointer;
   }
   
@@ -239,7 +240,7 @@
     font-size:5vw;
     color: rgb(175, 54, 54) ;
     border-radius: 30px 30px 30px 30px;
-    z-index: 2200;
+    z-index: 8200;
     cursor: pointer;
   }
 
@@ -388,8 +389,8 @@
 
 .cozGameFour .house .a5 {
   width: 100%;
-  top: -160%;
-  animation-name: afive;
+  top: -130%;
+  animation-name: afivesd;
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
@@ -417,7 +418,7 @@
   width: 100%;
   top: -185%;
   left: 24%;
-  animation-name: asix;
+  animation-name: asixsd;
   animation-duration: 6s;
   animation-iteration-count: infinite;
 }
@@ -480,7 +481,7 @@
   left:30%;
   top:20%;
   height: 60%;
-  z-index: 2200;
+  z-index: 8200;
  }
  .cozGameFour .lose {
   position: fixed;
@@ -517,7 +518,7 @@ font-family: 'Titan One';
 font-size:2.5vw;
 color:  rgb(14, 150, 168) ;
 border-radius: 30px 30px 30px 30px;
-z-index: 2000;
+z-index: 8000;
  }
  .cozGameFour  .mapIcon {
   position: fixed;
