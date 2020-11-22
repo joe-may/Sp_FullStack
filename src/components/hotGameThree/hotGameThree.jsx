@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 
 import './hotGameThree.css';
-import $ from "jquery";
+import $, { css } from "jquery";
 
 
 class HotGameThree extends Component {
@@ -59,12 +59,12 @@ answerset.forEach(function(questions) {
 console.log(currentGameArray);
 
   $.each(currentGameArray, function(index,value){
-    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Single_Torch.png' class='igloo'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Cave_Torch_Lit_Left.gif' class='penguin hide'><div class='answer'>" + value.answer + "</div></div></div>");
+    $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Single_Torch.png' class='igloo'><div class='answer'>" + value.answer + "</div></div></div>");
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
   });
 
  
-  var counter = 30;
+  var counter = 30000;
  
 
   
@@ -116,15 +116,24 @@ console.log(currentGameArray);
       
 
       console.log("Correct!");
+      $(this).css( "z-index","100");
+      
+      
+    
+
       $(this).find('.igloo').remove();
       $(this).find('.answer').fadeOut(1, function() {
-        $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>");
+        $(this).parent('.iglooWrapper').prepend("<img src='' class='penguin'>")
         console.log(currentGameArray.length);
         var penguin = $(this).parent().find('.penguin');
         penguin.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Cave_Torch_Lit_Left.gif");
+        $(this).find('.penguin').css( "z-index","100");
+        $(this).find('img').css( "z-index","100");
         $('audio#torchLight')[0].play();
         $('audio#torchLight')[0].currentTime = 0
         $('p').remove();
+
+        // $('.hotGameThree').attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Cave_Torch_Lit_Left.gif").addClass('penguin');
 
               
         
