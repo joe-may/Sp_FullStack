@@ -74,20 +74,22 @@
         height: 50%;
         top: 0%;
         width: 100%;
-        z-index: 800;
+        z-index: 1200;
         display: flex;
         flex-wrap: wrap;
         
     }
 
     .pupGameTwo .house {
-        width: 25%;
+        position: relative;
+        width: 5%;
         cursor: crosshair;  
+        z-index: 100;
     }
 
 
     .pupGameTwo .house .icecubeWrapper {
-        width:80%;  
+        width:10%;  
         display: inline-block;
         position: relative;
     }
@@ -128,9 +130,9 @@
         border-radius: 0%;
         color: white;
         text-shadow: 20px 20px 20px black, 0 0 5px rgb(9, 148, 28), 0 0 5px darkblue;
-        font-size:9vw;
+        font-size:7vw;
         width: 40%;
-        left: 35%;
+        left: 0%;
         top: 5%;
         font-family: 'Titan One';
         z-index: 800;
@@ -168,8 +170,9 @@
   .pupGameTwo .house .a0 {
     position: fixed;
     width: 10%;
-    top: 40%;
-    animation: animate 15s linear infinite;
+    left:30%;
+    top:20%;
+    animation: animate 40s linear infinite;
     
     
 }
@@ -191,9 +194,9 @@
 .pupGameTwo .house .a1 {
     position: fixed;
     width: 10%;
-    left:25%;
-    top: -24%;
-    animation: animate 25s linear infinite;
+    left:45%;
+    top: -14%;
+    animation: animate 34s linear infinite;
 }
  
 .pupGameTwo .house .a1 .answer {
@@ -212,7 +215,7 @@
     width: 10%;
     top: -52%;
     left: 67%;
-    animation: animate 14s linear infinite;
+    animation: animate 29s linear infinite;
 }
 .pupGameTwo .house .a2 .icecube {
     
@@ -236,8 +239,8 @@
     position: fixed;
     width: 10%;
     top: 35%;
-    left: 85%;
-    animation: animate 29s linear infinite;
+    left: 55%;
+    animation: animate 24s linear infinite;
 }
 .pupGameTwo .house .a3 .icecube {
     transform: rotateY(180deg);
@@ -257,8 +260,9 @@
 .pupGameTwo .house .a4 {
     position: fixed;
     width: 10%;
+    left:40%;
     top: -14%;
-    animation: animate 28s linear infinite;
+    animation: animate 19s linear infinite;
 }
  
 .pupGameTwo .house .a4 .answer {
@@ -275,8 +279,9 @@
 .pupGameTwo .house .a5 {
     position: fixed;
     width: 10%;
-    top: -63%;
-    animation: animate 17s linear infinite;
+    left: 50%;
+    top: -33%;
+    animation: animate 14s linear infinite;
 }
  
 .pupGameTwo .house .a5 .answer {
@@ -292,10 +297,11 @@
 
 .pupGameTwo .house .a6 { 
     position: fixed;
+    z-index: 700;
     width: 10%;
     top: -43%;
     left: 72%;
-    animation: animate 17s linear infinite;
+    animation: animate 9s linear infinite;
     
 }
 .pupGameTwo .house .a6 .icecube {
@@ -317,8 +323,8 @@
     position: fixed;
     width: 10%;
     top: 0%;
-    left: 69%;
-    animation: animate 25s linear infinite;
+    left: 55%;
+    animation: animate 9s linear infinite;
 }
 .pupGameTwo .house .a7 .icecube {
     transform: rotateY(180deg);
