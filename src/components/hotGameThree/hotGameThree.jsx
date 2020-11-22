@@ -64,7 +64,7 @@ console.log(currentGameArray);
   });
 
  
-  var counter = 30000;
+  var counter = 40;
  
 
   
@@ -117,6 +117,8 @@ console.log(currentGameArray);
 
       console.log("Correct!");
       $(this).css( "z-index","100");
+      
+
       
       
     

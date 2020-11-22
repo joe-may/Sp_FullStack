@@ -73,7 +73,7 @@ console.log(randomProblemSelector);
 
 
  
-  var counter = 35;
+  var counter = 50;
  
 ////////////timer
   var interval = setInterval(function() {
@@ -331,7 +331,7 @@ $('.countDown').click(function(){
 
       <div>
         <span id="timer">00:
-          <span id="time">35</span>      
+          <span id="time">50</span>      
         </span>
       </div>
       <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
