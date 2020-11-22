@@ -170,7 +170,7 @@
   .pupGameTwo .house .a0 {
     position: fixed;
     width: 10%;
-    left:30%;
+    left:80%;
     top:20%;
     animation: animate 40s linear infinite;
     
