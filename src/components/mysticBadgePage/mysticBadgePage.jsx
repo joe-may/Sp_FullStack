@@ -17,6 +17,7 @@ class MysticBadgePage extends Component {
  
 
     $('.layerOp').hide();
+  
 
     $('.skipToGame').hide();
     $('.opCon').hide();
@@ -50,6 +51,16 @@ class MysticBadgePage extends Component {
     
     });
 
+    $('.okButton').on('click',function() { 
+     
+     $('.flipLayer').hide();
+     $('.okButton').hide();
+      
+    
+    });
+
+    
+
 
    
   }
@@ -61,6 +72,7 @@ class MysticBadgePage extends Component {
               <body>
             <Navbar/>
               <div class="layerOp"></div>
+              <button class="okButton">OK!</button>
               <button class="skipToGame">Skip To Game</button>
             
               
@@ -69,6 +81,9 @@ class MysticBadgePage extends Component {
 
                 <div class="mobileLayer">
                 <p class="mobileInfo">For the best gaming experience, please visit this site on a laptop or tablet</p>
+                </div>
+                <div class="flipLayer">
+                <p class="flipInfo">For the best gaming experience, please flip screen!</p>
                 </div>
                 
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/MB_START_MENU_Button_New_Game.png' alt=""  class='newGame'/>

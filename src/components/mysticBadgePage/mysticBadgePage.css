@@ -226,6 +226,18 @@ top:50%;
     animation-timing-function: linear;   
   }
 
+  .mysticBadgePage .flipLayer  .flipInfo{
+    background-color: rgb(27, 236, 201);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:1000;
+    visibility: hidden;
+  
+  }
+
    .mysticBadgePage .mobileLayer  .mobileInfo{
       background-color: rgba(1, 82, 255, 1);
       position: fixed;
@@ -236,6 +248,20 @@ top:50%;
       z-index:1000;
       visibility: hidden;
     
+    }
+    .mysticBadgePage .okButton{
+      position: fixed;
+      top:50%;
+      left:38%;
+      width: 30vw;
+      font-family: 'Titan One';
+      cursor:pointer;
+      font-size:9.5vw;
+      color: rgb(175, 54, 54);
+      border-radius: 30px 30px 30px 30px;
+      z-index: 3500;
+      visibility: hidden;
+      
     }
   @media (max-width: 704px) {
     .mysticBadgePage .mobileLayer{
@@ -262,3 +288,45 @@ top:50%;
     
     }
     }
+    @media (min-width: 704px ) and (max-width: 900px) { 
+      .mysticBadgePage .flipLayer{
+        background-color: rgba(0, 0, 0, 0.85);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index:1000;
+      
+      }
+      .mysticBadgePage .flipLayer  .flipInfo{
+        background-color: rgba(0, 0, 0, 0.15);
+        position: fixed;
+        color: white;
+        font-size: 5vw;
+        top: 20%;
+        left: 15%;
+        width: 75%;
+        height: 100%;
+        z-index:1000;
+        visibility: visible;
+      
+      }
+      .mysticBadgePage .okButton{
+        position: fixed;
+        top:60%;
+        left:38%;
+        width: 30vw;
+        font-family: 'Titan One';
+        cursor:pointer;
+        font-size:9.5vw;
+        color: rgb(175, 54, 54);
+        border-radius: 30px 30px 30px 30px;
+        z-index: 3500;
+        visibility: visible;
+      }
+
+
+    }
+
+  
