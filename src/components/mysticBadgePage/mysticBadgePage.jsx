@@ -99,6 +99,7 @@ class MysticBadgePage extends Component {
                 <div class="backButton">BACK</div>
 
                 <div class="opCon">
+                  <div class="choose">CHOOSE YOUR OPPERATION</div>
                 <a  href="/arcade-play">
                     <img src='https://studypupassets.s3-us-west-1.amazonaws.com/button+-+addition1.png' alt="" class="addLvlOne" />
                  </a> 
