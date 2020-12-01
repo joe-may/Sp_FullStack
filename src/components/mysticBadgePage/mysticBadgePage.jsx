@@ -99,11 +99,31 @@ class MysticBadgePage extends Component {
                 <div class="backButton">BACK</div>
 
                 <div class="opCon">
-                <div class="chg">CHOOSE OPERATION</div>
-                  <a class="opa" href="/sno1">+</a>
-                  <a class="ops"href="/sno1s">-</a>
-                  <a class="opm" href="/sno1m">x</a>
-                  <a class="opd" href="/sno1d">÷</a>
+                <a  href="/arcade-play">
+                    <img src='https://studypupassets.s3-us-west-1.amazonaws.com/button+-+addition1.png' alt="" class="addLvlOne" />
+                 </a> 
+                 <a  href="/arcade-play">
+                    <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+subtraction1.png' alt="" class="subLvlOne" />
+                 </a> 
+                 <a  href="/arcade-play">
+                    <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+multiplication1.png' alt="" class="mulLvlOne" />
+                 </a> 
+                 <a  href="/arcade-play">
+                    <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+division1.png' alt="" class="divLvlOne" />
+                 </a> 
+                 <a  href="/arcade-play">
+                    <img src='https://studypupassets.s3-us-west-1.amazonaws.com/button+-+addition2.png' alt="" class="addLvlTwo" />
+                 </a> 
+                 <a  href="/arcade-play">
+                    <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+subtraction2.png' alt="" class="subLvlTwo" />
+                 </a> 
+                 <a  href="/arcade-play">
+                    <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+multiplication2.png' alt="" class="mulLvlTwo" />
+                 </a> 
+                 <a  href="/arcade-play">
+                    <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+division2.png' alt="" class="divLvlTwo" />
+                 </a> 
+               
                 </div>
             
                 </section>

@@ -124,7 +124,7 @@ top:50%;
    }
    .mysticBadgePage .backButton {
      position: fixed;
-    top:20%;
+    top:10%;
     font-size: 40px;
     width: 20vw;
     color: white;
@@ -132,21 +132,97 @@ top:50%;
     z-index: 2000;
 
   }
-
-   .mysticBadgePage .opCon{
+  .mysticBadgePage .opCon{
     position: relative;
-    background: #000000;
-    border: 12px solid #747474;
-    box-sizing: border-box;
-    box-shadow: 0px 9px 0px #000000;
-    border-radius: 24px;
-
-    left: 29%;
-    text-align: center;
-    top: 180px;
-    width: 42vw;
+    margin-top: 10%;
+    display: inline-block;
+    width:100%;
     z-index: 2200;
    }
+
+  .mysticBadgePage .opCon .addLvlOne {
+    position: fixed;
+    width: 15vw;
+    left:10%;
+    display: inline;
+    
+    transition: all .2s ease-in-out;
+    z-index: 2200;
+    
+  }
+  .mysticBadgePage .opCon .subLvlOne {
+    position: fixed;
+    width: 15vw;
+    display: inline;
+    left:30%;
+    transition: all .2s ease-in-out;
+    z-index: 2200;
+    
+  }
+  .mysticBadgePage .opCon .mulLvlOne {
+    position: fixed;
+    width: 15vw;
+    display: inline;
+    left:50%;
+    transition: all .2s ease-in-out;
+    z-index: 2200;
+    
+  }
+  .mysticBadgePage .opCon .divLvlOne {
+    position: fixed;
+    width: 15vw;
+    display: inline;
+    left:70%;
+    transition: all .2s ease-in-out;
+    z-index: 2200;
+    
+  }
+  .mysticBadgePage .opCon .addLvlTwo {
+    position: fixed;
+    width: 15vw;
+    display: inline;
+    margin-top:15%;
+    left:10%;
+    transition: all .2s ease-in-out;
+    z-index: 2200;
+    
+  }
+
+  .mysticBadgePage .opCon .subLvlTwo {
+    position: fixed;
+    width: 15vw;
+    display: inline;
+    margin-top:15%;
+    left:30%;
+    transition: all .2s ease-in-out;
+    z-index: 2200;
+    
+  }
+  .mysticBadgePage .opCon .mulLvlTwo {
+    position: fixed;
+    width: 15vw;
+    display: inline;
+    margin-top:15%;
+    left:50%;
+    transition: all .2s ease-in-out;
+    z-index: 2200;
+    
+  }
+  .mysticBadgePage .opCon .divLvlTwo {
+    position: fixed;
+    width: 15vw;
+    display: inline;
+    margin-top:15%;
+    left:70%;
+    transition: all .2s ease-in-out;
+    z-index: 2200;
+    
+  }
+  .mysticBadgePage  a :hover{ 
+    transform: scale(1.1); 
+    cursor: pointer;
+  
+  }
 
    .mysticBadgePage .opCon a {
     padding-right: 10px;

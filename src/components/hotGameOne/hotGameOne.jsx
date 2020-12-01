@@ -157,8 +157,8 @@ $('.countDown').click(function(){
       console.log("Correct!");
 
       console.log(currentGameArray.length);
-      $('audio#swoopboop')[0].play();
-      $('audio#swoopboop')[0].currentTime = 0
+      // $('audio#swoopboop')[0].play();
+      // $('audio#swoopboop')[0].currentTime = 0
       $('.greenBox').prepend("<img src='' class='penguinIcecream'>");
       var penguin = $('.penguinIcecream');
       penguin.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Nova.gif");
@@ -256,9 +256,9 @@ $('.countDown').click(function(){
   <button class="skip">Skip Video</button>
   
   <iframe src="https://player.vimeo.com/video/469133805" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-  <audio id="swoopboop">
+  {/* <audio id="swoopboop">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Sound_Scream.mp3' type="audio/mpeg"/>
-  </audio>
+  </audio> */}
   <audio id="buttonSound">
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Button_Click_Up.m4a' type="audio/mpeg"/>
   </audio>
