@@ -129,14 +129,39 @@ class App extends Component {
            
               <GameOne
               answerset = {[
-                { problem: "3 + 2 =", answer: "5"},
-                { problem: "6 + 1 =", answer: "7"},
-                { problem: "4 + 4 =", answer: "8"},
+                { problem: "5 + 1=", answer: "6"},			
+                { problem: "2 + 2 =", answer: "4"},
+                { problem: "2 + 3 =", answer: "5"},
                 { problem: "1 + 2 =", answer: "3"},
-                { problem: "3 + 1 =", answer: "4"},
-                { problem: "7 + 3 =", answer: "10"},
-                { problem: "6 + 3 =", answer: "9"},
-                { problem: "2 + 4 =", answer: "6"},
+                { problem: "3 + 3 =", answer: "6"},
+                { problem: "3 + 4 =", answer: "7"},
+                { problem: "5 + 5 =", answer: "10"},
+                { problem: "5 + 6 =", answer: "6"},
+      
+              ]}
+              nxtlvl={'/sno2'}
+              gButton={'/planetspagea'}
+              
+              
+              
+           
+                {...props} />
+               
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/sno1a2" render={(props) => (
+           
+              <GameOne
+              answerset = {[
+                { problem: "11 + 2 =", answer: "13"},
+                { problem: "10 + 6 =", answer: "16"},
+                { problem: "14 + 5 =", answer: "19"},
+                { problem: "15 + 3 =", answer: "18"},
+                { problem: "11 + 4 =", answer: "15"},
+                { problem: "16 + 4 =", answer: "20"},
+                { problem: "10+ 5 =", answer: "15"},
+                { problem: "15 + 5 =", answer: "20"},
                 
               ]}
               nxtlvl={'/sno2'}
@@ -153,17 +178,36 @@ class App extends Component {
           <Route exact path="/sno1s" render={(props) => (
               <GameOne
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "2 - 2 =", answer: "0"},
+                { problem: "4 - 3 =", answer: "1"},
+                { problem: "6 - 2 =", answer: "4"},
+                { problem: "8 - 4 =", answer: "4"},
+                { problem: "9 - 5 =", answer: "4"},
+                { problem: "7 - 2 =", answer: "5"},
+                { problem: "8 - 6 =", answer: "2"},
+                { problem: "5 - 2 =", answer: "3"},
                 
               ]}
               nxtlvl={'/sno2s'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/sno1s2" render={(props) => (
+              <GameOne
+              answerset = {[
+                { problem: "15 - 2 =", answer: "3"},
+                { problem: "12 - 3 =", answer: "9"},
+                { problem: "11 - 5 =", answer: "6"},
+                { problem: "10 - 3 =", answer: "7"},
+                { problem: "13 - 5 =", answer: "8"},
+                { problem: "18 - 7 =", answer: "11"},
+                { problem: "20 - 10 =", answer: "10"},
+                { problem: "17 - 10 =", answer: "7"},
+                
+              ]}
+              nxtlvl={'/sno2s2'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -226,22 +270,66 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+          <Route exact path="/sno3a2" render={(props) => (
+           
+              <GameTwo
+              answerset = {[
+                { problem: "11 + 2 =", answer: "13"},
+                { problem: "10 + 6 =", answer: "16"},
+                { problem: "14 + 5 =", answer: "19"},
+                { problem: "15 + 3 =", answer: "18"},
+                { problem: "11 + 4 =", answer: "15"},
+                { problem: "16 + 4 =", answer: "20"},
+                { problem: "10+ 5 =", answer: "15"},
+                { problem: "15 + 5 =", answer: "20"},
+                
+              ]}
+              nxtlvl={'/sno2a2'}
+              gButton={'/planetspagea'}
+              
+              
+              
+           
+                {...props} />
+               
+                )}/>
+      </section>
+      <section>
           <Route exact path="/sno3s" render={(props) => (
               <GameTwo
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "2 - 2 =", answer: "0"},
+                { problem: "4 - 3 =", answer: "1"},
+                { problem: "6 - 2 =", answer: "4"},
+                { problem: "8 - 4 =", answer: "4"},
+                { problem: "9 - 5 =", answer: "4"},
+                { problem: "7 - 2 =", answer: "5"},
+                { problem: "8 - 6 =", answer: "2"},
+                { problem: "5 - 2 =", answer: "3"},
                 
               ]}
               nxtlvl={'/bbsno1s'}
               gButton={'/planetspages'}
                 />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/sno3s2" render={(props) => (
+              <GameThree
+              answerset = {[
+                { problem: "15 - 2 =", answer: "3"},
+                { problem: "12 - 3 =", answer: "9"},
+                { problem: "11 - 5 =", answer: "6"},
+                { problem: "10 - 3 =", answer: "7"},
+                { problem: "13 - 5 =", answer: "8"},
+                { problem: "18 - 7 =", answer: "11"},
+                { problem: "20 - 10 =", answer: "10"},
+                { problem: "17 - 10 =", answer: "7"},
+                
+              ]}
+              nxtlvl={'/sno2s'}
+              gButton={'/planetspages'}
+                {...props} />
                 )}/>
       </section>
       <section>
@@ -300,20 +388,67 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+          <Route exact path="/sno2a2" render={(props) => (
+           
+              <GameThree
+              answerset = {[
+                { problem: "11 + 2 =", answer: "13"},
+                { problem: "10 + 6 =", answer: "16"},
+                { problem: "14 + 5 =", answer: "19"},
+                { problem: "15 + 3 =", answer: "18"},
+                { problem: "11 + 4 =", answer: "15"},
+                { problem: "16 + 4 =", answer: "20"},
+                { problem: "10+ 5 =", answer: "15"},
+                { problem: "15 + 5 =", answer: "20"},
+                
+              ]}
+              nxtlvl={'/sno2a2'}
+              gButton={'/planetspagea'}
+              
+              
+              
+           
+                {...props} />
+               
+                )}/>
+      </section>
+      <section>
           <Route exact path="/sno2s" render={(props) => (
               <GameThree
               answerset={[
-                { problem: "2 - 2 =", answer: "5"},
-                { problem: "2 - 1 =", answer: "7"},
-                { problem: "2 - 4 =", answer: "8"},
-                { problem: "2 - 2 =", answer: "3"},
-                { problem: "2 - 1 =", answer: "4"},
-                { problem: "2 - 3 =", answer: "10"},
+               { problem: "2 - 2 =", answer: "0"},
+               { problem: "4 - 3 =", answer: "1"},
+               { problem: "6 - 2 =", answer: "4"},
+               { problem: "8 - 4 =", answer: "4"},
+               { problem: "9 - 5 =", answer: "4"},
+               { problem: "7 - 2 =", answer: "5"},
+               { problem: "8 - 6 =", answer: "2"},
+               { problem: "5 - 2 =", answer: "3"},
+                
               
               ]}
               nxtlvl={'/sno3s'}
               gButton={'/planetspages'}
                 />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/sno2s2" render={(props) => (
+              <GameTwo
+              answerset = {[
+                { problem: "15 - 2 =", answer: "3"},
+                { problem: "12 - 3 =", answer: "9"},
+                { problem: "11 - 5 =", answer: "6"},
+                { problem: "10 - 3 =", answer: "7"},
+                { problem: "13 - 5 =", answer: "8"},
+                { problem: "18 - 7 =", answer: "11"},
+                { problem: "20 - 10 =", answer: "10"},
+                { problem: "17 - 10 =", answer: "7"},
+                
+              ]}
+              nxtlvl={'/sno2s2'}
+              gButton={'/planetspages'}
+                {...props} />
                 )}/>
       </section>
       <section>
@@ -391,20 +526,64 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+          <Route exact path="/bbsno1a2" render={(props) => (
+           
+              <BossBattleSno
+              answerset = {[
+                { problem: "11 + 2 =", answer: "13"},
+                { problem: "10 + 6 =", answer: "16"},
+                { problem: "14 + 5 =", answer: "19"},
+                { problem: "15 + 3 =", answer: "18"},
+                { problem: "11 + 4 =", answer: "15"},
+                { problem: "16 + 4 =", answer: "20"},
+                { problem: "10 + 5 =", answer: "15"},
+                { problem: "15 + 5 =", answer: "20"},
+                
+              ]}
+              nxtlvl={'/hot1a2'}
+              gButton={'/planetspagea'}
+              
+              
+              
+           
+                {...props} />
+               
+                )}/>
+      </section>
+      <section>
       <Route exact path="/bbsno1s" render={(props) => (
               <BossBattleSno
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "2 - 2 =", answer: "0"},
+                { problem: "4 - 3 =", answer: "1"},
+                { problem: "6 - 2 =", answer: "4"},
+                { problem: "8 - 4 =", answer: "4"},
+                { problem: "9 - 5 =", answer: "4"},
+                { problem: "7 - 2 =", answer: "5"},
+                { problem: "8 - 6 =", answer: "2"},
+                { problem: "5 - 2 =", answer: "3"},
                 
               ]}
               nxtlvl={'/hot1s'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/bbsno1s2" render={(props) => (
+              <BossBattleSno
+              answerset = {[
+                { problem: "15 - 2 =", answer: "3"},
+                { problem: "12 - 3 =", answer: "9"},
+                { problem: "11 - 5 =", answer: "6"},
+                { problem: "10 - 3 =", answer: "7"},
+                { problem: "13 - 5 =", answer: "8"},
+                { problem: "18 - 7 =", answer: "11"},
+                { problem: "20 - 10 =", answer: "10"},
+                { problem: "17 - 10 =", answer: "7"},
+                
+              ]}
+              nxtlvl={'/hot1s2'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -463,13 +642,13 @@ class App extends Component {
           <Route exact path="/hot1" render={(props) => (
               <HotGameOne
               answerset = {[
-                { problem: "3 + 2 =", answer: "5"},
-                { problem: "6 + 1 =", answer: "7"},
+                { problem: "4 + 3 =", answer: "7"},
                 { problem: "4 + 4 =", answer: "8"},
-                { problem: "1 + 2 =", answer: "3"},
-                { problem: "3 + 1 =", answer: "4"},
-                { problem: "7 + 3 =", answer: "10"},
-                { problem: "6 + 3 =", answer: "9"},
+                { problem: "5 + 4 =", answer: "9"},
+                { problem: "1 + 1 =", answer: "2"},
+                { problem: "3 + 2 =", answer: "5"},
+                { problem: "4 + 2 =", answer: "6"},
+                { problem: "4 + 6 =", answer: "10"},
                 { problem: "2 + 4 =", answer: "6"},
                 
               ]}
@@ -479,17 +658,37 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+          <Route exact path="/hot1a2" render={(props) => (
+              <HotGameOne
+              answerset = {[
+                { problem: "18 + 1 =", answer: "19"},
+                { problem: "17 + 3 =", answer: "20"},
+                { problem: "12 + 2 =", answer: "14"},
+                { problem: "11 + 6 =", answer: "17"},
+                { problem: "10 + 3 =", answer: "13"},
+                { problem: "16 + 1 =", answer: "17"},
+                { problem: "14 + 3 =", answer: "17"},
+                { problem: "15 + 4 =", answer: "19"},
+                
+                
+              ]}
+              nxtlvl={'/hot2a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
           <Route exact path="/hot1s" render={(props) => (
               <HotGameOne
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "3 - 2 =", answer: "1"},
+                { problem: "5 - 3 =", answer: "2"},
+                { problem: "4 - 4 =", answer: "0"},
+                { problem: "9 - 8 =", answer: "1"},
+                { problem: "7 - 4 =", answer: "3"},
+                { problem: "10 - 3 =", answer: "7"},
+                { problem: "10 - 5 =", answer: "5"},
+                { problem: "9 - 4 =", answer: "5"},
                 
               ]}
               nxtlvl={'/hot2s'}
@@ -497,6 +696,26 @@ class App extends Component {
                 {...props} />
                 )}/>
       </section>
+      <section>
+          <Route exact path="/hot1s2" render={(props) => (
+              <HotGameOne
+              answerset = {[
+                { problem: "15 - 9 =", answer: "6"},
+                { problem: "16 - 8 =", answer: "8"},
+                { problem: "18 - 5 =", answer: "3"},
+                { problem: "12 - 6 =", answer: "6"},
+                { problem: "13 - 10 =", answer: "3"},
+                { problem: "18 - 9 =", answer: "9"},
+                { problem: "19 - 4 =", answer: "5"},
+                { problem: "20 - 7 =", answer: "3"},
+                
+              ]}
+              nxtlvl={'/hot2s2'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+      </section>
+      
       <section>
           <Route exact path="/hot1m" render={(props) => (
               <HotGameOne
@@ -556,17 +775,37 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+          <Route exact path="/hot2a2" render={(props) => (
+              <HotGameTwo
+              answerset = {[
+                { problem: "18 + 1 =", answer: "19"},
+                { problem: "17 + 3 =", answer: "20"},
+                { problem: "12 + 2 =", answer: "14"},
+                { problem: "11 + 6 =", answer: "17"},
+                { problem: "10 + 3 =", answer: "13"},
+                { problem: "16 + 1 =", answer: "17"},
+                { problem: "14 + 3 =", answer: "17"},
+                { problem: "15 + 4 =", answer: "19"},
+                
+                
+              ]}
+              nxtlvl={'/hot3a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
           <Route exact path="/hot2s" render={(props) => (
               <HotGameTwo
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "3 - 2 =", answer: "1"},
+                { problem: "5 - 3 =", answer: "2"},
+                { problem: "4 - 4 =", answer: "0"},
+                { problem: "9 - 8 =", answer: "1"},
+                { problem: "7 - 4 =", answer: "3"},
+                { problem: "10 - 3 =", answer: "7"},
+                { problem: "10 - 5 =", answer: "5"},
+                { problem: "9 - 4 =", answer: "5"},
                 
               ]}
               nxtlvl={'/hot3s'}
@@ -575,6 +814,27 @@ class App extends Component {
                 {...props} />
                 )}/>
       </section>
+       <section>
+       <Route exact path="/hot2s2" render={(props) => (
+           <HotGameTwo
+           answerset = {[
+            { problem: "15 - 9 =", answer: "6"},
+            { problem: "16 - 8 =", answer: "8"},
+            { problem: "18 - 5 =", answer: "3"},
+            { problem: "12 - 6 =", answer: "6"},
+            { problem: "13 - 10 =", answer: "3"},
+            { problem: "18 - 9 =", answer: "9"},
+            { problem: "19 - 4 =", answer: "5"},
+            { problem: "20 - 7 =", answer: "3"},
+             
+           ]}
+           nxtlvl={'/hot3s2'}
+           gButton={'/planetspages'}
+
+             {...props} />
+             )}/>
+   </section>
+      
       <section>
           <Route exact path="/hot2m" render={(props) => (
               <HotGameTwo
@@ -635,17 +895,37 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+          <Route exact path="/hot3a2" render={(props) => (
+              <HotGameThree
+              answerset = {[
+                { problem: "18 + 1 =", answer: "19"},
+                { problem: "17 + 3 =", answer: "20"},
+                { problem: "12 + 2 =", answer: "14"},
+                { problem: "11 + 6 =", answer: "17"},
+                { problem: "10 + 3 =", answer: "13"},
+                { problem: "16 + 1 =", answer: "17"},
+                { problem: "14 + 3 =", answer: "17"},
+                { problem: "15 + 4 =", answer: "19"},
+                
+                
+              ]}
+              nxtlvl={'/hot4a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
           <Route exact path="/hot3s" render={(props) => (
               <HotGameThree
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "3 - 2 =", answer: "1"},
+                { problem: "5 - 3 =", answer: "2"},
+                { problem: "4 - 4 =", answer: "0"},
+                { problem: "9 - 8 =", answer: "1"},
+                { problem: "7 - 4 =", answer: "3"},
+                { problem: "10 - 3 =", answer: "7"},
+                { problem: "10 - 5 =", answer: "5"},
+                { problem: "9 - 4 =", answer: "5"},
                 
               ]}
               nxtlvl={'/hot4s'}
@@ -653,6 +933,26 @@ class App extends Component {
                 {...props} />
                 )}/>
       </section>
+      <section>
+          <Route exact path="/hot3s2" render={(props) => (
+              <HotGameThree
+              answerset = {[
+                { problem: "15 - 9 =", answer: "6"},
+                { problem: "16 - 8 =", answer: "8"},
+                { problem: "18 - 5 =", answer: "3"},
+                { problem: "12 - 6 =", answer: "6"},
+                { problem: "13 - 10 =", answer: "3"},
+                { problem: "18 - 9 =", answer: "9"},
+                { problem: "19 - 4 =", answer: "5"},
+                { problem: "20 - 7 =", answer: "3"},
+                
+              ]}
+              nxtlvl={'/hot4s2'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+      </section>
+      
       <section>
           <Route exact path="/hot3m" render={(props) => (
               <HotGameThree
@@ -711,24 +1011,64 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+          <Route exact path="/hot4a2" render={(props) => (
+              <HotGameFour
+              answerset = {[
+                { problem: "18 + 1 =", answer: "19"},
+                { problem: "17 + 3 =", answer: "20"},
+                { problem: "12 + 2 =", answer: "14"},
+                { problem: "11 + 6 =", answer: "17"},
+                { problem: "10 + 3 =", answer: "13"},
+                { problem: "16 + 1 =", answer: "17"},
+                { problem: "14 + 3 =", answer: "17"},
+                { problem: "15 + 4 =", answer: "19"},
+                
+                
+              ]}
+              nxtlvl={'/hot2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
           <Route exact path="/hot4s" render={(props) => (
               <HotGameFour
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
-                
+                { problem: "3 - 2 =", answer: "1"},
+                { problem: "5 - 3 =", answer: "2"},
+                { problem: "4 - 4 =", answer: "0"},
+                { problem: "9 - 8 =", answer: "1"},
+                { problem: "7 - 4 =", answer: "3"},
+                { problem: "10 - 3 =", answer: "7"},
+                { problem: "10 - 5 =", answer: "5"},
+                { problem: "9 - 4 =", answer: "5"},
+
               ]}
               nxtlvl={'/wild1s'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
       </section>
+      <section>
+          <Route exact path="/hot4s2" render={(props) => (
+              <HotGameFour
+              answerset = {[
+                { problem: "15 - 9 =", answer: "6"},
+                { problem: "16 - 8 =", answer: "8"},
+                { problem: "18 - 5 =", answer: "3"},
+                { problem: "12 - 6 =", answer: "6"},
+                { problem: "13 - 10 =", answer: "3"},
+                { problem: "18 - 9 =", answer: "9"},
+                { problem: "19 - 4 =", answer: "5"},
+                { problem: "20 - 7 =", answer: "3"},
+                
+              ]}
+              nxtlvl={'/wild1s2'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+      </section>
+      
       <section>
           <Route exact path="/hot4m" render={(props) => (
               <HotGameFour
@@ -773,14 +1113,14 @@ class App extends Component {
           <Route exact path="/wild1" render={(props) => (
               <WildGameOne
               answerset = {[
-                { problem: "3 + 2 =", answer: "5"},
-                { problem: "6 + 1 =", answer: "7"},
+                { problem: "6 + 4 =", answer: "10"},
+                { problem: "6 + 6 =", answer: "12"},
                 { problem: "4 + 4 =", answer: "8"},
-                { problem: "1 + 2 =", answer: "3"},
-                { problem: "3 + 1 =", answer: "4"},
                 { problem: "7 + 3 =", answer: "10"},
-                { problem: "6 + 3 =", answer: "9"},
-                { problem: "2 + 4 =", answer: "6"},
+                { problem: "7 + 7 =", answer: "14"},
+                { problem: "8 + 2 =", answer: "10"},
+                { problem: "8 + 8 =", answer: "16"},
+                { problem: "4 + 6 =", answer: "10"},
                 
               ]}
               nxtlvl={'/wild2'}
@@ -792,19 +1132,59 @@ class App extends Component {
           <Route exact path="/wild1s" render={(props) => (
               <WildGameOne
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "7 - 5 =", answer: "2"},
+                { problem: "6 - 6 =", answer: "0"},
+                { problem: "10 - 7 =", answer: "3"},
+                { problem: "8 - 3 =", answer: "5"},
+                { problem: "6 - 4 =", answer: "2"},
+                { problem: "4 - 2 =", answer: "2"},
+                { problem: "6 - 3 =", answer: "3"},
+                { problem: "7 - 3 =", answer: "4"},
                 
                 
               ]}
-              nxtlvl={'/wild2d'}
+              nxtlvl={'/wild2s'}
               gButton={'/planetspages'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/wild1s2" render={(props) => (
+              <WildGameOne
+              answerset = {[
+                { problem: "14 - 8 =", answer: "6"},
+                { problem: "11 - 9 =", answer: "2"},
+                { problem: "17 - 6 =", answer: "11"},
+                { problem: "13 - 8 =", answer: "5"},
+                { problem: "14 - 10 =", answer: "4"},
+                { problem: "10 - 10 =", answer: "0"},
+                { problem: "16 - 6 =", answer: "10"},
+                { problem: "16 - 10 =", answer: "6"},
+                
+                
+              ]}
+              nxtlvl={'/wild2s2'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/wild1a2" render={(props) => (
+              <HotGameOne
+              answerset = {[
+                { problem: "10 + 2 =", answer: "12"},
+                { problem: "12 + 5 =", answer: "7"},
+                { problem: "13 + 4 =", answer: "17"},
+                { problem: "14+ 2 =", answer: "16"},
+                { problem: "10 + 7 =", answer: "4"},
+                { problem: "4 + 13 =", answer: "17"},
+                { problem: "18 + 2 =", answer: "20"},
+                { problem: "12+ 4 =", answer: "16"},
+                
+                
+              ]}
+              nxtlvl={'/wild2a2'}
+              gButton={'/planetspagea'}
                 {...props} />
                 )}/>
       </section>
@@ -868,17 +1248,37 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+          <Route exact path="/wild2a2" render={(props) => (
+              <HotGameTwo
+              answerset = {[
+                { problem: "10 + 2 =", answer: "12"},
+                { problem: "12 + 5 =", answer: "7"},
+                { problem: "13 + 4 =", answer: "17"},
+                { problem: "14+ 2 =", answer: "16"},
+                { problem: "10 + 7 =", answer: "4"},
+                { problem: "4 + 13 =", answer: "17"},
+                { problem: "18 + 2 =", answer: "20"},
+                { problem: "12+ 4 =", answer: "16"},
+                
+                
+              ]}
+              nxtlvl={'/wild3a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
           <Route exact path="/wild2s" render={(props) => (
               <WildGameTwo
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "7 - 5 =", answer: "2"},
+                { problem: "6 - 6 =", answer: "0"},
+                { problem: "10 - 7 =", answer: "3"},
+                { problem: "8 - 3 =", answer: "5"},
+                { problem: "6 - 4 =", answer: "2"},
+                { problem: "4 - 2 =", answer: "2"},
+                { problem: "6 - 3 =", answer: "3"},
+                { problem: "7 - 3 =", answer: "4"},
                 
               ]}
               nxtlvl={'/wild3s'}
@@ -886,6 +1286,26 @@ class App extends Component {
                 {...props} />
                 )}/>
       </section>
+      <section>
+          <Route exact path="/wild2s2" render={(props) => (
+              <WildGameTwo
+              answerset = {[
+                { problem: "14 - 8 =", answer: "6"},
+                { problem: "11 - 9 =", answer: "2"},
+                { problem: "17 - 6 =", answer: "11"},
+                { problem: "13 - 8 =", answer: "5"},
+                { problem: "14 - 10 =", answer: "4"},
+                { problem: "10 - 10 =", answer: "0"},
+                { problem: "16 - 6 =", answer: "10"},
+                { problem: "16 - 10 =", answer: "6"},
+                
+              ]}
+              nxtlvl={'/wild3s2'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+      </section>
+      
       <section>
           <Route exact path="/wild2m" render={(props) => (
               <WildGameTwo
@@ -943,20 +1363,59 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+          <Route exact path="/wild3a2" render={(props) => (
+              <HotGameThree
+              answerset = {[
+                { problem: "10 + 2 =", answer: "12"},
+                { problem: "12 + 5 =", answer: "7"},
+                { problem: "13 + 4 =", answer: "17"},
+                { problem: "14+ 2 =", answer: "16"},
+                { problem: "10 + 7 =", answer: "4"},
+                { problem: "4 + 13 =", answer: "17"},
+                { problem: "18 + 2 =", answer: "20"},
+                { problem: "12+ 4 =", answer: "16"},
+                
+                
+              ]}
+              nxtlvl={'/wilda2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
           <Route exact path="/wild3s" render={(props) => (
               <WildGameThree
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "7 - 5 =", answer: "2"},
+                { problem: "6 - 6 =", answer: "0"},
+                { problem: "10 - 7 =", answer: "3"},
+                { problem: "8 - 3 =", answer: "5"},
+                { problem: "6 - 4 =", answer: "2"},
+                { problem: "4 - 2 =", answer: "2"},
+                { problem: "6 - 3 =", answer: "3"},
+                { problem: "7 - 3 =", answer: "4"},
                 
               ]}
               nxtlvl={'/wild4s'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/wild3s2" render={(props) => (
+              <WildGameThree
+              answerset = {[
+                { problem: "14 - 8 =", answer: "6"},
+                { problem: "11 - 9 =", answer: "2"},
+                { problem: "17 - 6 =", answer: "11"},
+                { problem: "13 - 8 =", answer: "5"},
+                { problem: "14 - 10 =", answer: "4"},
+                { problem: "10 - 10 =", answer: "0"},
+                { problem: "16 - 6 =", answer: "10"},
+                { problem: "16 - 10 =", answer: "6"},
+                
+              ]}
+              nxtlvl={'/wild4s2'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -1019,20 +1478,59 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+          <Route exact path="/wild4a2" render={(props) => (
+              <HotGameFour
+              answerset = {[
+                { problem: "10 + 2 =", answer: "12"},
+                { problem: "12 + 5 =", answer: "7"},
+                { problem: "13 + 4 =", answer: "17"},
+                { problem: "14+ 2 =", answer: "16"},
+                { problem: "10 + 7 =", answer: "4"},
+                { problem: "4 + 13 =", answer: "17"},
+                { problem: "18 + 2 =", answer: "20"},
+                { problem: "12+ 4 =", answer: "16"},
+                
+                
+              ]}
+              nxtlvl={'/coz1a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
           <Route exact path="/wild4s" render={(props) => (
               <WildGameFour
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "7 - 5 =", answer: "2"},
+                { problem: "6 - 6 =", answer: "0"},
+                { problem: "10 - 7 =", answer: "3"},
+                { problem: "8 - 3 =", answer: "5"},
+                { problem: "6 - 4 =", answer: "2"},
+                { problem: "4 - 2 =", answer: "2"},
+                { problem: "6 - 3 =", answer: "3"},
+                { problem: "7 - 3 =", answer: "4"},
                 
               ]}
               nxtlvl={'/coz1s'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
+          <Route exact path="/wild4s2" render={(props) => (
+              <WildGameTwo
+              answerset = {[
+                { problem: "14 - 8 =", answer: "6"},
+                { problem: "11 - 9 =", answer: "2"},
+                { problem: "17 - 6 =", answer: "11"},
+                { problem: "13 - 8 =", answer: "5"},
+                { problem: "14 - 10 =", answer: "4"},
+                { problem: "10 - 10 =", answer: "0"},
+                { problem: "16 - 6 =", answer: "10"},
+                { problem: "16 - 10 =", answer: "6"},
+                
+              ]}
+              nxtlvl={'/coz2s2'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -1079,14 +1577,14 @@ class App extends Component {
           <Route exact path="/coz1" render={(props) => (
               <CozGameOne
               answerset = {[
-                { problem: "3 + 2 =", answer: "5"},
-                { problem: "6 + 1 =", answer: "7"},
-                { problem: "4 + 4 =", answer: "8"},
-                { problem: "1 + 2 =", answer: "3"},
-                { problem: "3 + 1 =", answer: "4"},
-                { problem: "7 + 3 =", answer: "10"},
-                { problem: "6 + 3 =", answer: "9"},
-                { problem: "2 + 4 =", answer: "6"},
+                { problem: "10 + 5 =", answer: "15"},
+                { problem: "10 + 10 =", answer: "20"},
+                { problem: "9 + 4 =", answer: "13"},
+                { problem: "10 + 8 =", answer: "18"},
+                { problem: "9 + 8 =", answer: "17"},
+                { problem: "9 + 9 =", answer: "18"},
+                { problem: "10 + 7 =", answer: "17"},
+                { problem: "10 + 9 =", answer: "6"},
                 
               ]}
               nxtlvl={'/coz2'}
@@ -1096,19 +1594,58 @@ class App extends Component {
                 
       </section>
       <section>
+          <Route exact path="/coz1a2" render={(props) => (
+              <HotGameOne
+              answerset = {[
+                { problem: "10 + 9 =", answer: "19"},
+                { problem: "14 + 6 =", answer: "20"},
+                { problem: "12 + 7 =", answer: "19"},
+                { problem: "13 + 5 =", answer: "18"},
+                { problem: "11 + 3 =", answer: "14"},
+                { problem: "16 + 2 =", answer: "18"},
+                { problem: "13 + 6 =", answer: "19"},
+                { problem: "2 + 18 =", answer: "20"},
+                
+                
+              ]}
+              nxtlvl={'/coz2a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
           <Route exact path="/coz1s" render={(props) => (
               <CozGameOne
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "5 - 0 =", answer: "0"},
+                { problem: "9 - 3 =", answer: "6"},
+                { problem: "8 - 5 =", answer: "3"},
+                { problem: "6 - 5 =", answer: "1"},
+                { problem: "8 - 2 =", answer: "6"},
+                { problem: "9 - 7 =", answer: "2"},
+                { problem: "10 - 8 =", answer: "2"},
+                { problem: "5 - 4 =", answer: "1"},
               ]}
               nxtlvl={'/coz2s'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+                
+      </section>
+      <section>
+          <Route exact path="/coz1s2" render={(props) => (
+              <CozGameOne
+              answerset = {[
+                { problem: "13 - 7 =", answer: "6"},
+                { problem: "11 - 8 =", answer: "3"},
+                { problem: "17 - 4 =", answer: "3"},
+                { problem: "19 - 7 =", answer: "12"},
+                { problem: "11 - 4 =", answer: "7"},
+                { problem: "14 - 9 =", answer: "5"},
+                { problem: "17 - 8 =", answer: "9"},
+                { problem: "20 - 9 =", answer: "11"},
+              ]}
+              nxtlvl={'/coz2s2'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -1174,17 +1711,37 @@ class App extends Component {
                 )}/>
       </section>
       <section>
+          <Route exact path="/coz2a2" render={(props) => (
+              <CozGameTwo
+              answerset = {[
+                { problem: "10 + 9 =", answer: "19"},
+                { problem: "14 + 6 =", answer: "20"},
+                { problem: "12 + 7 =", answer: "19"},
+                { problem: "13 + 5 =", answer: "18"},
+                { problem: "11 + 3 =", answer: "14"},
+                { problem: "16 + 2 =", answer: "18"},
+                { problem: "13 + 6 =", answer: "19"},
+                { problem: "2 + 18 =", answer: "20"},
+                
+                
+              ]}
+              nxtlvl={'/coz3a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
       <Route exact path="/coz2s" render={(props) => (
               <CozGameTwo
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "5 - 0 =", answer: "0"},
+                { problem: "9 - 3 =", answer: "6"},
+                { problem: "8 - 5 =", answer: "3"},
+                { problem: "6 - 5 =", answer: "1"},
+                { problem: "8 - 2 =", answer: "6"},
+                { problem: "9 - 7 =", answer: "2"},
+                { problem: "10 - 8 =", answer: "2"},
+                { problem: "5 - 4 =", answer: "1"},
                 
               ]}
               nxtlvl={'/coz3s'}
@@ -1192,6 +1749,26 @@ class App extends Component {
                 {...props} />
                 )}/>
       </section>
+      <section>
+          <Route exact path="/coz2s2" render={(props) => (
+              <CozGameTwo
+              answerset = {[
+                { problem: "13 - 7 =", answer: "6"},
+                { problem: "11 - 8 =", answer: "3"},
+                { problem: "17 - 4 =", answer: "3"},
+                { problem: "19 - 7 =", answer: "12"},
+                { problem: "11 - 4 =", answer: "7"},
+                { problem: "14 - 9 =", answer: "5"},
+                { problem: "17 - 8 =", answer: "9"},
+                { problem: "20 - 9 =", answer: "11"},
+              ]}
+              nxtlvl={'/coz3s2'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+                
+      </section>
+      
       <section>
       <Route exact path="/coz2m" render={(props) => (
               <CozGameTwo
@@ -1250,17 +1827,37 @@ class App extends Component {
 
       </section>
       <section>
+          <Route exact path="/coz3a2" render={(props) => (
+              <CozGameThree
+              answerset = {[
+                { problem: "10 + 9 =", answer: "19"},
+                { problem: "14 + 6 =", answer: "20"},
+                { problem: "12 + 7 =", answer: "19"},
+                { problem: "13 + 5 =", answer: "18"},
+                { problem: "11 + 3 =", answer: "14"},
+                { problem: "16 + 2 =", answer: "18"},
+                { problem: "13 + 6 =", answer: "19"},
+                { problem: "2 + 18 =", answer: "20"},
+                
+                
+              ]}
+              nxtlvl={'/coz4a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
       <Route exact path="/coz3s" render={(props) => (
               <CozGameThree
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "5 - 0 =", answer: "0"},
+                { problem: "9 - 3 =", answer: "6"},
+                { problem: "8 - 5 =", answer: "3"},
+                { problem: "6 - 5 =", answer: "1"},
+                { problem: "8 - 2 =", answer: "6"},
+                { problem: "9 - 7 =", answer: "2"},
+                { problem: "10 - 8 =", answer: "2"},
+                { problem: "5 - 4 =", answer: "1"},
                 
               ]}
               nxtlvl={'/coz4s'}
@@ -1268,6 +1865,25 @@ class App extends Component {
                 {...props} />
                 )}/>
 
+      </section>
+      <section>
+          <Route exact path="/coz3s2" render={(props) => (
+              <CozGameThree
+              answerset = {[
+                { problem: "13 - 7 =", answer: "6"},
+                { problem: "11 - 8 =", answer: "3"},
+                { problem: "17 - 4 =", answer: "3"},
+                { problem: "19 - 7 =", answer: "12"},
+                { problem: "11 - 4 =", answer: "7"},
+                { problem: "14 - 9 =", answer: "5"},
+                { problem: "17 - 8 =", answer: "9"},
+                { problem: "20 - 9 =", answer: "11"},
+              ]}
+              nxtlvl={'/coz4s2'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+                
       </section>
       <section>
       <Route exact path="/coz3m" render={(props) => (
@@ -1328,17 +1944,37 @@ class App extends Component {
 
       </section>
       <section>
+          <Route exact path="/coz4a2" render={(props) => (
+              <CozGameFour
+              answerset = {[
+                { problem: "10 + 9 =", answer: "19"},
+                { problem: "14 + 6 =", answer: "20"},
+                { problem: "12 + 7 =", answer: "19"},
+                { problem: "13 + 5 =", answer: "18"},
+                { problem: "11 + 3 =", answer: "14"},
+                { problem: "16 + 2 =", answer: "18"},
+                { problem: "13 + 6 =", answer: "19"},
+                { problem: "2 + 18 =", answer: "20"},
+                
+                
+              ]}
+              nxtlvl={'/pup1a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
       <Route exact path="/coz4s" render={(props) => (
               <CozGameFour
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "5 - 0 =", answer: "0"},
+                { problem: "9 - 3 =", answer: "6"},
+                { problem: "8 - 5 =", answer: "3"},
+                { problem: "6 - 5 =", answer: "1"},
+                { problem: "8 - 2 =", answer: "6"},
+                { problem: "9 - 7 =", answer: "2"},
+                { problem: "10 - 8 =", answer: "2"},
+                { problem: "5 - 4 =", answer: "1"},
                 
               ]}
               nxtlvl={'/pup1s'}
@@ -1346,6 +1982,25 @@ class App extends Component {
                 {...props} />
                 )}/>
 
+      </section>
+      <section>
+          <Route exact path="/coz4s2" render={(props) => (
+              <CozGameFour
+              answerset = {[
+                { problem: "13 - 7 =", answer: "6"},
+                { problem: "11 - 8 =", answer: "3"},
+                { problem: "17 - 4 =", answer: "3"},
+                { problem: "19 - 7 =", answer: "12"},
+                { problem: "11 - 4 =", answer: "7"},
+                { problem: "14 - 9 =", answer: "5"},
+                { problem: "17 - 8 =", answer: "9"},
+                { problem: "20 - 9 =", answer: "11"},
+              ]}
+              nxtlvl={'/pup1s2'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+                
       </section>
       <section>
       <Route exact path="/coz4m" render={(props) => (
@@ -1389,14 +2044,14 @@ class App extends Component {
       <Route exact path="/pup1" render={(props) => (
               <PupGameOne
               answerset = {[
-                { problem: "3 + 2 =", answer: "5"},
-                { problem: "6 + 1 =", answer: "7"},
-                { problem: "4 + 4 =", answer: "8"},
-                { problem: "1 + 2 =", answer: "3"},
-                { problem: "3 + 1 =", answer: "4"},
-                { problem: "7 + 3 =", answer: "10"},
-                { problem: "6 + 3 =", answer: "9"},
-                { problem: "2 + 4 =", answer: "6"},
+                { problem: "6 + 7 =", answer: "13"},
+                { problem: "7 + 6 =", answer: "13"},
+                { problem: "9 + 3 =", answer: "8"},
+                { problem: "10 + 4 =", answer: "14"},
+                { problem: "5 + 8 =", answer: "13"},
+                { problem: "7 + 5 =", answer: "12"},
+                { problem: "8 + 9 =", answer: "17"},
+                { problem: "7 + 10 =", answer: "17"},
                 
               ]}
               nxtlvl={'/pup2'}
@@ -1406,21 +2061,64 @@ class App extends Component {
 
       </section>
       <section>
+          <Route exact path="/pup1a2" render={(props) => (
+              <PupGameOne
+              answerset = {[
+                { problem: "19 + 1 =", answer: "20"},
+                { problem: "13 + 2 =", answer: "15"},
+                { problem: "12 + 6 =", answer: "18"},
+                { problem: "17 + 2 =", answer: "19"},
+                { problem: "13 + 7 =", answer: "20"},
+                { problem: "11 + 7 =", answer: "18"},
+                { problem: "16 + 3 =", answer: "19"},
+                { problem: "15+ 2 =", answer: "17"},
+                
+                
+              ]}
+              nxtlvl={'/pup2a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
       <Route exact path="/pup1s" render={(props) => (
               <PupGameOne
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "10 - 6 =", answer: "4"},
+                { problem: "7 - 7 =", answer: "0"},
+                { problem: "10 - 4 =", answer: "6"},
+                { problem: "10 - 10 =", answer: "0"},
+                { problem: "9 - 6 =", answer: "3"},
+                { problem: "10 - 4 =", answer: "6"},
+                { problem: "9 - 2 =", answer: "7"},
+                { problem: "8 - 7 =", answer: "1"},
+                
                 
                 
               ]}
               nxtlvl={'/pup2s'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/pup1s2" render={(props) => (
+              <PupGameOne
+              answerset = {[
+                { problem: "14 - 7 =", answer: "7"},
+                { problem: "10 - 7 =", answer: "3"},
+                { problem: "14 - 6 =", answer: "8"},
+                { problem: "16 - 3 =", answer: "3"},
+                { problem: "19 - 8 =", answer: "11"},
+                { problem: "20 - 6 =", answer: "14"},
+                { problem: "12 - 10 =", answer: "2"},
+                { problem: "19 - 9 =", answer: "10"},
+                
+                
+                
+              ]}
+              nxtlvl={'/pup2s2'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -1489,17 +2187,38 @@ class App extends Component {
 
       </section>
       <section>
+          <Route exact path="/pup2a2" render={(props) => (
+              <PupGameTwo
+              answerset = {[
+                { problem: "19 + 1 =", answer: "20"},
+                { problem: "13 + 2 =", answer: "15"},
+                { problem: "12 + 6 =", answer: "18"},
+                { problem: "17 + 2 =", answer: "19"},
+                { problem: "13 + 7 =", answer: "20"},
+                { problem: "11 + 7 =", answer: "18"},
+                { problem: "16 + 3 =", answer: "19"},
+                { problem: "15+ 2 =", answer: "17"},
+                
+                
+              ]}
+              nxtlvl={'/pup3a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
+      <section>
       <Route exact path="/pup2s" render={(props) => (
               <PupGameTwo
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "10 - 6 =", answer: "4"},
+                { problem: "7 - 7 =", answer: "0"},
+                { problem: "10 - 4 =", answer: "6"},
+                { problem: "10 - 10 =", answer: "0"},
+                { problem: "9 - 6 =", answer: "3"},
+                { problem: "10 - 4 =", answer: "6"},
+                { problem: "9 - 2 =", answer: "7"},
+                { problem: "8 - 7 =", answer: "1"},
+                
                 
               ]}
               nxtlvl={'/pup3s'}
@@ -1508,6 +2227,29 @@ class App extends Component {
                 )}/>
 
       </section>
+      <section>
+      <Route exact path="/pup2s2" render={(props) => (
+              <PupGameTwo
+              answerset = {[
+                { problem: "14 - 7 =", answer: "7"},
+                { problem: "10 - 7 =", answer: "3"},
+                { problem: "14 - 6 =", answer: "8"},
+                { problem: "16 - 3 =", answer: "3"},
+                { problem: "19 - 8 =", answer: "11"},
+                { problem: "20 - 6 =", answer: "14"},
+                { problem: "12 - 10 =", answer: "2"},
+                { problem: "19 - 9 =", answer: "10"},
+                
+                
+                
+              ]}
+              nxtlvl={'/pup3s2'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+
+      </section>
+
       <section>
       <Route exact path="/pup2m" render={(props) => (
               <PupGameTwo
@@ -1554,14 +2296,15 @@ class App extends Component {
       <Route exact path="/pup3" render={(props) => (
               <PupGameThree
               answerset = {[
-                { problem: "3 + 2 =", answer: "5"},
-                { problem: "6 + 1 =", answer: "7"},
-                { problem: "4 + 4 =", answer: "8"},
-                { problem: "1 + 2 =", answer: "3"},
-                { problem: "3 + 1 =", answer: "4"},
-                { problem: "7 + 3 =", answer: "10"},
-                { problem: "6 + 3 =", answer: "9"},
-                { problem: "2 + 4 =", answer: "6"},
+                { problem: "10 - 6 =", answer: "4"},
+                { problem: "7 - 7 =", answer: "0"},
+                { problem: "10 - 4 =", answer: "6"},
+                { problem: "10 - 10 =", answer: "0"},
+                { problem: "9 - 6 =", answer: "3"},
+                { problem: "10 - 4 =", answer: "6"},
+                { problem: "9 - 2 =", answer: "7"},
+                { problem: "8 - 7 =", answer: "1"},
+                
                 
               ]}
               nxtlvl={'/pup4'}
@@ -1569,6 +2312,26 @@ class App extends Component {
                 {...props} />
                 )}/>
 
+      </section>
+      <section>
+          <Route exact path="/pup3a2" render={(props) => (
+              <PupGameThree
+              answerset = {[
+                { problem: "19 + 1 =", answer: "20"},
+                { problem: "13 + 2 =", answer: "15"},
+                { problem: "12 + 6 =", answer: "18"},
+                { problem: "17 + 2 =", answer: "19"},
+                { problem: "13 + 7 =", answer: "20"},
+                { problem: "11 + 7 =", answer: "18"},
+                { problem: "16 + 3 =", answer: "19"},
+                { problem: "15 + 2 =", answer: "17"},
+                
+                
+              ]}
+              nxtlvl={'/pup4a2'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
       </section>
       <section>
       <Route exact path="/pup3s" render={(props) => (
@@ -1585,6 +2348,28 @@ class App extends Component {
                 
               ]}
               nxtlvl={'/pup4s'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/pup3s2" render={(props) => (
+              <PupGameThree
+              answerset = {[
+                { problem: "14 - 7 =", answer: "7"},
+                { problem: "10 - 7 =", answer: "3"},
+                { problem: "14 - 6 =", answer: "8"},
+                { problem: "16 - 3 =", answer: "3"},
+                { problem: "19 - 8 =", answer: "11"},
+                { problem: "20 - 6 =", answer: "14"},
+                { problem: "12 - 10 =", answer: "2"},
+                { problem: "19 - 9 =", answer: "10"},
+                
+                
+                
+              ]}
+              nxtlvl={'/pup4s2'}
               gButton={'/planetspages'}
                 {...props} />
                 )}/>
@@ -1650,18 +2435,60 @@ class App extends Component {
                 )}/>
 
       </section>
+          <section>
+          <Route exact path="/pup4a2" render={(props) => (
+              <PupGameFour
+              answerset = {[
+                { problem: "19 + 1 =", answer: "20"},
+                { problem: "13 + 2 =", answer: "15"},
+                { problem: "12 + 6 =", answer: "18"},
+                { problem: "17 + 2 =", answer: "19"},
+                { problem: "13 + 7 =", answer: "20"},
+                { problem: "11 + 7 =", answer: "18"},
+                { problem: "16 + 3 =", answer: "19"},
+                { problem: "15 + 2 =", answer: "17"},
+                
+                
+              ]}
+              nxtlvl={'/credits'}
+              gButton={'/planetspagea'}
+                {...props} />
+                )}/>
+      </section>
       <section>
       <Route exact path="/pup4s" render={(props) => (
               <PupGameFour
               answerset = {[
-                { problem: "3 - 2 =", answer: "5"},
-                { problem: "6 - 1 =", answer: "7"},
-                { problem: "4 - 4 =", answer: "8"},
-                { problem: "1 - 2 =", answer: "3"},
-                { problem: "3 - 1 =", answer: "4"},
-                { problem: "7 - 3 =", answer: "10"},
-                { problem: "6 - 3 =", answer: "9"},
-                { problem: "2 - 4 =", answer: "6"},
+                { problem: "10 - 6 =", answer: "4"},
+                { problem: "7 - 7 =", answer: "0"},
+                { problem: "10 - 4 =", answer: "6"},
+                { problem: "10 - 10 =", answer: "0"},
+                { problem: "9 - 6 =", answer: "3"},
+                { problem: "10 - 4 =", answer: "6"},
+                { problem: "9 - 2 =", answer: "7"},
+                { problem: "8 - 7 =", answer: "1"},
+ 
+              ]}
+              nxtlvl={'/credits'}
+              gButton={'/planetspages'}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/pup4s2" render={(props) => (
+              <PupGameOne
+              answerset = {[
+                { problem: "14 - 7 =", answer: "7"},
+                { problem: "10 - 7 =", answer: "3"},
+                { problem: "14 - 6 =", answer: "8"},
+                { problem: "16 - 3 =", answer: "3"},
+                { problem: "19 - 8 =", answer: "11"},
+                { problem: "20 - 6 =", answer: "14"},
+                { problem: "12 - 10 =", answer: "2"},
+                { problem: "19 - 9 =", answer: "10"},
+                
+                
                 
               ]}
               nxtlvl={'/credits'}
