@@ -44,7 +44,9 @@ import AboutUs  from './components/aboutUs/aboutUs';
 import PlanetsPageA  from './components/planetsPageA/planetsPageA';
 import PlanetsPageATwo  from './components/planetsPageATwo/planetsPageATwo';
 import PlanetsPageS  from './components/planetsPageS/planetsPageS';
+import PlanetsPageSTwo  from './components/planetsPageSTwo/planetsPageSTwo';
 import PlanetsPageM  from './components/planetsPageM/planetsPageM';
+import PlanetsPageMTwo  from './components/planetsPageMTwo/planetsPageMTwo';
 import PlanetsPageD from './components/planetsPageD/planetsPageD';
 import TermsPage from "./components/termsPage/termsPage";
 import PrivacyPage from "./components/privacyPage/privacyPage";
@@ -3500,8 +3502,28 @@ class App extends Component {
 
       </section>
       <section>
+      <Route exact path="/planetsPageStwo" render={(props) => (
+              <PlanetsPageSTwo
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
       <Route exact path="/planetsPageM" render={(props) => (
               <PlanetsPageM
+                //passing user from app to home so i can access it in NavBar!! important!!
+                // user={this.state.user}
+                // handleLogout={this.handleLogout}
+                {...props} />
+                )}/>
+
+      </section>
+      <section>
+      <Route exact path="/planetsPageMTwo" render={(props) => (
+              <PlanetsPageMTwo
                 //passing user from app to home so i can access it in NavBar!! important!!
                 // user={this.state.user}
                 // handleLogout={this.handleLogout}
