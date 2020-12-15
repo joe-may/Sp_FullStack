@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./planetsPageD.css"
+import "./planetsPageDTwo.css"
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Navbar from '../Nav/Navbar';
 import FooterSpot from '../footer/footer';
@@ -7,7 +7,7 @@ import $ from "jquery";
 
 
 
-class PlanetsPageD extends Component {
+class PlanetsPageDTwo extends Component {
   componentDidMount() {
 
     $('.backButton').hide();
@@ -35,7 +35,7 @@ class PlanetsPageD extends Component {
 
     render() {
       return (
-        <div class="planetsPageD" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Background_Galaxy.png')"} }>
+        <div class="planetsPageDTwo" style ={ { backgroundImage: "url('https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Background_Galaxy.png')"} }>
             <Router>
 
             <section>
@@ -53,68 +53,68 @@ class PlanetsPageD extends Component {
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/StudyPup_MysticBadges_PLANET_MAP_NEW.png' alt=""  class='planets'/>
                 {/* <div class="top-left">Top Left</div> */}
                 <div class="buttons">
-                <a href="/sno1d">
+                <a href="/sno1d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/blueButton1.png' alt=""  class='blueButton1'/>
                 </a>
-                <a href="/sno2d">
+                <a href="/sno2d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/blueButton2.png' alt=""  class='blueButton2'/>
                 </a>
-                <a href="/sno3d">
+                <a href="/sno3d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/blueButton3.png' alt=""  class='blueButton3'/>
                 </a>
-                <a href="/bbsno1d">
+                <a href="/bbsno1d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/blueButton4.png' alt=""  class='blueButton4'/>
                 </a>
-                 <a href="/hot1d">
+                 <a href="/hot1d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/redButton5.png' alt=""  class='redButton5'/>
                 </a>
-                <a href="/hot2d">
+                <a href="/hot2d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/redButton6.png' alt=""  class='redButton6'/>
                 </a>
-                <a href="/hot3d">
+                <a href="/hot3d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/redButton7.png' alt=""  class='redButton7'/>
                 </a>
-                <a href="/hot4d">
+                <a href="/hot4d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/redButton8.png' alt=""  class='redButton8'/>
                 </a>
-                <a href="/wild1d">
+                <a href="/wild1d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_9.png' alt=""  class='yellowButton9'/>
                 </a>
-                <a href="/wild2d">
+                <a href="/wild2d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_10.png' alt=""  class='yellowButton10'/>
                 </a>
-                <a href="/wild3d">
+                <a href="/wild3d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_11.png' alt=""  class='yellowButton11'/>
                 </a>
-                <a href="/wild4d">
+                <a href="/wild4d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_12.png' alt=""  class='yellowButton12'/>
                 </a>
-                <a href="/coz1d">
+                <a href="/coz1d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_13.png' alt=""  class='purpButton13'/>
                 </a>
-                <a href="/coz2d">
+                <a href="/coz2d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_14.png' alt=""  class='purpButton14'/>
                 </a>
-                <a href="/coz3d">
+                <a href="/coz3d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_15.png' alt=""  class='purpButton15'/>
                 </a>
-                <a href="/coz4d">
+                <a href="/coz4d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_16.png' alt=""  class='purpButton16'/>
                 </a>
-                <a href="/pup1d">
+                <a href="/pup1d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_17.png' alt=""  class='greenButton17'/>
                 </a>
-                <a href="/pup2d">
+                <a href="/pup2d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_18.png' alt=""  class='greenButton18'/>
                 </a>
-                <a href="/pup3d">
+                <a href="/pup3d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_19.png' alt=""  class='greenButton19'/>
                 </a>
-                <a href="/pup4d">
+                <a href="/pup4d2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_20.png' alt=""  class='greenButton20'/>
                 </a>
                 </div>
-                <div class="addOneWords">LEVEL 1 Division</div>
+                <div class="addOneWords">LEVEL 2 Division</div>
                 <div class="backButton">BACK</div>
                 <div class="chg">CHANGE OPERATION</div>
                 <div class="opCon">
@@ -129,7 +129,7 @@ class PlanetsPageD extends Component {
                  <a  href="/planetspagem">
                     <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+multiplication1.png' alt="" class="mulLvlOne" />
                  </a> 
-                 <a  href="/planetspaged">
+                 <a  href="/planetsPageD">
                     <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+division1.png' alt="" class="divLvlOne" />
                  </a> 
                  <a  href="/planetsPageDtwo">
@@ -141,7 +141,7 @@ class PlanetsPageD extends Component {
                  <a  href="/planetspagemtwo">
                     <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+multiplication2.png' alt="" class="mulLvlTwo" />
                  </a> 
-                 <a  href="/planetspageDtwo">
+                 <a  href="/planetsPageDtwo">
                     <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+division2.png' alt="" class="divLvlTwo" />
                  </a> 
                
@@ -172,4 +172,4 @@ class PlanetsPageD extends Component {
     }
   }
   
-  export default PlanetsPageD;
+  export default PlanetsPageDTwo;
