@@ -25,15 +25,41 @@ $('.create').hide();
 $('.nextLevel').hide();
 
 
-
+var incrementedValue = 0;
+$('.output').html(answerset[0].answer);
 //////up counter 
-$('.countUp').click(function() {
-  $('.output').html(function(i, val) { return val*1+1 });
+$('.cycleAnswers').click(function() {
+
+
+
+  if ($(this).hasClass("countDown")){
+    
+    if ((parseInt(incrementedValue) - 1) <= 1 ) {
+      incrementedValue = answerset.length - 1; 
+    } else {
+      incrementedValue = incrementedValue - 1 ;
+    };
+  } else {
+    if (answerset.length - 1 <= incrementedValue) {
+      incrementedValue = 0; 
+    } else {
+      incrementedValue++
+    };
+  }
+
+  // alert(incrementedValue)
+
+  $('.output').html(answerset[parseInt(incrementedValue)].answer);
+
+
+  
+  //alert(incrementedValue);
+  
+  $('.output').html(answerset[parseInt(incrementedValue)].answer);
+  
+
 });
-///// down counter
-$('.countDown').click(function() {
-  $('.output').html(function(i, val) { return val*1-1 });
-});
+
 
 
 ////snowball throw
@@ -52,6 +78,8 @@ $('audio#icecreamSong')[0].play();
 
 
 var currentGameArray = [];
+
+var possibleAnswerArray = [];
 // var playerLives = 0;
 
 
@@ -303,10 +331,10 @@ $('.countDown').click(function(){
       <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Sass_Barrell_2.png' alt="" class='ybox'/>
        <div class="guessCounter">
     
-          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Up_Unclicked.png'alt=""  class='countUp'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Up_Unclicked.png'alt=""  class='cycleAnswers countUp'/>
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Up_Clicked.png'alt=""  class='countUpClicked'/>
   
-          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Down_Unclicked.png'alt=""  class='countDown'/>
+          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Down_Unclicked.png'alt=""  class='cycleAnswers countDown'/>
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Down_Clicked.png'alt=""  class='countDownClicked'/>
 
 
