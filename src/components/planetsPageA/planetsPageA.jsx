@@ -141,7 +141,7 @@ class PlanetsPageA extends Component {
                  <a  href="/planetspagemtwo">
                     <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+multiplication2.png' alt="" class="mulLvlTwo" />
                  </a> 
-                 <a  href="/planetspagetwo">
+                 <a  href="/planetspagedtwo">
                     <img src='https://studypupassets.s3-us-west-1.amazonaws.com/ops/button+-+division2.png' alt="" class="divLvlTwo" />
                  </a> 
                

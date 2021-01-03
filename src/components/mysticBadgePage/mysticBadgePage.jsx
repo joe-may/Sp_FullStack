@@ -91,9 +91,9 @@ class MysticBadgePage extends Component {
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/MB_START_MENU_Button_Select_Level.png' alt=""  class='selectGame'/>
                 </a>
                 
-                <a href="/arcade-play">
+                {/* <a href="/arcade-play">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/MB_START_MENU_Button_ARCADE.png' alt=""  class='arcadePlay'/>
-                </a>
+                </a> */}
 
                 {/* <div class="layerOp"></div> */}
                 <div class="backButton">BACK</div>

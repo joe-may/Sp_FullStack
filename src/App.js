@@ -775,7 +775,7 @@ class App extends Component {
                   { problem: "8 ÷ 2 =", answer: "4"},
                   { problem: "16 ÷ 1 =", answer: "8"},
                   { problem: "10 ÷ 2 =", answer: "5"},
-                  { problem: "34÷ 1 =", answer: "34"},
+                  { problem: "34 ÷ 1 =", answer: "34"},
                   { problem: "4 ÷ 2 =", answer: "2"},
                   { problem: "23 ÷ 1 =", answer: "23"},
                   { problem: "14 ÷ 2 =", answer: "7"},
@@ -2068,7 +2068,7 @@ class App extends Component {
                 { problem: "9 + 8 =", answer: "17"},
                 { problem: "9 + 9 =", answer: "18"},
                 { problem: "10 + 7 =", answer: "17"},
-                { problem: "10 + 9 =", answer: "6"},
+                { problem: "10 + 9 =", answer: "19"},
                 
               ]}
               nxtlvl={'/coz2'}
