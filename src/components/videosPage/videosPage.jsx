@@ -28,7 +28,7 @@ class VideosPage extends Component {
   
   <div class="opCon">
              
-                 <a  href="/arcade-play">
+                 {/* <a  href="/arcade-play">
                     <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Video_Button_Math.png' alt="" class="mathButton" />
                  </a>
                  <a  href="/arcade-play">
@@ -36,12 +36,12 @@ class VideosPage extends Component {
                  </a>
                  <a  href="/arcade-play">
                     <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Video_Button_Science.png' alt="" class="scienceButton" />
-                 </a>
+                 </a> */}
   </div>
   <div class="vidCon">
       <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_doubles.png' alt="" class="doublesThumb" />
-      <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_commutative.png' alt="" class="comThumb" />
-      <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_fives.png' alt="" class="fivesThumb" />
+      {/* <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_commutative.png' alt="" class="comThumb" />
+      <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_fives.png' alt="" class="fivesThumb" /> */}
   </div>
     
 

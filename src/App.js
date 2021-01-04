@@ -121,14 +121,14 @@ class App extends Component {
            
               <GameOne
               answerset = {[
-                { problem: "5 + 1=", answer: "6"},			
+                { problem: "5 + 1 =", answer: "6"},			
                 { problem: "2 + 2 =", answer: "4"},
                 { problem: "2 + 3 =", answer: "5"},
                 { problem: "1 + 2 =", answer: "3"},
                 { problem: "3 + 3 =", answer: "6"},
                 { problem: "3 + 4 =", answer: "7"},
                 { problem: "5 + 5 =", answer: "10"},
-                { problem: "5 + 6 =", answer: "6"},
+                { problem: "5 + 6 =", answer: "11"},
       
               ]}
               nxtlvl={'/sno2'}
@@ -152,7 +152,7 @@ class App extends Component {
                 { problem: "15 + 3 =", answer: "18"},
                 { problem: "11 + 4 =", answer: "15"},
                 { problem: "16 + 4 =", answer: "20"},
-                { problem: "10+ 5 =", answer: "15"},
+                { problem: "10 + 5 =", answer: "15"},
                 { problem: "15 + 5 =", answer: "20"},
                 
               ]}
