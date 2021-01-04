@@ -39,7 +39,9 @@ class VideosPage extends Component {
                  </a> */}
   </div>
   <div class="vidCon">
-      <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_doubles.png' alt="" class="doublesThumb" />
+    <a href="https://www.youtube.com/watch?v=DggubIEv4n0&t=56s">
+      <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/doubles_thumb.jpeg' alt="" class="doublesThumb" />
+      </a>
       {/* <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_commutative.png' alt="" class="comThumb" />
       <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/thumbnail_fives.png' alt="" class="fivesThumb" /> */}
   </div>
