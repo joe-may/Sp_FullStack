@@ -24,14 +24,20 @@ class AboutUs extends Component {
           <Navbar/>
           <img class="collage" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/BeFunky-collage1.png' alt="" />
           <h2 class="fam">About StudyPup</h2>
-              <p className="select">Study Pup is an edutainment company designed to help 1st - 4rd graders learn common core standards, and have a blast doing so! We provide educational videos and arcade games, as well as our flagship Story Game "StudyPup and the Quest for the Mystic Badges!" This game takes children on a journey through the galaxy, playing math games to help our protagonist Nova save the universe. Each level increases difficultly, allowing the child to progress in math skills while progressing in the story.  </p>
+              <p className="select"> Study Pup is an edutainment company designed to provide preliminary grade students, with multiple learning styles, extra resources that reinforce conceptual and procedural understanding of Math through play.<br></br>
+<br></br>
+     We provide games, videos, music and math stories which includes our flagship story “StudyPup and the Quest for the Mystic Badges”! This game takes students on a journey through the galaxy, playing math fact arcade-style games, practicing toward fluency, while helping our protagonist “Nova” save the universe! <br></br><br></br>
+At StudyPup, we use educationally sound principles to enable students to grasp a deeper understanding of math concepts while enjoying the process of learning. 
+<br></br><br></br>
+“Play is the highest form of research”
+-Albert Einstein  </p>
 
           
-              <img class="familyPic" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/IMG_1348.jpeg' alt="" />
+              {/* <img class="familyPic" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/IMG_1348.jpeg' alt="" />
               <h2 class="fam">The Story</h2>
               <p className="select">Karen May founded StudyPup when she was teaching 1st grade in the San Francisco Bay Area. One day she found herself looking to find engaging resources for her students beyond what her classroom could offer. After weeks of struggling to find content that was entertaining, funny, and taught the common core standards, she envisioned StudyPup. Her sons, Joe and Josh, having the same passion for the vision, went to computer programming school to make studyPup a reality. With the perspective of an educator, the technical know-how of Joe and Josh, and the story-telling ability of the talented Aubrey Huntsman, (not to forget the adorable face of their real-life dog Obie!) StudyPup was born!
 
-             </p>
+             </p> */}
  
 {/*      
                <div class="vidCon">
