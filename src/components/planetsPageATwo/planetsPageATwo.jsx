@@ -86,7 +86,7 @@ class planetsPageATwo extends Component {
                 <a href="/wild3a2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_11.png' alt=""  class='yellowButton11'/>
                 </a>
-                <a href="/wild4">
+                <a href="/wild4a2">
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_MysticBadges_Number_12.png' alt=""  class='yellowButton12'/>
                 </a>
                 <a href="/coz1a2">
