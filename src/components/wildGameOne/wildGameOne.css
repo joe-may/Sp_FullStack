@@ -47,8 +47,8 @@
   
     .wildGameOne .brownBox {
       position: fixed;
-      top: 9%;
-      left: 52%;
+      top: 2%;
+      left: 50%;
       z-index: 1000;
       width: 44%;
     }
@@ -64,8 +64,8 @@
 
     .wildGameOne .brownBox .ybox {
     position: relative;
-    width: 80%;
-    height: 100%;
+    width: 120%;
+    height: 90%;
     z-index: 300;
   }
   
@@ -250,18 +250,28 @@
       background-repeat: no-repeat;
       z-index: 1000;
      }
-      /* .answers {
-          position: fixed;
-          font-size: 5vh;
-          height: 20%;
-          top: 29%;
-          width: 67%;
-          z-index: 800;
-          display: flex;
-          flex-wrap: wrap;
-    
-      } */
-  
+     .wildGameOne .answers {
+      display: grid;
+   
+      position: fixed;
+      grid-template-columns: repeat(3, 10%);
+     
+      gap: 20%;
+      grid-auto-rows: minmax(60%, auto);
+     -webkit-text-stroke-width: 3px;
+     -webkit-text-stroke-color: rgb(255, 255, 255);
+     text-shadow: 13px 7px rgb(0, 0, 0);
+     color: rgb(255, 255, 255);
+     top: 5%;
+     font-family: 'Titan One';
+     z-index: 1700;
+     height: 20.5%;
+     left: 61%;
+     width: 50.2%;
+     
+     };
+   
+ 
       /* .house {
         position: relative;
         width: 38%;
@@ -329,10 +339,11 @@
       }
       .wildGameOne .house .iglooWrapper .answer {
         position: absolute;
-        color: #333;
-        font-size: 5vh;
+      
+        color: rgb(51, 190, 255);
+        font-size: 8vh;
         left: 45%;
-        margin-top: 11%;
+        margin-top: 8%;
       }
       .wildGameOne .house .iglooWrapper .penguin {
           position: absolute;
@@ -342,14 +353,7 @@
       }
     
       
-      /* .answers div {
-          font-size: 7vh;
-          font-family: 'Titan One', cursive;
-          width: 20%;
-          color: black;
-          cursor: crosshair;
-          z-index: 600;
-      } */
+      
 
       .wildGameOne .pinkBoxAndGif {
         position: fixed;
@@ -385,7 +389,10 @@
         width: 76%;
         left: 23%;
         top: -8%;
-      
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+        text-shadow: 13px 7px rgb(0, 0, 0);
+       
         font-size: 7vw;
         color: rgb(218, 165, 87);
         border-radius: 30px 30px 30px 30px;

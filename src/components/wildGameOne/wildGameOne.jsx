@@ -75,6 +75,7 @@ $('.create').show();
 $('.nextLevel').hide();
 $("audio#icecreamSong").prop("volume", 0.19);
 $('audio#icecreamSong')[0].play();
+$('#timer').show();
 
 
 var currentGameArray = [];
@@ -86,6 +87,7 @@ var possibleAnswerArray = [];
 answerset.forEach(function(questions) {
   currentGameArray.push(questions)
 });
+
 
 
   var randomProblemSelector = Math.floor((Math.random() * currentGameArray.length));
@@ -100,8 +102,11 @@ console.log(selectedProblem);
 console.log(randomProblemSelector);
 
 
- 
-  var counter = 50;
+$.each(currentGameArray, function(index,value){
+  $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><div class='answer'>" + value.answer + "</div></div></div>");
+  console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
+}); 
+  var counter = 30;
  
 ////////////timer
   var interval = setInterval(function() {
@@ -151,30 +156,30 @@ console.log(randomProblemSelector);
 
   
 ///////////change button img
-$('.countUp').click(function(){
-  $('.countUp').hide();
-  $('audio#buttonSound')[0].play();
-  $('audio#buttonSound')[0].currentTime = 0
-  setTimeout(function() {
- $('.countUp').show();
+// $('.countUp').click(function(){
+//   $('.countUp').hide();
+//   $('audio#buttonSound')[0].play();
+//   $('audio#buttonSound')[0].currentTime = 0
+//   setTimeout(function() {
+//  $('.countUp').show();
 
-}, 100);
-});
+// }, 100);
+// });
 
-$('.countDown').click(function(){
-  $('.countDown').hide();
-  $('audio#buttonSound')[0].play();
-  $('audio#buttonSound')[0].currentTime = 0
-  setTimeout(function() {
- $('.countDown').show();
-}, 100);
-});
+// $('.countDown').click(function(){
+//   $('.countDown').hide();
+//   $('audio#buttonSound')[0].play();
+//   $('audio#buttonSound')[0].currentTime = 0
+//   setTimeout(function() {
+//  $('.countDown').show();
+// }, 100);
+// });
   
 
 
   // when answer is clicked on
-  $('.create').on('click',function() {
-    var clickedAnswer = $('.output').text();
+  $('.iglooWrapper').on('click',function() {
+    var clickedAnswer = $(this).text();
     
     console.log(theAnswer);
     console.log(clickedAnswer);
@@ -193,6 +198,7 @@ $('.countDown').click(function(){
       
 
       
+      $(this).remove();
       $('p').remove();
       currentGameArray.splice(randomProblemSelector,1);
      
@@ -327,9 +333,9 @@ $('.countDown').click(function(){
      </div>
   
      <div class="brownBox">
-      <button class="create">CREATE</button>
+      {/* <button class="create">CREATE</button> */}
       <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Sass_Barrell_2.png' alt="" class='ybox'/>
-       <div class="guessCounter">
+       {/* <div class="guessCounter">
     
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Up_Unclicked.png'alt=""  class='cycleAnswers countUp'/>
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Up_Clicked.png'alt=""  class='countUpClicked'/>
@@ -339,11 +345,11 @@ $('.countDown').click(function(){
 
 
         
-      </div>
-        <div class='cocoaAndOutput'>
+      </div> */}
+        {/* <div class='cocoaAndOutput'>
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Sass_Droplet_Icon.png'alt=""  class='cocoa'/>
           <div class="output">3</div>
-       </div>
+       </div> */}
     </div>
   
     <div class='greenBoxAndGif'></div>
