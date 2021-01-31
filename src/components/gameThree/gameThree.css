@@ -40,24 +40,26 @@
   
     .game3 .brownBox {
       position: fixed;
-      top: 9%;
-      left: 52%;
+      top: -14%;
+      left: 56%;
+      height: 80%;
       z-index: 1000;
       width: 44%;
     }
 
     .game3 .brownBox .choco{
       position: fixed;
-      top: 10%;
-      left: 60%;
-      z-index: 500;
+      top: 22%;
+      left: 67%;
+      z-index: 100;
       width: 44%;
+      transform: rotate(90deg);
     }
     
 
     .game3 .brownBox .ybox {
     position: relative;
-    width: 80%;
+    width: 120%;
     height: 100%;
     z-index: 300;
   }
@@ -243,6 +245,26 @@
       background-repeat: no-repeat;
       z-index: 1000;
      }
+
+     .game3 .answers {
+      
+      display: grid;
+      position: fixed;
+      grid-template-columns: repeat(3, 10%);
+      gap: 20%;
+      grid-auto-rows: minmax(60%, auto);
+     -webkit-text-stroke-width: 3px;
+     -webkit-text-stroke-color: rgb(255, 255, 255);
+     text-shadow: 13px 7px rgb(0, 0, 0);
+     color: rgb(255, 255, 255);
+     top: 5%;
+     font-family: 'Titan One';
+     z-index: 1700;
+     height: 20.5%;
+     left: 65%;
+     width: 50.2%;
+     
+     };
       /* .answers {
           position: fixed;
           font-size: 5vh;
@@ -322,10 +344,10 @@
       }
       .game3 .house .iglooWrapper .answer {
         position: absolute;
-        color: #333;
-        font-size: 5vh;
+        color: rgb(51, 190, 255);
+        font-size: 8vh;
         left: 45%;
-        margin-top: 11%;
+        margin-top: 8%;
       }
       .game3 .house .iglooWrapper .penguin {
           position: absolute;

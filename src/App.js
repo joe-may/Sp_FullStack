@@ -455,6 +455,8 @@ class App extends Component {
                 { problem: "2 + 2 =", answer: "4"},
                 { problem: "2 + 1 =", answer: "3"},
                 { problem: "2 + 3 =", answer: "5"},
+                { problem: "2 + 7 =", answer: "9"},
+                { problem: "2 + 8 =", answer: "10"},
               
               ]}
               nxtlvl={'/sno3'}

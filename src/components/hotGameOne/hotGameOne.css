@@ -40,24 +40,26 @@
   
     .hotGameOne .brownBox {
       position: fixed;
-      top: 9%;
+      top: -7%;
       left: 52%;
       z-index: 1000;
-      width: 44%;
+      height: 80%;
+      width: 40%;
     }
 
     .hotGameOne .brownBox .smokers {
       position: fixed;
-      margin-top:-37%;
+      margin-top:-8%;
       left: 60%;
-      z-index: 500;
+      z-index: 100;
       width: 30%;
+      transform: rotate(180deg);
     }
     
 
     .hotGameOne .brownBox .ybox {
     position: relative;
-    width: 80%;
+    width: 130%;
     height: 100%;
     z-index: 300;
   }
@@ -322,10 +324,10 @@
       }
       .hotGameOne .house .iglooWrapper .answer {
         position: absolute;
-        color: #333;
-        font-size: 5vh;
+        color: rgb(241, 71, 71);
+        font-size: 8vh;
         left: 45%;
-        margin-top: 11%;
+        margin-top: 20%;
       }
       .hotGameOne .house .iglooWrapper .penguin {
           position: absolute;
@@ -333,7 +335,25 @@
           margin-top: 16%;
   
       }
-    
+      .hotGameOne .answers {
+        display: grid;
+     
+        position: fixed;
+        grid-template-columns: repeat(3, 10%);
+       
+        gap: 20%;
+        grid-auto-rows: minmax(60%, auto);
+       -webkit-text-stroke-width: 3px;
+       -webkit-text-stroke-color: rgb(255, 255, 255);
+       text-shadow: 13px 7px rgb(0, 0, 0);
+       color: rgb(255, 255, 255);
+       top: 13%;
+       font-family: 'Titan One';
+       z-index: 1700;
+       height: 20.5%;
+       left: 59%;
+       width: 50.2%;
+  }
       
       /* .answers div {
           font-size: 7vh;

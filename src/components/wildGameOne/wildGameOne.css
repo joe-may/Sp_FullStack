@@ -47,8 +47,9 @@
   
     .wildGameOne .brownBox {
       position: fixed;
-      top: 2%;
+      top: -5%;
       left: 50%;
+      height: 80%;
       z-index: 1000;
       width: 44%;
     }

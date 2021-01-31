@@ -27,10 +27,11 @@
   
     .cozGameOne .brownBox {
       position: fixed;
-      top: 9%;
+      top: -20%;
       left: 52%;
+      height: 70%;
       z-index: 1000;
-      width: 44%;
+      width: 49%;
     }
 
     .cozGameOne .brownBox .smokers {
@@ -315,11 +316,12 @@
         top: 0px;
       }
       .cozGameOne .house .iglooWrapper .answer {
-        position: absolute;
-        color: #333;
-        font-size: 5vh;
-        left: 45%;
-        margin-top: 11%;
+          position: absolute;
+          color: rgb(10, 180, 18);
+          font-size: 8vh;
+          left: 45%;
+          margin-top: 8%;
+        
       }
       .cozGameOne .house .iglooWrapper .penguin {
           position: absolute;
@@ -328,7 +330,25 @@
   
       }
     
-      
+      .cozGameOne .answers {
+        display: grid;
+     
+        position: fixed;
+        grid-template-columns: repeat(2, 10%);
+       
+        gap: 20%;
+        grid-auto-rows: minmax(60%, auto);
+       -webkit-text-stroke-width: 3px;
+       -webkit-text-stroke-color: rgb(255, 255, 255);
+       text-shadow: 13px 7px rgb(0, 0, 0);
+       color: rgb(255, 255, 255);
+       top: 17%;
+       font-family: 'Titan One';
+       z-index: 1700;
+       height: 20.5%;
+       left: 75%;
+       width: 50.2%;
+  }
       /* .answers div {
           font-size: 7vh;
           font-family: 'Titan One', cursive;
@@ -372,10 +392,10 @@
         border-radius: 0%;
         color: white;
         text-shadow: 20px 20px 20px black, 0 0 5px rgb(247, 72, 2), 0 0 5px darkblue;
-        font-size:9vw;
+        font-size:7.5vw;
         width: 40%;
-        left: 63%;
-        top: 5%;
+        left: 39%;
+        top: 45%;
         font-family: 'Titan One';
         z-index: 1600;
         cursor: crosshair; 

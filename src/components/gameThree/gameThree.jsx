@@ -75,7 +75,7 @@ $('.create').show();
 $('.nextLevel').hide();
 $("audio#icecreamSong").prop("volume", 0.19);
 $('audio#icecreamSong')[0].play();
-
+$('#timer').show();
 
 var currentGameArray = [];
 // var playerLives = 0;
@@ -96,6 +96,11 @@ console.log(currentGameArray);
 console.log(selectedProblem);
 
 console.log(randomProblemSelector);
+
+$.each(currentGameArray, function(index,value){
+  $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><div class='answer'>" + value.answer + "</div></div></div>");
+  console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
+}); 
 
 
  
@@ -167,8 +172,8 @@ $('.countDown').click(function(){
 
 
   // when answer is clicked on
-  $('.create').on('click',function() {
-    var clickedAnswer = $('.output').text();
+  $('.iglooWrapper').on('click',function() {
+    var clickedAnswer = $(this).text();
     
     console.log(theAnswer);
     console.log(clickedAnswer);
@@ -186,7 +191,7 @@ $('.countDown').click(function(){
       penguin.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/cocoa_Penguin_jump.gif");
       
 
-      
+      $(this).remove();
       $('p').remove();
       currentGameArray.splice(randomProblemSelector,1);
      
@@ -323,24 +328,16 @@ $('.countDown').click(function(){
      </div>
   
      <div class="brownBox">
-      <button class="create">CREATE</button>
+     
       <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snow_Con_Cocoa_Box2.png' alt="" class='ybox'/>
        <div class="guessCounter">
-    
-          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Up_Unclicked.png'alt=""  class='cycleAnswers countUp'/>
-          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Up_Clicked.png'alt=""  class='countUpClicked'/>
-  
-          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Down_Unclicked.png'alt=""  class='cycleAnswers countDown'/>
-          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Button_Down_Clicked.png'alt=""  class='countDownClicked'/>
+ 
 
 
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snow_Con_Cocoa_ChocolateBar.gif'alt=""  class='choco'/>
         
       </div>
-        <div class='cocoaAndOutput'>
-          <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/cocoa.png'alt=""  class='cocoa'/>
-          <div class="output">3</div>
-       </div>
+       
     </div>
   
     <div class='greenBoxAndGif'></div>
