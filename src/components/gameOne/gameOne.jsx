@@ -12,6 +12,40 @@ class GameOne extends Component {
      
       const { answerset } = this.props;
 
+      var counter = 40;
+
+var wrongCounter = 0
+
+$(".thex").hide();
+$(".hundo").hide();
+
+
+ 
+
+var percentCheck = "100%"
+
+
+function wrongCheck() {
+  console.log(wrongCounter);
+
+if (wrongCounter === 3) {
+  console.log("LIEHFQGILWEHFIWEHFLI");
+  counter = 0
+
+  setTimeout(function() {
+    $(".thex").show();
+    }, 1000);
+} else if (wrongCounter === 2) {
+  percentCheck = "75%"
+
+} else if (wrongCounter === 1) {
+  percentCheck = "87%"
+
+}
+};
+
+
+
 
       
       $("audio#snowballThrowd").prop("volume", 0.7);
@@ -62,6 +96,8 @@ $('.novaThrow').show();
 
 $('.game1').on('click',function(e) {
   console.log('FIRRRRRREEE');
+  wrongCheck();
+ 
   var parentOffset = $(this).parent().offset();
    var relX = e.pageX - parentOffset.left;
    var relY = e.pageY - parentOffset.top;
@@ -83,6 +119,11 @@ $('.game1').on('click',function(e) {
 
 
 $('.start').on('click',function() {
+  
+  wrongCounter = 0
+  counter = 40;
+  $(".thex").hide();
+  $(".hundo").hide();
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
@@ -90,6 +131,10 @@ $('.nextLevel').hide();
 $("audio#iglooSong").prop("volume", 0.19);
 $('audio#iglooSong')[0].play();
 $("audio#snowballThrowd").prop("volume", 0.7);
+
+
+ 
+
 
 
 
@@ -100,6 +145,8 @@ $('p').hide();
 $('.layer').hide();
 $('p').show();
 $('.novaIntro').hide();
+
+
 
 
 
@@ -133,7 +180,7 @@ console.log(currentGameArray);
   });
 
  
-  var counter = 40;
+  
  
 
   
@@ -148,7 +195,6 @@ console.log(currentGameArray);
           $(".reset").html(" ");
           $('#timer').hide();
           $(".start").show();
-           
           $('.treeOne').hide();
           $('.treeTwo').hide();
           $('.treeThree').hide();
@@ -174,6 +220,9 @@ console.log(currentGameArray);
       console.log("Timer --> " + counter);
     }
 }, 1000);
+
+
+
 
   
 
@@ -212,16 +261,6 @@ console.log(currentGameArray);
         var penguin = $(this).parent().find('.penguin');
         penguin.attr("src", "https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Penguin_Walk_Gif_Faster.gif");
        
-              
-        
-       
-        
-
-
-          // currentGameArray.splice(randomProblemSelector,1);
-          // console.log(currentGameArray.length);
-          // winningCheck();
-          // generateNextTurn();
           console.log($(this).parent());
           setTimeout(function() {
             penguin.attr("src", "").remove();
@@ -231,7 +270,7 @@ console.log(currentGameArray);
   
 
     } else {
-     
+      wrongCounter = wrongCounter +1
     };
   });
   
@@ -244,11 +283,11 @@ console.log(currentGameArray);
     selectedProblem = currentGameArray[randomProblemSelector].problem;
     theAnswer = currentGameArray[randomProblemSelector].answer;
     //$("p").first().html(selectedProblem);
-
     var problemHtml = $('<p></p>').html(selectedProblem);
     $(".problem").append(problemHtml);
     
   }
+
   
 
   function winningCheck() {
@@ -265,7 +304,6 @@ console.log('keep playing');
     $(".start").show();
     $('.tryAgain').show();
     $('p').hide();
-   
     $('.treeOne').hide();
     $('.treeTwo').hide();
     $('.treeThree').hide();
@@ -280,9 +318,13 @@ console.log('keep playing');
     $('audio#iglooSong')[0].pause()
     $('audio#iglooSong')[0].currentTime = 0
     console.log('you win')
-    // generateHearts();
+    $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+    $(".hundo").show();
     
-   
+    
+
+    
+    // generateHearts();
     
   };
 }
@@ -337,6 +379,10 @@ console.log('keep playing');
               <span id="time"></span>      
             </span>
           </div>
+
+          <div class="thex">Oh no, you got 3 wrong</div>
+          <div class="hundo"></div>
+
     
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Snowball-Transparent-Background.png' alt="" class='snowball'/>
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Nova_standing.png' alt="" class='novaThrow'/>
