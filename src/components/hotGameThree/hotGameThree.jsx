@@ -10,6 +10,34 @@ class HotGameThree extends Component {
     componentDidMount() {
 
       const { answerset } = this.props;
+      var counter = 40;
+
+      var wrongCounter = 1
+      
+      $(".thex").hide();
+      $(".hundo").hide();
+      
+      var percentCheck = "100%"
+      
+      
+      function wrongCheck() {
+        console.log(wrongCounter);
+      
+      if (wrongCounter === 3) {
+        console.log("LIEHFQGILWEHFIWEHFLI");
+        counter = 0
+      
+        setTimeout(function() {
+          $(".thex").show();
+          }, 1000);
+      } else if (wrongCounter === 2) {
+        percentCheck = "75%"
+      
+      } else if (wrongCounter === 1) {
+        percentCheck = "87%"
+      
+      }
+      };
      
       $('.start').hide();
 
@@ -32,6 +60,11 @@ $('.nextLevel').hide();
 
 
 $('.start').on('click',function() {
+wrongCheck();
+wrongCounter = 1
+counter = 40;
+$(".thex").hide();
+$(".hundo").hide();
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
@@ -64,7 +97,7 @@ console.log(currentGameArray);
   });
 
  
-  var counter = 40;
+ 
  
 
   
@@ -154,7 +187,8 @@ console.log(currentGameArray);
   
 
     } else {
-     
+      wrongCheck();
+      wrongCounter = wrongCounter +1
     };
   });
   
@@ -192,6 +226,8 @@ console.log('keep playing');
     clearInterval(interval);
     $('audio#torchSong')[0].pause()
     $('audio#torchSong')[0].currentTime = 0
+    $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+    $(".hundo").show();
     console.log('you win')
     // generateHearts();
     
@@ -248,6 +284,8 @@ console.log('keep playing');
               <span id="time">30</span>      
             </span>
           </div>
+          <div class="thex">Oh no, you got 3 wrong</div>
+          <div class="hundo"></div>
       
 
    

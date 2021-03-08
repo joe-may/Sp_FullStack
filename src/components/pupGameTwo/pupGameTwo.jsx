@@ -11,6 +11,35 @@ class PupGameTwo extends Component {
 
       const { answerset } = this.props;
 
+      var counter = 40;
+
+var wrongCounter = 0
+
+$(".thex").hide();
+$(".hundo").hide();
+
+var percentCheck = "100%"
+
+
+function wrongCheck() {
+  console.log(wrongCounter);
+
+if (wrongCounter === 3) {
+  console.log("LIEHFQGILWEHFIWEHFLI");
+  counter = 0
+
+  setTimeout(function() {
+    $(".thex").show();
+    }, 1000);
+} else if (wrongCounter === 2) {
+  percentCheck = "75%"
+
+} else if (wrongCounter === 1) {
+  percentCheck = "87%"
+
+}
+};
+
       $('.start').hide();
 
       $('.skip').on('click',function() { 
@@ -45,6 +74,10 @@ class PupGameTwo extends Component {
   
       
       $('.start').on('click',function() {
+        wrongCounter = 1
+        counter = 40;
+        $(".thex").hide();
+        $(".hundo").hide();
       $('.start').hide();
       $('.win').hide();
       $('#timer').show();
@@ -83,7 +116,7 @@ class PupGameTwo extends Component {
         });
       
        
-        var counter = 30;
+
        
       
         
@@ -155,7 +188,8 @@ class PupGameTwo extends Component {
       
           } else {
             $('audio#wrongWhoosh')[0].play();
-            
+            wrongCheck();
+            wrongCounter = wrongCounter +1
             $('audio#wrongWhoosh')[0].currentTime = 0;
           };
         });
@@ -194,6 +228,8 @@ class PupGameTwo extends Component {
           $('audio#stormSong')[0].pause()
           $('audio#stormSong')[0].currentTime = 0
           console.log('you win')
+          $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+          $(".hundo").show();
           
         };
       }
@@ -238,7 +274,8 @@ class PupGameTwo extends Component {
                 
                 <img class="lose" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_Puptune_Game2.png' alt="" />
                 <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
-          
+                <div class="thex">Oh no, you got 3 wrong</div>
+          <div class="hundo"></div>
           <div>
             <span id="timer">00:
               <span id="time">30</span>      

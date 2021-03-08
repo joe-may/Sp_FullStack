@@ -10,6 +10,34 @@ class CozGameFour extends Component {
     componentDidMount() {
 
       const { answerset } = this.props;
+      var counter = 40;
+
+var wrongCounter = 0
+
+$(".thex").hide();
+$(".hundo").hide();
+
+var percentCheck = "100%"
+
+
+function wrongCheck() {
+  console.log(wrongCounter);
+
+if (wrongCounter === 3) {
+  console.log("LIEHFQGILWEHFIWEHFLI");
+  counter = 0
+
+  setTimeout(function() {
+    $(".thex").show();
+    }, 1000);
+} else if (wrongCounter === 2) {
+  percentCheck = "75%"
+
+} else if (wrongCounter === 1) {
+  percentCheck = "87%"
+
+}
+};
      
       $('.start').hide();
       $("audio#snowballThrow").prop("volume", 0.19);
@@ -53,6 +81,10 @@ $('.nextLevel').hide();
 
 
 $('.start').on('click',function() {
+  wrongCounter = 1
+  counter = 40;
+  $(".thex").hide();
+  $(".hundo").hide();
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
@@ -95,7 +127,7 @@ console.log(currentGameArray);
   });
 
  ///////////////////////////////timer
-  var counter = 30;
+
  
   var interval = setInterval(function() {
     counter--;
@@ -186,7 +218,8 @@ console.log(currentGameArray);
   
 
     } else {
-     
+      wrongCheck();
+      wrongCounter = wrongCounter +1
     };
   });
   
@@ -223,6 +256,9 @@ console.log('keep playing');
     $('audio#raceMusic')[0].pause()
     $('audio#raceMusic')[0].currentTime = 0
     console.log('you win')
+    $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+    $(".hundo").show();
+
     // generateHearts();
     
    
@@ -279,6 +315,8 @@ console.log('keep playing');
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/hotCocoSquirt.png' alt="" class='snowball'/>
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Cozmo_Boss_Nova_w_Cheese.png' alt="" class='novaWithHose'/>
      </div>
+     <div class="thex">Oh no, you got 3 wrong</div>
+          <div class="hundo"></div>
   
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>

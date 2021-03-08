@@ -533,4 +533,26 @@ z-index: 8000;
   left: 2%;
   z-index: 3000;
 }
+.cozGameFour.thex {
+  position: fixed;
+  -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+    text-shadow: 9px 5px #333;
+  color: red;
+  font-size: 5vw;
+  left:15%;
+  bottom:5%;
+  z-index: 3000;
+}
+.cozGameFour .hundo {
+  position: fixed;
+  -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+    text-shadow: 9px 5px #333;
+  color: rgb(0, 180, 39);
+  font-size: 5vw;
+  left:35%;
+  bottom:15%;
+  z-index:3000;
+}
   

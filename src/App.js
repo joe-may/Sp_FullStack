@@ -2693,7 +2693,7 @@ class App extends Component {
               answerset = {[
                 { problem: "6 + 7 =", answer: "13"},
                 { problem: "7 + 6 =", answer: "13"},
-                { problem: "9 + 3 =", answer: "8"},
+                { problem: "9 + 3 =", answer: "12"},
                 { problem: "10 + 4 =", answer: "14"},
                 { problem: "5 + 8 =", answer: "13"},
                 { problem: "7 + 5 =", answer: "12"},

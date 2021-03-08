@@ -517,4 +517,28 @@ z-index: 9000;
   left: 2%;
   z-index: 3000;
 }
+.wildGameFour .thex {
+  position: fixed;
+  -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+    text-shadow: 9px 5px #333;
+  color: red;
+  font-size: 5vw;
+  left:15%;
+  bottom:20%;
+  z-index: 3000;
+}
+
+.wildGameFour .hundo {
+  position: fixed;
+  -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+    text-shadow: 9px 5px #333;
+  color: rgb(0, 180, 39);
+  font-size: 5vw;
+  left:35%;
+  bottom:10%;
+  z-index:10000;
+}
+
  

@@ -9,6 +9,36 @@ class PupGameThree extends Component {
 
 
       const { answerset } = this.props;
+      var counter = 40;
+
+var wrongCounter = 0
+
+$(".thex").hide();
+$(".hundo").hide();
+
+var percentCheck = "100%"
+
+
+function wrongCheck() {
+  console.log(wrongCounter);
+
+if (wrongCounter === 3) {
+  console.log("LIEHFQGILWEHFIWEHFLI");
+  counter = 0
+
+  setTimeout(function() {
+    $(".thex").show();
+    }, 1000);
+} else if (wrongCounter === 2) {
+  percentCheck = "75%"
+
+} else if (wrongCounter === 1) {
+  percentCheck = "87%"
+
+}
+};
+ 
+      
 
       
 
@@ -30,6 +60,10 @@ class PupGameThree extends Component {
       
       
       $('.start').on('click',function() {
+      wrongCounter = 1
+      counter = 40;
+      $(".thex").hide();
+      $(".hundo").hide();
       $('.start').hide();
       $('#timer').show();
       $('.win').hide();
@@ -75,7 +109,7 @@ class PupGameThree extends Component {
         },29999);
         /////////////
       /////timer and lose logic
-      var counter = 30;
+
       var interval = setInterval(function() {
           counter--;
           // Display 'counter' wherever you want to display it.
@@ -167,7 +201,8 @@ class PupGameThree extends Component {
             // get new problem/answer 
       
           } else {
-          
+            wrongCheck();
+            wrongCounter = wrongCounter +1
             console.log("False");
           };
           
@@ -208,7 +243,8 @@ class PupGameThree extends Component {
           $('.tryAgain').show();
           $('audio#raceMusic')[0].pause()
           $('audio#raceMusic')[0].currentTime = 0
-          
+          $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+          $(".hundo").show();
           clearInterval(interval);
           
   
@@ -243,7 +279,8 @@ class PupGameThree extends Component {
     <source src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_LOSE_SOUND.m4a' type="audio/mpeg"/>
   </audio>
   
-
+  <div class="thex">Oh no, you got 3 wrong</div>
+          <div class="hundo"></div>
 <div class="floor"></div>
   <div>
   <div class="answers reset"></div>

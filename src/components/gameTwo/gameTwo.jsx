@@ -9,6 +9,37 @@ class GameTwo extends Component {
 
       const { answerset } = this.props;
 
+      var counter = 30;
+
+      var wrongCounter = 1
+      
+      $(".thex").hide();
+      $(".hundo").hide();
+      
+      var percentCheck = "100%"
+      
+      
+      function wrongCheck() {
+        console.log(wrongCounter);
+      
+      if (wrongCounter === 3) {
+        console.log("LIEHFQGILWEHFIWEHFLI");
+        counter = 0
+      
+        setTimeout(function() {
+          $(".thex").show();
+          }, 1000);
+      } else if (wrongCounter === 2) {
+        percentCheck = "75%"
+      
+      } else if (wrongCounter === 1) {
+        percentCheck = "87%"
+      
+      }
+      };
+      wrongCounter = 1
+      
+
       $('.start').hide();
 
       $('.skip').on('click',function() { 
@@ -27,6 +58,11 @@ class GameTwo extends Component {
       
       
       $('.start').on('click',function() {
+        wrongCheck();
+        wrongCounter = 1
+        counter = 30;
+        $(".thex").hide();
+        $(".hundo").hide();
       $('.start').hide();
       $('.win').hide();
       $('.lose').hide();
@@ -70,7 +106,7 @@ class GameTwo extends Component {
         },29999);
         /////////////
       /////timer and lose logic
-      var counter = 30;
+    
       var interval = setInterval(function() {
           counter--;
           // Display 'counter' wherever you want to display it.
@@ -158,7 +194,8 @@ class GameTwo extends Component {
             // get new problem/answer 
       
           } else {
-          
+            wrongCheck();
+            wrongCounter = wrongCounter +1
             console.log("False");
           };
           
@@ -197,6 +234,8 @@ class GameTwo extends Component {
           $(".reset").html(" ");
           $(".start").show();
           $('.tryAgain').show();
+          $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+          $(".hundo").show();
           
           clearInterval(interval);
           
@@ -240,7 +279,8 @@ class GameTwo extends Component {
   <button class="start">START</button>
   <div class="footer">
   <img class="win" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/YOU_WON_Snowcon_Game3.png' alt="" />
-  
+<div class="thex">Oh no, you got 3 wrong</div>
+<div class="hundo"></div>
         <div class="problem reset"></div>
     </div>
   </div>

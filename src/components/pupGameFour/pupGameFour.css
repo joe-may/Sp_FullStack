@@ -528,7 +528,7 @@ z-index:2000 ;
   top:10%;
   width:60%;
   height:70%;
-  z-index:2000 ;
+  z-index:10000 ;
   }
 
 .pupGameFour .skip{
@@ -555,3 +555,27 @@ z-index: 8200;
   left: 2%;
   z-index: 3000;
 }
+.pupGameFour .thex {
+  position: fixed;
+  -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+    text-shadow: 9px 5px #333;
+  color: red;
+  font-size: 5vw;
+  left:15%;
+  bottom:20%;
+  z-index: 3000;
+}
+
+.pupGameFour .hundo {
+  position: fixed;
+  -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+    text-shadow: 9px 5px #333;
+  color: rgb(0, 180, 39);
+  font-size: 5vw;
+  left:35%;
+  bottom:80%;
+  z-index:5000;
+}
+

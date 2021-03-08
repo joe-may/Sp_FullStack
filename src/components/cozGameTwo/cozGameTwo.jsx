@@ -8,6 +8,34 @@ class CozGameTwo extends Component {
     componentDidMount() {
 
       const { answerset } = this.props;
+      var counter = 40;
+
+      var wrongCounter = 0
+      
+      $(".thex").hide();
+      $(".hundo").hide();
+      
+      var percentCheck = "100%"
+      
+      
+      function wrongCheck() {
+        console.log(wrongCounter);
+      
+      if (wrongCounter === 3) {
+        console.log("LIEHFQGILWEHFIWEHFLI");
+        counter = 0
+      
+        setTimeout(function() {
+          $(".thex").show();
+          }, 1000);
+      } else if (wrongCounter === 2) {
+        percentCheck = "75%"
+      
+      } else if (wrongCounter === 1) {
+        percentCheck = "87%"
+      
+      }
+      };
 
       $('.start').hide();
 
@@ -44,6 +72,10 @@ class CozGameTwo extends Component {
      
       
       $('.start').on('click',function() {
+        wrongCounter = 1
+        counter = 40;
+        $(".thex").hide();
+        $(".hundo").hide();
       $('.start').hide();
       $('.win').hide();
       $('.lose').hide();
@@ -88,7 +120,7 @@ class CozGameTwo extends Component {
         },29999);
         /////////////
       /////timer and lose logic
-      var counter = 30;
+      
       var interval = setInterval(function() {
           counter--;
           // Display 'counter' wherever you want to display it.
@@ -177,7 +209,8 @@ class CozGameTwo extends Component {
             // get new problem/answer 
       
           } else {
-          
+            wrongCheck();
+            wrongCounter = wrongCounter +1
             console.log("False");
           };
           
@@ -218,7 +251,8 @@ class CozGameTwo extends Component {
           $('.tryAgain').show();
           $('audio#raceMusic')[0].pause()
           $('audio#raceMusic')[0].currentTime = 0
-          
+          $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+          $(".hundo").show();
           clearInterval(interval);
           
   
@@ -278,7 +312,9 @@ class CozGameTwo extends Component {
 
     <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>
-    
+    <div class="thex">Oh no, you got 3 wrong</div>
+          <div class="hundo"></div>
+
 </body>
 </div>
 );

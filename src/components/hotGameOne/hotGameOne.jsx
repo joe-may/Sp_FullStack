@@ -7,6 +7,34 @@ import $ from "jquery";
 class HotGameOne extends Component {
     componentDidMount() {
       const { answerset } = this.props;
+      var counter = 40;
+
+      var wrongCounter = 1
+      
+      $(".thex").hide();
+      $(".hundo").hide();
+      
+      var percentCheck = "100%"
+      
+      
+      function wrongCheck() {
+        console.log(wrongCounter);
+      
+      if (wrongCounter === 3) {
+        console.log("LIEHFQGILWEHFIWEHFLI");
+        counter = 0
+      
+        setTimeout(function() {
+          $(".thex").show();
+          }, 1000);
+      } else if (wrongCounter === 2) {
+        percentCheck = "75%"
+      
+      } else if (wrongCounter === 1) {
+        percentCheck = "87%"
+      
+      }
+      };
 
       $('.start').hide();
 
@@ -69,6 +97,11 @@ $('.cycleAnswers').click(function() {
 
 
 $('.start').on('click',function() {
+  wrongCounter = 1
+  wrongCheck();
+  counter = 40;
+  $(".thex").hide();
+  $(".hundo").hide();
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
@@ -104,7 +137,7 @@ $.each(currentGameArray, function(index,value){
   console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
 }); 
  
-  var counter = 50  ;
+  
  
 ////////////timer
   var interval = setInterval(function() {
@@ -218,7 +251,8 @@ $('.countDown').click(function(){
         }, 5900);
 
     } else {
-
+      wrongCheck();
+      wrongCounter = wrongCounter +1
      console.log('wrong!!!!');
     };
   });
@@ -254,6 +288,8 @@ $('.countDown').click(function(){
     $(".reset").html(" ");
     $('.start').hide();
     $('.tryAgain').show();
+    $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+    $(".hundo").show();
     
     generateNextTurn();
     $('p').remove();
@@ -308,7 +344,8 @@ $('.countDown').click(function(){
   </audio>
  
   
-    
+  <div class="thex">Oh no, you got 3 wrong</div>
+  <div class="hundo"></div>
     <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_HotSauce_Pipes.png' alt="" class='skeletonBackground'/>
       
       <div class="answers reset"></div>

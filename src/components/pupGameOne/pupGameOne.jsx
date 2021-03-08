@@ -10,6 +10,34 @@ class WildGameTwo extends Component {
     componentDidMount() {
      
       const { answerset } = this.props;
+      var counter = 40;
+
+      var wrongCounter = 0
+      
+      $(".thex").hide();
+      $(".hundo").hide();
+      
+      var percentCheck = "100%"
+      
+      
+      function wrongCheck() {
+        console.log(wrongCounter);
+      
+      if (wrongCounter === 3) {
+        console.log("LIEHFQGILWEHFIWEHFLI");
+        counter = 0
+      
+        setTimeout(function() {
+          $(".thex").show();
+          }, 1000);
+      } else if (wrongCounter === 2) {
+        percentCheck = "75%"
+      
+      } else if (wrongCounter === 1) {
+        percentCheck = "87%"
+      
+      }
+      };
 
       $('.start').hide();
 
@@ -33,6 +61,10 @@ $('.nextLevel').hide();
 
 
 $('.start').on('click',function() {
+  wrongCounter = 1
+  counter = 40;
+  $(".thex").hide();
+  $(".hundo").hide();
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
@@ -70,7 +102,7 @@ console.log(currentGameArray);
     console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
   }); 
 
-  var counter = 30;
+
  
 
   
@@ -150,7 +182,8 @@ console.log(currentGameArray);
   
 
     } else {
-     
+      wrongCheck();
+      wrongCounter = wrongCounter +1
     };
   });
   
@@ -189,6 +222,9 @@ console.log('keep playing');
     $('audio#SlingSong')[0].pause()
     $('audio#SlingSong')[0].currentTime = 0
     console.log('you win')
+    $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+    $(".hundo").show();
+
     // generateHearts();
     
    
@@ -239,7 +275,8 @@ console.log('keep playing');
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Shooting_Nova_Slingshot.png' alt="" class='novaWithSling'/> */}
                 
                 <a class="nextLevel" href={this.props.nxtlvl}>Next Level!</a>
-          
+                <div class="thex">Oh no, you got 3 wrong</div>
+          <div class="hundo"></div>
           <div>
             <span id="timer">00:
               <span id="time">30</span>      

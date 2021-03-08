@@ -10,6 +10,35 @@ class HotGameFour extends Component {
     componentDidMount() {
 
       const { answerset } = this.props;
+      var counter = 33;
+
+var wrongCounter = 0
+
+$(".thex").hide();
+$(".hundo").hide();
+
+var percentCheck = "100%"
+
+
+function wrongCheck() {
+  console.log(wrongCounter);
+
+if (wrongCounter === 3) {
+  console.log("LIEHFQGILWEHFIWEHFLI");
+  counter = 0
+
+  setTimeout(function() {
+    $(".thex").show();
+    }, 1000);
+} else if (wrongCounter === 2) {
+  percentCheck = "75%"
+
+} else if (wrongCounter === 1) {
+  percentCheck = "87%"
+
+}
+};
+
      
       $('.start').hide();
 
@@ -52,6 +81,11 @@ $('.hotGameFour').on('click',function(e) {
 
 
 $('.start').on('click',function() {
+  wrongCheck();
+  wrongCounter = 1
+  counter = 33;
+  $(".thex").hide();
+  $(".hundo").hide();
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
@@ -95,7 +129,7 @@ console.log(currentGameArray);
   });
 
  ///////////////////////////////timer
-  var counter = 33;
+
  
   var interval = setInterval(function() {
     counter--;
@@ -187,7 +221,8 @@ console.log(currentGameArray);
   
 
     } else {
-     
+      wrongCheck();
+      wrongCounter = wrongCounter +1
     };
   });
   
@@ -224,6 +259,8 @@ console.log('keep playing');
     $('audio#moltaMusic')[0].pause()
     $('audio#moltaMusic')[0].currentTime = 0
     console.log('you win')
+    $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+    $(".hundo").show();
     // generateHearts();
     
    
@@ -244,7 +281,7 @@ console.log('keep playing');
 <a class="gButton" href={this.props.gButton}>
                 <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Studypup_Map_Icon.png' alt=""  class='mapIcon'/>
                 </a>
-
+         
 <div class="layer"></div>
   <button class="skip">Skip Video</button>
   <iframe src="https://player.vimeo.com/video/469146958" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -276,6 +313,8 @@ console.log('keep playing');
               <span id="time">30</span>      
             </span>
           </div>
+          <div class="thex">Oh no, you got 3 wrong</div>
+          <div class="hundo"></div>
 
           
           <img class="molta" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Molta.gif' alt="" />
@@ -284,7 +323,7 @@ console.log('keep playing');
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Water_Squirt.png' alt="" class='snowball'/>
           <img src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Hotsva_Boss_Battle_Nova_Hose.png' alt="" class='novaWithHoseMolta'/>
      </div>
-  
+     
 </body>
 <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"></link>
 <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'></link>

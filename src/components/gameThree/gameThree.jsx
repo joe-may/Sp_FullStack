@@ -8,6 +8,35 @@ class GameThree extends Component {
     componentDidMount() {
       const { answerset } = this.props;
 
+      var counter = 40;
+
+      var wrongCounter = 1
+      
+      $(".thex").hide();
+      $(".hundo").hide();
+      
+      var percentCheck = "100%"
+      
+      
+      function wrongCheck() {
+        console.log(wrongCounter);
+      
+      if (wrongCounter === 3) {
+        console.log("LIEHFQGILWEHFIWEHFLI");
+        counter = 0
+      
+        setTimeout(function() {
+          $(".thex").show();
+          }, 1000);
+      } else if (wrongCounter === 2) {
+        percentCheck = "75%"
+      
+      } else if (wrongCounter === 1) {
+        percentCheck = "87%"
+      
+      }
+      };
+
       $('.start').hide();
 
       $('.skip').on('click',function() { 
@@ -15,8 +44,10 @@ class GameThree extends Component {
         $('iframe').remove();
         $('.skip').remove();
         $('.start').show();
+        
       
       });
+      wrongCounter = 1
      
 $('.win').hide();
 $('.lose').hide();
@@ -68,6 +99,11 @@ $('.cycleAnswers').click(function() {
 
 
 $('.start').on('click',function() {
+  wrongCheck();
+  wrongCounter = 1
+  counter = 40;
+  $(".thex").hide();
+  $(".hundo").hide();
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
@@ -104,7 +140,7 @@ $.each(currentGameArray, function(index,value){
 
 
  
-  var counter = 55  ;
+
  
 ////////////timer
   var interval = setInterval(function() {
@@ -175,6 +211,8 @@ $('.countDown').click(function(){
   $('.iglooWrapper').on('click',function() {
     var clickedAnswer = $(this).text();
     
+    
+    
     console.log(theAnswer);
     console.log(clickedAnswer);
     console.log(selectedProblem);
@@ -182,6 +220,8 @@ $('.countDown').click(function(){
     
     if (clickedAnswer === theAnswer) {
       console.log("Correct!");
+      
+      
 
       console.log(currentGameArray.length);
       $('audio#swoopboop')[0].play();
@@ -194,7 +234,7 @@ $('.countDown').click(function(){
       $(this).remove();
       $('p').remove();
       currentGameArray.splice(randomProblemSelector,1);
-     
+      theAnswer = null;
         
 
 
@@ -213,7 +253,8 @@ $('.countDown').click(function(){
         }, 2500);
 
     } else {
-
+      wrongCheck();
+      wrongCounter = wrongCounter +1
      console.log('wrong!!!!');
     };
   });
@@ -262,6 +303,8 @@ $('.countDown').click(function(){
     console.log('keep playing');
     console.log(currentGameArray);
     console.log('you win');
+    $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+    $(".hundo").show();
 
   };
 }
@@ -339,7 +382,10 @@ $('.countDown').click(function(){
       </div>
        
     </div>
-  
+
+    <div class="thex">Oh no, you got 3 wrong</div>
+    <div class="hundo"></div>
+
     <div class='greenBoxAndGif'></div>
     <div class='greenBox'>
       

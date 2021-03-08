@@ -10,6 +10,34 @@ class WildGameFour extends Component {
     componentDidMount() {
      
       const { answerset } = this.props;
+      var counter = 40;
+
+      var wrongCounter = 0
+      
+      $(".thex").hide();
+      $(".hundo").hide();
+      
+      var percentCheck = "100%"
+      
+      
+      function wrongCheck() {
+        console.log(wrongCounter);
+      
+      if (wrongCounter === 3) {
+        console.log("LIEHFQGILWEHFIWEHFLI");
+        counter = 0
+      
+        setTimeout(function() {
+          $(".thex").show();
+          }, 1000);
+      } else if (wrongCounter === 2) {
+        percentCheck = "75%"
+      
+      } else if (wrongCounter === 1) {
+        percentCheck = "87%"
+      
+      }
+      };
 
       $('.start').hide();
 
@@ -50,6 +78,10 @@ $('.hotGameFour').on('click',function(e) {
 
 
 $('.start').on('click',function() {
+  wrongCounter = 1
+  counter = 40;
+  $(".thex").hide();
+  $(".hundo").hide();
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
@@ -86,7 +118,7 @@ console.log(currentGameArray);
   });
 
  ///////////////////////////////timer
-  var counter = 33;
+  
  
   var interval = setInterval(function() {
     counter--;
@@ -176,7 +208,8 @@ console.log(currentGameArray);
   
 
     } else {
-     
+      wrongCheck();
+      wrongCounter = wrongCounter +1
     };
   });
   
@@ -213,6 +246,9 @@ console.log('keep playing');
     $('audio#moltaMusic')[0].pause()
     $('audio#moltaMusic')[0].currentTime = 0
     console.log('you win')
+    $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+    $(".hundo").show();
+
     // generateHearts();
     
    
@@ -268,6 +304,9 @@ console.log('keep playing');
               <span id="time">35</span>      
             </span>
           </div>
+
+          <div class="thex">Oh no, you got 3 wrong</div>
+          <div class="hundo"></div>
 
           
           <img class="caveStuff" src='https://studypupassets.s3-us-west-1.amazonaws.com/StudyPup_assets/Tumblewyld_Boss_Foreground.png' alt="" />

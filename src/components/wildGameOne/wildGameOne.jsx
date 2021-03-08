@@ -8,6 +8,35 @@ class WildGameOne extends Component {
     componentDidMount() {
 
       const { answerset } = this.props;
+      var counter = 40;
+
+      var wrongCounter = 0
+      
+      $(".thex").hide();
+      $(".hundo").hide();
+      
+      var percentCheck = "100%"
+      
+      
+      function wrongCheck() {
+        console.log(wrongCounter);
+      
+      if (wrongCounter === 3) {
+        console.log("LIEHFQGILWEHFIWEHFLI");
+        counter = 0
+      
+        setTimeout(function() {
+          $(".thex").show();
+          }, 1000);
+      } else if (wrongCounter === 2) {
+        percentCheck = "75%"
+      
+      } else if (wrongCounter === 1) {
+        percentCheck = "87%"
+      
+      }
+      };
+      
 
       $('.start').hide();
 
@@ -68,6 +97,11 @@ $('.cycleAnswers').click(function() {
 
 
 $('.start').on('click',function() {
+  wrongCheck();
+  wrongCounter = 1
+  counter = 40;
+  $(".thex").hide();
+  $(".hundo").hide();
 $('.start').hide();
 $('.win').hide();
 $('.lose').hide();
@@ -106,7 +140,7 @@ $.each(currentGameArray, function(index,value){
   $(".answers").append("<div class='house'><div class='iglooWrapper "+'a'+index+"'><div class='answer'>" + value.answer + "</div></div></div>");
   console.log("index: " + index + " problem: " + value.problem + " answer: " + value.answer );
 }); 
-  var counter = 30;
+
  
 ////////////timer
   var interval = setInterval(function() {
@@ -220,7 +254,8 @@ $.each(currentGameArray, function(index,value){
         }, 4000);
 
     } else {
-
+      wrongCheck();
+      wrongCounter = wrongCounter +1
      console.log('wrong!!!!');
     };
   });
@@ -268,6 +303,8 @@ $.each(currentGameArray, function(index,value){
     console.log('you win');
     $('audio#icecreamSong')[0].pause()
     $('audio#icecreamSong')[0].currentTime = 0
+    $(".hundo").append("<div class='percent'> " + percentCheck + " correct!! </div>")
+    $(".hundo").show();
 
   };
 }
@@ -317,6 +354,8 @@ $.each(currentGameArray, function(index,value){
       
       <div class="answers reset"></div>
       <button class="start">START</button>
+      <div class="thex">Oh no, you got 3 wrong</div>
+          <div class="hundo"></div>
       
 
      
